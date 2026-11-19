@@ -1,0 +1,86 @@
+[
+  {
+    "id": "cold-extra-0",
+    "url": "https://raw.githubusercontent.com/drivendataorg/power-laws-cold-start/a22192b86b31c9f9f9f55cf108f1c3aa9c9ce9b1/2nd%20Place/src/model.py",
+    "repo_path": "2nd Place/src/model.py",
+    "commit": "a22192b86b31c9f9f9f55cf108f1c3aa9c9ce9b1"
+  },
+  {
+    "id": "cold-extra-1",
+    "url": "https://raw.githubusercontent.com/drivendataorg/power-laws-cold-start/a22192b86b31c9f9f9f55cf108f1c3aa9c9ce9b1/2nd%20Place/src/build_features.py",
+    "repo_path": "2nd Place/src/build_features.py",
+    "commit": "a22192b86b31c9f9f9f55cf108f1c3aa9c9ce9b1"
+  },
+  {
+    "id": "cold-extra-2",
+    "url": "https://raw.githubusercontent.com/drivendataorg/power-laws-cold-start/a22192b86b31c9f9f9f55cf108f1c3aa9c9ce9b1/1st%20Place/team-member-a-execute-first/scripts/final_solution/final_solution.sh",
+    "repo_path": "1st Place/team-member-a-execute-first/scripts/final_solution/final_solution.sh",
+    "commit": "a22192b86b31c9f9f9f55cf108f1c3aa9c9ce9b1"
+  },
+  {
+    "id": "cold-extra-3",
+    "url": "https://raw.githubusercontent.com/drivendataorg/power-laws-cold-start/a22192b86b31c9f9f9f55cf108f1c3aa9c9ce9b1/1st%20Place/team-member-a-execute-first/coldstart/keras/model.py",
+    "repo_path": "1st Place/team-member-a-execute-first/coldstart/keras/model.py",
+    "commit": "a22192b86b31c9f9f9f55cf108f1c3aa9c9ce9b1"
+  },
+  {
+    "id": "cold-extra-4",
+    "url": "https://raw.githubusercontent.com/drivendataorg/power-laws-cold-start/a22192b86b31c9f9f9f55cf108f1c3aa9c9ce9b1/1st%20Place/team-member-a-execute-first/coldstart/keras/data.py",
+    "repo_path": "1st Place/team-member-a-execute-first/coldstart/keras/data.py",
+    "commit": "a22192b86b31c9f9f9f55cf108f1c3aa9c9ce9b1"
+  },
+  {
+    "id": "bloom-extra-0",
+    "url": "https://raw.githubusercontent.com/drivendataorg/tick-tick-bloom/c59c9ab9e3d376bfd24a2b85e821776100d46230/1st%20Place/reproduce.sh",
+    "repo_path": "1st Place/reproduce.sh",
+    "commit": "c59c9ab9e3d376bfd24a2b85e821776100d46230"
+  },
+  {
+    "id": "bloom-extra-1",
+    "url": "https://raw.githubusercontent.com/drivendataorg/tick-tick-bloom/c59c9ab9e3d376bfd24a2b85e821776100d46230/1st%20Place/notebooks/Model.ipynb",
+    "repo_path": "1st Place/notebooks/Model.ipynb",
+    "commit": "c59c9ab9e3d376bfd24a2b85e821776100d46230"
+  },
+  {
+    "id": "bloom-extra-2",
+    "url": "https://raw.githubusercontent.com/drivendataorg/tick-tick-bloom/c59c9ab9e3d376bfd24a2b85e821776100d46230/1st%20Place/notebooks/Sentinels_features.ipynb",
+    "repo_path": "1st Place/notebooks/Sentinels_features.ipynb",
+    "commit": "c59c9ab9e3d376bfd24a2b85e821776100d46230"
+  },
+  {
+    "id": "bloom-extra-3",
+    "url": "https://raw.githubusercontent.com/drivendataorg/tick-tick-bloom/c59c9ab9e3d376bfd24a2b85e821776100d46230/3rd%20Place/main.ipynb",
+    "repo_path": "3rd Place/main.ipynb",
+    "commit": "c59c9ab9e3d376bfd24a2b85e821776100d46230"
+  },
+  {
+    "id": "bloom-extra-4",
+    "url": "https://raw.githubusercontent.com/drivendataorg/tick-tick-bloom/c59c9ab9e3d376bfd24a2b85e821776100d46230/3rd%20Place/download_satellite_data.py",
+    "repo_path": "3rd Place/download_satellite_data.py",
+    "commit": "c59c9ab9e3d376bfd24a2b85e821776100d46230"
+  },
+  {
+    "id": "bloom-extra-5",
+    "url": "https://raw.githubusercontent.com/drivendataorg/tick-tick-bloom/c59c9ab9e3d376bfd24a2b85e821776100d46230/2nd%20Place/main_prepdata.py",
+    "repo_path": "2nd Place/main_prepdata.py",
+    "commit": "c59c9ab9e3d376bfd24a2b85e821776100d46230"
+  },
+  {
+    "id": "alfred-extra-0",
+    "url": "https://raw.githubusercontent.com/HimariO/HatefulMemesChallenge/1c4505a5a071ad0bc9df54c3fab0f9896ae5a9b7/UNITER/scripts/train_uniter.sh",
+    "repo_path": "UNITER/scripts/train_uniter.sh",
+    "commit": "1c4505a5a071ad0bc9df54c3fab0f9896ae5a9b7"
+  },
+  {
+    "id": "alfred-extra-1",
+    "url": "https://raw.githubusercontent.com/HimariO/HatefulMemesChallenge/1c4505a5a071ad0bc9df54c3fab0f9896ae5a9b7/UNITER/config/final_train/uniter-base.json",
+    "repo_path": "UNITER/config/final_train/uniter-base.json",
+    "commit": "1c4505a5a071ad0bc9df54c3fab0f9896ae5a9b7"
+  },
+  {
+    "id": "alfred-extra-2",
+    "url": "https://raw.githubusercontent.com/HimariO/HatefulMemesChallenge/1c4505a5a071ad0bc9df54c3fab0f9896ae5a9b7/UNITER/train_meme_itm.py",
+    "repo_path": "UNITER/train_meme_itm.py",
+    "commit": "1c4505a5a071ad0bc9df54c3fab0f9896ae5a9b7"
+  }
+]

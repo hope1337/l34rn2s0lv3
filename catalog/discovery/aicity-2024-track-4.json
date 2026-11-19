@@ -1,0 +1,150 @@
+{
+  "schema_version": "1.0",
+  "id": "aicity-2024-track-4",
+  "title": "AI City Challenge 2024: Road Object Detection in Fish-Eye Cameras",
+  "aliases": [],
+  "identity": {
+    "platform": "AI City Challenge",
+    "organizer": null,
+    "year": 2024,
+    "track": "track-4",
+    "evaluation_version": null,
+    "canonical_url": "https://www.aicitychallenge.org/2024-data-and-evaluation/",
+    "source_ids": [
+      "aicity2024"
+    ]
+  },
+  "lifecycle": {
+    "status": "finished",
+    "source_ids": [
+      "aicity2024-results"
+    ],
+    "note": "Có thông báo winners 2024 chính thức; award có thể khác public rank."
+  },
+  "task": {
+    "name": "Road Object Detection in Fish-Eye Cameras",
+    "modalities": [
+      "image"
+    ],
+    "status": "VERIFIED",
+    "source_ids": [
+      "aicity2024"
+    ],
+    "note": "Đã đọc trang task/evaluation 2024; metric lead: F1. Chưa audit code từng đội."
+  },
+  "availability": {
+    "data": {
+      "status": "not_checked",
+      "value": null,
+      "source_ids": [],
+      "note": "Chưa audit riêng availability; không suy ra từ organizer index."
+    },
+    "code": {
+      "status": "not_checked",
+      "value": null,
+      "source_ids": [],
+      "note": "Chưa audit riêng availability; không suy ra từ organizer index."
+    },
+    "writeups": {
+      "status": "not_checked",
+      "value": null,
+      "source_ids": [],
+      "note": "Chưa audit riêng availability; không suy ra từ organizer index."
+    },
+    "final_results": {
+      "status": "verified",
+      "value": "Official 2024 challenge winners",
+      "source_ids": [
+        "aicity2024-results"
+      ],
+      "note": "Phân biệt public table, private dataset và award rules từng track."
+    },
+    "dataset_license": {
+      "status": "not_checked",
+      "value": null,
+      "source_ids": [],
+      "note": "Chưa audit riêng availability; không suy ra từ organizer index."
+    },
+    "code_license": {
+      "status": "not_checked",
+      "value": null,
+      "source_ids": [],
+      "note": "Chưa audit riêng availability; không suy ra từ organizer index."
+    },
+    "checkpoints": {
+      "status": "not_checked",
+      "value": null,
+      "source_ids": [],
+      "note": "Chưa audit riêng availability; không suy ra từ organizer index."
+    }
+  },
+  "curation": {
+    "state": "discovery",
+    "reasons": [
+      "Candidate từ nguồn có thể truy vết; cần audit trước khi khuyến nghị."
+    ],
+    "limitations": [
+      "Task/results đã đọc; solution papers/code, license và dataset availability cần audit riêng."
+    ],
+    "red_flags": [],
+    "rating": {
+      "criteria": {
+        "task_evaluation": {
+          "points": null,
+          "source_ids": [],
+          "justification": "Chưa audit tiêu chí này."
+        },
+        "solution_depth": {
+          "points": null,
+          "source_ids": [],
+          "justification": "Chưa audit tiêu chí này."
+        },
+        "public_code": {
+          "points": null,
+          "source_ids": [],
+          "justification": "Chưa audit tiêu chí này."
+        },
+        "dataset_access": {
+          "points": null,
+          "source_ids": [],
+          "justification": "Chưa audit tiêu chí này."
+        },
+        "technical_value": {
+          "points": null,
+          "source_ids": [],
+          "justification": "Chưa audit tiêu chí này."
+        },
+        "transfer_value": {
+          "points": null,
+          "source_ids": [],
+          "justification": "Chưa audit tiêu chí này."
+        },
+        "result_trust": {
+          "points": null,
+          "source_ids": [],
+          "justification": "Chưa audit tiêu chí này."
+        }
+      },
+      "total": null,
+      "tier": "UNRATED"
+    }
+  },
+  "research": {
+    "status": "not_started",
+    "report_path": null,
+    "next_actions": [
+      "Xác minh định danh year/track/evaluation, task, rules, final results và solution sources."
+    ]
+  },
+  "last_verified_at": "2026-11-19",
+  "source_ids": [
+    "aicity2024",
+    "aicity2024-results"
+  ],
+  "tags": [
+    "ai city challenge",
+    "needs-audit",
+    "vietnamese-teams",
+    "award-versus-leaderboard"
+  ]
+}

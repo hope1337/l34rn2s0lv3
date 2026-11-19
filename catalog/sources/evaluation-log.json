@@ -1,0 +1,145 @@
+[
+  {
+    "id": "cold-problem",
+    "url": "https://www.drivendata.org/competitions/55/schneider-cold-start/page/111/",
+    "retrieved_at": "2026-11-19T14:20:36.613094+00:00",
+    "final_url": "https://www.drivendata.org/competitions/55/schneider-cold-start/page/111/",
+    "http_status": 200,
+    "status": "retrieved",
+    "sha256": "3e2dd921e2b0c4ff9901b5895d04da88a1c7f9cb87ecb52480d1f4fdc022a688",
+    "snapshot": "evidence/snapshots/3e2dd921e2b0c4ff9901b5895d04da88a1c7f9cb87ecb52480d1f4fdc022a688.txt",
+    "bytes": 71800
+  },
+  {
+    "id": "cold-data",
+    "url": "https://www.drivendata.org/competitions/55/schneider-cold-start/page/138/",
+    "retrieved_at": "2026-11-19T14:20:36.613826+00:00",
+    "final_url": "https://www.drivendata.org/competitions/55/schneider-cold-start/page/138/",
+    "http_status": 200,
+    "status": "retrieved",
+    "sha256": "3861bc6a9e4f07e4fd8c1fcc52b257d923547a096614a8c4113c55d6d8cc2c84",
+    "snapshot": "evidence/snapshots/3861bc6a9e4f07e4fd8c1fcc52b257d923547a096614a8c4113c55d6d8cc2c84.txt",
+    "bytes": 61586
+  },
+  {
+    "id": "bloom-problem",
+    "url": "https://www.drivendata.org/competitions/143/tick-tick-bloom/page/650/",
+    "retrieved_at": "2026-11-19T14:20:36.614579+00:00",
+    "final_url": "https://www.drivendata.org/competitions/143/tick-tick-bloom/page/650/",
+    "http_status": 200,
+    "status": "retrieved",
+    "sha256": "24b042340e3455b314eb19652296fae36762b3329cd4f8218dc1f5d4cb1a56ee",
+    "snapshot": "evidence/snapshots/24b042340e3455b314eb19652296fae36762b3329cd4f8218dc1f5d4cb1a56ee.txt",
+    "bytes": 94285
+  },
+  {
+    "id": "bloom-data",
+    "url": "https://www.drivendata.org/competitions/143/tick-tick-bloom/page/879/",
+    "retrieved_at": "2026-11-19T14:20:36.615637+00:00",
+    "final_url": "https://www.drivendata.org/competitions/143/tick-tick-bloom/page/879/",
+    "http_status": 200,
+    "status": "retrieved",
+    "sha256": "bc75fe89c80c54567fba5a48bfa9bdadf674103f3da1837a3810b76f186ea207",
+    "snapshot": "evidence/snapshots/bc75fe89c80c54567fba5a48bfa9bdadf674103f3da1837a3810b76f186ea207.txt",
+    "bytes": 70447
+  },
+  {
+    "id": "memes-problem",
+    "url": "https://www.drivendata.org/competitions/70/hateful-memes-phase-2/page/267/",
+    "retrieved_at": "2026-11-19T14:20:36.616168+00:00",
+    "final_url": "https://www.drivendata.org/competitions/70/hateful-memes-phase-2/page/267/",
+    "http_status": 200,
+    "status": "retrieved",
+    "sha256": "4f262fb6b68416396e9945f6477d8feea617ba1a72a3e63607a4dda5a020f64a",
+    "snapshot": "evidence/snapshots/4f262fb6b68416396e9945f6477d8feea617ba1a72a3e63607a4dda5a020f64a.txt",
+    "bytes": 99528
+  },
+  {
+    "id": "memes-access",
+    "url": "https://www.drivendata.org/competitions/70/hateful-memes-phase-2/page/269/",
+    "retrieved_at": "2026-11-19T14:20:37.562175+00:00",
+    "final_url": "https://www.drivendata.org/competitions/70/hateful-memes-phase-2/page/269/",
+    "http_status": 200,
+    "status": "retrieved",
+    "sha256": "4328f8660a715743c1d0af004b571ec2d55f484400fd8248ff956a241e251181",
+    "snapshot": "evidence/snapshots/4328f8660a715743c1d0af004b571ec2d55f484400fd8248ff956a241e251181.txt",
+    "bytes": 95007
+  },
+  {
+    "id": "cold-rules",
+    "url": "https://www.drivendata.org/competitions/55/schneider-cold-start/rules/",
+    "retrieved_at": "2026-11-19T14:20:37.581735+00:00",
+    "final_url": "https://www.drivendata.org/competitions/55/schneider-cold-start/rules/",
+    "http_status": 200,
+    "status": "retrieved",
+    "sha256": "bbdf84b442bc43122f80b02b21e27534417430a2c8e87c8b3d2ed9260b7fdbf3",
+    "snapshot": "evidence/snapshots/bbdf84b442bc43122f80b02b21e27534417430a2c8e87c8b3d2ed9260b7fdbf3.txt",
+    "bytes": 98020
+  },
+  {
+    "id": "bloom-rules",
+    "url": "https://www.drivendata.org/competitions/143/tick-tick-bloom/rules/",
+    "retrieved_at": "2026-11-19T14:20:37.633036+00:00",
+    "final_url": "https://www.drivendata.org/competitions/143/tick-tick-bloom/rules/",
+    "http_status": 200,
+    "status": "retrieved",
+    "sha256": "192074821479e9e92533e500144f7e604f9ede36c53036a3f65655bf58ce28ee",
+    "snapshot": "evidence/snapshots/192074821479e9e92533e500144f7e604f9ede36c53036a3f65655bf58ce28ee.txt",
+    "bytes": 113939
+  },
+  {
+    "id": "memes-rules",
+    "url": "https://www.drivendata.org/competitions/70/hateful-memes-phase-2/rules/",
+    "retrieved_at": "2026-11-19T14:20:37.663961+00:00",
+    "final_url": "https://www.drivendata.org/competitions/70/hateful-memes-phase-2/rules/",
+    "http_status": 200,
+    "status": "retrieved",
+    "sha256": "3b688f1aec2d12ccb428b2b3f7644a83b4ea9f1deda2af6e92d994e60fd8309b",
+    "snapshot": "evidence/snapshots/3b688f1aec2d12ccb428b2b3f7644a83b4ea9f1deda2af6e92d994e60fd8309b.txt",
+    "bytes": 132196
+  },
+  {
+    "id": "hatedetectron-commit-head",
+    "url": "https://api.github.com/repos/rizavelioglu/hateful_memes-hate_detectron/commits/HEAD",
+    "retrieved_at": "2026-11-19T14:20:37.721358+00:00",
+    "final_url": "https://api.github.com/repos/rizavelioglu/hateful_memes-hate_detectron/commits/HEAD",
+    "http_status": 200,
+    "status": "retrieved",
+    "sha256": "63b4d84730a6a09b67d2d2510beb13d791a3b0bf11d74fa1be707456b39c518c",
+    "snapshot": "evidence/snapshots/63b4d84730a6a09b67d2d2510beb13d791a3b0bf11d74fa1be707456b39c518c.txt",
+    "bytes": 6106
+  },
+  {
+    "id": "hatedetectron-tree-head",
+    "url": "https://api.github.com/repos/rizavelioglu/hateful_memes-hate_detectron/git/trees/HEAD?recursive=1",
+    "retrieved_at": "2026-11-19T14:20:37.916297+00:00",
+    "final_url": "https://api.github.com/repos/rizavelioglu/hateful_memes-hate_detectron/git/trees/HEAD?recursive=1",
+    "http_status": 200,
+    "status": "retrieved",
+    "sha256": "92039df32beb4466029aa6ec940fbf919bcdf6a158a270835738f68445ea382e",
+    "snapshot": "evidence/snapshots/92039df32beb4466029aa6ec940fbf919bcdf6a158a270835738f68445ea382e.txt",
+    "bytes": 5324
+  },
+  {
+    "id": "alfred-commit",
+    "url": "https://api.github.com/repos/HimariO/HatefulMemesChallenge/commits/HEAD",
+    "retrieved_at": "2026-11-19T14:20:37.928850+00:00",
+    "final_url": "https://api.github.com/repos/HimariO/HatefulMemesChallenge/commits/HEAD",
+    "http_status": 200,
+    "status": "retrieved",
+    "sha256": "a8dc124806b75c0dd9ad1eeb6137bbd39416bc1045c5a0426bca6c950d0d8f50",
+    "snapshot": "evidence/snapshots/a8dc124806b75c0dd9ad1eeb6137bbd39416bc1045c5a0426bca6c950d0d8f50.txt",
+    "bytes": 4986
+  },
+  {
+    "id": "alfred-tree",
+    "url": "https://api.github.com/repos/HimariO/HatefulMemesChallenge/git/trees/HEAD?recursive=1",
+    "retrieved_at": "2026-11-19T14:20:37.981986+00:00",
+    "final_url": "https://api.github.com/repos/HimariO/HatefulMemesChallenge/git/trees/HEAD?recursive=1",
+    "http_status": 200,
+    "status": "retrieved",
+    "sha256": "201fabeeb0d3b9ffbef358e6476ed0d90a58688b25838b17fa9504e16f724041",
+    "snapshot": "evidence/snapshots/201fabeeb0d3b9ffbef358e6476ed0d90a58688b25838b17fa9504e16f724041.txt",
+    "bytes": 138540
+  }
+]

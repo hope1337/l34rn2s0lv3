@@ -1,0 +1,144 @@
+{
+  "schema_version": "1.0",
+  "id": "kaggle-otto",
+  "title": "OTTO – Multi-Objective Recommender System",
+  "aliases": [],
+  "identity": {
+    "platform": "Kaggle",
+    "organizer": null,
+    "year": null,
+    "track": null,
+    "evaluation_version": null,
+    "canonical_url": "https://www.kaggle.com/competitions/otto-recommender-system",
+    "source_ids": [
+      "kaggle-otto"
+    ]
+  },
+  "lifecycle": {
+    "status": "unknown",
+    "source_ids": [],
+    "note": "Chưa audit thời gian/kết quả từng competition."
+  },
+  "task": {
+    "name": "Session recommendation",
+    "modalities": [
+      "tabular"
+    ],
+    "status": "INFERRED",
+    "source_ids": [
+      "kaggle-otto"
+    ],
+    "note": "Task/modality là định hướng discovery suy từ tên. Trang tải về có metadata nhưng chưa đọc được đầy đủ rules/data/results; năm để null chờ xác minh."
+  },
+  "availability": {
+    "data": {
+      "status": "not_checked",
+      "value": null,
+      "source_ids": [],
+      "note": "Chưa audit riêng availability; không suy ra từ organizer index."
+    },
+    "code": {
+      "status": "not_checked",
+      "value": null,
+      "source_ids": [],
+      "note": "Chưa audit riêng availability; không suy ra từ organizer index."
+    },
+    "writeups": {
+      "status": "not_checked",
+      "value": null,
+      "source_ids": [],
+      "note": "Chưa audit riêng availability; không suy ra từ organizer index."
+    },
+    "final_results": {
+      "status": "not_checked",
+      "value": null,
+      "source_ids": [],
+      "note": "Chưa audit riêng availability; không suy ra từ organizer index."
+    },
+    "dataset_license": {
+      "status": "not_checked",
+      "value": null,
+      "source_ids": [],
+      "note": "Chưa audit riêng availability; không suy ra từ organizer index."
+    },
+    "code_license": {
+      "status": "not_checked",
+      "value": null,
+      "source_ids": [],
+      "note": "Chưa audit riêng availability; không suy ra từ organizer index."
+    },
+    "checkpoints": {
+      "status": "not_checked",
+      "value": null,
+      "source_ids": [],
+      "note": "Chưa audit riêng availability; không suy ra từ organizer index."
+    }
+  },
+  "curation": {
+    "state": "discovery",
+    "reasons": [
+      "Candidate từ nguồn có thể truy vết; cần audit trước khi khuyến nghị."
+    ],
+    "limitations": [
+      "Trang public tải được nhưng phần nội dung chính phụ thuộc JavaScript/login; chưa xác minh năm/track, rules, final results và solution."
+    ],
+    "red_flags": [],
+    "rating": {
+      "criteria": {
+        "task_evaluation": {
+          "points": null,
+          "source_ids": [],
+          "justification": "Chưa audit tiêu chí này."
+        },
+        "solution_depth": {
+          "points": null,
+          "source_ids": [],
+          "justification": "Chưa audit tiêu chí này."
+        },
+        "public_code": {
+          "points": null,
+          "source_ids": [],
+          "justification": "Chưa audit tiêu chí này."
+        },
+        "dataset_access": {
+          "points": null,
+          "source_ids": [],
+          "justification": "Chưa audit tiêu chí này."
+        },
+        "technical_value": {
+          "points": null,
+          "source_ids": [],
+          "justification": "Chưa audit tiêu chí này."
+        },
+        "transfer_value": {
+          "points": null,
+          "source_ids": [],
+          "justification": "Chưa audit tiêu chí này."
+        },
+        "result_trust": {
+          "points": null,
+          "source_ids": [],
+          "justification": "Chưa audit tiêu chí này."
+        }
+      },
+      "total": null,
+      "tier": "UNRATED"
+    }
+  },
+  "research": {
+    "status": "not_started",
+    "report_path": null,
+    "next_actions": [
+      "Xác minh định danh year/track/evaluation, task, rules, final results và solution sources."
+    ]
+  },
+  "last_verified_at": null,
+  "source_ids": [
+    "kaggle-otto"
+  ],
+  "tags": [
+    "kaggle",
+    "needs-audit",
+    "needs-browser-audit"
+  ]
+}

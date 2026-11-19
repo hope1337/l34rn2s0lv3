@@ -1,0 +1,153 @@
+[
+  {
+    "id": "forecast-horizon-normalization",
+    "technique": "Normalize aggregate targets using observed fine-grained history",
+    "category": "preprocessing",
+    "problem_addressed": "Very short daily history with hourly observations available",
+    "when_to_use": [
+      "Daily/weekly forecasting with available hourly history",
+      "All scale statistics can be fit before prediction cutoff"
+    ],
+    "mechanism": "Hourly extrema can define an aggregate target range when daily range has too few points.",
+    "failure_modes": [
+      "Future/local-validation tail enters scale statistics",
+      "Hourly extrema do not represent future seasonal range",
+      "Near-zero range and eps behavior dominate"
+    ],
+    "evidence_level": "observed implementation + author rationale; no reproduced gain",
+    "competition_ids": [
+      "dd-power-laws-cold-start"
+    ],
+    "claim_ids": [
+      "cold-normalize",
+      "cold-hypothesis",
+      "cold-validation-risk"
+    ],
+    "recommended_tests": [
+      "Prefix-only vs full-observed scale fit",
+      "Compare by history length and horizon on group/time holdout"
+    ],
+    "compute_tradeoffs": "Scale computation cheap relative to model training; full runtime unknown."
+  },
+  {
+    "id": "post-ensemble-overrides",
+    "technique": "Audit overrides after ensemble",
+    "category": "inference",
+    "problem_addressed": "Final artifact differs from model-family description",
+    "when_to_use": [
+      "Multiple scripts/components produce a final submission",
+      "Patches or rule-based overrides exist"
+    ],
+    "mechanism": "An override changes predictions after ordinary averaging, so it must be traced as a separate stage.",
+    "failure_modes": [
+      "Patch rules overfit known cohort",
+      "Missing component rows silently change effective weights",
+      "Binary labels drift from updated probabilities"
+    ],
+    "evidence_level": "verified code observations across two competitions; benefits not established",
+    "competition_ids": [
+      "dd-power-laws-cold-start",
+      "dd-hateful-memes"
+    ],
+    "claim_ids": [
+      "cold-team-blend",
+      "memes-alfred-ensemble"
+    ],
+    "recommended_tests": [
+      "Base blend vs override on untouched holdout",
+      "Assert exact ID set and final probability/label consistency"
+    ],
+    "compute_tradeoffs": "Postprocessing cheap; error review and inference assets may not be."
+  },
+  {
+    "id": "regional-metric-validation",
+    "technique": "Match validation aggregation and independence to the evaluation target",
+    "category": "validation",
+    "problem_addressed": "Pooled performance hides geographically small groups and repeated locations",
+    "when_to_use": [
+      "Official metric averages regional scores",
+      "Deployment/test locations are unseen areas"
+    ],
+    "mechanism": "Regional aggregation gives each region equal top-level contribution; geographic holdout tests location generalization.",
+    "failure_modes": [
+      "UID grouping mistaken for independent lake grouping",
+      "Pooled model selection optimizes a different objective",
+      "Too few geographic groups yields high fold variance"
+    ],
+    "evidence_level": "official metric + inspected split code; no causal gain reproduced",
+    "competition_ids": [
+      "dd-tick-tick-bloom"
+    ],
+    "claim_ids": [
+      "bloom-metric",
+      "bloom-validation",
+      "bloom-third-split"
+    ],
+    "recommended_tests": [
+      "Compare UID vs geographic holdout",
+      "Report each regional RMSE and macro score"
+    ],
+    "compute_tradeoffs": "Extra CV folds increase training; external imagery preparation can dominate."
+  },
+  {
+    "id": "scene-ensemble-weighting",
+    "technique": "Audit implicit ensemble weights from repeated scene rows",
+    "category": "ensembling",
+    "problem_addressed": "Mean over records weights modalities by number of available scenes",
+    "when_to_use": [
+      "Multiple scenes per sample and satellite family",
+      "Predictions are concatenated then grouped by sample"
+    ],
+    "mechanism": "A record-level mean assigns more mass to a family that contributes more scene rows.",
+    "failure_modes": [
+      "Missingness shifts effective family weight",
+      "Validation scene counts differ from production",
+      "Rounding before vs after aggregation changes outputs"
+    ],
+    "evidence_level": "code behavior; equal-family alternative is untested",
+    "competition_ids": [
+      "dd-tick-tick-bloom"
+    ],
+    "claim_ids": [
+      "bloom-third-select",
+      "bloom-fallback"
+    ],
+    "recommended_tests": [
+      "Hold predictions fixed and compare record-weighted/equal-family means",
+      "Analyze score by scene coverage before choosing rule"
+    ],
+    "compute_tradeoffs": "Can compare cached predictions without retraining."
+  },
+  {
+    "id": "probability-voting-ranking",
+    "technique": "Separate decision voting from probability ranking",
+    "category": "ensembling",
+    "problem_addressed": "AUC and accuracy use different output columns",
+    "when_to_use": [
+      "Submission or product needs both score and binary decision",
+      "Combining heterogeneous classifiers"
+    ],
+    "mechanism": "Majority class and max/min probability can reorder samples compared with mean probability.",
+    "failure_modes": [
+      "More confident false positives",
+      "Positional row mismatch",
+      "Hardcoded vote cutoff with missing models",
+      "Development-set model selection bias"
+    ],
+    "evidence_level": "official metric + code observation + hypothesis; no controlled gain",
+    "competition_ids": [
+      "dd-hateful-memes"
+    ],
+    "claim_ids": [
+      "memes-metric",
+      "memes-vote-code",
+      "memes-vote-hypothesis",
+      "memes-select"
+    ],
+    "recommended_tests": [
+      "Compare AUC/calibration/accuracy on outer holdout",
+      "Verify model count and align all inputs by ID"
+    ],
+    "compute_tradeoffs": "Cached CSV comparison cheap; generating27models expensive and unmeasured."
+  }
+]

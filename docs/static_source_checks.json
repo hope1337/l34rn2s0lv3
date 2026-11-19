@@ -1,0 +1,14 @@
+{
+  "scope": "Static AST/list arithmetic, not an executed ML experiment",
+  "sweep_axis_sizes": [
+    3,
+    2,
+    2,
+    2,
+    2,
+    2
+  ],
+  "sweep_configurations": 96,
+  "landsat_features": 88,
+  "sentinel_features": 67
+}

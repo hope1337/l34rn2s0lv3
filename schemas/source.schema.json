@@ -1,0 +1,101 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Source retrieval records v1",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "properties": {
+      "id": {
+        "type": "string",
+        "minLength": 1
+      },
+      "url": {
+        "type": "string",
+        "format": "uri",
+        "pattern": "^https://"
+      },
+      "retrieved_at": {
+        "type": "string",
+        "format": "date-time"
+      },
+      "status": {
+        "enum": [
+          "retrieved",
+          "blocked"
+        ]
+      },
+      "final_url": {
+        "type": "string",
+        "format": "uri"
+      },
+      "http_status": {
+        "type": "integer"
+      },
+      "sha256": {
+        "type": "string",
+        "pattern": "^[a-f0-9]{64}$"
+      },
+      "snapshot": {
+        "type": "string",
+        "pattern": "^evidence/snapshots/[a-f0-9]{64}\\.txt$"
+      },
+      "bytes": {
+        "type": "integer",
+        "minimum": 0
+      },
+      "repo_path": {
+        "type": "string",
+        "minLength": 1
+      },
+      "commit": {
+        "type": "string",
+        "pattern": "^[a-f0-9]{40}$"
+      },
+      "error": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "required": [
+      "id",
+      "url",
+      "retrieved_at",
+      "status"
+    ],
+    "additionalProperties": false,
+    "allOf": [
+      {
+        "if": {
+          "properties": {
+            "status": {
+              "const": "retrieved"
+            }
+          }
+        },
+        "then": {
+          "required": [
+            "final_url",
+            "http_status",
+            "sha256",
+            "snapshot",
+            "bytes"
+          ]
+        }
+      },
+      {
+        "if": {
+          "properties": {
+            "status": {
+              "const": "blocked"
+            }
+          }
+        },
+        "then": {
+          "required": [
+            "error"
+          ]
+        }
+      }
+    ]
+  }
+}

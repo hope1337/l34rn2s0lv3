@@ -1,0 +1,768 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+        
+            
+
+
+<meta charset="UTF-8">
+<meta http-equiv='Content-Type' content='text/html; charset=utf-8'>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+        
+
+        
+            
+    
+
+
+
+<meta property="og:type" content="website">
+<meta property="twitter:card" content="summary_large_image">
+<meta property="og:url" content="https://camelyon16.grand-challenge.org/">
+<meta property="og:site_name" content="grand-challenge.org">
+
+
+    
+
+    <meta name="title" content="CAMELYON16 - Grand Challenge">
+    <meta property="og:title" content="CAMELYON16 - Grand Challenge">
+
+    <meta name="description" content="The goal of this challenge is to evaluate new and existing algorithms for automated detection of cancer metastasis in digitized lymph node tissue sections. Two large datasets from both the Radboud University Medical Center and the University Medical Center Utrecht are provided.">
+    <meta property="og:description" content="The goal of this challenge is to evaluate new and existing algorithms for automated detection of cancer metastasis in digitized lymph node tissue sections. Two large datasets from both the Radboud University Medical Center and the University Medical Center Utrecht are provided.">
+
+    
+        <meta property="og:image" content="https://public.grand-challenge-user-content.org/logos/challenge/65/logo/1/200w.avif">
+    
+
+
+
+
+        
+
+        <title>
+            
+    Home - CAMELYON16 - Grand Challenge
+
+            
+                
+            
+        </title>
+    
+
+    
+        
+
+
+
+
+<script type="text/javascript" src="https://static.grand-challenge.org/9d6895e/vendored/jquery/jquery.min.js"></script>
+
+    
+
+    
+        
+    
+
+    
+        
+
+
+<link rel="stylesheet" href="https://static.grand-challenge.org/9d6895e/CACHE/css/output.21129494455e.css" type="text/css" media="screen"><link rel="stylesheet" href="https://static.grand-challenge.org/9d6895e/CACHE/css/output.60163e8f4b52.css" type="text/css">
+
+<link rel="shortcut icon" href="https://static.grand-challenge.org/9d6895e/images/favicon.ico"/>
+
+    
+</head>
+
+<body class="d-flex flex-column min-vh-100">
+
+
+    
+
+    
+        
+
+
+<nav class="navbar navbar-light navbar-top navbar-expand-md shadow bg-white">
+    <div class="container">
+        <a class="navbar-brand mr-md-2 text-capitalize"
+           href="https://grand-challenge.org/">
+            Grand Challenge
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse"
+                data-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link "
+                       href="https://grand-challenge.org/challenges/">
+                        Challenges
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link "
+                       href="https://grand-challenge.org/algorithms/">
+                        Algorithms
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link "
+                       href="https://grand-challenge.org/reader-studies/">
+                        Reader Studies
+                    </a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <i class="fa fa-ellipsis-h"></i>
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item" href="https://grand-challenge.org/blogs/">Blog</a>
+                        <a class="dropdown-item" href="https://grand-challenge.org/archives/">Archives</a>
+                        <div class="dropdown-divider"></div>
+                        
+                        <a class="dropdown-item" href="https://grand-challenge.org/about/"></a>
+                        <a class="dropdown-item" href="https://grand-challenge.org/stats/">Statistics</a>
+                        
+                            <a class="dropdown-item" href="https://grand-challenge.org/policies/terms-of-service/">Terms of Service</a>
+                        
+                            <a class="dropdown-item" href="https://grand-challenge.org/policies/privacy/">Privacy Policy</a>
+                        
+                    </div>
+                </li>
+            </ul>
+            <ul class="navbar-nav">
+                
+
+
+
+<li class="nav-item dropdown my-auto">
+    <a href="#" class="nav-link dropdown-toggle"
+       data-toggle="dropdown" role="button"
+       aria-haspopup="true"
+       aria-expanded="false">
+        Help
+    </a>
+    <div class="dropdown-menu dropdown-menu-right">
+        
+            <h6 class="dropdown-header">CAMELYON16 Support</h6>
+            
+            
+            <div class="dropdown-divider"></div>
+        
+        <h6 class="dropdown-header">Grand Challenge Support</h6>
+        <a class="dropdown-item"
+           href="https://grand-challenge.org/documentation/">
+            <i class="fas fa-book fa-fw"></i>
+            &nbsp;Grand Challenge Documentation
+        </a>
+    </div>
+</li>
+
+    <li class="pr-2 my-auto"><a
+            class="btn btn-outline-primary"
+            href="https://grand-challenge.org/accounts/login/?next=https://camelyon16.grand-challenge.org/#signin">Sign In</a></li>
+    <li class="my-auto"><a
+            class="btn btn-outline-primary"
+            href="https://grand-challenge.org/accounts/signup/?next=https://camelyon16.grand-challenge.org/#register">Register</a></li>
+
+
+            </ul>
+        </div>
+    </div>
+</nav>
+
+    
+
+    <div class="container-fluid bg-primary">
+        <div class="container">
+            <nav aria-label="breadcrumb">
+                
+    <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="https://grand-challenge.org/challenges/">Challenges</a></li>
+        <li class="breadcrumb-item"><a
+                href="https://camelyon16.grand-challenge.org/">CAMELYON16</a></li>
+        <li class="breadcrumb-item active"
+            aria-current="page">
+            Home
+        </li>
+    </ol>
+
+            </nav>
+        </div>
+    </div>
+
+    <main role="main" class="flex-fill">
+
+        
+            
+
+
+
+
+
+
+
+
+        
+
+        <div class="container pb-3 mt-3">
+
+            
+                
+                    
+
+
+
+    <div class="row mb-3">
+        <div class="col-12">
+            <a style="width: 100%;"
+               href="https://camelyon16.grand-challenge.org/">
+                <picture>
+  <source type="image/avif"
+          srcset="https://public.grand-challenge-user-content.org/b/65/header/800w.avif 800w, https://public.grand-challenge-user-content.org/b/65/header/100w.avif 100w, https://public.grand-challenge-user-content.org/b/65/header/900w.avif 900w, https://public.grand-challenge-user-content.org/b/65/header/200w.avif 200w, https://public.grand-challenge-user-content.org/b/65/header/1000w.avif 1000w, https://public.grand-challenge-user-content.org/b/65/header/300w.avif 300w, https://public.grand-challenge-user-content.org/b/65/header/400w.avif 400w, https://public.grand-challenge-user-content.org/b/65/header/500w.avif 500w, https://public.grand-challenge-user-content.org/b/65/header/600w.avif 600w, https://public.grand-challenge-user-content.org/b/65/header/700w.avif 700w"
+          sizes="(min-width: 0px) and (max-width: 1199px) 100vw, 1200px">
+  <img src="https://public.grand-challenge-user-content.org/b/65/header.png" alt="Challenge Banner" width="100%" height="100%" class="rounded w-100" loading="lazy">
+</picture>
+
+            </a>
+        </div>
+    </div>
+
+
+                
+                <div id="messages">
+                    
+
+                </div>
+                
+
+            
+
+            
+                
+                    
+
+
+
+
+    <nav class="navbar navbar-expand-sm navbar-light p-0 mb-3 mx-0 border-bottom align-items-start challenge-topbar">
+        <div class="col mr-auto px-0">
+            <ul class="nav navbar-nav nav-tabs">
+                <li class="nav-item">
+                    <a class="nav-link  show active"
+                       href="https://camelyon16.grand-challenge.org/">
+                        <i class="fas fa-info fa-fw"></i>&nbsp;&nbsp;Info
+                    </a>
+                </li>
+
+                
+                
+
+                
+                <li class="nav-item">
+                    <a class="nav-link "
+                       href="https://camelyon16.grand-challenge.org/challenge/statistics/">
+                        <i class="fas fa-chart-bar fa-fw"></i>&nbsp;&nbsp;Statistics
+                    </a>
+                </li>
+                
+            </ul>
+        </div>
+
+        
+    </nav>
+
+
+
+                
+                <div class="row">
+                    
+    <div class="col-md-3">
+        <ul class="nav nav-pills flex-column mb-3">
+            
+                
+                    <li class="nav-item">
+                        <a class="nav-link px-2 py-1 mb-1 d-flex align-items-center active"
+                           href="https://camelyon16.grand-challenge.org/Home/">
+                            
+                                <i class="fa fa-fw mr-1 flex-shrink-0"></i>
+                            
+                            Home
+                        </a>
+                    </li>
+                
+            
+                
+                    <li class="nav-item">
+                        <a class="nav-link px-2 py-1 mb-1 d-flex align-items-center "
+                           href="https://camelyon16.grand-challenge.org/Background/">
+                            
+                                <i class="fa fa-fw mr-1 flex-shrink-0"></i>
+                            
+                            Background
+                        </a>
+                    </li>
+                
+            
+                
+                    <li class="nav-item">
+                        <a class="nav-link px-2 py-1 mb-1 d-flex align-items-center "
+                           href="https://camelyon16.grand-challenge.org/Rules/">
+                            
+                                <i class="fa fa-fw mr-1 flex-shrink-0"></i>
+                            
+                            Rules
+                        </a>
+                    </li>
+                
+            
+                
+                    <li class="nav-item">
+                        <a class="nav-link px-2 py-1 mb-1 d-flex align-items-center "
+                           href="https://camelyon16.grand-challenge.org/Register/">
+                            
+                                <i class="fa fa-fw mr-1 flex-shrink-0"></i>
+                            
+                            Register
+                        </a>
+                    </li>
+                
+            
+                
+                    <li class="nav-item">
+                        <a class="nav-link px-2 py-1 mb-1 d-flex align-items-center "
+                           href="https://camelyon16.grand-challenge.org/Data/">
+                            
+                                <i class="fa fa-fw mr-1 flex-shrink-0"></i>
+                            
+                            Data
+                        </a>
+                    </li>
+                
+            
+                
+                    <li class="nav-item">
+                        <a class="nav-link px-2 py-1 mb-1 d-flex align-items-center "
+                           href="https://camelyon16.grand-challenge.org/Evaluation/">
+                            
+                                <i class="fa fa-fw mr-1 flex-shrink-0"></i>
+                            
+                            Evaluation
+                        </a>
+                    </li>
+                
+            
+                
+                    <li class="nav-item">
+                        <a class="nav-link px-2 py-1 mb-1 d-flex align-items-center "
+                           href="https://camelyon16.grand-challenge.org/Submit/">
+                            
+                                <i class="fas fa-lock fa-fw mr-1 flex-shrink-0" title="Page is only visible by participants of this challenge"></i>
+                            
+                            Submit
+                        </a>
+                    </li>
+                
+            
+                
+                    <li class="nav-item">
+                        <a class="nav-link px-2 py-1 mb-1 d-flex align-items-center "
+                           href="https://camelyon16.grand-challenge.org/Results/">
+                            
+                                <i class="fa fa-fw mr-1 flex-shrink-0"></i>
+                            
+                            Results
+                        </a>
+                    </li>
+                
+            
+                
+                    <li class="nav-item">
+                        <a class="nav-link px-2 py-1 mb-1 d-flex align-items-center "
+                           href="https://camelyon16.grand-challenge.org/Organizers/">
+                            
+                                <i class="fa fa-fw mr-1 flex-shrink-0"></i>
+                            
+                            Organizers
+                        </a>
+                    </li>
+                
+            
+                
+                    <li class="nav-item">
+                        <a class="nav-link px-2 py-1 mb-1 d-flex align-items-center "
+                           href="https://camelyon16.grand-challenge.org/Download/">
+                            
+                                <i class="fa fa-fw mr-1 flex-shrink-0"></i>
+                            
+                            Download
+                        </a>
+                    </li>
+                
+            
+                
+            
+                
+            
+                
+                    <li class="nav-item">
+                        <a class="nav-link px-2 py-1 mb-1 d-flex align-items-center "
+                           href="https://camelyon16.grand-challenge.org/Program/">
+                            
+                                <i class="fa fa-fw mr-1 flex-shrink-0"></i>
+                            
+                            Program
+                        </a>
+                    </li>
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+            
+        </ul>
+    </div>
+
+                    <div class="col overflow-auto">
+                        
+    <div class="ml-lg-3">
+        
+
+        
+
+        
+
+        <div id="pageContainer">
+            <h4 id="the-camelyon16-challenge-has-ended-in-november-2016">The CAMELYON16 challenge has ended in November 2016<a class="headerlink text-muted small pl-1" href="#the-camelyon16-challenge-has-ended-in-november-2016" title="Permanent link">¶</a></h4>
+<h4 id="please-check-out-camelyon17">PLEASE CHECK OUT CAMELYON17:<a class="headerlink text-muted small pl-1" href="#please-check-out-camelyon17" title="Permanent link">¶</a></h4>
+<h4 id="httpscamelyon17grand-challengeorg"><a href="https://camelyon17.grand-challenge.org/">https://camelyon17.grand-challenge.org</a><a class="headerlink text-muted small pl-1" href="#httpscamelyon17grand-challengeorg" title="Permanent link">¶</a></h4>
+<h4 id="overview"><strong>Overview</strong><a class="headerlink text-muted small pl-1" href="#overview" title="Permanent link">¶</a></h4>
+<p>The goal of this challenge is to evaluate new and existing algorithms
+for automated detection of metastases in hematoxylin and eosin (H&amp;E)
+stained whole-slide images of lymph node sections. This task has a high
+clinical relevance but requires large amounts of reading time from
+pathologists. Therefore, a successful solution would hold great promise
+to reduce the workload of the pathologists while at the same time reduce
+the subjectivity in diagnosis. This will be the first challenge using
+whole-slide images in histopathology. The challenge will run for two
+years. The 2016 challenge will focus on sentinel lymph nodes of breast
+cancer patients and will provide a large dataset from both the Radboud
+University Medical Center (Nijmegen, the Netherlands), as well as the
+University Medical Center Utrecht (Utrecht, the Netherlands).</p>
+<h4 id="camelyon16-in-news-and-media"><strong>CAMELYON16 in news and media</strong><a class="headerlink text-muted small pl-1" href="#camelyon16-in-news-and-media" title="Permanent link">¶</a></h4>
+<p><img src="https://public.grand-challenge-user-content.org/f/challenge/65/976b7311-195b-41e7-806e-cd3e731a0f86/Event_1.jpg" style="width: 313px; height: 190px" class="img-fluid"> Camelyon16 was
+a highly successful challenge with 32 submissions from as many as 23
+teams. The results of our challenge were widely reflected in the news
+and reports including:</p>
+<ul>
+<li><a href="https://research.googleblog.com/2017/03/assisting-pathologists-in-detecting.html">Google Research Blog</a></li>
+<li><a href="https://www.whitehouse.gov/sites/default/files/whitehouse_files/microsites/ostp/NSTC/national_ai_rd_strategic_plan.pdf">White House report</a> on "The national AI research and
+  development strategic plan"</li>
+<li><a href="https://blogs.nvidia.com/blog/2016/09/19/deep-learning-breast-cancer-diagnosis/">Nvidia blog</a></li>
+<li><a href="https://tonic.vice.com/en_us/article/googles-algorithms-are-already-outperforming-pathologists">Tonic</a> on the Google results</li>
+<li><a href="https://www.engadget.com/2016/06/19/ai-breast-cancer-diagnosis/">Engadget</a></li>
+<li><a href="http://www.dailymail.co.uk/sciencetech/article-3650372/Could-computers-diagnose-cancer-Artificial-intelligence-shown-spot-early-signs-tumour-92-cent-accuracy.html">Dailymail</a></li>
+<li><a href="http://www.azorobotics.com/News.aspx?newsID=8549">Azorobotics</a></li>
+<li>and many more articles.</li>
+</ul>
+<h4 id="important-dates"><strong>Important dates</strong><a class="headerlink text-muted small pl-1" href="#important-dates" title="Permanent link">¶</a></h4>
+<ul>
+<li><strong>20th November
+  2016:</strong> <a href="https://camelyon17.grand-challenge.org/">Camelyon17</a> is open
+  for registration. <strong>Registration to Camelyon16 is closed.</strong> </li>
+<li><strong>14th April 2016:</strong> Submission page is reopened.</li>
+<li><strong>13th April 2016:</strong> The challenge workshop took place.</li>
+<li><strong>1st April 2016:</strong> Submission deadline for results.</li>
+<li><strong>1st March 2016:</strong> The test dataset is released.</li>
+<li><strong>30 December 2015:</strong> The second training dataset is released.</li>
+<li><strong>25 November 2015:</strong> The first training dataset is released.</li>
+<li><strong>25 November 2015:</strong> Registration is opened.</li>
+<li><strong>15 October 2015:</strong> Challenge website launched.</li>
+</ul>
+<h4 id="publication"><strong>Publication</strong><a class="headerlink text-muted small pl-1" href="#publication" title="Permanent link">¶</a></h4>
+<p>Ehteshami Bejnordi B, Veta M, Johannes van Diest P, van Ginneken B,
+Karssemeijer N, Litjens G, van der Laak JAWM, and the CAMELYON16
+Consortium. <em><strong>Diagnostic Assessment of Deep Learning Algorithms for
+Detection of Lymph Node Metastases in Women With Breast Cancer</strong></em>. JAMA.
+2017;318(22):2199–2210.
+<a href="https://jamanetwork.com/journals/jama/article-abstract/2665774">doi:10.1001/jama.2017.14585</a></p>
+<h4 id="sponsors"><strong>Sponsors</strong><a class="headerlink text-muted small pl-1" href="#sponsors" title="Permanent link">¶</a></h4>
+<p><img src="http://orthopaedicresearchlab.nl/wp-content/uploads/2013/10/Logo_UMCtext_Plus_Wapen-300x253.png" style="width: 119px; height: 100px" class="img-fluid"> <img src="https://public.grand-challenge-user-content.org/f/challenge/65/227d6380-347f-4491-8d83-fde35bf9a33f/logo_UMCU_staand_RGB.jpg" style="width: 91px; height: 100px" class="img-fluid">   <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/TUeLOG_SLO_D_RGB_-Converted-.svg/2126px-TUeLOG_SLO_D_RGB_-Converted-.svg.png" style="width: 200px; height: 67px" class="img-fluid">  <img src="https://public.grand-challenge-user-content.org/f/challenge/65/94d14da5-604c-4cbd-9e82-7bda041b430a/LogoFinal.png" style="width: 200px; height: 70px" class="img-fluid">   <img src="https://public.grand-challenge-user-content.org/f/challenge/65/c3c6ce4d-2975-4d55-93d4-3f4bc38d2144/logo_1.png" style="width: 170px; height: 100px" class="img-fluid"> <img src="https://public.grand-challenge-user-content.org/f/challenge/65/a304d207-0fde-4f52-b680-6c1a1caf3519/powered-by-stitpro.png" style="width: 150px; height: 60px" class="img-fluid"></p>
+        </div>
+
+        
+            
+        
+    </div>
+
+                    </div>
+                </div>
+            
+        </div>
+
+        
+        
+    </main>
+
+
+
+    
+
+
+
+    
+
+
+
+
+
+    
+    <footer class="footer">
+        <div class="container">
+            <div class="row small border-top">
+                <div class="col-sm-6 col-md-3 pt-3">
+                    <h6 class="text-uppercase text-primary mb-2">Grand Challenge</h6>
+                    <ul class="list-unstyled ml-1 mb-0">
+                        
+                            <li>
+                                
+                                <a class="text-secondary"
+                                        
+                                   href="https://grand-challenge.org/about-us/">
+                                        
+                                    About Us
+                                </a>
+                            </li>
+                        
+                            <li>
+                                
+                                <a class="text-secondary"
+                                        
+                                   href="https://grand-challenge.org/challenge-pricing-and-hosting-requirements/">
+                                        
+                                    Challenge Pricing &amp; Hosting Requirements
+                                </a>
+                            </li>
+                        
+                            <li>
+                                
+                                <a class="text-secondary"
+                                        
+                                   href="https://grand-challenge.org/support/">
+                                        
+                                    Support &amp; Documentation
+                                </a>
+                            </li>
+                        
+                            <li>
+                                
+                                <a class="text-secondary"
+                                        
+                                   href="https://grand-challenge.org/vulnerability-disclosure/">
+                                        
+                                    Vulnerability Disclosure
+                                </a>
+                            </li>
+                        
+                        <li>
+                            <a class="text-secondary"
+                               href="https://grand-challenge.org/stats/">
+                                Statistics
+                            </a>
+                        </li>
+                        <li>
+                            <a class="text-secondary"
+                               href="https://diagnijmegen.github.io/rse-grand-challenge-status/"
+                               target="_blank">
+                                Status
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-sm-6 col-md-3 pt-3">
+                    <h6 class="text-uppercase text-primary mb-2">Policies</h6>
+                    <ul class="list-unstyled ml-1 mb-0">
+                        
+                            <li>
+                                <a class="text-secondary"
+                                    href="https://grand-challenge.org/policies/terms-of-service/">
+                                        Terms of Service
+                                </a>
+                            </li>
+                        
+                            <li>
+                                <a class="text-secondary"
+                                    href="https://grand-challenge.org/policies/privacy/">
+                                        Privacy Policy
+                                </a>
+                            </li>
+                        
+                    </ul>
+                </div>
+                <div class="col-sm-6 col-md-3 pt-3">
+                    <h6 class="text-uppercase text-primary mb-1">Follow Us</h6>
+                    <ul class="d-flex list-unstyled ml-1 mb-2">
+                        <li class="mt-2">
+                            <a class="h4 text-secondary"
+                                href="https://www.linkedin.com/company/grand-challenge/"
+                                title="Follow us on LinkedIn">
+                                <i class="fab fa-linkedin fa-lg"></i>
+                            </a>
+                        </li>
+                        <li class="mt-2">
+                            <a class="h4 mx-2 text-secondary"
+                                href="https://github.com/DIAGNijmegen/rse-grand-challenge/"
+                                title="Join us on GitHub">
+                                <i class="fab fa-github fa-lg"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-sm-6 col-md-3 pt-3">
+                    <h6 class="text-uppercase text-primary mb-1">Sponsors</h6>
+                    <ul class="d-flex list-unstyled ml-2 mb-0">
+                        <li class="text-center">
+                           <a href="https://aws.amazon.com/">
+                                 <img class="w-25 mx-2"
+                                     loading="lazy"
+                                     src="https://static.grand-challenge.org/9d6895e/images/Powered-By_logo-stack_RGB.png"
+                                     alt="Logo of Amazon Web Services"
+                                     title="Grand Challenge is sponsored by Amazon Web Services"
+                                >
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="row justify-content-center">
+                <div class="col text-center pt-2">
+                    <p class="text-muted small">&copy; 2012&ndash;2026 Radboud university medical center</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+
+    
+
+
+
+<script src="https://static.grand-challenge.org/9d6895e/vendored/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+
+<script src="https://static.grand-challenge.org/9d6895e/vendored/floating-scroll/dist/jquery.floatingscroll.min.js" defer></script>
+
+
+
+<script src="https://static.grand-challenge.org/9d6895e/CACHE/js/output.5fc6011173e7.js"></script>
+
+
+<script type="module" src="https://static.grand-challenge.org/9d6895e/js/datatables.defaults.mjs"></script>
+
+
+<script id="htmx-script" src="https://static.grand-challenge.org/9d6895e/vendored/htmx/htmx.min.js" defer></script>
+
+
+<script type="module" src="https://static.grand-challenge.org/9d6895e/js/copy_to_clipboard.mjs"></script>
+
+
+<script type="module" src="https://static.grand-challenge.org/9d6895e/js/disable_after_submit.mjs"></script>
+
+    
+
+
+
+
+
+<script id="setTimezoneUrl" type="application/json">"https://grand-challenge.org/api/v1/timezone/"</script>
+
+<script id="currentTimezone" type="application/json">"UTC"</script>
+<input type="hidden" name="csrfmiddlewaretoken" value="PmDZFeKxMmkERZzg33XCFy2qjFfMRaecwmJlqWjJqXOhIt0IjzuXzX78plelxitW">
+<script src="https://static.grand-challenge.org/9d6895e/timezones/js/detect-timezone.mjs" type="module"></script>
+
+
+</body>
+</html>

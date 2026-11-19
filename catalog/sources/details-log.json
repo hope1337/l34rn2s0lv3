@@ -1,0 +1,71 @@
+[
+  {
+    "id": "cold-page",
+    "url": "https://www.drivendata.org/competitions/55/schneider-cold-start/",
+    "retrieved_at": "2026-11-19T14:18:28.826187+00:00",
+    "final_url": "https://www.drivendata.org/competitions/55/schneider-cold-start/",
+    "http_status": 200,
+    "status": "retrieved",
+    "sha256": "cf67fbdaccaa84f5ad0e8f08c88d828b71dd51070f4a140c396a3748d2f59ecf",
+    "snapshot": "evidence/snapshots/cf67fbdaccaa84f5ad0e8f08c88d828b71dd51070f4a140c396a3748d2f59ecf.txt",
+    "bytes": 63056
+  },
+  {
+    "id": "bloom-page",
+    "url": "https://www.drivendata.org/competitions/143/tick-tick-bloom/",
+    "retrieved_at": "2026-11-19T14:18:28.826952+00:00",
+    "final_url": "https://www.drivendata.org/competitions/143/tick-tick-bloom/",
+    "http_status": 200,
+    "status": "retrieved",
+    "sha256": "6cb4056e422db2b2bc5de193eb2663c0b4143cb959cb844ccfbef11eb7b4a380",
+    "snapshot": "evidence/snapshots/6cb4056e422db2b2bc5de193eb2663c0b4143cb959cb844ccfbef11eb7b4a380.txt",
+    "bytes": 72441
+  },
+  {
+    "id": "memes-page",
+    "url": "https://www.drivendata.org/competitions/70/hateful-memes-phase-2/",
+    "retrieved_at": "2026-11-19T14:18:28.827901+00:00",
+    "final_url": "https://www.drivendata.org/competitions/70/hateful-memes-phase-2/",
+    "http_status": 200,
+    "status": "retrieved",
+    "sha256": "d2c7f753edcfeccd00de80f8e2d1e354de173d76af6d2c00566ddf0372e717bf",
+    "snapshot": "evidence/snapshots/d2c7f753edcfeccd00de80f8e2d1e354de173d76af6d2c00566ddf0372e717bf.txt",
+    "bytes": 86942
+  },
+  {
+    "id": "hatedetectron-commit",
+    "url": "https://api.github.com/repos/rizavelioglu/hateful_memes-hate_detectron/commits/master",
+    "retrieved_at": "2026-11-19T14:18:28.829038+00:00",
+    "status": "blocked",
+    "error": "HTTP Error 422: Unprocessable Entity"
+  },
+  {
+    "id": "hatedetectron-tree",
+    "url": "https://api.github.com/repos/rizavelioglu/hateful_memes-hate_detectron/git/trees/master?recursive=1",
+    "retrieved_at": "2026-11-19T14:18:28.829628+00:00",
+    "status": "blocked",
+    "error": "HTTP Error 404: Not Found"
+  },
+  {
+    "id": "alfred-readme",
+    "url": "https://raw.githubusercontent.com/HimariO/HatefulMemesChallenge/main/README.md",
+    "retrieved_at": "2026-11-19T14:18:29.230921+00:00",
+    "final_url": "https://raw.githubusercontent.com/HimariO/HatefulMemesChallenge/main/README.md",
+    "http_status": 200,
+    "status": "retrieved",
+    "sha256": "6754307584361cf4f7a43fa61de135a68d891e41045338c35bdc96adec3d8114",
+    "snapshot": "evidence/snapshots/6754307584361cf4f7a43fa61de135a68d891e41045338c35bdc96adec3d8114.txt",
+    "bytes": 2378
+  },
+  {
+    "id": "vilio-readme",
+    "url": "https://raw.githubusercontent.com/Muennighoff/vilio/master/README.md",
+    "retrieved_at": "2026-11-19T14:18:29.361209+00:00",
+    "final_url": "https://raw.githubusercontent.com/Muennighoff/vilio/master/README.md",
+    "http_status": 200,
+    "status": "retrieved",
+    "sha256": "e2259e87183290ce81359f8e0eb2e4e773d6eeebb505fac3999f7ac2fb7a644d",
+    "snapshot": "evidence/snapshots/e2259e87183290ce81359f8e0eb2e4e773d6eeebb505fac3999f7ac2fb7a644d.txt",
+    "bytes": 5932
+  }
+]

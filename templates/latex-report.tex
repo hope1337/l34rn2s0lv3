@@ -1,0 +1,32 @@
+% Copy to competitions/<id>/latex/main.tex when a report is requested.
+% Compile from that latex/ directory:
+% latexmk -xelatex -outdir=build main.tex
+\documentclass[11pt,a4paper]{article}
+\usepackage[margin=25mm]{geometry}
+\usepackage{fontspec}
+\setmainfont{Latin Modern Roman}
+\usepackage{amsmath,amssymb,booktabs,graphicx}
+\usepackage{tikz,pgfplots}
+\pgfplotsset{compat=1.18}
+\usepackage[unicode,hidelinks]{hyperref}
+% If citations are needed, create references.bib and enable:
+% \usepackage[backend=biber,style=numeric]{biblatex}
+% \addbibresource{references.bib}
+\graphicspath{{figures/}}
+
+\title{Competition Research Report}
+\author{}
+\date{\today}
+
+\begin{document}
+\maketitle
+
+% Write the requested report in Vietnamese using verified research artifacts.
+% Separate published results, measured results and analyst hypotheses.
+% Add figures as source, e.g. \input{figures/pipeline.tex}.
+% PGFPlots may read small, traceable CSV tables kept in figures/.
+% Do not put fabricated sample scores into a real results figure.
+
+% Enable together with biblatex when a bibliography has been populated:
+% \printbibliography
+\end{document}

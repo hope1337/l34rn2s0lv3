@@ -1,0 +1,9 @@
+{
+  "provenance": "illustrative; synthetic inputs; arithmetic only; not an official scorer",
+  "cold_same_10pct_relative_error_three_windows": 0.21818181818181823,
+  "bloom_macro_region_rmse": 1.5,
+  "bloom_pooled_rmse": 1.0,
+  "auc_tie_half_credit": 0.5,
+  "auc_before_monotonic_transform": 0.875,
+  "auc_after_monotonic_transform": 0.875
+}

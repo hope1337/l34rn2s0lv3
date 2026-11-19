@@ -1,0 +1,347 @@
+[
+  {
+    "id": "memes-task",
+    "claim": "Phase2 final evaluation October2020,3submissions,test_unseen; image/text inputs và5JSONL files.",
+    "status": "VERIFIED",
+    "scope": "published",
+    "source_ids": [
+      "memes-problem"
+    ],
+    "locator": "Competition timeline; Features; Memes",
+    "limitations": "Trang có câu cũ three files mâu thuẫn với list5; report dùng danh sách explicit.",
+    "assumptions": [],
+    "test": null,
+    "artifact": null
+  },
+  {
+    "id": "memes-metric",
+    "claim": "Ranking bằng ROC-AUC cột proba; binary label để accuracy display; submission id/proba/label.",
+    "status": "VERIFIED",
+    "scope": "published",
+    "source_ids": [
+      "memes-problem"
+    ],
+    "locator": "Performance metric; Phase2 submission format",
+    "limitations": "Chỉ xác minh trong nguồn đã đọc; chưa chứng minh winning execution hoặc tái hiện score.",
+    "assumptions": [],
+    "test": null,
+    "artifact": null
+  },
+  {
+    "id": "memes-access",
+    "claim": "Dataset có access agreement riêng với code; chưa accept/download.",
+    "status": "VERIFIED",
+    "scope": "published",
+    "source_ids": [
+      "memes-access"
+    ],
+    "locator": "Data access agreement",
+    "limitations": "Chỉ đọc điều kiện truy cập, không đưa ra tư vấn pháp lý hay xác nhận quyền sử dụng cụ thể.",
+    "assumptions": [],
+    "test": null,
+    "artifact": null
+  },
+  {
+    "id": "memes-results",
+    "claim": "Official Phase2 top5 scores .8450/.8310/.8108/.8053/.7943.",
+    "status": "VERIFIED",
+    "scope": "published",
+    "source_ids": [
+      "memes-file-0"
+    ],
+    "locator": "Winning Submissions",
+    "limitations": "Bảng nguồn ghi Score, không ghi public/private riêng.",
+    "assumptions": [],
+    "test": null,
+    "artifact": null
+  },
+  {
+    "id": "memes-baseline",
+    "claim": "Official repo dẫn MMF starter và baseline benchmark.",
+    "status": "VERIFIED",
+    "scope": "published",
+    "source_ids": [
+      "memes-file-0"
+    ],
+    "locator": "Starter code; Benchmark Blog Post",
+    "limitations": "Chỉ xác minh trong nguồn đã đọc; chưa chứng minh winning execution hoặc tái hiện score.",
+    "assumptions": [],
+    "test": null,
+    "artifact": null
+  },
+  {
+    "id": "memes-preprocess",
+    "claim": "Top-one documents OCR/inpainting/boxes/tags→ROI/entities→augmented annotations; pretrained patch recommendation.",
+    "status": "VERIFIED",
+    "scope": "published",
+    "source_ids": [
+      "alfred-file-3"
+    ],
+    "locator": "Data Preprocessing; First/Second Stage",
+    "limitations": "Chưa trace toàn bộ constants/external feature model implementations.",
+    "assumptions": [],
+    "test": null,
+    "artifact": null
+  },
+  {
+    "id": "memes-alfred-launch",
+    "claim": "run_ensemble.sh output test_set_enselble.csv khác README test_set_ensemble.csv.",
+    "status": "VERIFIED",
+    "scope": "code",
+    "source_ids": [
+      "alfred-file-2",
+      "alfred-file-0"
+    ],
+    "locator": "run_ensemble.sh:3–6; README Steps",
+    "limitations": "Chỉ xác minh trong nguồn đã đọc; chưa chứng minh winning execution hoặc tái hiện score.",
+    "assumptions": [],
+    "test": null,
+    "artifact": null
+  },
+  {
+    "id": "memes-alfred-ensemble",
+    "claim": "Mean positional CSV probabilities, interactive component choice, rule overrides proba1 without recomputing label.",
+    "status": "VERIFIED",
+    "scope": "code",
+    "source_ids": [
+      "alfred-file-1"
+    ],
+    "locator": "ensemble.py:141–197",
+    "limitations": "Chưa có final CSV để đo label inconsistency/ranking effect.",
+    "assumptions": [],
+    "test": null,
+    "artifact": null
+  },
+  {
+    "id": "memes-rule-code",
+    "claim": "Rule dùng token similarity>.6, race/object predicates và HSV_FULL face crop/KMeans5 hue filter30<h<160.",
+    "status": "VERIFIED",
+    "scope": "code",
+    "source_ids": [
+      "alfred-file-1"
+    ],
+    "locator": "ensemble.py:63–137",
+    "limitations": "Mô tả implementation, không xác nhận demographic labels đúng hoặc endorsing rule.",
+    "assumptions": [],
+    "test": null,
+    "artifact": null
+  },
+  {
+    "id": "memes-rule-risk",
+    "claim": "Demographic/keyword rule có thể tạo subgroup errors và khó chuyển giao production.",
+    "status": "INFERRED",
+    "scope": "reasoning",
+    "source_ids": [
+      "alfred-file-1"
+    ],
+    "locator": "rasicm_det and probability override",
+    "limitations": "Giả thuyết của người phân tích; chưa có controlled evidence.",
+    "assumptions": [
+      "Tag/keyword proxies có lỗi hoặc phân bố khác deployment."
+    ],
+    "test": "Đo false-positive/negative và calibration theo subgroup với/không rule trên heldout được phép dùng.",
+    "artifact": null
+  },
+  {
+    "id": "memes-uniter-launch",
+    "claim": "Launcher4configs, skip training nếu thư mục có, infer nếu thiếu CSV.",
+    "status": "VERIFIED",
+    "scope": "code",
+    "source_ids": [
+      "alfred-extra-0"
+    ],
+    "locator": "UNITER/scripts/train_uniter.sh:16–46",
+    "limitations": "Chỉ xác minh trong nguồn đã đọc; chưa chứng minh winning execution hoặc tái hiện score.",
+    "assumptions": [],
+    "test": null,
+    "artifact": null
+  },
+  {
+    "id": "memes-uniter-config",
+    "claim": "UNITER-base config chỉ rõ lengths, LR/AdamW/seed/fp16/accumulation và DB paths.",
+    "status": "VERIFIED",
+    "scope": "code",
+    "source_ids": [
+      "alfred-extra-1"
+    ],
+    "locator": "UNITER/config/final_train/uniter-base.json:1–42",
+    "limitations": "Không suy train_batch_size token budget thành sample batch hoặc exact winning execution.",
+    "assumptions": [],
+    "test": null,
+    "artifact": null
+  },
+  {
+    "id": "memes-diversity",
+    "claim": "Author ERNIE-ViL README nêu mục đích tăng diversity trong ensemble.",
+    "status": "VERIFIED",
+    "scope": "published",
+    "source_ids": [
+      "alfred-file-6"
+    ],
+    "locator": "ERNIE-ViL introduction",
+    "limitations": "Đây là rationale tác giả, chưa là causal evidence.",
+    "assumptions": [],
+    "test": null,
+    "artifact": null
+  },
+  {
+    "id": "memes-top-two",
+    "claim": "Vilio author README hướng dẫn hm.py/param.py, models và score reproduction entrypoints.",
+    "status": "VERIFIED",
+    "scope": "published",
+    "source_ids": [
+      "vilio-readme"
+    ],
+    "locator": "Ordering; Usage; Architectures",
+    "limitations": "URL branch chưa pin code tree/commit của team2; chỉ mô tả source đã đọc.",
+    "assumptions": [],
+    "test": null,
+    "artifact": null
+  },
+  {
+    "id": "memes-expanded-data",
+    "claim": "Data-extension script thêm100dev_seen-only và Memotion, comments nêu8500+100+328=8928; shuffle không explicit seed.",
+    "status": "VERIFIED",
+    "scope": "code",
+    "source_ids": [
+      "hate-detail-3"
+    ],
+    "locator": "utils/concat_memotion-hm.py:comments; get_img_list_from_dev; final concat/shuffle",
+    "limitations": "Counts là comment/assertion, không phải measurement của dự án.",
+    "assumptions": [],
+    "test": null,
+    "artifact": null
+  },
+  {
+    "id": "memes-feature-description",
+    "claim": "Author mô tả Detectron/ResNet152 feature extraction và VisualBERT CC checkpoint.",
+    "status": "VERIFIED",
+    "scope": "published",
+    "source_ids": [
+      "memes-blog",
+      "hate-file-0"
+    ],
+    "locator": "HateDetectron summary; end-to-end notebook description",
+    "limitations": "Full extraction notebook vượt snapshot limit; chưa independently trace features.",
+    "assumptions": [],
+    "test": null,
+    "artifact": null
+  },
+  {
+    "id": "memes-sweep",
+    "claim": "Sweep script96config combinations; MMF max_updates1000, baseLR5e-5, valdev_unseen và resume CC full.",
+    "status": "VERIFIED",
+    "scope": "code",
+    "source_ids": [
+      "hate-detail-2",
+      "hate-file-3"
+    ],
+    "locator": "hyperparameter_sweep/sweep.py nested loops; sweep.sh:4–30",
+    "limitations": "Không khẳng định96successful runs; MMF defaults chưa pin.",
+    "assumptions": [],
+    "test": null,
+    "artifact": null
+  },
+  {
+    "id": "memes-select",
+    "claim": "Đọc last250chars log, ROC strings sort descending head27 và moves best.ckpt; broad exceptions.",
+    "status": "VERIFIED",
+    "scope": "code",
+    "source_ids": [
+      "hate-file-2"
+    ],
+    "locator": "get_27_models.py:9–47",
+    "limitations": "Fragility chưa chứng minh sai model selection trên actual logs.",
+    "assumptions": [],
+    "test": null,
+    "artifact": null
+  },
+  {
+    "id": "memes-vote-code",
+    "claim": "Cell41 majority cutoff13 với max/min toàn bộ model proba; positional concat và assert count bị comment.",
+    "status": "VERIFIED",
+    "scope": "code",
+    "source_ids": [
+      "hate-detail-0"
+    ],
+    "locator": "notebooks/[GitHub]reproduce_submissions.ipynb cell41 (zero-based)",
+    "limitations": "Chỉ xác minh trong nguồn đã đọc; chưa chứng minh winning execution hoặc tái hiện score.",
+    "assumptions": [],
+    "test": null,
+    "artifact": null
+  },
+  {
+    "id": "memes-vote-rationale",
+    "claim": "Top-three tác giả giải thích ensemble như các experts theo hate category.",
+    "status": "VERIFIED",
+    "scope": "published",
+    "source_ids": [
+      "memes-blog"
+    ],
+    "locator": "HateDetectron: Majority Voting Technique",
+    "limitations": "Author explanation; không có controlled ablation được audit ở đây.",
+    "assumptions": [],
+    "test": null,
+    "artifact": null
+  },
+  {
+    "id": "memes-hardware",
+    "claim": "Top-one author README nêu4T4/104GB RAM/500GB disk và fp16.",
+    "status": "VERIFIED",
+    "scope": "published",
+    "source_ids": [
+      "alfred-file-0"
+    ],
+    "locator": "System spec",
+    "limitations": "Chỉ xác minh trong nguồn đã đọc; chưa chứng minh winning execution hoặc tái hiện score.",
+    "assumptions": [],
+    "test": null,
+    "artifact": null
+  },
+  {
+    "id": "memes-legacy",
+    "claim": "Inference notebook pin torch1.6/vision0.7 nhưng clone MMF branch chưa pin, có signed historical template URL.",
+    "status": "VERIFIED",
+    "scope": "code",
+    "source_ids": [
+      "hate-detail-0"
+    ],
+    "locator": "code cells6,8,43",
+    "limitations": "Không chạy shell/download/deletes; chưa kiểm tra availability các assets.",
+    "assumptions": [],
+    "test": null,
+    "artifact": null
+  },
+  {
+    "id": "memes-vote-hypothesis",
+    "claim": "Majority+extreme probability có thể đổi ranking/AUC, cần so mean trên untouched holdout.",
+    "status": "INFERRED",
+    "scope": "reasoning",
+    "source_ids": [
+      "hate-detail-0"
+    ],
+    "locator": "cell41",
+    "limitations": "Giả thuyết của người phân tích; chưa có controlled evidence.",
+    "assumptions": [
+      "Prediction CSVs align IDs và đủ27models."
+    ],
+    "test": "Cùng input CSVs so mean proba/voting, nested holdout; report AUC/calibration/subgroup errors.",
+    "artifact": null
+  },
+  {
+    "id": "memes-unknown-run",
+    "claim": "Chưa xác minh full training graph/defaults, dataset/weights permission, exact winning component CSVs và reproduced score.",
+    "status": "UNKNOWN",
+    "scope": "unknown",
+    "source_ids": [
+      "hate-detail-1",
+      "memes-access",
+      "alfred-tree"
+    ],
+    "locator": "Known blockers",
+    "limitations": "Training notebook vượt8MB; data/assets chưa tải; selected models interactive chưa có manifest.",
+    "assumptions": [],
+    "test": null,
+    "artifact": null
+  }
+]

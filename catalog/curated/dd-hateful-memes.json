@@ -1,0 +1,194 @@
+{
+  "schema_version": "1.0",
+  "id": "dd-hateful-memes",
+  "title": "Hateful Memes",
+  "aliases": [],
+  "identity": {
+    "platform": "DrivenData",
+    "organizer": "Facebook AI / DrivenData",
+    "year": 2020,
+    "track": "phase-2",
+    "evaluation_version": "original-final",
+    "canonical_url": "https://www.drivendata.org/competitions/70/hateful-memes-phase-2/",
+    "source_ids": [
+      "memes-page",
+      "memes-file-0"
+    ]
+  },
+  "lifecycle": {
+    "status": "finished",
+    "source_ids": [
+      "memes-file-0",
+      "memes-blog"
+    ],
+    "note": "Có kết quả cuối chính thức; năm lấy theo edition, không theo năm xuất bản blog."
+  },
+  "task": {
+    "name": "Multimodal hateful meme classification",
+    "modalities": [
+      "image",
+      "text",
+      "multimodal"
+    ],
+    "status": "VERIFIED",
+    "source_ids": [
+      "memes-problem"
+    ],
+    "note": "Task đã đọc từ trang chính thức; pilot đo dữ liệu chưa chạy."
+  },
+  "availability": {
+    "data": {
+      "status": "verified",
+      "value": "Published access route; download not tested",
+      "source_ids": [
+        "memes-access"
+      ],
+      "note": "Xác minh trang hướng dẫn, không xác nhận đã có dataset hay quyền dùng mọi artifact."
+    },
+    "code": {
+      "status": "verified",
+      "value": "Published winning solution source available",
+      "source_ids": [
+        "memes-file-0",
+        "memes-tree"
+      ],
+      "note": "Đã đọc file ở commit cố định; không chứng minh winning execution hay reproduction thành công."
+    },
+    "writeups": {
+      "status": "verified",
+      "value": "Top-three solution summaries and reports linked",
+      "source_ids": [
+        "memes-file-0",
+        "memes-blog"
+      ],
+      "note": "Đã đọc summaries và chọn một số tài liệu/code để đối chiếu; PDF chưa đọc toàn bộ."
+    },
+    "final_results": {
+      "status": "verified",
+      "value": "Official final top ranks and scores",
+      "source_ids": [
+        "memes-file-0"
+      ],
+      "note": "Score công bố, không phải kết quả dự án tự đo."
+    },
+    "dataset_license": {
+      "status": "verified",
+      "value": "Separate dataset access agreement required",
+      "source_ids": [
+        "memes-access"
+      ],
+      "note": "Chưa accept agreement; không coi dataset cùng license với code."
+    },
+    "code_license": {
+      "status": "verified",
+      "value": "HateDetectron: MIT; other teams require separate audit",
+      "source_ids": [
+        "hate-detail-4"
+      ],
+      "note": "Không áp MIT cho mọi solution hoặc data."
+    },
+    "checkpoints": {
+      "status": "not_checked",
+      "value": null,
+      "source_ids": [],
+      "note": "Chưa audit riêng availability; không suy ra từ organizer index."
+    }
+  },
+  "curation": {
+    "state": "curated",
+    "reasons": [
+      "Case cụ thể về confounder splits, feature fusion, majority vote và ranking probability.",
+      "Pilot để kiểm tra quy trình prompt và source-to-claim audit."
+    ],
+    "limitations": [
+      "Nghiên cứu tĩnh có nguồn; chưa đo EDA hay chạy training/inference.",
+      "Chi tiết unknown và khác biệt write-up/code nằm trong report và pipeline."
+    ],
+    "red_flags": [
+      "Một số rule top-one dùng demographic annotations; cần audit bias trước khi chuyển giao.",
+      "Notebook inference có signed download URL lịch sử và dependency branch chưa pin; không chạy nguyên xi."
+    ],
+    "rating": {
+      "criteria": {
+        "task_evaluation": {
+          "points": 11.25,
+          "source_ids": [
+            "memes-problem"
+          ],
+          "justification": "Task, Phase-2 timeline và ROC-AUC/proba schema rõ; server clipping/ties chưa đọc scorer."
+        },
+        "solution_depth": {
+          "points": 15.0,
+          "source_ids": [
+            "memes-file-0",
+            "memes-blog"
+          ],
+          "justification": "Top-three official summaries và code/readmes; đã trace top-one ensemble/top-three voting, full training notebook chưa đọc."
+        },
+        "public_code": {
+          "points": 10.0,
+          "source_ids": [
+            "memes-tree"
+          ],
+          "justification": "Code ở kho tác giả, có sweep và inference notebooks; MMF dependency/run versions, weights access còn blocker."
+        },
+        "dataset_access": {
+          "points": 3.75,
+          "source_ids": [
+            "memes-access"
+          ],
+          "justification": "Data agreement truy cập được nhưng chưa accept hay tải dataset; điều kiện khác với code license."
+        },
+        "technical_value": {
+          "points": 11.25,
+          "source_ids": [
+            "memes-file-0"
+          ],
+          "justification": "Case cụ thể về confounder splits, feature fusion, majority vote và ranking probability."
+        },
+        "transfer_value": {
+          "points": 5.0,
+          "source_ids": [
+            "memes-file-0"
+          ],
+          "justification": "Có bài học row alignment và confidence aggregation; rule dựa demographic tags không tự coi là production-ready."
+        },
+        "result_trust": {
+          "points": 5,
+          "source_ids": [
+            "memes-file-0"
+          ],
+          "justification": "Official Phase-2 repository và winners announcement thống nhất top ranks/scores."
+        }
+      },
+      "total": 61.25,
+      "tier": "B"
+    }
+  },
+  "research": {
+    "status": "partial",
+    "report_path": "competitions/dd-hateful-memes/report.md",
+    "next_actions": [
+      "Hoàn thiện các unknown trong state.json, dataset access và dependency/code trace trước reproduction."
+    ]
+  },
+  "last_verified_at": "2026-11-19",
+  "source_ids": [
+    "dd-winners",
+    "memes-page",
+    "memes-problem",
+    "memes-file-0",
+    "memes-blog",
+    "memes-tree",
+    "memes-commit",
+    "memes-access"
+  ],
+  "tags": [
+    "image",
+    "text",
+    "multimodal",
+    "pilot",
+    "implementation-forensics",
+    "needs-reproduction"
+  ]
+}

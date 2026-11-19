@@ -1,0 +1,27 @@
+__pycache__/
+*.pyc
+.venv/
+catalog/indexes/*.sqlite
+/data/
+/runs/
+
+# LaTeX build output; preserve .tex, .bib and figure assets (including PDFs).
+**/latex/build/
+**/latex/**/*.aux
+**/latex/**/*.bbl
+**/latex/**/*.blg
+**/latex/**/*.bcf
+**/latex/**/*.run.xml
+**/latex/**/*.log
+**/latex/**/*.out
+**/latex/**/*.toc
+**/latex/**/*.lof
+**/latex/**/*.lot
+**/latex/**/*.fls
+**/latex/**/*.fdb_latexmk
+**/latex/**/*.synctex.gz
+**/latex/**/*.synctex(busy)
+**/latex/**/*.xdv
+**/latex/**/*.nav
+**/latex/**/*.snm
+**/latex/**/*.vrb

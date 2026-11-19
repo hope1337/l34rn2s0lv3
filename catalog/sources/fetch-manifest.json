@@ -1,0 +1,110 @@
+[
+  {
+    "id": "dd-winners",
+    "url": "https://raw.githubusercontent.com/drivendataorg/competition-winners/master/README.md"
+  },
+  {
+    "id": "dd-competitions",
+    "url": "https://www.drivendata.org/competitions/"
+  },
+  {
+    "id": "cold-meta",
+    "url": "https://api.github.com/repos/drivendataorg/power-laws-cold-start"
+  },
+  {
+    "id": "bloom-meta",
+    "url": "https://api.github.com/repos/drivendataorg/tick-tick-bloom"
+  },
+  {
+    "id": "memes-meta",
+    "url": "https://api.github.com/repos/drivendataorg/hateful-memes"
+  },
+  {
+    "id": "cold-blog",
+    "url": "https://blog.drivendata.org/blog/power-laws-cold-start-winners"
+  },
+  {
+    "id": "bloom-blog",
+    "url": "https://blog.drivendata.org/blog/tick-tick-bloom-challenge-winners"
+  },
+  {
+    "id": "memes-blog",
+    "url": "https://blog.drivendata.org/blog/hateful-memes-winners"
+  },
+  {
+    "id": "kaggle",
+    "url": "https://www.kaggle.com/competitions"
+  },
+  {
+    "id": "aicrowd",
+    "url": "https://www.aicrowd.com/challenges"
+  },
+  {
+    "id": "grand-challenge",
+    "url": "https://grand-challenge.org/challenges/"
+  },
+  {
+    "id": "evalai",
+    "url": "https://eval.ai/"
+  },
+  {
+    "id": "semeval",
+    "url": "https://semeval.github.io/"
+  },
+  {
+    "id": "zalo",
+    "url": "https://challenge.zalo.ai/"
+  },
+  {
+    "id": "vlsp",
+    "url": "https://vlsp.org.vn/"
+  },
+  {
+    "id": "vlsp-2023",
+    "url": "https://vlsp.org.vn/index.php/node/51"
+  },
+  {
+    "id": "vlsp-2025",
+    "url": "https://vlsp.org.vn/index.php/vlsp2025/eval"
+  },
+  {
+    "id": "hcmc",
+    "url": "https://aichallenge.hochiminhcity.gov.vn/"
+  },
+  {
+    "id": "aihub",
+    "url": "https://aihub.ml/competitions/"
+  },
+  {
+    "id": "aicity",
+    "url": "https://www.aicitychallenge.org/"
+  },
+  {
+    "id": "dcase",
+    "url": "https://dcase.community/challenge2024/"
+  },
+  {
+    "id": "wmt",
+    "url": "https://www2.statmt.org/wmt24/"
+  },
+  {
+    "id": "kaggle-vinbigdata",
+    "url": "https://www.kaggle.com/competitions/vinbigdata-chest-xray-abnormalities-detection"
+  },
+  {
+    "id": "kaggle-m5",
+    "url": "https://www.kaggle.com/competitions/m5-forecasting-accuracy"
+  },
+  {
+    "id": "kaggle-otto",
+    "url": "https://www.kaggle.com/competitions/otto-recommender-system"
+  },
+  {
+    "id": "kaggle-rsna",
+    "url": "https://www.kaggle.com/competitions/rsna-pneumonia-detection-challenge"
+  },
+  {
+    "id": "kaggle-salt",
+    "url": "https://www.kaggle.com/competitions/tgs-salt-identification-challenge"
+  }
+]

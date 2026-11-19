@@ -1,0 +1,188 @@
+{
+  "schema_version": "1.0",
+  "id": "dd-power-laws-cold-start",
+  "title": "Power Laws: Cold Start Energy Forecasting",
+  "aliases": [],
+  "identity": {
+    "platform": "DrivenData",
+    "organizer": "Schneider Electric / DrivenData",
+    "year": 2018,
+    "track": "main",
+    "evaluation_version": "original-final",
+    "canonical_url": "https://www.drivendata.org/competitions/55/schneider-cold-start/",
+    "source_ids": [
+      "cold-page",
+      "cold-file-0"
+    ]
+  },
+  "lifecycle": {
+    "status": "finished",
+    "source_ids": [
+      "cold-file-0",
+      "cold-blog"
+    ],
+    "note": "Có kết quả cuối chính thức; năm lấy theo edition, không theo năm xuất bản blog."
+  },
+  "task": {
+    "name": "Cold start energy forecasting",
+    "modalities": [
+      "time_series",
+      "tabular"
+    ],
+    "status": "VERIFIED",
+    "source_ids": [
+      "cold-problem"
+    ],
+    "note": "Task đã đọc từ trang chính thức; pilot đo dữ liệu chưa chạy."
+  },
+  "availability": {
+    "data": {
+      "status": "verified",
+      "value": "Published access route; download not tested",
+      "source_ids": [
+        "cold-data"
+      ],
+      "note": "Xác minh trang hướng dẫn, không xác nhận đã có dataset hay quyền dùng mọi artifact."
+    },
+    "code": {
+      "status": "verified",
+      "value": "Published winning solution source available",
+      "source_ids": [
+        "cold-file-0",
+        "cold-tree"
+      ],
+      "note": "Đã đọc file ở commit cố định; không chứng minh winning execution hay reproduction thành công."
+    },
+    "writeups": {
+      "status": "verified",
+      "value": "Top-three solution summaries and reports linked",
+      "source_ids": [
+        "cold-file-0",
+        "cold-blog"
+      ],
+      "note": "Đã đọc summaries và chọn một số tài liệu/code để đối chiếu; PDF chưa đọc toàn bộ."
+    },
+    "final_results": {
+      "status": "verified",
+      "value": "Official final top ranks and scores",
+      "source_ids": [
+        "cold-file-0"
+      ],
+      "note": "Score công bố, không phải kết quả dự án tự đo."
+    },
+    "dataset_license": {
+      "status": "not_checked",
+      "value": null,
+      "source_ids": [],
+      "note": "Chưa audit riêng availability; không suy ra từ organizer index."
+    },
+    "code_license": {
+      "status": "verified",
+      "value": "MIT",
+      "source_ids": [
+        "cold-meta",
+        "cold-file-0"
+      ],
+      "note": "License code công bố; không áp cho datasets."
+    },
+    "checkpoints": {
+      "status": "not_checked",
+      "value": null,
+      "source_ids": [],
+      "note": "Chưa audit riêng availability; không suy ra từ organizer index."
+    }
+  },
+  "curation": {
+    "state": "curated",
+    "reasons": [
+      "Có cold-start regimes, normalization, recursive forecast và patch sau ensemble cần học.",
+      "Pilot để kiểm tra quy trình prompt và source-to-claim audit."
+    ],
+    "limitations": [
+      "Nghiên cứu tĩnh có nguồn; chưa đo EDA hay chạy training/inference.",
+      "Chi tiết unknown và khác biệt write-up/code nằm trong report và pipeline."
+    ],
+    "red_flags": [],
+    "rating": {
+      "criteria": {
+        "task_evaluation": {
+          "points": 11.25,
+          "source_ids": [
+            "cold-problem"
+          ],
+          "justification": "Task và NMAE có công thức, nhưng zero-denominator/scorer server chưa truy được."
+        },
+        "solution_depth": {
+          "points": 15.0,
+          "source_ids": [
+            "cold-file-0",
+            "cold-blog"
+          ],
+          "justification": "Top-three write-ups và top-one/top-three code đã đối chiếu; chưa trace toàn bộ dependency."
+        },
+        "public_code": {
+          "points": 10.0,
+          "source_ids": [
+            "cold-tree"
+          ],
+          "justification": "Có entry points, configs và một số model files; thiếu neural/XGB assets trong tree của top-three, chưa chạy."
+        },
+        "dataset_access": {
+          "points": 3.75,
+          "source_ids": [
+            "cold-data"
+          ],
+          "justification": "Trang open-data chuyển sang Schneider Exchange và yêu cầu account; chưa xác minh tải được và license archive."
+        },
+        "technical_value": {
+          "points": 11.25,
+          "source_ids": [
+            "cold-file-0"
+          ],
+          "justification": "Có cold-start regimes, normalization, recursive forecast và patch sau ensemble cần học."
+        },
+        "transfer_value": {
+          "points": 5.0,
+          "source_ids": [
+            "cold-file-0"
+          ],
+          "justification": "So được model/ensemble và dài history; chi phí training/latency chưa đo."
+        },
+        "result_trust": {
+          "points": 5,
+          "source_ids": [
+            "cold-file-0"
+          ],
+          "justification": "Organizer công bố thứ hạng và cả public/private scores ở repository chính thức."
+        }
+      },
+      "total": 61.25,
+      "tier": "B"
+    }
+  },
+  "research": {
+    "status": "partial",
+    "report_path": "competitions/dd-power-laws-cold-start/report.md",
+    "next_actions": [
+      "Hoàn thiện các unknown trong state.json, dataset access và dependency/code trace trước reproduction."
+    ]
+  },
+  "last_verified_at": "2026-11-19",
+  "source_ids": [
+    "dd-winners",
+    "cold-page",
+    "cold-problem",
+    "cold-file-0",
+    "cold-blog",
+    "cold-tree",
+    "cold-commit",
+    "cold-data"
+  ],
+  "tags": [
+    "time_series",
+    "tabular",
+    "pilot",
+    "implementation-forensics",
+    "needs-reproduction"
+  ]
+}

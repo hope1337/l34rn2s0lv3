@@ -1,0 +1,353 @@
+[
+  {
+    "id": "cold-task",
+    "claim": "History hourly 1–14 ngày; prediction windows24hour/7day/2week; CSV schema và units Wh.",
+    "status": "VERIFIED",
+    "scope": "published",
+    "source_ids": [
+      "cold-problem"
+    ],
+    "locator": "Overview; Datasets; Submission format",
+    "limitations": "Chỉ xác minh trong nguồn đã đọc; chưa chứng minh winning execution hoặc tái hiện score.",
+    "assumptions": [],
+    "test": null,
+    "artifact": null
+  },
+  {
+    "id": "cold-rules-scope",
+    "claim": "External data giới hạn; exceptions holiday lists và pretrained releasable models.",
+    "status": "VERIFIED",
+    "scope": "published",
+    "source_ids": [
+      "cold-problem"
+    ],
+    "locator": "External data",
+    "limitations": "Chỉ xác minh trong nguồn đã đọc; chưa chứng minh winning execution hoặc tái hiện score.",
+    "assumptions": [],
+    "test": null,
+    "artifact": null
+  },
+  {
+    "id": "cold-published-stats",
+    "claim": "Guillermo công bố758series/672timestamps, khoảng40%temperature missing và weekly/daily/hourly counts192/191/242.",
+    "status": "VERIFIED",
+    "scope": "published",
+    "source_ids": [
+      "cold-file-5"
+    ],
+    "locator": "reports/02_Data_Understanding.md:61–99",
+    "limitations": "Số liệu tác giả công bố, chưa đo lại; building identity chưa xác minh.",
+    "assumptions": [],
+    "test": null,
+    "artifact": null
+  },
+  {
+    "id": "cold-access",
+    "claim": "Open-data page yêu cầu account Schneider Exchange; route không phải artifact đã tải.",
+    "status": "VERIFIED",
+    "scope": "published",
+    "source_ids": [
+      "cold-data"
+    ],
+    "locator": "Open data: create an account; Data Exchange",
+    "limitations": "Chưa login, tải data hoặc kiểm tra archive license/equivalence.",
+    "assumptions": [],
+    "test": null,
+    "artifact": null
+  },
+  {
+    "id": "cold-metric",
+    "claim": "NMAE dùng weight1,24/7,12 và true window mean; concatenate errors rồi mean.",
+    "status": "VERIFIED",
+    "scope": "published",
+    "source_ids": [
+      "cold-problem",
+      "cold-file-3"
+    ],
+    "locator": "Performance metric; coldstart/metrics.py:24–61",
+    "limitations": "Official written formula và team metric code; server edge cases chưa có.",
+    "assumptions": [],
+    "test": null,
+    "artifact": null
+  },
+  {
+    "id": "cold-baseline",
+    "claim": "Official repo dẫn baseline LSTM; chưa audit score trên exact final set.",
+    "status": "VERIFIED",
+    "scope": "published",
+    "source_ids": [
+      "cold-file-0"
+    ],
+    "locator": "Benchmark Blog Post link",
+    "limitations": "Chỉ xác minh trong nguồn đã đọc; chưa chứng minh winning execution hoặc tái hiện score.",
+    "assumptions": [],
+    "test": null,
+    "artifact": null
+  },
+  {
+    "id": "cold-results",
+    "claim": "Final top3 public/private scores lần lượt .272444/.257776, .289542/.259703, .298222/.261503.",
+    "status": "VERIFIED",
+    "scope": "published",
+    "source_ids": [
+      "cold-file-0"
+    ],
+    "locator": "Winning Submissions table",
+    "limitations": "Chỉ xác minh trong nguồn đã đọc; chưa chứng minh winning execution hoặc tái hiện score.",
+    "assumptions": [],
+    "test": null,
+    "artifact": null
+  },
+  {
+    "id": "cold-a-launch",
+    "claim": "Top-one member-A final_solution có environment riêng, cluster/features, tailor/seq2seq stages.",
+    "status": "VERIFIED",
+    "scope": "published",
+    "source_ids": [
+      "cold-file-1",
+      "cold-extra-2"
+    ],
+    "locator": "scripts/final_solution/README.md; final_solution.sh",
+    "limitations": "Chỉ xác minh trong nguồn đã đọc; chưa chứng minh winning execution hoặc tái hiện score.",
+    "assumptions": [],
+    "test": null,
+    "artifact": null
+  },
+  {
+    "id": "cold-a-blend",
+    "claim": "Mean CSV arrays theo vị trí; hourly mean tailor/seq2seq, nonhourly giữ tailor.",
+    "status": "VERIFIED",
+    "scope": "code",
+    "source_ids": [
+      "cold-file-2"
+    ],
+    "locator": "combine_submissions.py:17–48",
+    "limitations": "Chỉ xác minh trong nguồn đã đọc; chưa chứng minh winning execution hoặc tái hiện score.",
+    "assumptions": [],
+    "test": null,
+    "artifact": null
+  },
+  {
+    "id": "cold-team-blend",
+    "claim": "Team launcher mean hai input CSV rồi overwrite selected-trivial predictions theo pred_id; skipna=True.",
+    "status": "VERIFIED",
+    "scope": "code",
+    "source_ids": [
+      "cold-file-7",
+      "cold-file-9"
+    ],
+    "locator": "gen-final-pred.sh:2–6; src/submission_tool.py:27–78",
+    "limitations": "Chỉ xác minh trong nguồn đã đọc; chưa chứng minh winning execution hoặc tái hiện score.",
+    "assumptions": [],
+    "test": null,
+    "artifact": null
+  },
+  {
+    "id": "cold-compute",
+    "claim": "Valilenk README yêu cầu legacy fastai1.0.19/Python3.7 và nêu128GB RAM/1080Ti11GB.",
+    "status": "VERIFIED",
+    "scope": "published",
+    "source_ids": [
+      "cold-file-10"
+    ],
+    "locator": "Prerequisites; Hardware; Running",
+    "limitations": "Setup tác giả, không phải minimum đã benchmark.",
+    "assumptions": [],
+    "test": null,
+    "artifact": null
+  },
+  {
+    "id": "cold-two-path",
+    "claim": "Top-two temperature missing/rolling features và per-series target scale range+1.",
+    "status": "VERIFIED",
+    "scope": "code",
+    "source_ids": [
+      "cold-extra-1",
+      "cold-file-10"
+    ],
+    "locator": "src/build_features.py:59–94,139–205,277–304; README Running",
+    "limitations": "Chỉ xác minh trong nguồn đã đọc; chưa chứng minh winning execution hoặc tái hiện score.",
+    "assumptions": [],
+    "test": null,
+    "artifact": null
+  },
+  {
+    "id": "cold-two-model",
+    "claim": "Top-two code10-fold stratification theo series, fastai tabular params và mean fold predictions/aggregate horizons.",
+    "status": "VERIFIED",
+    "scope": "code",
+    "source_ids": [
+      "cold-extra-0"
+    ],
+    "locator": "src/model.py:13–114",
+    "limitations": "Chưa trace fastai dependency defaults và exact winning checkpoint selection.",
+    "assumptions": [],
+    "test": null,
+    "artifact": null
+  },
+  {
+    "id": "cold-preprocess",
+    "claim": "LastRocky concat observed histories,336hour/14day lags, dummy encodings và daily aggregation.",
+    "status": "VERIFIED",
+    "scope": "code",
+    "source_ids": [
+      "cold-file-12"
+    ],
+    "locator": "src/prepare_data.py:21–86,156–187,190–267",
+    "limitations": "Chỉ xác minh trong nguồn đã đọc; chưa chứng minh winning execution hoặc tái hiện score.",
+    "assumptions": [],
+    "test": null,
+    "artifact": null
+  },
+  {
+    "id": "cold-normalize",
+    "claim": "LastRocky hourly eps1e-5, daily eps1e-2, weekly lag eps1e-3 và extrema scaling.",
+    "status": "VERIFIED",
+    "scope": "code",
+    "source_ids": [
+      "cold-file-13",
+      "cold-file-17"
+    ],
+    "locator": "hour_models.py:88–106; daily_sub.py:147–165",
+    "limitations": "Chỉ xác minh trong nguồn đã đọc; chưa chứng minh winning execution hoặc tái hiện score.",
+    "assumptions": [],
+    "test": null,
+    "artifact": null
+  },
+  {
+    "id": "cold-split",
+    "claim": "Local tail split theo vị trí unique series; DEBUG_MODE=False, full training dùng tất cả rows.",
+    "status": "VERIFIED",
+    "scope": "code",
+    "source_ids": [
+      "cold-file-13"
+    ],
+    "locator": "hour_models.py:31–33,66–85,108–185",
+    "limitations": "Chỉ xác minh trong nguồn đã đọc; chưa chứng minh winning execution hoặc tái hiện score.",
+    "assumptions": [],
+    "test": null,
+    "artifact": null
+  },
+  {
+    "id": "cold-hour-training",
+    "claim": "Hourly LGB/XGB params và NN training schedule/16epochs được khai báo trong source.",
+    "status": "VERIFIED",
+    "scope": "code",
+    "source_ids": [
+      "cold-file-13"
+    ],
+    "locator": "hour_models.py:121–136,172–224,229–317",
+    "limitations": "Các giá trị là published code; không khẳng định mọi run hoặc checkpoints thành công.",
+    "assumptions": [],
+    "test": null,
+    "artifact": null
+  },
+  {
+    "id": "cold-shape",
+    "claim": "NN input là(batch,1,168); metadata dropout output bị bỏ; full training checkpoint monitor val_loss nhưng không validation_data.",
+    "status": "VERIFIED",
+    "scope": "code",
+    "source_ids": [
+      "cold-file-13"
+    ],
+    "locator": "hour_models.py:232–254,264–317",
+    "limitations": "Chỉ xác minh trong nguồn đã đọc; chưa chứng minh winning execution hoặc tái hiện score.",
+    "assumptions": [],
+    "test": null,
+    "artifact": null
+  },
+  {
+    "id": "cold-hour-infer",
+    "claim": "Clip each model, recursive hourly predictions, .1XGB+.5LGB+.4NN; inverse scaling rồi group sum.",
+    "status": "VERIFIED",
+    "scope": "code",
+    "source_ids": [
+      "cold-file-14"
+    ],
+    "locator": "hourly_sub.py:145–238",
+    "limitations": "Chỉ xác minh trong nguồn đã đọc; chưa chứng minh winning execution hoặc tái hiện score.",
+    "assumptions": [],
+    "test": null,
+    "artifact": null
+  },
+  {
+    "id": "cold-daily-infer",
+    "claim": "Daily first-step blend .3/.3/.4, later .5/.3/.2; aggregate days thành weekly rồi ghép hourly output.",
+    "status": "VERIFIED",
+    "scope": "code",
+    "source_ids": [
+      "cold-file-17"
+    ],
+    "locator": "daily_sub.py:209–296",
+    "limitations": "Chỉ xác minh trong nguồn đã đọc; chưa chứng minh winning execution hoặc tái hiện score.",
+    "assumptions": [],
+    "test": null,
+    "artifact": null
+  },
+  {
+    "id": "cold-assets",
+    "claim": "Repo tree có3LGB text models, không liệt kê đầy đủ NN/XGB files inference top-three yêu cầu.",
+    "status": "VERIFIED",
+    "scope": "code",
+    "source_ids": [
+      "cold-tree",
+      "cold-file-14",
+      "cold-file-17"
+    ],
+    "locator": "3rd Place/input tree; hourly_sub.py checkpoint loads; daily_sub.py:125–144",
+    "limitations": "Tree là manifest tại thời điểm audit; không chứng minh external files không tồn tại ở nơi khác.",
+    "assumptions": [],
+    "test": null,
+    "artifact": null
+  },
+  {
+    "id": "cold-validation-risk",
+    "claim": "Tính extrema trước local tail split có thể làm local validation lạc quan.",
+    "status": "INFERRED",
+    "scope": "reasoning",
+    "source_ids": [
+      "cold-file-12",
+      "cold-file-13"
+    ],
+    "locator": "prepare_data.py:25–31; hour_models.py:66–112",
+    "limitations": "Giả thuyết của người phân tích; chưa có controlled evidence.",
+    "assumptions": [
+      "Deployment local cutoff chỉ biết prefix history.",
+      "Range extrema thay đổi khi thêm validation tail."
+    ],
+    "test": "So prefix-only vs full-observed extrema trên cùng holdout; report theo history length.",
+    "artifact": null
+  },
+  {
+    "id": "cold-hypothesis",
+    "claim": "Hourly extrema có thể ổn định daily normalization khi chỉ có1ngày history.",
+    "status": "INFERRED",
+    "scope": "reasoning",
+    "source_ids": [
+      "cold-file-17",
+      "cold-blog"
+    ],
+    "locator": "daily_sub.py:147–163; Hao Li author rationale",
+    "limitations": "Giả thuyết của người phân tích; chưa có controlled evidence.",
+    "assumptions": [
+      "Hourly history đủ biến động đại diện cho future range."
+    ],
+    "test": "Cùng model/split: so daily-only scaling với hourly-derived scaling; stratify history1day.",
+    "artifact": null
+  },
+  {
+    "id": "cold-unknown-run",
+    "claim": "Chưa xác minh exact winning run manifest, official scorer edge cases và current data equivalence.",
+    "status": "UNKNOWN",
+    "scope": "unknown",
+    "source_ids": [
+      "cold-tree",
+      "cold-data"
+    ],
+    "locator": "Research blockers",
+    "limitations": "Chưa có dataset/run logs/đủ checkpoint hashes trong phạm vi audit.",
+    "assumptions": [],
+    "test": null,
+    "artifact": null
+  }
+]

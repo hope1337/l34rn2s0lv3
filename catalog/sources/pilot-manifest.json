@@ -1,0 +1,200 @@
+[
+  {
+    "id": "cold-file-0",
+    "url": "https://raw.githubusercontent.com/drivendataorg/power-laws-cold-start/a22192b86b31c9f9f9f55cf108f1c3aa9c9ce9b1/README.md",
+    "repo_path": "README.md",
+    "commit": "a22192b86b31c9f9f9f55cf108f1c3aa9c9ce9b1"
+  },
+  {
+    "id": "cold-file-1",
+    "url": "https://raw.githubusercontent.com/drivendataorg/power-laws-cold-start/a22192b86b31c9f9f9f55cf108f1c3aa9c9ce9b1/1st%20Place/team-member-a-execute-first/scripts/final_solution/README.md",
+    "repo_path": "1st Place/team-member-a-execute-first/scripts/final_solution/README.md",
+    "commit": "a22192b86b31c9f9f9f55cf108f1c3aa9c9ce9b1"
+  },
+  {
+    "id": "cold-file-2",
+    "url": "https://raw.githubusercontent.com/drivendataorg/power-laws-cold-start/a22192b86b31c9f9f9f55cf108f1c3aa9c9ce9b1/1st%20Place/team-member-a-execute-first/scripts/final_solution/combine_submissions.py",
+    "repo_path": "1st Place/team-member-a-execute-first/scripts/final_solution/combine_submissions.py",
+    "commit": "a22192b86b31c9f9f9f55cf108f1c3aa9c9ce9b1"
+  },
+  {
+    "id": "cold-file-3",
+    "url": "https://raw.githubusercontent.com/drivendataorg/power-laws-cold-start/a22192b86b31c9f9f9f55cf108f1c3aa9c9ce9b1/1st%20Place/team-member-a-execute-first/coldstart/metrics.py",
+    "repo_path": "1st Place/team-member-a-execute-first/coldstart/metrics.py",
+    "commit": "a22192b86b31c9f9f9f55cf108f1c3aa9c9ce9b1"
+  },
+  {
+    "id": "cold-file-4",
+    "url": "https://raw.githubusercontent.com/drivendataorg/power-laws-cold-start/a22192b86b31c9f9f9f55cf108f1c3aa9c9ce9b1/1st%20Place/team-member-a-execute-first/coldstart/validation.py",
+    "repo_path": "1st Place/team-member-a-execute-first/coldstart/validation.py",
+    "commit": "a22192b86b31c9f9f9f55cf108f1c3aa9c9ce9b1"
+  },
+  {
+    "id": "cold-file-5",
+    "url": "https://raw.githubusercontent.com/drivendataorg/power-laws-cold-start/a22192b86b31c9f9f9f55cf108f1c3aa9c9ce9b1/1st%20Place/team-member-a-execute-first/reports/02_Data_Understanding.md",
+    "repo_path": "1st Place/team-member-a-execute-first/reports/02_Data_Understanding.md",
+    "commit": "a22192b86b31c9f9f9f55cf108f1c3aa9c9ce9b1"
+  },
+  {
+    "id": "cold-file-6",
+    "url": "https://raw.githubusercontent.com/drivendataorg/power-laws-cold-start/a22192b86b31c9f9f9f55cf108f1c3aa9c9ce9b1/1st%20Place/team-member-a-execute-first/reports/05_Solution_Summary.md",
+    "repo_path": "1st Place/team-member-a-execute-first/reports/05_Solution_Summary.md",
+    "commit": "a22192b86b31c9f9f9f55cf108f1c3aa9c9ce9b1"
+  },
+  {
+    "id": "cold-file-7",
+    "url": "https://raw.githubusercontent.com/drivendataorg/power-laws-cold-start/a22192b86b31c9f9f9f55cf108f1c3aa9c9ce9b1/1st%20Place/team-member-b-execute-second/src/submission_tool.py",
+    "repo_path": "1st Place/team-member-b-execute-second/src/submission_tool.py",
+    "commit": "a22192b86b31c9f9f9f55cf108f1c3aa9c9ce9b1"
+  },
+  {
+    "id": "cold-file-8",
+    "url": "https://raw.githubusercontent.com/drivendataorg/power-laws-cold-start/a22192b86b31c9f9f9f55cf108f1c3aa9c9ce9b1/1st%20Place/team-member-b-execute-second/reports/solution.md",
+    "repo_path": "1st Place/team-member-b-execute-second/reports/solution.md",
+    "commit": "a22192b86b31c9f9f9f55cf108f1c3aa9c9ce9b1"
+  },
+  {
+    "id": "cold-file-9",
+    "url": "https://raw.githubusercontent.com/drivendataorg/power-laws-cold-start/a22192b86b31c9f9f9f55cf108f1c3aa9c9ce9b1/1st%20Place/team-member-b-execute-second/gen-final-pred.sh",
+    "repo_path": "1st Place/team-member-b-execute-second/gen-final-pred.sh",
+    "commit": "a22192b86b31c9f9f9f55cf108f1c3aa9c9ce9b1"
+  },
+  {
+    "id": "cold-file-10",
+    "url": "https://raw.githubusercontent.com/drivendataorg/power-laws-cold-start/a22192b86b31c9f9f9f55cf108f1c3aa9c9ce9b1/2nd%20Place/README.md",
+    "repo_path": "2nd Place/README.md",
+    "commit": "a22192b86b31c9f9f9f55cf108f1c3aa9c9ce9b1"
+  },
+  {
+    "id": "cold-file-11",
+    "url": "https://raw.githubusercontent.com/drivendataorg/power-laws-cold-start/a22192b86b31c9f9f9f55cf108f1c3aa9c9ce9b1/3rd%20Place/README.md",
+    "repo_path": "3rd Place/README.md",
+    "commit": "a22192b86b31c9f9f9f55cf108f1c3aa9c9ce9b1"
+  },
+  {
+    "id": "cold-file-12",
+    "url": "https://raw.githubusercontent.com/drivendataorg/power-laws-cold-start/a22192b86b31c9f9f9f55cf108f1c3aa9c9ce9b1/3rd%20Place/src/prepare_data.py",
+    "repo_path": "3rd Place/src/prepare_data.py",
+    "commit": "a22192b86b31c9f9f9f55cf108f1c3aa9c9ce9b1"
+  },
+  {
+    "id": "cold-file-13",
+    "url": "https://raw.githubusercontent.com/drivendataorg/power-laws-cold-start/a22192b86b31c9f9f9f55cf108f1c3aa9c9ce9b1/3rd%20Place/src/hour_models.py",
+    "repo_path": "3rd Place/src/hour_models.py",
+    "commit": "a22192b86b31c9f9f9f55cf108f1c3aa9c9ce9b1"
+  },
+  {
+    "id": "cold-file-14",
+    "url": "https://raw.githubusercontent.com/drivendataorg/power-laws-cold-start/a22192b86b31c9f9f9f55cf108f1c3aa9c9ce9b1/3rd%20Place/src/hourly_sub.py",
+    "repo_path": "3rd Place/src/hourly_sub.py",
+    "commit": "a22192b86b31c9f9f9f55cf108f1c3aa9c9ce9b1"
+  },
+  {
+    "id": "cold-file-15",
+    "url": "https://raw.githubusercontent.com/drivendataorg/power-laws-cold-start/a22192b86b31c9f9f9f55cf108f1c3aa9c9ce9b1/3rd%20Place/src/day_models_no_hour.py",
+    "repo_path": "3rd Place/src/day_models_no_hour.py",
+    "commit": "a22192b86b31c9f9f9f55cf108f1c3aa9c9ce9b1"
+  },
+  {
+    "id": "cold-file-16",
+    "url": "https://raw.githubusercontent.com/drivendataorg/power-laws-cold-start/a22192b86b31c9f9f9f55cf108f1c3aa9c9ce9b1/3rd%20Place/src/day_models_with_hour.py",
+    "repo_path": "3rd Place/src/day_models_with_hour.py",
+    "commit": "a22192b86b31c9f9f9f55cf108f1c3aa9c9ce9b1"
+  },
+  {
+    "id": "cold-file-17",
+    "url": "https://raw.githubusercontent.com/drivendataorg/power-laws-cold-start/a22192b86b31c9f9f9f55cf108f1c3aa9c9ce9b1/3rd%20Place/src/daily_sub.py",
+    "repo_path": "3rd Place/src/daily_sub.py",
+    "commit": "a22192b86b31c9f9f9f55cf108f1c3aa9c9ce9b1"
+  },
+  {
+    "id": "cold-file-18",
+    "url": "https://raw.githubusercontent.com/drivendataorg/power-laws-cold-start/a22192b86b31c9f9f9f55cf108f1c3aa9c9ce9b1/3rd%20Place/requirements.txt",
+    "repo_path": "3rd Place/requirements.txt",
+    "commit": "a22192b86b31c9f9f9f55cf108f1c3aa9c9ce9b1"
+  },
+  {
+    "id": "bloom-file-0",
+    "url": "https://raw.githubusercontent.com/drivendataorg/tick-tick-bloom/c59c9ab9e3d376bfd24a2b85e821776100d46230/README.md",
+    "repo_path": "README.md",
+    "commit": "c59c9ab9e3d376bfd24a2b85e821776100d46230"
+  },
+  {
+    "id": "bloom-file-1",
+    "url": "https://raw.githubusercontent.com/drivendataorg/tick-tick-bloom/c59c9ab9e3d376bfd24a2b85e821776100d46230/1st%20Place/readme.md",
+    "repo_path": "1st Place/readme.md",
+    "commit": "c59c9ab9e3d376bfd24a2b85e821776100d46230"
+  },
+  {
+    "id": "bloom-file-2",
+    "url": "https://raw.githubusercontent.com/drivendataorg/tick-tick-bloom/c59c9ab9e3d376bfd24a2b85e821776100d46230/1st%20Place/notebooks/Model.py",
+    "repo_path": "1st Place/notebooks/Model.py",
+    "commit": "c59c9ab9e3d376bfd24a2b85e821776100d46230"
+  },
+  {
+    "id": "bloom-file-3",
+    "url": "https://raw.githubusercontent.com/drivendataorg/tick-tick-bloom/c59c9ab9e3d376bfd24a2b85e821776100d46230/1st%20Place/notebooks/Sentinels_features.py",
+    "repo_path": "1st Place/notebooks/Sentinels_features.py",
+    "commit": "c59c9ab9e3d376bfd24a2b85e821776100d46230"
+  },
+  {
+    "id": "bloom-file-4",
+    "url": "https://raw.githubusercontent.com/drivendataorg/tick-tick-bloom/c59c9ab9e3d376bfd24a2b85e821776100d46230/2nd%20Place/README.md",
+    "repo_path": "2nd Place/README.md",
+    "commit": "c59c9ab9e3d376bfd24a2b85e821776100d46230"
+  },
+  {
+    "id": "bloom-file-5",
+    "url": "https://raw.githubusercontent.com/drivendataorg/tick-tick-bloom/c59c9ab9e3d376bfd24a2b85e821776100d46230/2nd%20Place/src/mod.py",
+    "repo_path": "2nd Place/src/mod.py",
+    "commit": "c59c9ab9e3d376bfd24a2b85e821776100d46230"
+  },
+  {
+    "id": "bloom-file-6",
+    "url": "https://raw.githubusercontent.com/drivendataorg/tick-tick-bloom/c59c9ab9e3d376bfd24a2b85e821776100d46230/2nd%20Place/src/feat.py",
+    "repo_path": "2nd Place/src/feat.py",
+    "commit": "c59c9ab9e3d376bfd24a2b85e821776100d46230"
+  },
+  {
+    "id": "bloom-file-7",
+    "url": "https://raw.githubusercontent.com/drivendataorg/tick-tick-bloom/c59c9ab9e3d376bfd24a2b85e821776100d46230/2nd%20Place/main_preds.py",
+    "repo_path": "2nd Place/main_preds.py",
+    "commit": "c59c9ab9e3d376bfd24a2b85e821776100d46230"
+  },
+  {
+    "id": "bloom-file-8",
+    "url": "https://raw.githubusercontent.com/drivendataorg/tick-tick-bloom/c59c9ab9e3d376bfd24a2b85e821776100d46230/3rd%20Place/README.md",
+    "repo_path": "3rd Place/README.md",
+    "commit": "c59c9ab9e3d376bfd24a2b85e821776100d46230"
+  },
+  {
+    "id": "bloom-file-9",
+    "url": "https://raw.githubusercontent.com/drivendataorg/tick-tick-bloom/c59c9ab9e3d376bfd24a2b85e821776100d46230/3rd%20Place/train.py",
+    "repo_path": "3rd Place/train.py",
+    "commit": "c59c9ab9e3d376bfd24a2b85e821776100d46230"
+  },
+  {
+    "id": "bloom-file-10",
+    "url": "https://raw.githubusercontent.com/drivendataorg/tick-tick-bloom/c59c9ab9e3d376bfd24a2b85e821776100d46230/3rd%20Place/test.py",
+    "repo_path": "3rd Place/test.py",
+    "commit": "c59c9ab9e3d376bfd24a2b85e821776100d46230"
+  },
+  {
+    "id": "bloom-file-11",
+    "url": "https://raw.githubusercontent.com/drivendataorg/tick-tick-bloom/c59c9ab9e3d376bfd24a2b85e821776100d46230/3rd%20Place/create_datasets.py",
+    "repo_path": "3rd Place/create_datasets.py",
+    "commit": "c59c9ab9e3d376bfd24a2b85e821776100d46230"
+  },
+  {
+    "id": "bloom-file-12",
+    "url": "https://raw.githubusercontent.com/drivendataorg/tick-tick-bloom/c59c9ab9e3d376bfd24a2b85e821776100d46230/3rd%20Place/environment.yml",
+    "repo_path": "3rd Place/environment.yml",
+    "commit": "c59c9ab9e3d376bfd24a2b85e821776100d46230"
+  },
+  {
+    "id": "memes-file-0",
+    "url": "https://raw.githubusercontent.com/drivendataorg/hateful-memes/0cc41becf86a83e8b0e9df34886e1bb506f9762b/README.md",
+    "repo_path": "README.md",
+    "commit": "0cc41becf86a83e8b0e9df34886e1bb506f9762b"
+  }
+]

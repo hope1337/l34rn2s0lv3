@@ -1,0 +1,42 @@
+[
+  {
+    "id": "cold-commit",
+    "url": "https://api.github.com/repos/drivendataorg/power-laws-cold-start/commits/main"
+  },
+  {
+    "id": "cold-tree",
+    "url": "https://api.github.com/repos/drivendataorg/power-laws-cold-start/git/trees/main?recursive=1"
+  },
+  {
+    "id": "bloom-commit",
+    "url": "https://api.github.com/repos/drivendataorg/tick-tick-bloom/commits/main"
+  },
+  {
+    "id": "bloom-tree",
+    "url": "https://api.github.com/repos/drivendataorg/tick-tick-bloom/git/trees/main?recursive=1"
+  },
+  {
+    "id": "memes-commit",
+    "url": "https://api.github.com/repos/drivendataorg/hateful-memes/commits/main"
+  },
+  {
+    "id": "memes-tree",
+    "url": "https://api.github.com/repos/drivendataorg/hateful-memes/git/trees/main?recursive=1"
+  },
+  {
+    "id": "aicity2024",
+    "url": "https://www.aicitychallenge.org/2024-data-and-evaluation/"
+  },
+  {
+    "id": "aicity2024-results",
+    "url": "https://www.aicitychallenge.org/2024-challenge-winners/"
+  },
+  {
+    "id": "camelyon16",
+    "url": "https://camelyon16.grand-challenge.org/"
+  },
+  {
+    "id": "vlsp2026",
+    "url": "https://vlsp.org.vn/node/208"
+  }
+]

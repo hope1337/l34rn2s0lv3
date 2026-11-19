@@ -1,0 +1,146 @@
+{
+  "schema_version": "1.0",
+  "id": "camelyon16",
+  "title": "CAMELYON16",
+  "aliases": [],
+  "identity": {
+    "platform": "Grand Challenge",
+    "organizer": null,
+    "year": 2016,
+    "track": "main",
+    "evaluation_version": null,
+    "canonical_url": "https://camelyon16.grand-challenge.org/",
+    "source_ids": [
+      "camelyon16"
+    ]
+  },
+  "lifecycle": {
+    "status": "finished",
+    "source_ids": [
+      "camelyon16"
+    ],
+    "note": "Trang chính thức nói đã kết thúc tháng 11/2016."
+  },
+  "task": {
+    "name": "Metastasis detection in whole-slide histopathology",
+    "modalities": [
+      "medical_image",
+      "image"
+    ],
+    "status": "VERIFIED",
+    "source_ids": [
+      "camelyon16"
+    ],
+    "note": "Đã đọc overview và lịch sử đóng challenge. Chưa kiểm tra evaluator/code/license hiện tại."
+  },
+  "availability": {
+    "data": {
+      "status": "not_checked",
+      "value": null,
+      "source_ids": [],
+      "note": "Chưa audit riêng availability; không suy ra từ organizer index."
+    },
+    "code": {
+      "status": "not_checked",
+      "value": null,
+      "source_ids": [],
+      "note": "Chưa audit riêng availability; không suy ra từ organizer index."
+    },
+    "writeups": {
+      "status": "not_checked",
+      "value": null,
+      "source_ids": [],
+      "note": "Chưa audit riêng availability; không suy ra từ organizer index."
+    },
+    "final_results": {
+      "status": "not_checked",
+      "value": null,
+      "source_ids": [],
+      "note": "Chưa audit riêng availability; không suy ra từ organizer index."
+    },
+    "dataset_license": {
+      "status": "not_checked",
+      "value": null,
+      "source_ids": [],
+      "note": "Chưa audit riêng availability; không suy ra từ organizer index."
+    },
+    "code_license": {
+      "status": "not_checked",
+      "value": null,
+      "source_ids": [],
+      "note": "Chưa audit riêng availability; không suy ra từ organizer index."
+    },
+    "checkpoints": {
+      "status": "not_checked",
+      "value": null,
+      "source_ids": [],
+      "note": "Chưa audit riêng availability; không suy ra từ organizer index."
+    }
+  },
+  "curation": {
+    "state": "discovery",
+    "reasons": [
+      "Candidate từ nguồn có thể truy vết; cần audit trước khi khuyến nghị."
+    ],
+    "limitations": [
+      "Chưa kiểm chứng riêng rules, dữ liệu, năm/track nếu null và final results."
+    ],
+    "red_flags": [],
+    "rating": {
+      "criteria": {
+        "task_evaluation": {
+          "points": null,
+          "source_ids": [],
+          "justification": "Chưa audit tiêu chí này."
+        },
+        "solution_depth": {
+          "points": null,
+          "source_ids": [],
+          "justification": "Chưa audit tiêu chí này."
+        },
+        "public_code": {
+          "points": null,
+          "source_ids": [],
+          "justification": "Chưa audit tiêu chí này."
+        },
+        "dataset_access": {
+          "points": null,
+          "source_ids": [],
+          "justification": "Chưa audit tiêu chí này."
+        },
+        "technical_value": {
+          "points": null,
+          "source_ids": [],
+          "justification": "Chưa audit tiêu chí này."
+        },
+        "transfer_value": {
+          "points": null,
+          "source_ids": [],
+          "justification": "Chưa audit tiêu chí này."
+        },
+        "result_trust": {
+          "points": null,
+          "source_ids": [],
+          "justification": "Chưa audit tiêu chí này."
+        }
+      },
+      "total": null,
+      "tier": "UNRATED"
+    }
+  },
+  "research": {
+    "status": "not_started",
+    "report_path": null,
+    "next_actions": [
+      "Xác minh định danh year/track/evaluation, task, rules, final results và solution sources."
+    ]
+  },
+  "last_verified_at": null,
+  "source_ids": [
+    "camelyon16"
+  ],
+  "tags": [
+    "grand challenge",
+    "needs-audit"
+  ]
+}

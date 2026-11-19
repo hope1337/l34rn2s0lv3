@@ -1,0 +1,112 @@
+[
+  {
+    "id": "cold-commit",
+    "url": "https://api.github.com/repos/drivendataorg/power-laws-cold-start/commits/main",
+    "retrieved_at": "2026-11-19T14:14:47.020979+00:00",
+    "final_url": "https://api.github.com/repos/drivendataorg/power-laws-cold-start/commits/main",
+    "http_status": 200,
+    "status": "retrieved",
+    "sha256": "0edaf72dd57c9ee7e4c1900f471b52390f1895e5dcdb44558d194478f38eb4a9",
+    "snapshot": "evidence/snapshots/0edaf72dd57c9ee7e4c1900f471b52390f1895e5dcdb44558d194478f38eb4a9.txt",
+    "bytes": 4703
+  },
+  {
+    "id": "cold-tree",
+    "url": "https://api.github.com/repos/drivendataorg/power-laws-cold-start/git/trees/main?recursive=1",
+    "retrieved_at": "2026-11-19T14:14:47.021718+00:00",
+    "final_url": "https://api.github.com/repos/drivendataorg/power-laws-cold-start/git/trees/main?recursive=1",
+    "http_status": 200,
+    "status": "retrieved",
+    "sha256": "eb84db689f57069c1ce15c62852dad0b27337c5cfdd0ac5a6f197de1da95ac13",
+    "snapshot": "evidence/snapshots/eb84db689f57069c1ce15c62852dad0b27337c5cfdd0ac5a6f197de1da95ac13.txt",
+    "bytes": 62992
+  },
+  {
+    "id": "bloom-commit",
+    "url": "https://api.github.com/repos/drivendataorg/tick-tick-bloom/commits/main",
+    "retrieved_at": "2026-11-19T14:14:47.022238+00:00",
+    "final_url": "https://api.github.com/repos/drivendataorg/tick-tick-bloom/commits/main",
+    "http_status": 200,
+    "status": "retrieved",
+    "sha256": "6c52d0a90a573393d90ad755d4a49315f89fa92fe7c341ca15df43f41c5e6f2c",
+    "snapshot": "evidence/snapshots/6c52d0a90a573393d90ad755d4a49315f89fa92fe7c341ca15df43f41c5e6f2c.txt",
+    "bytes": 7421
+  },
+  {
+    "id": "bloom-tree",
+    "url": "https://api.github.com/repos/drivendataorg/tick-tick-bloom/git/trees/main?recursive=1",
+    "retrieved_at": "2026-11-19T14:14:47.022850+00:00",
+    "final_url": "https://api.github.com/repos/drivendataorg/tick-tick-bloom/git/trees/main?recursive=1",
+    "http_status": 200,
+    "status": "retrieved",
+    "sha256": "458928d64beaf97ea69cdba77d0645bf6d5d453627b899d5df85fef7d04a4e76",
+    "snapshot": "evidence/snapshots/458928d64beaf97ea69cdba77d0645bf6d5d453627b899d5df85fef7d04a4e76.txt",
+    "bytes": 20048
+  },
+  {
+    "id": "memes-commit",
+    "url": "https://api.github.com/repos/drivendataorg/hateful-memes/commits/main",
+    "retrieved_at": "2026-11-19T14:14:47.023759+00:00",
+    "final_url": "https://api.github.com/repos/drivendataorg/hateful-memes/commits/main",
+    "http_status": 200,
+    "status": "retrieved",
+    "sha256": "7c79962995e26820226ff2c0dc7784a6378a57783760a309e1847493f77f7488",
+    "snapshot": "evidence/snapshots/7c79962995e26820226ff2c0dc7784a6378a57783760a309e1847493f77f7488.txt",
+    "bytes": 5895
+  },
+  {
+    "id": "memes-tree",
+    "url": "https://api.github.com/repos/drivendataorg/hateful-memes/git/trees/main?recursive=1",
+    "retrieved_at": "2026-11-19T14:14:47.550831+00:00",
+    "final_url": "https://api.github.com/repos/drivendataorg/hateful-memes/git/trees/main?recursive=1",
+    "http_status": 200,
+    "status": "retrieved",
+    "sha256": "37860dbe1df9fb36b3588c38b7f1543c43234ddcf807e8dada6944e793a23ffe",
+    "snapshot": "evidence/snapshots/37860dbe1df9fb36b3588c38b7f1543c43234ddcf807e8dada6944e793a23ffe.txt",
+    "bytes": 4271
+  },
+  {
+    "id": "aicity2024",
+    "url": "https://www.aicitychallenge.org/2024-data-and-evaluation/",
+    "retrieved_at": "2026-11-19T14:14:47.579095+00:00",
+    "final_url": "https://www.aicitychallenge.org/2024-data-and-evaluation/",
+    "http_status": 200,
+    "status": "retrieved",
+    "sha256": "d0097e218a49a93c58bbfc5d1878e91c5cc346a27212ad9d18f52b083cb40b45",
+    "snapshot": "evidence/snapshots/d0097e218a49a93c58bbfc5d1878e91c5cc346a27212ad9d18f52b083cb40b45.txt",
+    "bytes": 133918
+  },
+  {
+    "id": "aicity2024-results",
+    "url": "https://www.aicitychallenge.org/2024-challenge-winners/",
+    "retrieved_at": "2026-11-19T14:14:47.612880+00:00",
+    "final_url": "https://www.aicitychallenge.org/2024-challenge-winners/",
+    "http_status": 200,
+    "status": "retrieved",
+    "sha256": "f7558f76b1029e557a9d96c534beabd2e20a18171e1a5129cb16f7a04877f260",
+    "snapshot": "evidence/snapshots/f7558f76b1029e557a9d96c534beabd2e20a18171e1a5129cb16f7a04877f260.txt",
+    "bytes": 122673
+  },
+  {
+    "id": "camelyon16",
+    "url": "https://camelyon16.grand-challenge.org/",
+    "retrieved_at": "2026-11-19T14:14:47.639292+00:00",
+    "final_url": "https://camelyon16.grand-challenge.org/",
+    "http_status": 200,
+    "status": "retrieved",
+    "sha256": "3a8f9238e31922bda7e1f7d25de98e938dc6d133dc65cbbf5832b2f3527d5fad",
+    "snapshot": "evidence/snapshots/3a8f9238e31922bda7e1f7d25de98e938dc6d133dc65cbbf5832b2f3527d5fad.txt",
+    "bytes": 29508
+  },
+  {
+    "id": "vlsp2026",
+    "url": "https://vlsp.org.vn/node/208",
+    "retrieved_at": "2026-11-19T14:14:47.667022+00:00",
+    "final_url": "https://vlsp.org.vn/node/208",
+    "http_status": 200,
+    "status": "retrieved",
+    "sha256": "3fc7aaf52ac1bc45573488d9b9a81633dedb22346bd7d9ba0422025aafa5f78f",
+    "snapshot": "evidence/snapshots/3fc7aaf52ac1bc45573488d9b9a81633dedb22346bd7d9ba0422025aafa5f78f.txt",
+    "bytes": 21484
+  }
+]

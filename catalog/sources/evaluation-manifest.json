@@ -1,0 +1,54 @@
+[
+  {
+    "id": "cold-problem",
+    "url": "https://www.drivendata.org/competitions/55/schneider-cold-start/page/111/"
+  },
+  {
+    "id": "cold-data",
+    "url": "https://www.drivendata.org/competitions/55/schneider-cold-start/page/138/"
+  },
+  {
+    "id": "bloom-problem",
+    "url": "https://www.drivendata.org/competitions/143/tick-tick-bloom/page/650/"
+  },
+  {
+    "id": "bloom-data",
+    "url": "https://www.drivendata.org/competitions/143/tick-tick-bloom/page/879/"
+  },
+  {
+    "id": "memes-problem",
+    "url": "https://www.drivendata.org/competitions/70/hateful-memes-phase-2/page/267/"
+  },
+  {
+    "id": "memes-access",
+    "url": "https://www.drivendata.org/competitions/70/hateful-memes-phase-2/page/269/"
+  },
+  {
+    "id": "cold-rules",
+    "url": "https://www.drivendata.org/competitions/55/schneider-cold-start/rules/"
+  },
+  {
+    "id": "bloom-rules",
+    "url": "https://www.drivendata.org/competitions/143/tick-tick-bloom/rules/"
+  },
+  {
+    "id": "memes-rules",
+    "url": "https://www.drivendata.org/competitions/70/hateful-memes-phase-2/rules/"
+  },
+  {
+    "id": "hatedetectron-commit-head",
+    "url": "https://api.github.com/repos/rizavelioglu/hateful_memes-hate_detectron/commits/HEAD"
+  },
+  {
+    "id": "hatedetectron-tree-head",
+    "url": "https://api.github.com/repos/rizavelioglu/hateful_memes-hate_detectron/git/trees/HEAD?recursive=1"
+  },
+  {
+    "id": "alfred-commit",
+    "url": "https://api.github.com/repos/HimariO/HatefulMemesChallenge/commits/HEAD"
+  },
+  {
+    "id": "alfred-tree",
+    "url": "https://api.github.com/repos/HimariO/HatefulMemesChallenge/git/trees/HEAD?recursive=1"
+  }
+]

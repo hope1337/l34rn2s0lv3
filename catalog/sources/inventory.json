@@ -1,0 +1,164 @@
+[
+  {
+    "name": "DrivenData",
+    "source_id": "dd-competitions",
+    "url": "https://www.drivendata.org/competitions/",
+    "coverage": "Đa lĩnh vực, social impact",
+    "content_access": "readable_index",
+    "checked_at": "2026-11-19",
+    "note": "Đã đọc index và winning-code registry;53candidates,3pilot. Mỗi competition khác vẫn cần audit riêng."
+  },
+  {
+    "name": "Kaggle",
+    "source_id": "kaggle",
+    "url": "https://www.kaggle.com/competitions",
+    "coverage": "Tabular/CV/NLP/forecasting/recommendation",
+    "content_access": "metadata_only",
+    "checked_at": "2026-11-19",
+    "note": "HTML public chủ yếu metadata/JS;5candidate pages, chưa đọc đầy đủ task/rules/results."
+  },
+  {
+    "name": "AIcrowd",
+    "source_id": "aicrowd",
+    "url": "https://www.aicrowd.com/challenges",
+    "coverage": "RL/agents/CV và applied ML",
+    "content_access": "readable_index",
+    "checked_at": "2026-11-19",
+    "note": "Index tải được; chưa import/audit từng challenge."
+  },
+  {
+    "name": "Grand Challenge",
+    "source_id": "grand-challenge",
+    "url": "https://grand-challenge.org/challenges/",
+    "coverage": "Medical imaging",
+    "content_access": "readable_index",
+    "checked_at": "2026-11-19",
+    "note": "Index và CAMELYON16 overview đã đọc; license/evaluation từng challenge cần audit."
+  },
+  {
+    "name": "EvalAI",
+    "source_id": "evalai",
+    "url": "https://eval.ai/",
+    "coverage": "Multimodal/agents/research challenges",
+    "content_access": "js_shell",
+    "checked_at": "2026-11-19",
+    "note": "Landing HTML chủ yếu shell; cần đọc task-specific pages, không coi benchmark tự động là competition."
+  },
+  {
+    "name": "SemEval",
+    "source_id": "semeval",
+    "url": "https://semeval.github.io/",
+    "coverage": "NLP shared tasks",
+    "content_access": "readable_index",
+    "checked_at": "2026-11-19",
+    "note": "Có index theo edition; chưa import task-level records."
+  },
+  {
+    "name": "Zalo AI Challenge",
+    "source_id": "zalo",
+    "url": "https://challenge.zalo.ai/",
+    "coverage": "AI tiếng Việt và applied AI",
+    "content_access": "js_shell",
+    "checked_at": "2026-11-19",
+    "note": "Portal trả shell. Chưa xác minh archive từng năm/track; không lấy edition2026 làm final results."
+  },
+  {
+    "name": "VLSP",
+    "source_id": "vlsp",
+    "url": "https://vlsp.org.vn/",
+    "coverage": "Vietnamese NLP/speech",
+    "content_access": "readable_index",
+    "checked_at": "2026-11-19",
+    "note": "Đã đọc2023/2025campaign lists, import21task candidates; subtask constraints cần tách trước curate."
+  },
+  {
+    "name": "HCMC AI Challenge",
+    "source_id": "hcmc",
+    "url": "https://aichallenge.hochiminhcity.gov.vn/",
+    "coverage": "Video retrieval và AI ứng dụng Việt Nam",
+    "content_access": "landing_only",
+    "checked_at": "2026-11-19",
+    "note": "Landing tải được; chưa audit archive năm/track/results."
+  },
+  {
+    "name": "AIHUB.ML",
+    "source_id": "aihub",
+    "url": "https://aihub.ml/competitions/",
+    "coverage": "Vietnamese speech/NLP/CV/recommendation",
+    "content_access": "readable_index",
+    "checked_at": "2026-11-19",
+    "note": "Đã đọc platform listing; import12non-VLSPcandidates và tránh classroom/examples/legacy containers."
+  },
+  {
+    "name": "AI City Challenge",
+    "source_id": "aicity",
+    "url": "https://www.aicitychallenge.org/",
+    "coverage": "Traffic/video/multi-camera",
+    "content_access": "readable_index",
+    "checked_at": "2026-11-19",
+    "note": "2024task/evaluation và awards đã đọc;5track records; code/papers/licenses cần audit."
+  },
+  {
+    "name": "DCASE",
+    "source_id": "dcase",
+    "url": "https://dcase.community/challenge2024/",
+    "coverage": "Audio/sound event/scene/captioning",
+    "content_access": "readable_index",
+    "checked_at": "2026-11-19",
+    "note": "10task candidates edition2024; chưa tách mọi subtrack/dataset/resource setting."
+  },
+  {
+    "name": "WMT",
+    "source_id": "wmt",
+    "url": "https://www2.statmt.org/wmt24/",
+    "coverage": "Machine translation và evaluation",
+    "content_access": "readable_index",
+    "checked_at": "2026-11-19",
+    "note": "12task candidates2024; cần tách language pairs và constrained/unconstrained tracks khi áp dụng."
+  },
+  {
+    "name": "DrivenData winner repositories",
+    "source_id": "dd-winners",
+    "url": "https://raw.githubusercontent.com/drivendataorg/competition-winners/master/README.md",
+    "coverage": "Organizer-maintained source-code index",
+    "content_access": "readable_index",
+    "checked_at": "2026-11-19",
+    "note": "Đã trích53titles/repository leads. Chỉ là discovery evidence ngoài3pilot; có cả visualization/data challenges cần scope review."
+  },
+  {
+    "name": "VLSP2023 archive",
+    "source_id": "vlsp-2023",
+    "url": "https://vlsp.org.vn/index.php/node/51",
+    "coverage": "Vietnamese NLP/speech shared tasks",
+    "content_access": "readable_index",
+    "checked_at": "2026-11-19",
+    "note": "10task links, chưa coi source paper/code tự động tồn tại."
+  },
+  {
+    "name": "VLSP2025 archive",
+    "source_id": "vlsp-2025",
+    "url": "https://vlsp.org.vn/index.php/vlsp2025/eval",
+    "coverage": "Vietnamese NLP/speech/legal QA",
+    "content_access": "readable_index",
+    "checked_at": "2026-11-19",
+    "note": "11task links sau khi loại registration form; chưa xác minh final results."
+  },
+  {
+    "name": "VinBigData on Kaggle",
+    "source_id": "kaggle-vinbigdata",
+    "url": "https://www.kaggle.com/competitions/vinbigdata-chest-xray-abnormalities-detection",
+    "coverage": "Chest X-ray object detection lead",
+    "content_access": "metadata_only",
+    "checked_at": "2026-11-19",
+    "note": "Đầu mối trong brief và metadata trang; không đồng nhất organizer với VinAI."
+  },
+  {
+    "name": "CAMELYON16",
+    "source_id": "camelyon16",
+    "url": "https://camelyon16.grand-challenge.org/",
+    "coverage": "Whole-slide metastasis detection",
+    "content_access": "readable_page",
+    "checked_at": "2026-11-19",
+    "note": "Official overview nói kết thúc11/2016; chưa kiểm tra updated rules/license/evaluator."
+  }
+]

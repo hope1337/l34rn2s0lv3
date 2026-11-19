@@ -1,0 +1,2995 @@
+
+
+
+
+
+<!DOCTYPE html>
+<html class="no-js"  lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="globalsign-domain-verification" content="1lsowFdlUrrtcRyvAiFS11btFe-ChVU8h2FmxHw7sD" />
+
+    <!-- Set the viewport width to device width for mobile -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link type="image/x-icon" rel="shortcut icon" href="/static/img/favicon.ico">
+    
+    
+
+    <title>AIHUB.ML - Competitions</title>
+
+    
+        <!-- Included CSS Files (Compressed) -->
+        <link rel="stylesheet" href="/static/css/jquery.dataTables.css">
+        <link rel="stylesheet" href="/static/css/jquery-editable.css">
+        <link rel="stylesheet" href="/static/js/vendor/select2/select2.css" />
+        <link rel="stylesheet" href="/static/css/jquery-eu-cookie-law-popup.css">
+        
+            <link rel="stylesheet" type="text/css" href="/static/css/imports.css">
+        
+        <script src="//cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.bundle.min.js"></script>
+        <script src="/static/js/vendor/jquery-1.10.2.min.js"></script>
+        <script src="/static/js/vendor/custom.modernizr.js"></script>
+        <!-- IE Fix for HTML5 Tags -->
+        <!--[if lt IE 9]>
+            <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+        <script src="/static/js/vendor/jquery-eu-cookie-law-popup.js"></script>
+    
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&family=Geist+Mono:wght@400;500;600&display=swap">
+    <link rel="stylesheet" href="/static/hub/hub.css?v=7f5ac7ca05">
+    <link rel="stylesheet" href="/static/hub/notifications.css?v=53a8f96fdc">
+    <link rel="stylesheet" href="/static/hub/glass.css?v=8e8f312cfd">
+
+    
+    
+
+    
+    
+
+    
+    
+
+
+    <script type="text/javascript">
+
+    </script>
+</head>
+
+<body class="hub-body hub-theme-glass" >
+    <a class="hub-skip" href="#hub-main">Skip to content</a>
+    
+    
+    
+    <header class="hub-header" id="hub-header">
+        <div class="hub-wrap hub-header__bar">
+            
+                <a class="hub-logo" href="/" target="_self">
+                    
+                        <img src="/static/img/codalab-logo-onecolor-reverse.png" alt="AI Hub, an incubator for AI lovers: home">
+                    
+                </a>
+            
+            
+                
+                <button type="button" class="hub-burger" aria-expanded="false" aria-controls="hub-header-menus" data-hub-burger>
+                    <span class="hub-burger__icon" aria-hidden="true"></span><span class="hub-sr">Menu</span>
+                </button>
+                <div class="hub-header__menus" id="hub-header-menus">
+                    <nav class="hub-nav" aria-label="Main">
+                        
+                            <a href="/#challenges" class="is-active">Challenges</a>
+                            <a href="/rankings/" class="">Rankings</a>
+                            <a href="/#notebooks">Notebooks</a>
+                            <a href="/#teams" class="">Teams</a>
+                            <a href="/discussions/" class="">Discussions</a>
+                            <a href="/#archive">Archive</a>
+                        
+                        
+                    </nav>
+                    
+                    <div class="hub-header__actions">
+                        
+                        
+                            
+                            <a class="hub-header__link" href="/accounts/login/?next=/competitions/" target="_self">Sign in</a>
+                            <a class="hub-btn-signup" href="/accounts/signup/?next=/competitions/" target="_self">Sign up</a>
+                        
+                    </div>
+                </div>
+            
+        </div>
+    </header>
+    
+
+    <div class="hub-main" id="hub-main">
+    
+        
+            <div class="page-header hub-pagehead">
+                <div class="container">
+                    <h1>Competitions</h1>
+                </div>
+                <div class="hub-stripe" aria-hidden="true"><span></span><span></span><span></span><span></span></div>
+            </div>
+        
+    
+
+    
+    
+
+    
+        <div class="container" style="padding-bottom: 40px;">
+            
+
+
+<div class="row">
+    <div class="col-md-6">
+        
+        <form id="search_form" action="." method="GET">
+            <div class="input-group margin-bottom">
+                <input id="search_query_input" class="form-control" type="search" name="q" placeholder="Search...">
+                <span class="input-group-btn">
+                    <input class="btn btn-primary" type="submit" value="Search">
+                </span>
+            </div>
+            <!--
+            <div class="checkbox-inline">
+                <label>
+                    <input name="is_active" type="checkbox"> Is active
+                </label>
+            </div>
+            <div class="checkbox-inline">
+                <label>
+                    <input name="is_finished" type="checkbox"> Is finished
+                </label>
+            </div>
+            <div class="checkbox-inline">
+                <label>
+                    <input name="medical_image_viewer" type="checkbox"> Medical image viewer
+                </label>
+            </div>
+            -->
+        </form>
+    </div>
+</div>
+
+<div class="row pad-top">
+    <div class="col-md-12 competition-list">
+        
+            
+                
+
+
+
+
+
+
+<a href="/competitions/1041">
+    <div class="competition-tile full-width">
+        <input id="competitionID" type="hidden" value="1041"/>
+        <div class="row">
+            <div class="col-sm-2 col-md-2">
+                <div class="img-container">
+                    
+                        <img src="https://s3-ap-northeast-1.amazonaws.com/thiaisotajppub/logos/1041/208e7/logo.png" class="img-responsive">
+                    
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-6">
+                <h3>ViTNumChart: Multimodal Numerical Reasoning over Vietnamese Financial Documents</h3>
+                <p class="organizer">Organized by nam13092003</p>
+                <p>&lt;p&gt;This shared task focuses on multimodal numerical reasoning over Vietnamese financial documents. Participants are required to develop systems capable of …&lt;/p&gt;</p>
+            </div>
+            <div class="col-sm-4 col-md-4 right-panel">
+                Oct 09, 2026-
+                <i>No end date</i><br>
+
+                
+                    <b>2</b> participants<br>
+                
+
+
+                
+            </div>
+
+            <br><br>
+        </div>
+        <div class="row">
+            
+        </div>
+    </div>
+</a>
+            
+                
+
+
+
+
+
+
+<a href="/competitions/1038">
+    <div class="competition-tile full-width">
+        <input id="competitionID" type="hidden" value="1038"/>
+        <div class="row">
+            <div class="col-sm-2 col-md-2">
+                <div class="img-container">
+                    
+                        <img src="https://s3-ap-northeast-1.amazonaws.com/thiaisotajppub/logos/1038/283c2/logo.png" class="img-responsive">
+                    
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-6">
+                <h3>VGEC: Vietnamese Grammatical Error Correction Challenge Subtask 1 Constrained-Resource</h3>
+                <p class="organizer">Organized by phng</p>
+                <p>&lt;p&gt;This shared task focuses on identifying and correcting grammatical errors in Vietnamese sentences. Participants are required to build models that …&lt;/p&gt;</p>
+            </div>
+            <div class="col-sm-4 col-md-4 right-panel">
+                Oct 02, 2026-Oct 22, 2026<br>
+
+                
+                    <b>12</b> participants<br>
+                
+
+
+                
+            </div>
+
+            <br><br>
+        </div>
+        <div class="row">
+            
+        </div>
+    </div>
+</a>
+            
+                
+
+
+
+
+
+
+<a href="/competitions/1039">
+    <div class="competition-tile full-width">
+        <input id="competitionID" type="hidden" value="1039"/>
+        <div class="row">
+            <div class="col-sm-2 col-md-2">
+                <div class="img-container">
+                    
+                        <img src="https://s3-ap-northeast-1.amazonaws.com/thiaisotajppub/logos/1039/68575/logo.png" class="img-responsive">
+                    
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-6">
+                <h3>VGEC: Vietnamese Grammatical Error Correction Challenge Subtask 2 Unconstrained-Resource</h3>
+                <p class="organizer">Organized by phng</p>
+                <p>&lt;p&gt;This shared task focuses on identifying and correcting grammatical errors in Vietnamese sentences. Participants are required to build models that …&lt;/p&gt;</p>
+            </div>
+            <div class="col-sm-4 col-md-4 right-panel">
+                Oct 02, 2026-Oct 22, 2026<br>
+
+                
+                    <b>10</b> participants<br>
+                
+
+
+                
+            </div>
+
+            <br><br>
+        </div>
+        <div class="row">
+            
+        </div>
+    </div>
+</a>
+            
+                
+
+
+
+
+
+
+<a href="/competitions/1028">
+    <div class="competition-tile full-width">
+        <input id="competitionID" type="hidden" value="1028"/>
+        <div class="row">
+            <div class="col-sm-2 col-md-2">
+                <div class="img-container">
+                    
+                        <img src="https://s3-ap-northeast-1.amazonaws.com/thiaisotajppub/logos/1028/3888f/logo.png" class="img-responsive">
+                    
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-6">
+                <h3>VLSP2026: Multimodal Numerical Reasoning over Vietnamese Financial Documents</h3>
+                <p class="organizer">Organized by toanlnhus</p>
+                <p>&lt;p&gt;This shared task focuses on multimodal numerical reasoning over Vietnamese financial documents. Participants are required to develop systems capable of …&lt;/p&gt;</p>
+            </div>
+            <div class="col-sm-4 col-md-4 right-panel">
+                Sep 25, 2026-Oct 15, 2026<br>
+
+                
+                    <b>13</b> participants<br>
+                
+
+
+                
+            </div>
+
+            <br><br>
+        </div>
+        <div class="row">
+            
+        </div>
+    </div>
+</a>
+            
+                
+
+
+
+
+
+
+<a href="/competitions/1033">
+    <div class="competition-tile full-width">
+        <input id="competitionID" type="hidden" value="1033"/>
+        <div class="row">
+            <div class="col-sm-2 col-md-2">
+                <div class="img-container">
+                    
+                        <img src="https://s3-ap-northeast-1.amazonaws.com/thiaisotajppub/logos/1033/8a413/logo.png" class="img-responsive">
+                    
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-6">
+                <h3>VLSP 2026 English-Vietnamese Document Translation</h3>
+                <p class="organizer">Organized by thviet</p>
+                <p>&lt;p&gt;Legal-domain English-Vietnamese machine translation under a local-inference, sub-3B-parameter constraint&lt;/p&gt;</p>
+            </div>
+            <div class="col-sm-4 col-md-4 right-panel">
+                Sep 25, 2026-Oct 15, 2026<br>
+
+                
+                    <b>13</b> participants<br>
+                
+
+
+                
+            </div>
+
+            <br><br>
+        </div>
+        <div class="row">
+            
+        </div>
+    </div>
+</a>
+            
+                
+
+
+
+
+
+
+<a href="/competitions/1018">
+    <div class="competition-tile full-width">
+        <input id="competitionID" type="hidden" value="1018"/>
+        <div class="row">
+            <div class="col-sm-2 col-md-2">
+                <div class="img-container">
+                    
+                        <img src="https://s3-ap-northeast-1.amazonaws.com/thiaisotajppub/logos/1018/86ed5/logo.png" class="img-responsive">
+                    
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-6">
+                <h3>VLSP 2026 - ViSpartQA: Vietnamese Spatial Reasoning Question Answering</h3>
+                <p class="organizer">Organized by linhhm</p>
+                <p>&lt;p&gt;Answer Vietnamese spatial reasoning questions about textual scene descriptions (SPaRTQA). Participants submit predictions for two datasets (auto and human); the …&lt;/p&gt;</p>
+            </div>
+            <div class="col-sm-4 col-md-4 right-panel">
+                Sep 24, 2026-Oct 14, 2026<br>
+
+                
+                    <b>17</b> participants<br>
+                
+
+
+                
+            </div>
+
+            <br><br>
+        </div>
+        <div class="row">
+            
+        </div>
+    </div>
+</a>
+            
+                
+
+
+
+
+
+
+<a href="/competitions/1012">
+    <div class="competition-tile full-width">
+        <input id="competitionID" type="hidden" value="1012"/>
+        <div class="row">
+            <div class="col-sm-2 col-md-2">
+                <div class="img-container">
+                    
+                        <img src="https://s3-ap-northeast-1.amazonaws.com/thiaisotajppub/logos/1012/54d79/logo.png" class="img-responsive">
+                    
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-6">
+                <h3>Summer UET Class 2026</h3>
+                <p class="organizer">Organized by thviet</p>
+                <p>Summer UET Class 2026 Machine Translation Competition using the IWSLT 2015 English-Vietnamese dataset.</p>
+            </div>
+            <div class="col-sm-4 col-md-4 right-panel">
+                Aug 04, 2026-Aug 06, 2026<br>
+
+                
+                    <b>57</b> participants<br>
+                
+
+
+                
+            </div>
+
+            <br><br>
+        </div>
+        <div class="row">
+            
+        </div>
+    </div>
+</a>
+            
+                
+
+
+
+
+
+
+<a href="/competitions/979">
+    <div class="competition-tile full-width">
+        <input id="competitionID" type="hidden" value="979"/>
+        <div class="row">
+            <div class="col-sm-2 col-md-2">
+                <div class="img-container">
+                    
+                        <img src="https://s3-ap-northeast-1.amazonaws.com/thiaisotajppub/logos/979/0f0e3/logo.png" class="img-responsive">
+                    
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-6">
+                <h3>VLSP 2025 Medical domain MT Challenge</h3>
+                <p class="organizer">Organized by thviet</p>
+                <p>Machine Translation (MT) in the medical field poses a particular challenge due to the high requirements for accuracy and the …</p>
+            </div>
+            <div class="col-sm-4 col-md-4 right-panel">
+                Jul 17, 2025-Aug 25, 2025<br>
+
+                
+                    <b>15</b> participants<br>
+                
+
+
+                
+            </div>
+
+            <br><br>
+        </div>
+        <div class="row">
+            
+        </div>
+    </div>
+</a>
+            
+                
+
+
+
+
+
+
+<a href="/competitions/953">
+    <div class="competition-tile full-width">
+        <input id="competitionID" type="hidden" value="953"/>
+        <div class="row">
+            <div class="col-sm-2 col-md-2">
+                <div class="img-container">
+                    
+                        <img src="https://s3-ap-northeast-1.amazonaws.com/thiaisotajppub/logos/953/242d7/logo.png" class="img-responsive">
+                    
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-6">
+                <h3>VLSP 2025 – viTempQA Duration Challenge - Vietnamese Temporal QA</h3>
+                <p class="organizer">Organized by toanlnhus</p>
+                <p>VLSP 2025 – viTempQA Duration Challenge</p>
+            </div>
+            <div class="col-sm-4 col-md-4 right-panel">
+                Jul 10, 2025-Oct 10, 2025<br>
+
+                
+                    <b>14</b> participants<br>
+                
+
+
+                
+            </div>
+
+            <br><br>
+        </div>
+        <div class="row">
+            
+        </div>
+    </div>
+</a>
+            
+                
+
+
+
+
+
+
+<a href="/competitions/952">
+    <div class="competition-tile full-width">
+        <input id="competitionID" type="hidden" value="952"/>
+        <div class="row">
+            <div class="col-sm-2 col-md-2">
+                <div class="img-container">
+                    
+                        <img src="https://s3-ap-northeast-1.amazonaws.com/thiaisotajppub/logos/952/f2a19/logo.png" class="img-responsive">
+                    
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-6">
+                <h3>VLSP 2025 – viTempQA Date-arith Challenge - Vietnamese Temporal QA Date-Arith</h3>
+                <p class="organizer">Organized by toanlnhus</p>
+                <p>VLSP 2025 – viTempQA Date-arith Challenge</p>
+            </div>
+            <div class="col-sm-4 col-md-4 right-panel">
+                Jul 10, 2025-Oct 10, 2025<br>
+
+                
+                    <b>12</b> participants<br>
+                
+
+
+                
+            </div>
+
+            <br><br>
+        </div>
+        <div class="row">
+            
+        </div>
+    </div>
+</a>
+            
+                
+
+
+
+
+
+
+<a href="/competitions/951">
+    <div class="competition-tile full-width">
+        <input id="competitionID" type="hidden" value="951"/>
+        <div class="row">
+            <div class="col-sm-2 col-md-2">
+                <div class="img-container">
+                    
+                        <img src="https://s3-ap-northeast-1.amazonaws.com/thiaisotajppub/logos/951/3a9cb/logo.png" class="img-responsive">
+                    
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-6">
+                <h3>VLSP 2025 challenge on Semantic Parsing</h3>
+                <p class="organizer">Organized by toanlnhus</p>
+                <p>VLSP 2025 – viAMR Challenge</p>
+            </div>
+            <div class="col-sm-4 col-md-4 right-panel">
+                Jul 10, 2025-Oct 03, 2025<br>
+
+                
+                    <b>9</b> participants<br>
+                
+
+
+                
+            </div>
+
+            <br><br>
+        </div>
+        <div class="row">
+            
+        </div>
+    </div>
+</a>
+            
+                
+
+
+
+
+
+
+<a href="/competitions/955">
+    <div class="competition-tile full-width">
+        <input id="competitionID" type="hidden" value="955"/>
+        <div class="row">
+            <div class="col-sm-2 col-md-2">
+                <div class="img-container">
+                    
+                        <img src="https://s3-ap-northeast-1.amazonaws.com/thiaisotajppub/logos/955/befa9/logo.png" class="img-responsive">
+                    
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-6">
+                <h3>VLSP-2025 Numerical Reasoning QA Subtask 1 Constrained-Resource Numerical Reasoning</h3>
+                <p class="organizer">Organized by toanlnhus</p>
+                <p>This shared task aims to develop specialized models that not only provide correct answers to financial questions but also generate …</p>
+            </div>
+            <div class="col-sm-4 col-md-4 right-panel">
+                Jul 10, 2025-Aug 31, 2025<br>
+
+                
+                    <b>16</b> participants<br>
+                
+
+
+                
+            </div>
+
+            <br><br>
+        </div>
+        <div class="row">
+            
+        </div>
+    </div>
+</a>
+            
+                
+
+
+
+
+
+
+<a href="/competitions/956">
+    <div class="competition-tile full-width">
+        <input id="competitionID" type="hidden" value="956"/>
+        <div class="row">
+            <div class="col-sm-2 col-md-2">
+                <div class="img-container">
+                    
+                        <img src="https://s3-ap-northeast-1.amazonaws.com/thiaisotajppub/logos/956/abae8/logo.png" class="img-responsive">
+                    
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-6">
+                <h3>VLSP-2025 Numerical Reasoning QA Subtask 2 Unconstrained Training with LLM-Supported Reasoning</h3>
+                <p class="organizer">Organized by toanlnhus</p>
+                <p>This shared task aims to develop specialized models that not only provide correct answers to financial questions but also generate …</p>
+            </div>
+            <div class="col-sm-4 col-md-4 right-panel">
+                Jul 10, 2025-Aug 31, 2025<br>
+
+                
+                    <b>14</b> participants<br>
+                
+
+
+                
+            </div>
+
+            <br><br>
+        </div>
+        <div class="row">
+            
+        </div>
+    </div>
+</a>
+            
+                
+
+
+
+
+
+
+<a href="/competitions/942">
+    <div class="competition-tile full-width">
+        <input id="competitionID" type="hidden" value="942"/>
+        <div class="row">
+            <div class="col-sm-2 col-md-2">
+                <div class="img-container">
+                    
+                        <img src="https://s3-ap-northeast-1.amazonaws.com/thiaisotajppub/logos/942/d256e/logo.png" class="img-responsive">
+                    
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-6">
+                <h3>VLSP 2025 Speech Quality Assessment Challenge</h3>
+                <p class="organizer">Organized by vlsp_asr_organizer</p>
+                <p>Some description here</p>
+            </div>
+            <div class="col-sm-4 col-md-4 right-panel">
+                Jul 01, 2025-Aug 14, 2025<br>
+
+                
+                    <b>11</b> participants<br>
+                
+
+
+                
+            </div>
+
+            <br><br>
+        </div>
+        <div class="row">
+            
+        </div>
+    </div>
+</a>
+            
+                
+
+
+
+
+
+
+<a href="/competitions/930">
+    <div class="competition-tile full-width">
+        <input id="competitionID" type="hidden" value="930"/>
+        <div class="row">
+            <div class="col-sm-2 col-md-2">
+                <div class="img-container">
+                    
+                        <img src="https://s3-ap-northeast-1.amazonaws.com/thiaisotajppub/logos/930/d8738/logo.png" class="img-responsive">
+                    
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-6">
+                <h3>VLSP 2025 ASR/SER Challenge</h3>
+                <p class="organizer">Organized by vlsp_asr_organizer</p>
+                <p>Some description here</p>
+            </div>
+            <div class="col-sm-4 col-md-4 right-panel">
+                Jul 01, 2025-Aug 14, 2025<br>
+
+                
+                    <b>14</b> participants<br>
+                
+
+
+                
+            </div>
+
+            <br><br>
+        </div>
+        <div class="row">
+            
+        </div>
+    </div>
+</a>
+            
+                
+
+
+
+
+
+
+<a href="/competitions/887">
+    <div class="competition-tile full-width">
+        <input id="competitionID" type="hidden" value="887"/>
+        <div class="row">
+            <div class="col-sm-2 col-md-2">
+                <div class="img-container">
+                    
+                        <img src="https://s3-ap-northeast-1.amazonaws.com/thiaisotajppub/logos/887/49852/logo.png" class="img-responsive">
+                    
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-6">
+                <h3>Automatic Speech Recognition Challenge</h3>
+                <p class="organizer">Organized by vuhl</p>
+                <p>Automatic Speech Recognition Challenge, hosted by HuSTeP Lab</p>
+            </div>
+            <div class="col-sm-4 col-md-4 right-panel">
+                Apr 01, 2025-Dec 31, 2025<br>
+
+                
+                    <b>46</b> participants<br>
+                
+
+
+                
+            </div>
+
+            <br><br>
+        </div>
+        <div class="row">
+            
+        </div>
+    </div>
+</a>
+            
+                
+
+
+
+
+
+
+<a href="/competitions/886">
+    <div class="competition-tile full-width">
+        <input id="competitionID" type="hidden" value="886"/>
+        <div class="row">
+            <div class="col-sm-2 col-md-2">
+                <div class="img-container">
+                    
+                        <img src="https://s3-ap-northeast-1.amazonaws.com/thiaisotajppub/logos/886/42985/logo.png" class="img-responsive">
+                    
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-6">
+                <h3>Automatic Speaker Verification Challenge</h3>
+                <p class="organizer">Organized by vuhl</p>
+                <p>ASV Challenge, hosted by HuSTeP Lab</p>
+            </div>
+            <div class="col-sm-4 col-md-4 right-panel">
+                Apr 01, 2025-Dec 31, 2025<br>
+
+                
+                    <b>19</b> participants<br>
+                
+
+
+                
+            </div>
+
+            <br><br>
+        </div>
+        <div class="row">
+            
+        </div>
+    </div>
+</a>
+            
+                
+
+
+
+
+
+
+<a href="/competitions/795">
+    <div class="competition-tile full-width">
+        <input id="competitionID" type="hidden" value="795"/>
+        <div class="row">
+            <div class="col-sm-2 col-md-2">
+                <div class="img-container">
+                    
+                        <img src="https://s3-ap-northeast-1.amazonaws.com/thiaisotajppub/logos/795/05f85/logo.png" class="img-responsive">
+                    
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-6">
+                <h3>Reliable Intelligence Identification on Vietnamese SNSs (ReINTEL) - 2024</h3>
+                <p class="organizer">Organized by aihub-admin</p>
+                <p>This challenge aims to identify a piece of information shared on social network sites (SNSs), is reliable or unreliable. With …</p>
+            </div>
+            <div class="col-sm-4 col-md-4 right-panel">
+                Nov 22, 2024-Dec 08, 2024<br>
+
+                
+                    <b>16</b> participants<br>
+                
+
+
+                
+            </div>
+
+            <br><br>
+        </div>
+        <div class="row">
+            
+        </div>
+    </div>
+</a>
+            
+                
+
+
+
+
+
+
+<a href="/competitions/783">
+    <div class="competition-tile full-width">
+        <input id="competitionID" type="hidden" value="783"/>
+        <div class="row">
+            <div class="col-sm-2 col-md-2">
+                <div class="img-container">
+                    
+                        <img src="https://s3-ap-northeast-1.amazonaws.com/thiaisotajppub/logos/783/2481e/logo.png" class="img-responsive">
+                    
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-6">
+                <h3>Tempo Run 2024 - Signboard Detection</h3>
+                <p class="organizer">Organized by aiclub</p>
+                <p>Hội thi thử thách Tempo Run</p>
+            </div>
+            <div class="col-sm-4 col-md-4 right-panel">
+                Nov 11, 2024-Nov 24, 2024<br>
+
+                
+                    <b>86</b> participants<br>
+                
+
+
+                
+            </div>
+
+            <br><br>
+        </div>
+        <div class="row">
+            
+        </div>
+    </div>
+</a>
+            
+                
+
+
+
+
+
+
+<a href="/competitions/761">
+    <div class="competition-tile full-width">
+        <input id="competitionID" type="hidden" value="761"/>
+        <div class="row">
+            <div class="col-sm-2 col-md-2">
+                <div class="img-container">
+                    
+                        <img src="https://s3-ap-northeast-1.amazonaws.com/thiaisotajppub/logos/761/0b5fa/vac2024-logo.jpeg" class="img-responsive">
+                    
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-6">
+                <h3>Viettel AI Challenge: Image Translation</h3>
+                <p class="organizer">Organized by ViettelAIChallenge</p>
+                <p></p>
+            </div>
+            <div class="col-sm-4 col-md-4 right-panel">
+                Oct 28, 2024-Nov 21, 2024<br>
+
+                
+                    <b>164</b> participants<br>
+                
+
+
+                
+            </div>
+
+            <br><br>
+        </div>
+        <div class="row">
+            
+        </div>
+    </div>
+</a>
+            
+                
+
+
+
+
+
+
+<a href="/competitions/762">
+    <div class="competition-tile full-width">
+        <input id="competitionID" type="hidden" value="762"/>
+        <div class="row">
+            <div class="col-sm-2 col-md-2">
+                <div class="img-container">
+                    
+                        <img src="https://s3-ap-northeast-1.amazonaws.com/thiaisotajppub/logos/762/c44df/vac2024-logo.jpeg" class="img-responsive">
+                    
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-6">
+                <h3>VIETTEL AI CHALLENGE</h3>
+                <p class="organizer">Organized by ViettelAIChallenge</p>
+                <p>Cuộc thi AI lớn nhất tập đoàn Viettel</p>
+            </div>
+            <div class="col-sm-4 col-md-4 right-panel">
+                Oct 28, 2024-Nov 21, 2024<br>
+
+                
+                    <b>1</b> participant<br>
+                
+
+
+                
+            </div>
+
+            <br><br>
+        </div>
+        <div class="row">
+            
+        </div>
+    </div>
+</a>
+            
+                
+
+
+
+
+
+
+<a href="/competitions/759">
+    <div class="competition-tile full-width">
+        <input id="competitionID" type="hidden" value="759"/>
+        <div class="row">
+            <div class="col-sm-2 col-md-2">
+                <div class="img-container">
+                    
+                        <img src="https://s3-ap-northeast-1.amazonaws.com/thiaisotajppub/logos/759/cbf45/vac2024-logo.jpeg" class="img-responsive">
+                    
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-6">
+                <h3>Viettel AI Challenge: Classification of Encrypted Texts</h3>
+                <p class="organizer">Organized by ViettelAIChallenge</p>
+                <p></p>
+            </div>
+            <div class="col-sm-4 col-md-4 right-panel">
+                Oct 28, 2024-Nov 20, 2024<br>
+
+                
+                    <b>165</b> participants<br>
+                
+
+
+                
+            </div>
+
+            <br><br>
+        </div>
+        <div class="row">
+            
+        </div>
+    </div>
+</a>
+            
+                
+
+
+
+
+
+
+<a href="/competitions/760">
+    <div class="competition-tile full-width">
+        <input id="competitionID" type="hidden" value="760"/>
+        <div class="row">
+            <div class="col-sm-2 col-md-2">
+                <div class="img-container">
+                    
+                        <img src="https://s3-ap-northeast-1.amazonaws.com/thiaisotajppub/logos/760/3609e/vac2024-logo.jpeg" class="img-responsive">
+                    
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-6">
+                <h3>Viettel AI Challenge: E-commerce Recommendation System</h3>
+                <p class="organizer">Organized by ViettelAIChallenge</p>
+                <p>Cuộc thi nhằm thúc đẩy và phát triển hệ thống gợi ý sản phẩm của thương mại điện tử</p>
+            </div>
+            <div class="col-sm-4 col-md-4 right-panel">
+                Oct 28, 2024-Nov 20, 2024<br>
+
+                
+                    <b>173</b> participants<br>
+                
+
+
+                
+            </div>
+
+            <br><br>
+        </div>
+        <div class="row">
+            
+        </div>
+    </div>
+</a>
+            
+                
+
+
+
+
+
+
+<a href="/competitions/755">
+    <div class="competition-tile full-width">
+        <input id="competitionID" type="hidden" value="755"/>
+        <div class="row">
+            <div class="col-sm-2 col-md-2">
+                <div class="img-container">
+                    
+                        <img src="https://s3-ap-northeast-1.amazonaws.com/thiaisotajppub/logos/755/b6cf3/logo.svg" class="img-responsive">
+                    
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-6">
+                <h3>SoICT Hackathon 2024 - Traffic Vehicle Detection</h3>
+                <p class="organizer">Organized by sangdv</p>
+                <p>Cuộc thi nhằm thúc đẩy ứng dụng và phát triển các kỹ thuật trí tuệ nhân tạo trong việc nhận …</p>
+            </div>
+            <div class="col-sm-4 col-md-4 right-panel">
+                Oct 08, 2024-Dec 02, 2024<br>
+
+                
+                    <b>109</b> participants<br>
+                
+
+
+                
+            </div>
+
+            <br><br>
+        </div>
+        <div class="row">
+            
+        </div>
+    </div>
+</a>
+            
+                
+
+
+
+
+
+
+<a href="/competitions/715">
+    <div class="competition-tile full-width">
+        <input id="competitionID" type="hidden" value="715"/>
+        <div class="row">
+            <div class="col-sm-2 col-md-2">
+                <div class="img-container">
+                    
+                        <img src="https://s3-ap-northeast-1.amazonaws.com/thiaisotajppub/logos/715/a2626/logo.svg" class="img-responsive">
+                    
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-6">
+                <h3>SoICT Hackathon 2024 - Legal Document Retrieval</h3>
+                <p class="organizer">Organized by sangdv</p>
+                <p>Cuộc thi nhằm thúc đẩy ứng dụng và phát triển các kỹ thuật trí tuệ nhân tạo trong việc truy …</p>
+            </div>
+            <div class="col-sm-4 col-md-4 right-panel">
+                Oct 08, 2024-Dec 02, 2024<br>
+
+                
+                    <b>64</b> participants<br>
+                
+
+
+                
+            </div>
+
+            <br><br>
+        </div>
+        <div class="row">
+            
+        </div>
+    </div>
+</a>
+            
+                
+
+
+
+
+
+
+<a href="/competitions/664">
+    <div class="competition-tile full-width">
+        <input id="competitionID" type="hidden" value="664"/>
+        <div class="row">
+            <div class="col-sm-2 col-md-2">
+                <div class="img-container">
+                    
+                        <img src="https://s3-ap-northeast-1.amazonaws.com/thiaisotajppub/logos/664/f7a02/c3236e86-84b9-4940-8927-5591eb38e07.jpg" class="img-responsive">
+                    
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-6">
+                <h3>VIOAI-Vietnam - PHÂN LOẠI ẢNH CHỤP VIÊN THUỐC</h3>
+                <p class="organizer">Organized by tien-nh</p>
+                <p>Cuộc thi nhằm thúc đẩy ứng dụng và phát triển các kỹ thuật trí tuệ nhân tạo trong phân loại …</p>
+            </div>
+            <div class="col-sm-4 col-md-4 right-panel">
+                May 19, 2024-Jul 03, 2025<br>
+
+                
+                    <b>43</b> participants<br>
+                
+
+
+                
+            </div>
+
+            <br><br>
+        </div>
+        <div class="row">
+            
+        </div>
+    </div>
+</a>
+            
+                
+
+
+
+
+
+
+<a href="/competitions/663">
+    <div class="competition-tile full-width">
+        <input id="competitionID" type="hidden" value="663"/>
+        <div class="row">
+            <div class="col-sm-2 col-md-2">
+                <div class="img-container">
+                    
+                        <img src="https://s3-ap-northeast-1.amazonaws.com/thiaisotajppub/logos/663/264b9/IOAI.png" class="img-responsive">
+                    
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-6">
+                <h3>IOAI-Vietnam: DỰ ĐOÁN CHỈ SỐ BỤI MỊN PM2.5</h3>
+                <p class="organizer">Organized by ngminhhieu</p>
+                <p>Cuộc thi nhằm thúc đẩy ứng dụng và phát triển các kỹ thuật trí tuệ nhân tạo trong dự đoán …</p>
+            </div>
+            <div class="col-sm-4 col-md-4 right-panel">
+                May 19, 2024-Jul 03, 2024<br>
+
+                
+                    <b>44</b> participants<br>
+                
+
+
+                
+            </div>
+
+            <br><br>
+        </div>
+        <div class="row">
+            
+        </div>
+    </div>
+</a>
+            
+                
+
+
+
+
+
+
+<a href="/competitions/685">
+    <div class="competition-tile full-width">
+        <input id="competitionID" type="hidden" value="685"/>
+        <div class="row">
+            <div class="col-sm-2 col-md-2">
+                <div class="img-container">
+                    
+                        <img src="https://s3-ap-northeast-1.amazonaws.com/thiaisotajppub/logos/685/2d69a/IOAI.png" class="img-responsive">
+                    
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-6">
+                <h3>IOAI-Vietnam TÓM TẮT VĂN BẢN Y SINH</h3>
+                <p class="organizer">Organized by ngminhhieu</p>
+                <p>Cuộc thi nhằm thúc đẩy ứng dụng và phát triển các kỹ thuật trí tuệ nhân tạo trong việc tóm …</p>
+            </div>
+            <div class="col-sm-4 col-md-4 right-panel">
+                May 19, 2024-Jul 03, 2024<br>
+
+                
+                    <b>43</b> participants<br>
+                
+
+
+                
+            </div>
+
+            <br><br>
+        </div>
+        <div class="row">
+            
+        </div>
+    </div>
+</a>
+            
+                
+
+
+
+
+
+
+<a href="/competitions/650">
+    <div class="competition-tile full-width">
+        <input id="competitionID" type="hidden" value="650"/>
+        <div class="row">
+            <div class="col-sm-2 col-md-2">
+                <div class="img-container">
+                    
+                        <img src="https://s3-ap-northeast-1.amazonaws.com/thiaisotajppub/logos/650/9b4f4/AI Hackathon  (900 x 900 px).png" class="img-responsive">
+                    
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-6">
+                <h3>AI Hackathon: Face Analysis Challenge</h3>
+                <p class="organizer">Organized by pendulum</p>
+                <p>Cuộc thi được đồng tổ chức bởi PIXTA Vietnam, Co-Host AI, Viblo, HUB Network, iHUB,.. dành riêng cho cộng đồng …</p>
+            </div>
+            <div class="col-sm-4 col-md-4 right-panel">
+                Jan 07, 2024-Jan 20, 2024<br>
+
+                
+                    <b>141</b> participants<br>
+                
+
+
+                
+            </div>
+
+            <br><br>
+        </div>
+        <div class="row">
+            
+        </div>
+    </div>
+</a>
+            
+                
+
+
+
+
+
+
+<a href="/competitions/645">
+    <div class="competition-tile full-width">
+        <input id="competitionID" type="hidden" value="645"/>
+        <div class="row">
+            <div class="col-sm-2 col-md-2">
+                <div class="img-container">
+                    
+                        <img src="https://s3-ap-northeast-1.amazonaws.com/thiaisotajppub/logos/645/29a60/logo.png" class="img-responsive">
+                    
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-6">
+                <h3>VLSP 2023 – VCP Challenge - Vietnamese Constituency Parsing (Private Test)</h3>
+                <p class="organizer">Organized by linhhm</p>
+                <p>VLSP 2023 – VCP Challenge - Private Test</p>
+            </div>
+            <div class="col-sm-4 col-md-4 right-panel">
+                Nov 12, 2023-Nov 30, 2026<br>
+
+                
+                    <b>5</b> participants<br>
+                
+
+
+                
+            </div>
+
+            <br><br>
+        </div>
+        <div class="row">
+            
+        </div>
+    </div>
+</a>
+            
+                
+
+
+
+
+
+
+<a href="/competitions/630">
+    <div class="competition-tile full-width">
+        <input id="competitionID" type="hidden" value="630"/>
+        <div class="row">
+            <div class="col-sm-2 col-md-2">
+                <div class="img-container">
+                    
+                        <img src="https://s3-ap-northeast-1.amazonaws.com/thiaisotajppub/logos/630/5157e/logo.png" class="img-responsive">
+                    
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-6">
+                <h3>VLSP 2023 – VCP Challenge - Vietnamese Constituency Parsing (Public Test)</h3>
+                <p class="organizer">Organized by linhhm</p>
+                <p>VLSP 2023 – VCP Challenge - PublicTest</p>
+            </div>
+            <div class="col-sm-4 col-md-4 right-panel">
+                Nov 01, 2023-Nov 17, 2023<br>
+
+                
+                    <b>7</b> participants<br>
+                
+
+
+                
+            </div>
+
+            <br><br>
+        </div>
+        <div class="row">
+            
+        </div>
+    </div>
+</a>
+            
+                
+
+
+
+
+
+
+<a href="/competitions/623">
+    <div class="competition-tile full-width">
+        <input id="competitionID" type="hidden" value="623"/>
+        <div class="row">
+            <div class="col-sm-2 col-md-2">
+                <div class="img-container">
+                    
+                        <img src="https://s3-ap-northeast-1.amazonaws.com/thiaisotajppub/logos/623/226b2/AI Logo - use it for white backgrou.png" class="img-responsive">
+                    
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-6">
+                <h3>UCC AI Quest 2023</h3>
+                <p class="organizer">Organized by ucc-ai-quest</p>
+                <p>Working on AI solutions together</p>
+            </div>
+            <div class="col-sm-4 col-md-4 right-panel">
+                Oct 25, 2023-Feb 08, 2024<br>
+
+                
+                    <b>84</b> participants<br>
+                
+
+
+                
+            </div>
+
+            <br><br>
+        </div>
+        <div class="row">
+            
+        </div>
+    </div>
+</a>
+            
+                
+
+
+
+
+
+
+<a href="/competitions/602">
+    <div class="competition-tile full-width">
+        <input id="competitionID" type="hidden" value="602"/>
+        <div class="row">
+            <div class="col-sm-2 col-md-2">
+                <div class="img-container">
+                    
+                        <img src="https://s3-ap-northeast-1.amazonaws.com/thiaisotajppub/logos/602/2cffb/logo.png" class="img-responsive">
+                    
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-6">
+                <h3>VLSP 2023 - VSASV Shared task</h3>
+                <p class="organizer">Organized by cocosda-msv-organizer</p>
+                <p>VLSP 2023 challenge on Vietnamese Spoofing-Aware Speaker Verification Shared Task</p>
+            </div>
+            <div class="col-sm-4 col-md-4 right-panel">
+                Oct 19, 2023-Nov 18, 2023<br>
+
+                
+                    <b>16</b> participants<br>
+                
+
+
+                
+            </div>
+
+            <br><br>
+        </div>
+        <div class="row">
+            
+        </div>
+    </div>
+</a>
+            
+                
+
+
+
+
+
+
+<a href="/competitions/601">
+    <div class="competition-tile full-width">
+        <input id="competitionID" type="hidden" value="601"/>
+        <div class="row">
+            <div class="col-sm-2 col-md-2">
+                <div class="img-container">
+                    
+                        <img src="https://s3-ap-northeast-1.amazonaws.com/thiaisotajppub/logos/601/b722e/logo.png" class="img-responsive">
+                    
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-6">
+                <h3>VLSP2023 ComOM shared task</h3>
+                <p class="organizer">Organized by catcd</p>
+                <p>VLSP 2023 challenge on Comparative Opinion Mining from Vietnamese Product Reviews</p>
+            </div>
+            <div class="col-sm-4 col-md-4 right-panel">
+                Oct 15, 2023-Nov 03, 2023<br>
+
+                
+                    <b>47</b> participants<br>
+                
+
+
+                
+            </div>
+
+            <br><br>
+        </div>
+        <div class="row">
+            
+        </div>
+    </div>
+</a>
+            
+                
+
+
+
+
+
+
+<a href="/competitions/595">
+    <div class="competition-tile full-width">
+        <input id="competitionID" type="hidden" value="595"/>
+        <div class="row">
+            <div class="col-sm-2 col-md-2">
+                <div class="img-container">
+                    
+                        <img src="https://s3-ap-northeast-1.amazonaws.com/thiaisotajppub/logos/595/506ca/logo.png" class="img-responsive">
+                    
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-6">
+                <h3>VLSP 2023 ASR/SER Challenge</h3>
+                <p class="organizer">Organized by vlsp_asr_organizer</p>
+                <p>Some description here</p>
+            </div>
+            <div class="col-sm-4 col-md-4 right-panel">
+                Sep 20, 2023-Nov 17, 2023<br>
+
+                
+                    <b>8</b> participants<br>
+                
+
+
+                
+            </div>
+
+            <br><br>
+        </div>
+        <div class="row">
+            
+        </div>
+    </div>
+</a>
+            
+                
+
+
+
+
+
+
+<a href="/competitions/596">
+    <div class="competition-tile full-width">
+        <input id="competitionID" type="hidden" value="596"/>
+        <div class="row">
+            <div class="col-sm-2 col-md-2">
+                <div class="img-container">
+                    
+                        <img src="https://s3-ap-northeast-1.amazonaws.com/thiaisotajppub/logos/596/b5a76/logo.png" class="img-responsive">
+                    
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-6">
+                <h3>DopikAI&#x27;s LLM Challenge</h3>
+                <p class="organizer">Organized by dopikai</p>
+                <p>DopikAI LLM Challenge 2023 - cuộc thi đầu tiên benchmark LLM trên tiếng Việt</p>
+            </div>
+            <div class="col-sm-4 col-md-4 right-panel">
+                Sep 05, 2023-
+                <i>No end date</i><br>
+
+                
+                    <b>101</b> participants<br>
+                
+
+
+                
+            </div>
+
+            <br><br>
+        </div>
+        <div class="row">
+            
+        </div>
+    </div>
+</a>
+            
+                
+
+
+
+
+
+
+<a href="/competitions/535">
+    <div class="competition-tile full-width">
+        <input id="competitionID" type="hidden" value="535"/>
+        <div class="row">
+            <div class="col-sm-2 col-md-2">
+                <div class="img-container">
+                    
+                        <img src="https://s3-ap-northeast-1.amazonaws.com/thiaisotajppub/logos/535/664f6/VHAC logo.png" class="img-responsive">
+                    
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-6">
+                <h3>Viettel Hearted AI Challenges</h3>
+                <p class="organizer">Organized by vhac-organizers</p>
+                <p>Cuộc thi AI lớn nhất tập đoàn Viettel</p>
+            </div>
+            <div class="col-sm-4 col-md-4 right-panel">
+                Sep 01, 2023-Oct 11, 2023<br>
+
+                
+                    <b>451</b> participants<br>
+                
+
+
+                
+            </div>
+
+            <br><br>
+        </div>
+        <div class="row">
+            
+        </div>
+    </div>
+</a>
+            
+                
+
+
+
+
+
+
+<a href="/competitions/570">
+    <div class="competition-tile full-width">
+        <input id="competitionID" type="hidden" value="570"/>
+        <div class="row">
+            <div class="col-sm-2 col-md-2">
+                <div class="img-container">
+                    
+                        <img src="https://s3-ap-northeast-1.amazonaws.com/thiaisotajppub/logos/570/a477a/logo.png" class="img-responsive">
+                    
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-6">
+                <h3>AIHub Bundle Example</h3>
+                <p class="organizer">Organized by ai4sec-organizers</p>
+                <p>Some description here</p>
+            </div>
+            <div class="col-sm-4 col-md-4 right-panel">
+                Aug 21, 2023-Nov 30, 2023<br>
+
+                
+                    <b>7</b> participants<br>
+                
+
+
+                
+            </div>
+
+            <br><br>
+        </div>
+        <div class="row">
+            
+        </div>
+    </div>
+</a>
+            
+                
+
+
+
+
+
+
+<a href="/competitions/569">
+    <div class="competition-tile full-width">
+        <input id="competitionID" type="hidden" value="569"/>
+        <div class="row">
+            <div class="col-sm-2 col-md-2">
+                <div class="img-container">
+                    
+                        <img src="https://s3-ap-northeast-1.amazonaws.com/thiaisotajppub/logos/569/4676c/logo.png" class="img-responsive">
+                    
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-6">
+                <h3>AIHub Bundle Example</h3>
+                <p class="organizer">Organized by tungdpk</p>
+                <p>Some description here</p>
+            </div>
+            <div class="col-sm-4 col-md-4 right-panel">
+                Aug 21, 2023-Nov 30, 2023<br>
+
+                
+                    <b>10</b> participants<br>
+                
+
+
+                
+            </div>
+
+            <br><br>
+        </div>
+        <div class="row">
+            
+        </div>
+    </div>
+</a>
+            
+                
+
+
+
+
+
+
+<a href="/competitions/456">
+    <div class="competition-tile full-width">
+        <input id="competitionID" type="hidden" value="456"/>
+        <div class="row">
+            <div class="col-sm-2 col-md-2">
+                <div class="img-container">
+                    
+                        <img src="https://s3-ap-northeast-1.amazonaws.com/thiaisotajppub/logos/456/23910/logo.svg" class="img-responsive">
+                    
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-6">
+                <h3>SoICT Hackathon 2023 - Vietnamese Spoken Language Understanding Challenge</h3>
+                <p class="organizer">Organized by sangdv</p>
+                <p>Bài toán hiểu ngôn ngữ tự nhiên dạng nói tiếng Việt</p>
+            </div>
+            <div class="col-sm-4 col-md-4 right-panel">
+                Aug 08, 2023-Oct 29, 2023<br>
+
+                
+                    <b>31</b> participants<br>
+                
+
+
+                
+            </div>
+
+            <br><br>
+        </div>
+        <div class="row">
+            
+        </div>
+    </div>
+</a>
+            
+                
+
+
+
+
+
+
+<a href="/competitions/426">
+    <div class="competition-tile full-width">
+        <input id="competitionID" type="hidden" value="426"/>
+        <div class="row">
+            <div class="col-sm-2 col-md-2">
+                <div class="img-container">
+                    
+                        <img src="https://s3-ap-northeast-1.amazonaws.com/thiaisotajppub/logos/426/5cf81/logo.svg" class="img-responsive">
+                    
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-6">
+                <h3>SoICT Hackathon 2023 - Vietnamese Handwritten Text Recognition</h3>
+                <p class="organizer">Organized by sangdv</p>
+                <p>Cuộc thi nhằm thúc đẩy ứng dụng và phát triển các kỹ thuật trí tuệ nhân tạo trong việc nhận …</p>
+            </div>
+            <div class="col-sm-4 col-md-4 right-panel">
+                Aug 08, 2023-Oct 29, 2023<br>
+
+                
+                    <b>34</b> participants<br>
+                
+
+
+                
+            </div>
+
+            <br><br>
+        </div>
+        <div class="row">
+            
+        </div>
+    </div>
+</a>
+            
+                
+
+
+
+
+
+
+<a href="/competitions/376">
+    <div class="competition-tile full-width">
+        <input id="competitionID" type="hidden" value="376"/>
+        <div class="row">
+            <div class="col-sm-2 col-md-2">
+                <div class="img-container">
+                    
+                        <img src="https://s3-ap-northeast-1.amazonaws.com/thiaisotajppub/logos/376/2d8be/logo.png" class="img-responsive">
+                    
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-6">
+                <h3>MLOps Marathon 2023</h3>
+                <p class="organizer">Organized by mlops-organizers</p>
+                <p>The first MLOps competition in Vietnam</p>
+            </div>
+            <div class="col-sm-4 col-md-4 right-panel">
+                Jun 04, 2023-Aug 27, 2023<br>
+
+                
+                    <b>595</b> participants<br>
+                
+
+
+                
+            </div>
+
+            <br><br>
+        </div>
+        <div class="row">
+            
+        </div>
+    </div>
+</a>
+            
+                
+
+
+
+
+
+
+<a href="/competitions/370">
+    <div class="competition-tile full-width">
+        <input id="competitionID" type="hidden" value="370"/>
+        <div class="row">
+            <div class="col-sm-2 col-md-2">
+                <div class="img-container">
+                    
+                        <img src="https://s3-ap-northeast-1.amazonaws.com/thiaisotajppub/logos/370/1c93d/logo.png" class="img-responsive">
+                    
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-6">
+                <h3>VLSP 2022 – VTB Challenge - Vietnamese Constituency Parsing (Private Test)</h3>
+                <p class="organizer">Organized by linhhm</p>
+                <p>VLSP 2022 – VTB Challenge - Private Test</p>
+            </div>
+            <div class="col-sm-4 col-md-4 right-panel">
+                Nov 12, 2022-Nov 15, 2022<br>
+
+                
+                    <b>7</b> participants<br>
+                
+
+
+                
+            </div>
+
+            <br><br>
+        </div>
+        <div class="row">
+            
+        </div>
+    </div>
+</a>
+            
+                
+
+
+
+
+
+
+<a href="/competitions/361">
+    <div class="competition-tile full-width">
+        <input id="competitionID" type="hidden" value="361"/>
+        <div class="row">
+            <div class="col-sm-2 col-md-2">
+                <div class="img-container">
+                    
+                        <img src="https://s3-ap-northeast-1.amazonaws.com/thiaisotajppub/logos/361/2a19d/logo.png" class="img-responsive">
+                    
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-6">
+                <h3>VLSP 2022 – VTB Challenge - Vietnamese Constituency Parsing</h3>
+                <p class="organizer">Organized by linhhm</p>
+                <p>VLSP 2022 – VTB Challenge - Vietnamese Constituency Parsing</p>
+            </div>
+            <div class="col-sm-4 col-md-4 right-panel">
+                Nov 03, 2022-Nov 15, 2022<br>
+
+                
+                    <b>10</b> participants<br>
+                
+
+
+                
+            </div>
+
+            <br><br>
+        </div>
+        <div class="row">
+            
+        </div>
+    </div>
+</a>
+            
+                
+
+
+
+
+
+
+<a href="/competitions/341">
+    <div class="competition-tile full-width">
+        <input id="competitionID" type="hidden" value="341"/>
+        <div class="row">
+            <div class="col-sm-2 col-md-2">
+                <div class="img-container">
+                    
+                        <img src="https://s3-ap-northeast-1.amazonaws.com/thiaisotajppub/logos/341/2b274/logo.png" class="img-responsive">
+                    
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-6">
+                <h3>VLSP2022 AbMusu task</h3>
+                <p class="organizer">Organized by abmusu.vlsp2022</p>
+                <p>Vietnamese Abstractive multi-document summarization</p>
+            </div>
+            <div class="col-sm-4 col-md-4 right-panel">
+                Nov 01, 2022-Dec 31, 2100<br>
+
+                
+                    <b>45</b> participants<br>
+                
+
+
+                
+            </div>
+
+            <br><br>
+        </div>
+        <div class="row">
+            
+        </div>
+    </div>
+</a>
+            
+                
+
+
+
+
+
+
+<a href="/competitions/313">
+    <div class="competition-tile full-width">
+        <input id="competitionID" type="hidden" value="313"/>
+        <div class="row">
+            <div class="col-sm-2 col-md-2">
+                <div class="img-container">
+                    
+                        <img src="https://s3-ap-northeast-1.amazonaws.com/thiaisotajppub/logos/313/4202c/logo.png" class="img-responsive">
+                    
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-6">
+                <h3>O-COCOSDA and VLSP 2022 - A-MSV Shared task</h3>
+                <p class="organizer">Organized by cocosda-msv-organizer</p>
+                <p>Multilingual speaker verification shared-task organized by VLSP and COCOSDA</p>
+            </div>
+            <div class="col-sm-4 col-md-4 right-panel">
+                Oct 07, 2022-Oct 17, 2022<br>
+
+                
+                    <b>25</b> participants<br>
+                
+
+
+                
+            </div>
+
+            <br><br>
+        </div>
+        <div class="row">
+            
+        </div>
+    </div>
+</a>
+            
+                
+
+
+
+
+
+
+<a href="/competitions/290">
+    <div class="competition-tile full-width">
+        <input id="competitionID" type="hidden" value="290"/>
+        <div class="row">
+            <div class="col-sm-2 col-md-2">
+                <div class="img-container">
+                    
+                        <img src="https://s3-ap-northeast-1.amazonaws.com/thiaisotajppub/logos/290/c57fd/logo.png" class="img-responsive">
+                    
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-6">
+                <h3>VLSP 2022 ASR Challenge: Task-2</h3>
+                <p class="organizer">Organized by vlsp_2022_asr_organizer</p>
+                <p>Some description here</p>
+            </div>
+            <div class="col-sm-4 col-md-4 right-panel">
+                Sep 19, 2022-Oct 31, 2022<br>
+
+                
+                    <b>10</b> participants<br>
+                
+
+
+                
+            </div>
+
+            <br><br>
+        </div>
+        <div class="row">
+            
+        </div>
+    </div>
+</a>
+            
+                
+
+
+
+
+
+
+<a href="/competitions/289">
+    <div class="competition-tile full-width">
+        <input id="competitionID" type="hidden" value="289"/>
+        <div class="row">
+            <div class="col-sm-2 col-md-2">
+                <div class="img-container">
+                    
+                        <img src="https://s3-ap-northeast-1.amazonaws.com/thiaisotajppub/logos/289/35c18/logo.png" class="img-responsive">
+                    
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-6">
+                <h3>VLSP 2022 ASR Challenge: Task-1</h3>
+                <p class="organizer">Organized by vlsp_2022_asr_organizer</p>
+                <p>Some description here</p>
+            </div>
+            <div class="col-sm-4 col-md-4 right-panel">
+                Sep 19, 2022-Oct 31, 2022<br>
+
+                
+                    <b>12</b> participants<br>
+                
+
+
+                
+            </div>
+
+            <br><br>
+        </div>
+        <div class="row">
+            
+        </div>
+    </div>
+</a>
+            
+                
+
+
+
+
+
+
+<a href="/competitions/266">
+    <div class="competition-tile full-width">
+        <input id="competitionID" type="hidden" value="266"/>
+        <div class="row">
+            <div class="col-sm-2 col-md-2">
+                <div class="img-container">
+                    
+                        <img src="https://s3-ap-northeast-1.amazonaws.com/thiaisotajppub/logos/266/43a43/logo.png" class="img-responsive">
+                    
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-6">
+                <h3>O-COCOSDA and VLSP 2022 - Indic MSV Shared task - I-MSV</h3>
+                <p class="organizer">Organized by cocosda-msv-organizer</p>
+                <p>Multilingual speaker verification shared-task organized by VLSP and COCOSDA</p>
+            </div>
+            <div class="col-sm-4 col-md-4 right-panel">
+                Sep 15, 2022-Oct 16, 2022<br>
+
+                
+                    <b>15</b> participants<br>
+                
+
+
+                
+            </div>
+
+            <br><br>
+        </div>
+        <div class="row">
+            
+        </div>
+    </div>
+</a>
+            
+                
+
+
+
+
+
+
+<a href="/competitions/230">
+    <div class="competition-tile full-width">
+        <input id="competitionID" type="hidden" value="230"/>
+        <div class="row">
+            <div class="col-sm-2 col-md-2">
+                <div class="img-container">
+                    
+                        <img src="https://s3-ap-northeast-1.amazonaws.com/thiaisotajppub/logos/230/65966/logo.svg" class="img-responsive">
+                    
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-6">
+                <h3>AI4VN 2022 - VAIPE: Medicine Pill Image Recognition Challenge</h3>
+                <p class="organizer">Organized by anhduy0911</p>
+                <p>Cuộc thi tìm kiếm và phát triển các thuật toán AI nhận dạng chính xác tên các loại thuốc uống, …</p>
+            </div>
+            <div class="col-sm-4 col-md-4 right-panel">
+                Jul 16, 2022-Sep 17, 2022<br>
+
+                
+                    <b>195</b> participants<br>
+                
+
+
+                
+            </div>
+
+            <br><br>
+        </div>
+        <div class="row">
+            
+        </div>
+    </div>
+</a>
+            
+                
+
+
+
+
+
+
+<a href="/competitions/242">
+    <div class="competition-tile full-width">
+        <input id="competitionID" type="hidden" value="242"/>
+        <div class="row">
+            <div class="col-sm-2 col-md-2">
+                <div class="img-container">
+                    
+                        <img src="https://s3-ap-northeast-1.amazonaws.com/thiaisotajppub/logos/242/7113b/logo.png" class="img-responsive">
+                    
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-6">
+                <h3>AI4VN 2022 - Air Quality Forecasting Challenge</h3>
+                <p class="organizer">Organized by ngminhhieu</p>
+                <p>Cuộc thi nhằm thúc đẩy ứng dụng và phát triển các kỹ thuật trí tuệ nhân tạo trong việc dự …</p>
+            </div>
+            <div class="col-sm-4 col-md-4 right-panel">
+                Jul 14, 2022-Dec 24, 2022<br>
+
+                
+                    <b>51</b> participants<br>
+                
+
+
+                
+            </div>
+
+            <br><br>
+        </div>
+        <div class="row">
+            
+        </div>
+    </div>
+</a>
+            
+                
+
+
+
+
+
+
+<a href="/competitions/214">
+    <div class="competition-tile full-width">
+        <input id="competitionID" type="hidden" value="214"/>
+        <div class="row">
+            <div class="col-sm-2 col-md-2">
+                <div class="img-container">
+                    
+                        <img src="https://s3-ap-northeast-1.amazonaws.com/thiaisotajppub/logos/214/211e7/logo.svg" class="img-responsive">
+                    
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-6">
+                <h3>BKAI-NAVER Challenge 2022 - Vietnamese Scene Text Detection and Recognition</h3>
+                <p class="organizer">Organized by sangdv</p>
+                <p>Cuộc thi nhằm thúc đẩy ứng dụng và phát triển các kỹ thuật trí tuệ nhân tạo trong phát hiện …</p>
+            </div>
+            <div class="col-sm-4 col-md-4 right-panel">
+                Apr 01, 2022-May 22, 2022<br>
+
+                
+                    <b>162</b> participants<br>
+                
+
+
+                
+            </div>
+
+            <br><br>
+        </div>
+        <div class="row">
+            
+        </div>
+    </div>
+</a>
+            
+                
+
+
+
+
+
+
+<a href="/competitions/209">
+    <div class="competition-tile full-width">
+        <input id="competitionID" type="hidden" value="209"/>
+        <div class="row">
+            <div class="col-sm-2 col-md-2">
+                <div class="img-container">
+                    
+                        <img src="https://s3-ap-northeast-1.amazonaws.com/thiaisotajppub/logos/209/c5f8d/logo.svg" class="img-responsive">
+                    
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-6">
+                <h3>BKAI-NAVER Challenge 2022 - Body Segmentation and Gesture Recognition</h3>
+                <p class="organizer">Organized by sangdv</p>
+                <p>Mục tiêu của cuộc thi là đưa ra các giải pháp nhận diện diện cử chỉ hành động của con …</p>
+            </div>
+            <div class="col-sm-4 col-md-4 right-panel">
+                Apr 01, 2022-May 22, 2022<br>
+
+                
+                    <b>104</b> participants<br>
+                
+
+
+                
+            </div>
+
+            <br><br>
+        </div>
+        <div class="row">
+            
+        </div>
+    </div>
+</a>
+            
+                
+
+
+
+
+
+
+<a href="/competitions/207">
+    <div class="competition-tile full-width">
+        <input id="competitionID" type="hidden" value="207"/>
+        <div class="row">
+            <div class="col-sm-2 col-md-2">
+                <div class="img-container">
+                    
+                        <img src="https://s3-ap-northeast-1.amazonaws.com/thiaisotajppub/logos/207/89576/logo.svg" class="img-responsive">
+                    
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-6">
+                <h3>BKAI-NAVER Challenge 2022 - Vietnamese Intent Detection and Slot Tagging</h3>
+                <p class="organizer">Organized by sangdv</p>
+                <p>Trong cuộc thi này, chúng ta sẽ dịch các câu lệnh của người dùng bằng cách trích xuất ý định …</p>
+            </div>
+            <div class="col-sm-4 col-md-4 right-panel">
+                Apr 01, 2022-May 22, 2022<br>
+
+                
+                    <b>110</b> participants<br>
+                
+
+
+                
+            </div>
+
+            <br><br>
+        </div>
+        <div class="row">
+            
+        </div>
+    </div>
+</a>
+            
+                
+
+
+
+
+
+
+<a href="/competitions/172">
+    <div class="competition-tile full-width">
+        <input id="competitionID" type="hidden" value="172"/>
+        <div class="row">
+            <div class="col-sm-2 col-md-2">
+                <div class="img-container">
+                    
+                        <img src="https://s3-ap-northeast-1.amazonaws.com/thiaisotajppub/logos/172/b73df/logo.svg" class="img-responsive">
+                    
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-6">
+                <h3>Intent Detection and Slot Filling</h3>
+                <p class="organizer">Organized by vietvq_organizers</p>
+                <p>Trong cuộc thi này, chúng ta sẽ dịch các câu lệnh của người dùng bằng cách trích xuất ý định …</p>
+            </div>
+            <div class="col-sm-4 col-md-4 right-panel">
+                Mar 18, 2022-May 19, 2022<br>
+
+                
+                    <b>2</b> participants<br>
+                
+
+
+                
+            </div>
+
+            <br><br>
+        </div>
+        <div class="row">
+            
+        </div>
+    </div>
+</a>
+            
+                
+
+
+
+
+
+
+<a href="/competitions/62">
+    <div class="competition-tile full-width">
+        <input id="competitionID" type="hidden" value="62"/>
+        <div class="row">
+            <div class="col-sm-2 col-md-2">
+                <div class="img-container">
+                    
+                        <img src="https://s3-ap-northeast-1.amazonaws.com/thiaisotajppub/logos/62/406de/logo.png" class="img-responsive">
+                    
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-6">
+                <h3>VLSP2021 - Vietnamese Speaker Verification</h3>
+                <p class="organizer">Organized by sv-vlsp2021-organizers</p>
+                <p>Speaker verification shared-task organized by VLSP</p>
+            </div>
+            <div class="col-sm-4 col-md-4 right-panel">
+                Oct 02, 2021-Nov 07, 2021<br>
+
+                
+                    <b>19</b> participants<br>
+                
+
+
+                
+            </div>
+
+            <br><br>
+        </div>
+        <div class="row">
+            
+        </div>
+    </div>
+</a>
+            
+                
+
+
+
+
+
+
+<a href="/competitions/35">
+    <div class="competition-tile full-width">
+        <input id="competitionID" type="hidden" value="35"/>
+        <div class="row">
+            <div class="col-sm-2 col-md-2">
+                <div class="img-container">
+                    
+                        <img src="https://s3-ap-northeast-1.amazonaws.com/thiaisotajppub/logos/35/0f373/logo.png" class="img-responsive">
+                    
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-6">
+                <h3>VLSP2021 - Vietnamese Machine Reading Comprehension</h3>
+                <p class="organizer">Organized by vlsp-mrc-2021-organisers</p>
+                <p>Machine Reading Comprehension (MRC) has lately emerged as an area in computational linguistics (CL) in which automatic systems are developed …</p>
+            </div>
+            <div class="col-sm-4 col-md-4 right-panel">
+                Sep 30, 2021-Oct 27, 2021<br>
+
+                
+                    <b>143</b> participants<br>
+                
+
+
+                
+            </div>
+
+            <br><br>
+        </div>
+        <div class="row">
+            
+        </div>
+    </div>
+</a>
+            
+                
+
+
+
+
+
+
+<a href="/competitions/68">
+    <div class="competition-tile full-width">
+        <input id="competitionID" type="hidden" value="68"/>
+        <div class="row">
+            <div class="col-sm-2 col-md-2">
+                <div class="img-container">
+                    
+                        <img src="https://s3-ap-northeast-1.amazonaws.com/thiaisotajppub/logos/68/6a7b7/logo.png" class="img-responsive">
+                    
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-6">
+                <h3>VLSP2021 vieCap4H Challenge: Legacy Version</h3>
+                <p class="organizer">Organized by viecap4h-organizers</p>
+                <p>Humans are unique in their capability to interpret and describe their visual perception in natural language. Although modern AI has …</p>
+            </div>
+            <div class="col-sm-4 col-md-4 right-panel">
+                Sep 24, 2021-
+                <i>No end date</i><br>
+
+                
+                    <b>60</b> participants<br>
+                
+
+
+                
+            </div>
+
+            <br><br>
+        </div>
+        <div class="row">
+            
+        </div>
+    </div>
+</a>
+            
+                
+
+
+
+
+
+
+<a href="/competitions/40">
+    <div class="competition-tile full-width">
+        <input id="competitionID" type="hidden" value="40"/>
+        <div class="row">
+            <div class="col-sm-2 col-md-2">
+                <div class="img-container">
+                    
+                        <img src="https://s3-ap-northeast-1.amazonaws.com/thiaisotajppub/logos/40/499aa/logo.png" class="img-responsive">
+                    
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-6">
+                <h3>VLSP2021 vieCap4H Challenge: Automatic image caption generation for healthcare domains in Vietnamese</h3>
+                <p class="organizer">Organized by viecap4h-organizers</p>
+                <p>Humans are unique in their capability to interpret and describe their visual perception in natural language. Although modern AI has …</p>
+            </div>
+            <div class="col-sm-4 col-md-4 right-panel">
+                Sep 24, 2021-Oct 25, 2021<br>
+
+                
+                    <b>84</b> participants<br>
+                
+
+
+                
+            </div>
+
+            <br><br>
+        </div>
+        <div class="row">
+            
+        </div>
+    </div>
+</a>
+            
+                
+
+
+
+
+
+
+<a href="/competitions/22">
+    <div class="competition-tile full-width">
+        <input id="competitionID" type="hidden" value="22"/>
+        <div class="row">
+            <div class="col-sm-2 col-md-2">
+                <div class="img-container">
+                    
+                        <img src="https://s3-ap-northeast-1.amazonaws.com/thiaisotajppub/logos/22/fabd8/aicv115m_final.png" class="img-responsive">
+                    
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-6">
+                <h3>AICovidVN 115M Challenge: Covid Cough Detection Challenge (Final Round)</h3>
+                <p class="organizer">Organized by aicovidvn115m-organizers</p>
+                <p>AICovidVN 115 Millions Challenge (AICV-115M) được khởi động nhằm hiện thực hoá khả năng phát hiện nguy cơ có Covid-19 …</p>
+            </div>
+            <div class="col-sm-4 col-md-4 right-panel">
+                Jul 28, 2021-Aug 28, 2021<br>
+
+                
+                    <b>136</b> participants<br>
+                
+
+
+                
+            </div>
+
+            <br><br>
+        </div>
+        <div class="row">
+            
+        </div>
+    </div>
+</a>
+            
+                
+
+
+
+
+
+
+<a href="/competitions/18">
+    <div class="competition-tile full-width">
+        <input id="competitionID" type="hidden" value="18"/>
+        <div class="row">
+            <div class="col-sm-2 col-md-2">
+                <div class="img-container">
+                    
+                        <img src="https://s3-ap-northeast-1.amazonaws.com/thiaisotajppub/logos/18/c31b0/logo_2.png" class="img-responsive">
+                    
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-6">
+                <h3>AICovidVN 115M Challenge: Covid Cough Detection Challenge (Warm-up Round)</h3>
+                <p class="organizer">Organized by aicovidvn115m-organizers</p>
+                <p>AICovidVN 115 Millions Challenge (AICV-115M) được khởi động nhằm hiện thực hoá khả năng phát hiện nguy cơ có Covid-19 …</p>
+            </div>
+            <div class="col-sm-4 col-md-4 right-panel">
+                Jun 21, 2021-Jul 28, 2021<br>
+
+                
+                    <b>318</b> participants<br>
+                
+
+
+                
+            </div>
+
+            <br><br>
+        </div>
+        <div class="row">
+            
+        </div>
+    </div>
+</a>
+            
+                
+
+
+
+
+
+
+<a href="/competitions/9">
+    <div class="competition-tile full-width">
+        <input id="competitionID" type="hidden" value="9"/>
+        <div class="row">
+            <div class="col-sm-2 col-md-2">
+                <div class="img-container">
+                    
+                        <img src="https://s3-ap-northeast-1.amazonaws.com/thiaisotajppub/logos/9/c2081/logo2.png" class="img-responsive">
+                    
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-6">
+                <h3>Legacy version of HSD2019-SHARED Task - Hate Speech Detection on Social Networks</h3>
+                <p class="organizer">Organized by hsd2019-organizers</p>
+                <p>On social network sites (SNSs), such as Facebook, Twitter, the threat of abuse and harassment online makes many SNS users …</p>
+            </div>
+            <div class="col-sm-4 col-md-4 right-panel">
+                Jan 01, 2021-
+                <i>No end date</i><br>
+
+                
+                    <b>50</b> participants<br>
+                
+
+
+                
+            </div>
+
+            <br><br>
+        </div>
+        <div class="row">
+            
+        </div>
+    </div>
+</a>
+            
+                
+
+
+
+
+
+
+<a href="/competitions/1">
+    <div class="competition-tile full-width">
+        <input id="competitionID" type="hidden" value="1"/>
+        <div class="row">
+            <div class="col-sm-2 col-md-2">
+                <div class="img-container">
+                    
+                        <img src="https://s3-ap-northeast-1.amazonaws.com/thiaisotajppub/logos/1/b5e2b/logo.png" class="img-responsive">
+                    
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-6">
+                <h3>Mobile-Captured Image Document Recognition for Vietnamese Receipts (MC-OCR) - Legacy</h3>
+                <p class="organizer">Organized by mc-ocr-organizers</p>
+                <p>In this competition, we would like to tackle a problem of receipt recognition analysis i.e., the text recognition of Vietnamese …</p>
+            </div>
+            <div class="col-sm-4 col-md-4 right-panel">
+                Dec 19, 2020-
+                <i>No end date</i><br>
+
+                
+                    <b>196</b> participants<br>
+                
+
+
+                
+            </div>
+
+            <br><br>
+        </div>
+        <div class="row">
+            
+        </div>
+    </div>
+</a>
+            
+                
+
+
+
+
+
+
+<a href="/competitions/4">
+    <div class="competition-tile full-width">
+        <input id="competitionID" type="hidden" value="4"/>
+        <div class="row">
+            <div class="col-sm-2 col-md-2">
+                <div class="img-container">
+                    
+                        <img src="https://s3-ap-northeast-1.amazonaws.com/thiaisotajppub/logos/4/23a16/203236408_307813977659139_485587217.png" class="img-responsive">
+                    
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-6">
+                <h3>Reliable Intelligence Identification on Vietnamese SNSs (ReINTEL) - 2020</h3>
+                <p class="organizer">Organized by reml</p>
+                <p>This challenge aims to identify a piece of information shared on social network sites (SNSs), is reliable or unreliable. With …</p>
+            </div>
+            <div class="col-sm-4 col-md-4 right-panel">
+                Nov 28, 2020-
+                <i>No end date</i><br>
+
+                
+                    <b>28</b> participants<br>
+                
+
+
+                
+            </div>
+
+            <br><br>
+        </div>
+        <div class="row">
+            
+        </div>
+    </div>
+</a>
+            
+        
+    </div>
+</div>
+<a href="https://github.com/codalab/codalab/wiki/User_Competition-Roadmap">Learn how to create your own competition.</a>
+
+        </div>
+    
+
+    </div>
+
+    <footer class="hub-footer">
+        <div class="hub-wrap hub-footer__inner">
+            <div class="hub-footer__brand">
+                <img src="/static/img/codalab-logo-onecolor-reverse.png" alt="AI Hub">
+                <div>
+                    <span>An Incubator for AI Lovers</span>
+                    <span class="hub-footer__managed">Managed by <a href="https://deeptensor.ai" target="_blank" rel="noopener">DeepTensor.AI</a></span>
+                </div>
+            </div>
+            <div class="hub-footer__links">
+                
+                <a href="https://github.com/AIHubVN/aihubml-bugs-report" target="_blank" rel="noopener">GitHub · contact &amp; bug reports</a>
+                <a href="https://github.com/codalab/codalab-competitions/wiki" target="_blank" rel="noopener">Help</a>
+                
+                    <a href="/about/">About</a>
+                    <a href="https://github.com/codalab/codalab/wiki/Privacy" target="_blank" rel="noopener">Privacy and Terms</a>
+                
+                <span class="hub-mono">v1.5</span>
+            </div>
+        </div>
+    </footer>
+
+    <script src="//ajax.aspnetcdn.com/ajax/jquery.validate/1.11.1/jquery.validate.min.js"></script>
+
+    <script src="/static/bootstrap/js/bootstrap.min.js"></script>
+    <script src="/static/js/vendor/select2/select2-forked.js"></script>
+    <script src="/static/lib/jq/jquery.cookie.js"></script>
+
+    <script type="text/javascript" src="/static/js/app.js"></script>
+    <script type="text/javascript" src="/static/js/Competition.js"></script>
+    <script type="text/javascript" src="/static/js/main.js"></script>
+    <script type="text/javascript" src="/static/hub/hub-base.js?v=5402cddd03"></script>
+    <script type="text/javascript" src="/static/hub/glass.js?v=c66c9c266d"></script>
+    
+
+    <div id="maintenance_modal" class="modal fade" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title">Maintenance warning</h4>
+                </div>
+                <div class="modal-body">
+                    <!-- maintenance warning message.. -->
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    <button id="hide_maintenance_warning" type="button" class="btn btn-primary" data-dismiss="modal" onclick="hide_maintenance_warning">OK don't tell me again!</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript">
+
+    //GOOGLE ANALYTICS SNIPPET
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+              (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+              m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+              })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+              ga('create', 'UA-42847758-2', 'auto');
+              ga('send', 'pageview');
+
+    
+    function populate(frm, data) {
+        $.each(data, function(key, value){
+            var $ctrl = $('[name='+key+']', frm);
+            switch($ctrl.attr("type"))
+            {
+                case "text":
+                case "hidden":
+                    $ctrl.val(value);
+                    break;
+                case "radio":
+                case "checkbox":
+                    $ctrl.each(function(){
+                        if(value=='on') {
+                            $(this).attr("checked",value);
+                        }
+                    });
+                    break;
+                default:
+                    $ctrl.val(value);
+            }
+        });
+    }
+    $('.competition-tile').on('click',function(){
+        var competitionID = $(this).find('#competitionID').val();
+        window.location.href = '/competitions/' + competitionID;
+    });
+
+    var params = {}
+    location.search.substr(1).split("&").forEach(function(item) {params[item.split("=")[0]] = item.split("=")[1]})
+
+    populate('#search_form', params);
+
+        CODAUSER = {
+            username: "",
+            user_id: 0,
+            email: "",
+            is_authenticated: false,
+        }
+
+        /*
+         * If we want to do huge maintenance again, can use this warning!
+         *
+        $(document).ready(function() {
+            var maintenance_warning = localStorage.getItem('maintenance_warning')
+            if(maintenance_warning === null) {
+                $("#maintenance_modal").modal('show')
+            }
+
+            $("#hide_maintenance_warning").click(function() {
+                localStorage.setItem('maintenance_warning', true)
+            })
+        })*/
+    </script>
+
+    
+    
+
+    
+    
+    <div class="eupopup eupopup-top"></div>
+<script type="module" src="https://static.cloudflareinsights.com/beacon.min.js/vce701823e78c4301a35b7e07294d87301792088814092" integrity="sha512-UKNk8GbxkABxKcXYuLkO16EleLGUkcvJWtpSNmExE0Too3ZaFAxTscNWEc1OdAv5/BikHawapSCaiD2XCmp+Bw==" data-cf-beacon='{"version":"2024.11.0","token":"2eb4071cef60462a87e4f2aea671ad70","r":1,"spa":2}' crossorigin="anonymous"></script>
+</body>
+</html>

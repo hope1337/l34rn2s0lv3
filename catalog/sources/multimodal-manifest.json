@@ -1,0 +1,68 @@
+[
+  {
+    "id": "hate-file-0",
+    "url": "https://raw.githubusercontent.com/rizavelioglu/hateful_memes-hate_detectron/e55d7c95930c4ca47bbb550a291290133cc11e15/README.md",
+    "repo_path": "README.md",
+    "commit": "e55d7c95930c4ca47bbb550a291290133cc11e15"
+  },
+  {
+    "id": "hate-file-1",
+    "url": "https://raw.githubusercontent.com/rizavelioglu/hateful_memes-hate_detectron/e55d7c95930c4ca47bbb550a291290133cc11e15/majority_voting.py",
+    "repo_path": "majority_voting.py",
+    "commit": "e55d7c95930c4ca47bbb550a291290133cc11e15"
+  },
+  {
+    "id": "hate-file-2",
+    "url": "https://raw.githubusercontent.com/rizavelioglu/hateful_memes-hate_detectron/e55d7c95930c4ca47bbb550a291290133cc11e15/hyperparameter_sweep/get_27_models.py",
+    "repo_path": "hyperparameter_sweep/get_27_models.py",
+    "commit": "e55d7c95930c4ca47bbb550a291290133cc11e15"
+  },
+  {
+    "id": "hate-file-3",
+    "url": "https://raw.githubusercontent.com/rizavelioglu/hateful_memes-hate_detectron/e55d7c95930c4ca47bbb550a291290133cc11e15/hyperparameter_sweep/sweep.sh",
+    "repo_path": "hyperparameter_sweep/sweep.sh",
+    "commit": "e55d7c95930c4ca47bbb550a291290133cc11e15"
+  },
+  {
+    "id": "alfred-file-0",
+    "url": "https://raw.githubusercontent.com/HimariO/HatefulMemesChallenge/1c4505a5a071ad0bc9df54c3fab0f9896ae5a9b7/README.md",
+    "repo_path": "README.md",
+    "commit": "1c4505a5a071ad0bc9df54c3fab0f9896ae5a9b7"
+  },
+  {
+    "id": "alfred-file-1",
+    "url": "https://raw.githubusercontent.com/HimariO/HatefulMemesChallenge/1c4505a5a071ad0bc9df54c3fab0f9896ae5a9b7/ensemble.py",
+    "repo_path": "ensemble.py",
+    "commit": "1c4505a5a071ad0bc9df54c3fab0f9896ae5a9b7"
+  },
+  {
+    "id": "alfred-file-2",
+    "url": "https://raw.githubusercontent.com/HimariO/HatefulMemesChallenge/1c4505a5a071ad0bc9df54c3fab0f9896ae5a9b7/run_ensemble.sh",
+    "repo_path": "run_ensemble.sh",
+    "commit": "1c4505a5a071ad0bc9df54c3fab0f9896ae5a9b7"
+  },
+  {
+    "id": "alfred-file-3",
+    "url": "https://raw.githubusercontent.com/HimariO/HatefulMemesChallenge/1c4505a5a071ad0bc9df54c3fab0f9896ae5a9b7/data_utils/README.md",
+    "repo_path": "data_utils/README.md",
+    "commit": "1c4505a5a071ad0bc9df54c3fab0f9896ae5a9b7"
+  },
+  {
+    "id": "alfred-file-4",
+    "url": "https://raw.githubusercontent.com/HimariO/HatefulMemesChallenge/1c4505a5a071ad0bc9df54c3fab0f9896ae5a9b7/VL-BERT/README.md",
+    "repo_path": "VL-BERT/README.md",
+    "commit": "1c4505a5a071ad0bc9df54c3fab0f9896ae5a9b7"
+  },
+  {
+    "id": "alfred-file-5",
+    "url": "https://raw.githubusercontent.com/HimariO/HatefulMemesChallenge/1c4505a5a071ad0bc9df54c3fab0f9896ae5a9b7/UNITER/README.md",
+    "repo_path": "UNITER/README.md",
+    "commit": "1c4505a5a071ad0bc9df54c3fab0f9896ae5a9b7"
+  },
+  {
+    "id": "alfred-file-6",
+    "url": "https://raw.githubusercontent.com/HimariO/HatefulMemesChallenge/1c4505a5a071ad0bc9df54c3fab0f9896ae5a9b7/ERNIE-Vil/README.md",
+    "repo_path": "ERNIE-Vil/README.md",
+    "commit": "1c4505a5a071ad0bc9df54c3fab0f9896ae5a9b7"
+  }
+]

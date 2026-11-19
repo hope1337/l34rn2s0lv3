@@ -1,0 +1,192 @@
+{
+  "schema_version": "1.0",
+  "id": "dd-tick-tick-bloom",
+  "title": "Tick Tick Bloom: Harmful Algal Bloom Detection Challenge",
+  "aliases": [],
+  "identity": {
+    "platform": "DrivenData",
+    "organizer": "DrivenData with NASA and partners",
+    "year": 2023,
+    "track": "main",
+    "evaluation_version": "original-final",
+    "canonical_url": "https://www.drivendata.org/competitions/143/tick-tick-bloom/",
+    "source_ids": [
+      "bloom-page",
+      "bloom-file-0"
+    ]
+  },
+  "lifecycle": {
+    "status": "finished",
+    "source_ids": [
+      "bloom-file-0",
+      "bloom-blog"
+    ],
+    "note": "Có kết quả cuối chính thức; năm lấy theo edition, không theo năm xuất bản blog."
+  },
+  "task": {
+    "name": "Ordinal severity prediction from satellite and climate data",
+    "modalities": [
+      "satellite",
+      "image",
+      "tabular"
+    ],
+    "status": "VERIFIED",
+    "source_ids": [
+      "bloom-problem"
+    ],
+    "note": "Task đã đọc từ trang chính thức; pilot đo dữ liệu chưa chạy."
+  },
+  "availability": {
+    "data": {
+      "status": "verified",
+      "value": "Published access route; download not tested",
+      "source_ids": [
+        "bloom-data"
+      ],
+      "note": "Xác minh trang hướng dẫn, không xác nhận đã có dataset hay quyền dùng mọi artifact."
+    },
+    "code": {
+      "status": "verified",
+      "value": "Published winning solution source available",
+      "source_ids": [
+        "bloom-file-0",
+        "bloom-tree"
+      ],
+      "note": "Đã đọc file ở commit cố định; không chứng minh winning execution hay reproduction thành công."
+    },
+    "writeups": {
+      "status": "verified",
+      "value": "Top-three solution summaries and reports linked",
+      "source_ids": [
+        "bloom-file-0",
+        "bloom-blog"
+      ],
+      "note": "Đã đọc summaries và chọn một số tài liệu/code để đối chiếu; PDF chưa đọc toàn bộ."
+    },
+    "final_results": {
+      "status": "verified",
+      "value": "Official final top ranks and scores",
+      "source_ids": [
+        "bloom-file-0"
+      ],
+      "note": "Score công bố, không phải kết quả dự án tự đo."
+    },
+    "dataset_license": {
+      "status": "verified",
+      "value": "Open-data page permits use with attribution",
+      "source_ids": [
+        "bloom-data"
+      ],
+      "note": "Chỉ xác minh phát biểu của trang; terms từng satellite/API và equivalence archive cần kiểm tra."
+    },
+    "code_license": {
+      "status": "verified",
+      "value": "MIT",
+      "source_ids": [
+        "bloom-meta",
+        "bloom-file-0"
+      ],
+      "note": "License code công bố; không áp cho datasets."
+    },
+    "checkpoints": {
+      "status": "not_checked",
+      "value": null,
+      "source_ids": [],
+      "note": "Chưa audit riêng availability; không suy ra từ organizer index."
+    }
+  },
+  "curation": {
+    "state": "curated",
+    "reasons": [
+      "Case cụ thể về region-aware validation, temporal feature availability, rounding và missing imagery.",
+      "Pilot để kiểm tra quy trình prompt và source-to-claim audit."
+    ],
+    "limitations": [
+      "Nghiên cứu tĩnh có nguồn; chưa đo EDA hay chạy training/inference.",
+      "Chi tiết unknown và khác biệt write-up/code nằm trong report và pipeline."
+    ],
+    "red_flags": [],
+    "rating": {
+      "criteria": {
+        "task_evaluation": {
+          "points": 11.25,
+          "source_ids": [
+            "bloom-problem"
+          ],
+          "justification": "Official metric và regional aggregation rõ, server edge cases chưa đọc code."
+        },
+        "solution_depth": {
+          "points": 15.0,
+          "source_ids": [
+            "bloom-file-0",
+            "bloom-blog"
+          ],
+          "justification": "Top-three README, top-one và top-three implementation đã đọc; một số acquisition notebook chưa trace."
+        },
+        "public_code": {
+          "points": 10.0,
+          "source_ids": [
+            "bloom-tree"
+          ],
+          "justification": "Có scripts/env/model artifacts trong tree, nhưng version compatibility và winning config chưa thực nghiệm."
+        },
+        "dataset_access": {
+          "points": 7.5,
+          "source_ids": [
+            "bloom-data"
+          ],
+          "justification": "Trang open-data dẫn archive SeaBASS và cho phép dùng với attribution; chưa tải/chứng minh equivalence bản competition."
+        },
+        "technical_value": {
+          "points": 15,
+          "source_ids": [
+            "bloom-file-0"
+          ],
+          "justification": "Case cụ thể về region-aware validation, temporal feature availability, rounding và missing imagery."
+        },
+        "transfer_value": {
+          "points": 7.5,
+          "source_ids": [
+            "bloom-file-0"
+          ],
+          "justification": "Pipeline cây và feature thống kê có thể thử nhỏ; external APIs/version và domain shift là hạn chế đã nhận diện."
+        },
+        "result_trust": {
+          "points": 5,
+          "source_ids": [
+            "bloom-file-0"
+          ],
+          "justification": "Official repository tách prediction rank khỏi write-up bonus và công bố public/private scores."
+        }
+      },
+      "total": 71.25,
+      "tier": "B"
+    }
+  },
+  "research": {
+    "status": "partial",
+    "report_path": "competitions/dd-tick-tick-bloom/report.md",
+    "next_actions": [
+      "Hoàn thiện các unknown trong state.json, dataset access và dependency/code trace trước reproduction."
+    ]
+  },
+  "last_verified_at": "2026-11-19",
+  "source_ids": [
+    "dd-winners",
+    "bloom-page",
+    "bloom-problem",
+    "bloom-file-0",
+    "bloom-blog",
+    "bloom-tree",
+    "bloom-commit",
+    "bloom-data"
+  ],
+  "tags": [
+    "satellite",
+    "image",
+    "tabular",
+    "pilot",
+    "implementation-forensics",
+    "needs-reproduction"
+  ]
+}

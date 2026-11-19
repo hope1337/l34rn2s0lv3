@@ -1,0 +1,32 @@
+[
+  {
+    "id": "hate-detail-0",
+    "url": "https://raw.githubusercontent.com/rizavelioglu/hateful_memes-hate_detectron/e55d7c95930c4ca47bbb550a291290133cc11e15/notebooks/%5BGitHub%5Dreproduce_submissions.ipynb",
+    "repo_path": "notebooks/[GitHub]reproduce_submissions.ipynb",
+    "commit": "e55d7c95930c4ca47bbb550a291290133cc11e15"
+  },
+  {
+    "id": "hate-detail-1",
+    "url": "https://raw.githubusercontent.com/rizavelioglu/hateful_memes-hate_detectron/e55d7c95930c4ca47bbb550a291290133cc11e15/notebooks/%5BGitHub%5Dend2end_process.ipynb",
+    "repo_path": "notebooks/[GitHub]end2end_process.ipynb",
+    "commit": "e55d7c95930c4ca47bbb550a291290133cc11e15"
+  },
+  {
+    "id": "hate-detail-2",
+    "url": "https://raw.githubusercontent.com/rizavelioglu/hateful_memes-hate_detectron/e55d7c95930c4ca47bbb550a291290133cc11e15/hyperparameter_sweep/sweep.py",
+    "repo_path": "hyperparameter_sweep/sweep.py",
+    "commit": "e55d7c95930c4ca47bbb550a291290133cc11e15"
+  },
+  {
+    "id": "hate-detail-3",
+    "url": "https://raw.githubusercontent.com/rizavelioglu/hateful_memes-hate_detectron/e55d7c95930c4ca47bbb550a291290133cc11e15/utils/concat_memotion-hm.py",
+    "repo_path": "utils/concat_memotion-hm.py",
+    "commit": "e55d7c95930c4ca47bbb550a291290133cc11e15"
+  },
+  {
+    "id": "hate-detail-4",
+    "url": "https://raw.githubusercontent.com/rizavelioglu/hateful_memes-hate_detectron/e55d7c95930c4ca47bbb550a291290133cc11e15/LICENSE",
+    "repo_path": "LICENSE",
+    "commit": "e55d7c95930c4ca47bbb550a291290133cc11e15"
+  }
+]

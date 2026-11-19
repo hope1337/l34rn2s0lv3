@@ -1,0 +1,359 @@
+[
+  {
+    "id": "bloom-task",
+    "claim": "Sample ngày–location; test unseen geographic areas; bốn nguồn feature approved và temporal restriction.",
+    "status": "VERIFIED",
+    "scope": "published",
+    "source_ids": [
+      "bloom-problem"
+    ],
+    "locator": "Metadata; Feature data; Satellite imagery",
+    "limitations": "Chỉ xác minh trong nguồn đã đọc; chưa chứng minh winning execution hoặc tái hiện score.",
+    "assumptions": [],
+    "test": null,
+    "artifact": null
+  },
+  {
+    "id": "bloom-labels",
+    "claim": "Severity1–5 có các ngưỡng density20k/100k/1m/10m.",
+    "status": "VERIFIED",
+    "scope": "published",
+    "source_ids": [
+      "bloom-problem"
+    ],
+    "locator": "Labels; Submission format",
+    "limitations": "Chỉ xác minh trong nguồn đã đọc; chưa chứng minh winning execution hoặc tái hiện score.",
+    "assumptions": [],
+    "test": null,
+    "artifact": null
+  },
+  {
+    "id": "bloom-access",
+    "claim": "Official open-data page cho phép sử dụng với attribution và dẫn SeaBASS.",
+    "status": "VERIFIED",
+    "scope": "published",
+    "source_ids": [
+      "bloom-data"
+    ],
+    "locator": "Open data",
+    "limitations": "Chưa tải archive, kiểm tra CSV equivalence hay terms của satellite APIs.",
+    "assumptions": [],
+    "test": null,
+    "artifact": null
+  },
+  {
+    "id": "bloom-metric",
+    "claim": "Minimize arithmetic average của bốn regional RMSE trên integer severity.",
+    "status": "VERIFIED",
+    "scope": "published",
+    "source_ids": [
+      "bloom-problem"
+    ],
+    "locator": "Performance metric; Submission format",
+    "limitations": "Không có mã scorer server để audit empty/NaN/noninteger behavior.",
+    "assumptions": [],
+    "test": null,
+    "artifact": null
+  },
+  {
+    "id": "bloom-baseline",
+    "claim": "Official repo dẫn LightGBM/satellite benchmark.",
+    "status": "VERIFIED",
+    "scope": "published",
+    "source_ids": [
+      "bloom-file-0"
+    ],
+    "locator": "Benchmark Blog Post",
+    "limitations": "Link/description xác minh; baseline exact score chưa audit.",
+    "assumptions": [],
+    "test": null,
+    "artifact": null
+  },
+  {
+    "id": "bloom-results",
+    "claim": "Top3 sheep/apwheele/karelds private .7608/.7616/.7844 và public .7554/.7476/.7698; writeup bonus riêng.",
+    "status": "VERIFIED",
+    "scope": "published",
+    "source_ids": [
+      "bloom-file-0"
+    ],
+    "locator": "Winning Submissions; Method Write-up Bonus",
+    "limitations": "Chỉ xác minh trong nguồn đã đọc; chưa chứng minh winning execution hoặc tái hiện score.",
+    "assumptions": [],
+    "test": null,
+    "artifact": null
+  },
+  {
+    "id": "bloom-entry",
+    "claim": "reproduce.sh thực tế gọi Sentinels_features.py rồi Model.py.",
+    "status": "VERIFIED",
+    "scope": "code",
+    "source_ids": [
+      "bloom-extra-0"
+    ],
+    "locator": "1st Place/reproduce.sh:1–7",
+    "limitations": "Chỉ xác minh trong nguồn đã đọc; chưa chứng minh winning execution hoặc tái hiện score.",
+    "assumptions": [],
+    "test": null,
+    "artifact": null
+  },
+  {
+    "id": "bloom-water-features",
+    "claim": "Resize mask, chọn class6, mean RGB/green percentiles95/5, ratios không eps.",
+    "status": "VERIFIED",
+    "scope": "code",
+    "source_ids": [
+      "bloom-file-3"
+    ],
+    "locator": "Sentinels_features.py:23–72",
+    "limitations": "Chỉ xác minh trong nguồn đã đọc; chưa chứng minh winning execution hoặc tái hiện score.",
+    "assumptions": [],
+    "test": null,
+    "artifact": null
+  },
+  {
+    "id": "bloom-topone-code",
+    "claim": "Top-one joins metadata/weather/water-color,100repeats×5folds LightGBM và parameter/saving behavior.",
+    "status": "VERIFIED",
+    "scope": "code",
+    "source_ids": [
+      "bloom-file-2"
+    ],
+    "locator": "Model.py:50–171",
+    "limitations": "Đếm vòng lặp dự kiến; không phải log500successful models.",
+    "assumptions": [],
+    "test": null,
+    "artifact": null
+  },
+  {
+    "id": "bloom-validation",
+    "claim": "KMeans100 geographic clusters, GroupKFold5, không random_state explicit; local rounded pooled RMSE.",
+    "status": "VERIFIED",
+    "scope": "code",
+    "source_ids": [
+      "bloom-file-2"
+    ],
+    "locator": "Model.py:99–164",
+    "limitations": "Chỉ xác minh trong nguồn đã đọc; chưa chứng minh winning execution hoặc tái hiện score.",
+    "assumptions": [],
+    "test": null,
+    "artifact": null
+  },
+  {
+    "id": "bloom-knn",
+    "claim": "KDTree euclidean trên degrees, k100 và inverse-distance mean không eps.",
+    "status": "VERIFIED",
+    "scope": "code",
+    "source_ids": [
+      "bloom-file-2"
+    ],
+    "locator": "Model.py:175–180",
+    "limitations": "Chỉ xác minh trong nguồn đã đọc; chưa chứng minh winning execution hoặc tái hiện score.",
+    "assumptions": [],
+    "test": null,
+    "artifact": null
+  },
+  {
+    "id": "bloom-round",
+    "claim": "Hai vùng LGB dùng thresholds1.65/2.55/3.5/4.5; final hai vùng khác dùng np.round của KNN test_df.",
+    "status": "VERIFIED",
+    "scope": "code",
+    "source_ids": [
+      "bloom-file-2"
+    ],
+    "locator": "Model.py:22–32,186–197",
+    "limitations": "Chỉ xác minh trong nguồn đã đọc; chưa chứng minh winning execution hoặc tái hiện score.",
+    "assumptions": [],
+    "test": null,
+    "artifact": null
+  },
+  {
+    "id": "bloom-code-risks",
+    "claim": "knn_test copy nhầm test intermediate nhưng cuối file lấy south/west từ test_df; no zero-distance guard.",
+    "status": "VERIFIED",
+    "scope": "code",
+    "source_ids": [
+      "bloom-file-2"
+    ],
+    "locator": "Model.py:175–197",
+    "limitations": "Static flow observation; không có measured final predictions hay exception.",
+    "assumptions": [],
+    "test": null,
+    "artifact": null
+  },
+  {
+    "id": "bloom-regions",
+    "claim": "Official summary top-one LGB hai vùng và KNN hai vùng; tác giả nêu data/location quality rationale.",
+    "status": "VERIFIED",
+    "scope": "published",
+    "source_ids": [
+      "bloom-file-0",
+      "bloom-blog"
+    ],
+    "locator": "Winning Submissions; Yang Xu explanation",
+    "limitations": "Author rationale không phải controlled proof.",
+    "assumptions": [],
+    "test": null,
+    "artifact": null
+  },
+  {
+    "id": "bloom-second",
+    "claim": "Top-two fit CatBoost380depth6/LGB470depth8/XGB70depth2; mean clip1–5 round int.",
+    "status": "VERIFIED",
+    "scope": "code",
+    "source_ids": [
+      "bloom-file-7",
+      "bloom-file-5",
+      "bloom-file-4"
+    ],
+    "locator": "main_preds.py:16–68; src/mod.py:454–472; README",
+    "limitations": "Chỉ xác minh trong nguồn đã đọc; chưa chứng minh winning execution hoặc tái hiện score.",
+    "assumptions": [],
+    "test": null,
+    "artifact": null
+  },
+  {
+    "id": "bloom-third-entry",
+    "claim": "main.ipynb chỉ thứ tự acquisition→create_datasets→train→test và archive shortcuts.",
+    "status": "VERIFIED",
+    "scope": "code",
+    "source_ids": [
+      "bloom-extra-3"
+    ],
+    "locator": "3rd Place/main.ipynb code cells",
+    "limitations": "Chỉ xác minh trong nguồn đã đọc; chưa chứng minh winning execution hoặc tái hiện score.",
+    "assumptions": [],
+    "test": null,
+    "artifact": null
+  },
+  {
+    "id": "bloom-third-select",
+    "claim": "Longitude round(longitude/10); chọn1Landsat/15Sentinel theo quality/cloud/date; weather aggregates.",
+    "status": "VERIFIED",
+    "scope": "code",
+    "source_ids": [
+      "bloom-file-11"
+    ],
+    "locator": "create_datasets.py:17–74",
+    "limitations": "Chỉ xác minh trong nguồn đã đọc; chưa chứng minh winning execution hoặc tái hiện score.",
+    "assumptions": [],
+    "test": null,
+    "artifact": null
+  },
+  {
+    "id": "bloom-third-features",
+    "claim": "Landsat88/Sentinel67 features: stats mean/min/max/range, indices denominator+1 và dtypes float32/int8.",
+    "status": "VERIFIED",
+    "scope": "code",
+    "source_ids": [
+      "bloom-file-9"
+    ],
+    "locator": "train.py:60–157",
+    "limitations": "Dimensions đếm từ code feature lists, không phải measured EDA.",
+    "assumptions": [],
+    "test": null,
+    "artifact": null
+  },
+  {
+    "id": "bloom-third-split",
+    "claim": "StratifiedGroupKFold5 seed41 group UID, split riêng satellite tables.",
+    "status": "VERIFIED",
+    "scope": "code",
+    "source_ids": [
+      "bloom-file-9"
+    ],
+    "locator": "train.py:11–17,43–53",
+    "limitations": "Không chứng minh lake/time separation hoặc global hash determinism.",
+    "assumptions": [],
+    "test": null,
+    "artifact": null
+  },
+  {
+    "id": "bloom-third-train",
+    "claim": "Per-region/family/fold LGB regression params, max100krounds và early_stop100, save model path.",
+    "status": "VERIFIED",
+    "scope": "code",
+    "source_ids": [
+      "bloom-file-9"
+    ],
+    "locator": "train.py:168–217",
+    "limitations": "Chỉ xác minh trong nguồn đã đọc; chưa chứng minh winning execution hoặc tái hiện score.",
+    "assumptions": [],
+    "test": null,
+    "artifact": null
+  },
+  {
+    "id": "bloom-fallback",
+    "claim": "Inference average scene/fold records theo UID rồi round; fallback mean rounded regional severity, reindex UID.",
+    "status": "VERIFIED",
+    "scope": "code",
+    "source_ids": [
+      "bloom-file-10"
+    ],
+    "locator": "test.py:141–178",
+    "limitations": "Không phải equal family weighting nếu scene counts khác nhau; thiếu vùng chưa chạy thử.",
+    "assumptions": [],
+    "test": null,
+    "artifact": null
+  },
+  {
+    "id": "bloom-negative",
+    "claim": "Top-three author nói một số climate/elevation features không giúp hoặc overfit.",
+    "status": "VERIFIED",
+    "scope": "published",
+    "source_ids": [
+      "bloom-blog"
+    ],
+    "locator": "Raphael Kiminya: other things tried",
+    "limitations": "Tường thuật của tác giả; không có ablation table verified trong pilot.",
+    "assumptions": [],
+    "test": null,
+    "artifact": null
+  },
+  {
+    "id": "bloom-compute",
+    "claim": "Top-one author README nêu Ryzen5950X/128GB và predownloaded data không kèm repo.",
+    "status": "VERIFIED",
+    "scope": "published",
+    "source_ids": [
+      "bloom-file-1"
+    ],
+    "locator": "Hardware; Reproduce",
+    "limitations": "Chỉ xác minh trong nguồn đã đọc; chưa chứng minh winning execution hoặc tái hiện score.",
+    "assumptions": [],
+    "test": null,
+    "artifact": null
+  },
+  {
+    "id": "bloom-hypothesis",
+    "claim": "Region-specific signal quality có thể khiến routing trees/KNN có lợi.",
+    "status": "INFERRED",
+    "scope": "reasoning",
+    "source_ids": [
+      "bloom-file-0",
+      "bloom-file-2"
+    ],
+    "locator": "Regional model choice",
+    "limitations": "Giả thuyết của người phân tích; chưa có controlled evidence.",
+    "assumptions": [
+      "Các vùng có quality và geographic patterns khác nhau."
+    ],
+    "test": "Matched-feature/model ablations trong outer geographic CV, report từng vùng; không tune trên final test.",
+    "artifact": null
+  },
+  {
+    "id": "bloom-unknown-run",
+    "claim": "Chưa có verified archive mapping, acquisition chronology đầy đủ hoặc reproduced score.",
+    "status": "UNKNOWN",
+    "scope": "unknown",
+    "source_ids": [
+      "bloom-data",
+      "bloom-extra-4"
+    ],
+    "locator": "Unknowns",
+    "limitations": "Chưa tải dataset/imagery hay chạy train/inference.",
+    "assumptions": [],
+    "test": null,
+    "artifact": null
+  }
+]

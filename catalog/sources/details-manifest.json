@@ -1,0 +1,30 @@
+[
+  {
+    "id": "cold-page",
+    "url": "https://www.drivendata.org/competitions/55/schneider-cold-start/"
+  },
+  {
+    "id": "bloom-page",
+    "url": "https://www.drivendata.org/competitions/143/tick-tick-bloom/"
+  },
+  {
+    "id": "memes-page",
+    "url": "https://www.drivendata.org/competitions/70/hateful-memes-phase-2/"
+  },
+  {
+    "id": "hatedetectron-commit",
+    "url": "https://api.github.com/repos/rizavelioglu/hateful_memes-hate_detectron/commits/master"
+  },
+  {
+    "id": "hatedetectron-tree",
+    "url": "https://api.github.com/repos/rizavelioglu/hateful_memes-hate_detectron/git/trees/master?recursive=1"
+  },
+  {
+    "id": "alfred-readme",
+    "url": "https://raw.githubusercontent.com/HimariO/HatefulMemesChallenge/main/README.md"
+  },
+  {
+    "id": "vilio-readme",
+    "url": "https://raw.githubusercontent.com/Muennighoff/vilio/master/README.md"
+  }
+]

@@ -1,0 +1,4097 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+        
+            
+
+
+<meta charset="UTF-8">
+<meta http-equiv='Content-Type' content='text/html; charset=utf-8'>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+        
+
+        
+            
+    
+
+
+
+<meta property="og:type" content="website">
+<meta property="twitter:card" content="summary_large_image">
+<meta property="og:url" content="https://grand-challenge.org/challenges/">
+<meta property="og:site_name" content="grand-challenge.org">
+
+
+    <meta name="title" content="Grand Challenge">
+    <meta property="og:title" content="Grand Challenge">
+
+    <meta name="description"
+          content="A platform for end-to-end development of machine learning solutions in biomedical imaging.">
+    <meta property="og:description"
+          content="A platform for end-to-end development of machine learning solutions in biomedical imaging.">
+
+
+
+
+        
+
+        <title>
+            
+    Challenges - Grand Challenge
+
+            
+                
+            
+        </title>
+    
+
+    
+        
+
+
+
+
+<script type="text/javascript" src="https://static.grand-challenge.org/9d6895e/vendored/jquery/jquery.min.js"></script>
+
+    
+
+    
+        
+    
+
+    
+        
+
+
+<link rel="stylesheet" href="https://static.grand-challenge.org/9d6895e/CACHE/css/output.21129494455e.css" type="text/css" media="screen"><link rel="stylesheet" href="https://static.grand-challenge.org/9d6895e/CACHE/css/output.60163e8f4b52.css" type="text/css">
+
+<link rel="shortcut icon" href="https://static.grand-challenge.org/9d6895e/images/favicon.ico"/>
+
+    
+</head>
+
+<body class="d-flex flex-column min-vh-100">
+
+
+    
+
+    
+        
+
+
+<nav class="navbar navbar-light navbar-top navbar-expand-md shadow bg-white">
+    <div class="container">
+        <a class="navbar-brand mr-md-2 text-capitalize"
+           href="https://grand-challenge.org/">
+            Grand Challenge
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse"
+                data-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link active"
+                       href="https://grand-challenge.org/challenges/">
+                        Challenges
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link "
+                       href="https://grand-challenge.org/algorithms/">
+                        Algorithms
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link "
+                       href="https://grand-challenge.org/reader-studies/">
+                        Reader Studies
+                    </a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <i class="fa fa-ellipsis-h"></i>
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item" href="https://grand-challenge.org/blogs/">Blog</a>
+                        <a class="dropdown-item" href="https://grand-challenge.org/archives/">Archives</a>
+                        <div class="dropdown-divider"></div>
+                        
+                        <a class="dropdown-item" href="https://grand-challenge.org/about/"></a>
+                        <a class="dropdown-item" href="https://grand-challenge.org/stats/">Statistics</a>
+                        
+                            <a class="dropdown-item" href="https://grand-challenge.org/policies/terms-of-service/">Terms of Service</a>
+                        
+                            <a class="dropdown-item" href="https://grand-challenge.org/policies/privacy/">Privacy Policy</a>
+                        
+                    </div>
+                </li>
+            </ul>
+            <ul class="navbar-nav">
+                
+
+
+
+<li class="nav-item dropdown my-auto">
+    <a href="#" class="nav-link dropdown-toggle"
+       data-toggle="dropdown" role="button"
+       aria-haspopup="true"
+       aria-expanded="false">
+        Help
+    </a>
+    <div class="dropdown-menu dropdown-menu-right">
+        
+        <h6 class="dropdown-header">Grand Challenge Support</h6>
+        <a class="dropdown-item"
+           href="https://grand-challenge.org/documentation/">
+            <i class="fas fa-book fa-fw"></i>
+            &nbsp;Grand Challenge Documentation
+        </a>
+    </div>
+</li>
+
+    <li class="pr-2 my-auto"><a
+            class="btn btn-outline-primary"
+            href="https://grand-challenge.org/accounts/login/?next=https://grand-challenge.org/challenges/#signin">Sign In</a></li>
+    <li class="my-auto"><a
+            class="btn btn-outline-primary"
+            href="https://grand-challenge.org/accounts/signup/?next=https://grand-challenge.org/challenges/#register">Register</a></li>
+
+
+            </ul>
+        </div>
+    </div>
+</nav>
+
+    
+
+    <div class="container-fluid bg-primary">
+        <div class="container">
+            <nav aria-label="breadcrumb">
+                
+                
+            </nav>
+        </div>
+    </div>
+
+    <main role="main" class="flex-fill">
+
+        
+            
+
+
+
+
+
+
+
+    <div class="jumbotron background-fill rounded-0 bg-primary mb-0"
+         style="background-image: linear-gradient(to bottom, rgba(44,62,80,0.5) 0%, rgba(44,62,80,0.5) 100%), url('');"
+    >
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-10 col-md-8 col-lg-6 text-light">
+                    <h1>Challenges</h1>
+                    <p class="lead">Here is an overview over the medical image analysis challenges that have been hosted on Grand Challenge.<br>Please fill in <a href='https://grand-challenge.org/challenges/requests/create/'>this form</a> if you would like to host your own challenge.</p>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+
+
+        
+
+        <div class="container pb-3 mt-3">
+
+            
+                
+                    
+
+
+
+
+                
+                <div id="messages">
+                    
+
+                </div>
+                
+
+            
+
+            
+                
+                    
+
+
+
+
+
+                
+                <div class="row">
+                    
+                    <div class="col overflow-auto">
+                        
+   <div class="row mb-3 justify-content-between">
+        <div class="col-auto">
+            <a class="btn btn-primary"
+            href="https://grand-challenge.org/challenges/requests/create/"
+            title="Host your own challenge">
+                <i class="fas fa-plus mr-1"></i>Host your own Challenge
+            </a>
+        </div>
+        <div class="col-auto">
+            <a class="btn btn-primary"
+            href="https://grand-challenge.org/challenges/requests/"
+            title="Your challenge requests">
+                <i class="fas fa-list mr-1"></i>Your Challenge Requests
+            </a>
+        </div>
+    </div>
+    
+
+
+
+<p>
+    <a class="btn btn-primary"
+       role="button"
+       data-toggle="collapse"
+       data-target="#filterForm"
+       aria-expanded="false"
+       aria-controls="filterForm">
+        <i class="fas fa-filter mr-1"></i>Filter  Challenges
+    </a>
+    
+</p>
+<div class="collapse" id="filterForm">
+    <div class="card card-body mb-3">
+        
+
+<form  method="get" > <link href="https://static.grand-challenge.org/9d6895e/admin/css/vendor/select2/select2.min.css" media="screen" rel="stylesheet">
+<link href="https://static.grand-challenge.org/9d6895e/django_select2/django_select2.css" media="screen" rel="stylesheet">
+<script src="https://static.grand-challenge.org/9d6895e/admin/js/vendor/select2/select2.full.min.js"></script>
+<script src="https://static.grand-challenge.org/9d6895e/admin/js/vendor/select2/i18n/en.js"></script>
+<script src="https://static.grand-challenge.org/9d6895e/django_select2/django_select2.js"></script> <div id="div_id_search" class="form-group"> <label for="id_search" class="">
+                Title or Description
+            </label> <div> <input type="text" name="search" class="textinput form-control" id="id_search"> </div> </div> <div id="div_id_modalities" class="form-group"> <label for="id_modalities" class="">
+                Modality
+            </label> <div> <select name="modalities" lang="en" data-minimum-input-length="0" data-theme="default" data-allow-clear="true" data-placeholder="" class="select2multiplewidget custom-select django-select2" id="id_modalities" multiple> <option value="23">CBCT</option> <option value="1">CT</option> <option value="8">CT/MR</option> <option value="15">Dermoscopy</option> <option value="17">Endoscopy</option> <option value="13">Fundus Photograp</option> <option value="11">Histology</option> <option value="16">Infrared Reflect</option> <option value="7">Mammography</option> <option value="2">MR</option> <option value="12">OCT</option> <option value="4">PET</option> <option value="5">PET/CT</option> <option value="6">PET/MR</option> <option value="10">Transmission Ele</option> <option value="9">US</option> <option value="3">XR</option>
+
+</select> </div> </div> <div id="div_id_structures" class="form-group"> <label for="id_structures" class="">
+                Anatomical Structure
+            </label> <div> <select name="structures" lang="en" data-minimum-input-length="0" data-theme="default" data-allow-clear="true" data-placeholder="" class="select2multiplewidget custom-select django-select2" id="id_structures" multiple> <option value="19">Colon (Abdomen)</option> <option value="7">Kidney (Abdomen)</option> <option value="5">Liver (Abdomen)</option> <option value="6">Pancreas (Abdomen)</option> <option value="8">Spleen (Abdomen)</option> <option value="4">Heart (Cardiac)</option> <option value="1">Brain (Head and Neck)</option> <option value="16">Cranium (Head and Neck)</option> <option value="15">Retina (Head and Neck)</option> <option value="2">Teeth (Head and Neck)</option> <option value="13">Knee (Lower Limb)</option> <option value="10">Cervix (Pelvis)</option> <option value="9">Prostate (Pelvis)</option> <option value="18">Skin (Skin)</option> <option value="11">Spinal Cord (Spine)</option> <option value="14">Vertebral Column (Spine)</option> <option value="17">Breast (Thorax)</option> <option value="3">Lung (Thorax)</option> <option value="12">Hand (Upper Limb)</option>
+
+</select> </div> </div> <div id="div_id_structures__region" class="form-group"> <label for="id_structures__region" class="">
+                Anatomical Region
+            </label> <div> <select name="structures__region" lang="en" data-minimum-input-length="0" data-theme="default" data-allow-clear="true" data-placeholder="" class="select2multiplewidget custom-select django-select2" id="id_structures__region" multiple> <option value="4">Abdomen</option> <option value="3">Cardiac</option> <option value="1">Head and Neck</option> <option value="8">Lower Limb</option> <option value="5">Pelvis</option> <option value="9">Skin</option> <option value="6">Spine</option> <option value="2">Thorax</option> <option value="7">Upper Limb</option>
+
+</select> </div> </div> <div id="div_id_organizations" class="form-group"> <label for="id_organizations" class="">
+                Organization
+            </label> <div> <select name="organizations" lang="en" data-minimum-input-length="0" data-theme="default" data-allow-clear="true" data-placeholder="" class="select2multiplewidget custom-select django-select2" id="id_organizations" multiple> <option value="diag">Diagnostic Image Analysis Group</option> <option value="qia">QIA</option> <option value="fme">FME</option> <option value="qurai">qurAI</option> <option value="radboud-ai-for-health">Radboud AI for Health</option> <option value="institute-of-cancer-research">Institute of Cancer Research</option> <option value="northwestern-university">Northwestern University</option> <option value="medical-deep-learning-lab">Medical Deep Learning Lab</option> <option value="zeiss">Zeiss</option> <option value="aws">AWS</option> <option value="delft-imaging">Delft Imaging</option> <option value="fastmri">FastMRI</option> <option value="screenpoint-medical">ScreenPoint Medical</option> <option value="hesge">HESGE</option> <option value="breast-imaging-group-radboudumc">Breast Imaging Group Radboudumc</option> <option value="magic">MAGIC</option>
+
+</select> </div> </div> <div id="div_id_series" class="form-group"> <label for="id_series" class="">
+                Challenge Series
+            </label> <div> <select name="series" lang="en" data-minimum-input-length="0" data-theme="default" data-allow-clear="true" data-placeholder="" class="select2multiplewidget custom-select django-select2" id="id_series" multiple> <option value="11">AAPM</option> <option value="4">CAMELYON</option> <option value="5">COMPAY</option> <option value="10">ECDP</option> <option value="1">ICAIR</option> <option value="6">ICIP</option> <option value="2">ISBI</option> <option value="3">MICCAI</option> <option value="12">MIDL</option> <option value="9">OpenCXR</option> <option value="7">RSNA</option> <option value="8">SPIE</option>
+
+</select> </div> </div> <div id="div_id_task_types" class="form-group"> <label for="id_task_types" class="">
+                Task Type
+            </label> <div> <select name="task_types" lang="en" data-minimum-input-length="0" data-theme="default" data-allow-clear="true" data-placeholder="" class="select2multiplewidget custom-select django-select2" id="id_task_types" multiple> <option value="2">Classification</option> <option value="3">Detection</option> <option value="8">Generalization</option> <option value="9">Localization</option> <option value="6">Modeling</option> <option value="11">Prediction</option> <option value="5">Reconstruction</option> <option value="4">Registration</option> <option value="7">Regression</option> <option value="1">Segmentation</option> <option value="10">Tracking</option>
+
+</select> </div> </div> <div id="div_id_status" class="form-group"> <label for="id_status" class="">
+                Challenge status
+            </label> <div> <select name="status" class="select custom-select" id="id_status"> <option value="" selected>---------</option> <option value="OPEN">Accepting submissions now</option> <option value="OPEN_SOON">Opening submissions soon</option> <option value="CLOSED">Not accepting submissions</option> <option value="COMPLETED">Completed</option>
+
+</select> </div> </div> <input type="submit"
+    name="submit"
+    value="Apply Filters"
+    
+        class="btn btn-primary"
+        id="submit-id-submit"
+    
+    
+    /> </form>
+
+    </div>
+</div>
+
+<p class="text-muted">
+
+        
+            264 challenges found
+        
+
+ </p>
+
+
+    
+
+
+
+
+<div class="row equal-height mx-n2">
+    
+        
+        <div class="col-12 col-sm-6 col-md-3 mb-3 px-2">
+            <div class="card gc-card">
+                <a class="stretched-link" href="https://owl.grand-challenge.org/"
+                   title="View Challenge"></a>
+                <div class="embed-responsive embed-responsive-1by1">
+                    
+                        <picture>
+  <source type="image/avif"
+          srcset="https://public.grand-challenge-user-content.org/logos/challenge/859/OWL_logo_1280x1280/1/800w.avif 800w, https://public.grand-challenge-user-content.org/logos/challenge/859/OWL_logo_1280x1280/1/100w.avif 100w, https://public.grand-challenge-user-content.org/logos/challenge/859/OWL_logo_1280x1280/1/900w.avif 900w, https://public.grand-challenge-user-content.org/logos/challenge/859/OWL_logo_1280x1280/1/200w.avif 200w, https://public.grand-challenge-user-content.org/logos/challenge/859/OWL_logo_1280x1280/1/1000w.avif 1000w, https://public.grand-challenge-user-content.org/logos/challenge/859/OWL_logo_1280x1280/1/300w.avif 300w, https://public.grand-challenge-user-content.org/logos/challenge/859/OWL_logo_1280x1280/1/1100w.avif 1100w, https://public.grand-challenge-user-content.org/logos/challenge/859/OWL_logo_1280x1280/1/400w.avif 400w, https://public.grand-challenge-user-content.org/logos/challenge/859/OWL_logo_1280x1280/1/1200w.avif 1200w, https://public.grand-challenge-user-content.org/logos/challenge/859/OWL_logo_1280x1280/1/500w.avif 500w, https://public.grand-challenge-user-content.org/logos/challenge/859/OWL_logo_1280x1280/1/600w.avif 600w, https://public.grand-challenge-user-content.org/logos/challenge/859/OWL_logo_1280x1280/1/700w.avif 700w"
+          sizes="(min-width: 0px) and (max-width: 767px) 100vw, (min-width: 768px) and (max-width: 991px) 50vw, (min-width: 992px) and (max-width: 1199px) 25vw, 300px">
+  <img src="https://public.grand-challenge-user-content.org/logos/challenge/859/OWL_logo_1280x1280.png" alt="Item Logo" width="1280" height="1280" class="card-img-top embed-responsive-item" loading="lazy">
+</picture>
+
+                    
+                </div>
+                <div class="card-body d-flex flex-column">
+                    <h5 class="card-title text-truncate mb-0">
+                        
+                            Observing What Models Learn
+                        
+                        
+                    </h5>
+                    
+                        
+
+
+
+<div>
+    
+        <div class="badge-info badge above-stretched-link text-wrap mt-1 p-2 text-white w-100"
+             title="Algorithm submission challenge (Type 2)">
+            <i class="fa fa-sm fa-code mr-1"></i> Algorithm submission challenge
+        </div>
+    
+
+    <span class="badge  badge-success  mt-1 above-stretched-link text-wrap w-100 p-2">
+    <i class="far fa-clock fa-fw"></i> Accepting submissions
+</span><br>
+
+
+    
+
+    
+        <span class="badge badge-dark above-stretched-link p-1 mt-1"
+              title="128 participants">
+                                            <i class="fas fa-user fa-fw"></i>
+                                            128
+                                        </span>
+    
+
+    
+        
+            <a class="badge badge-dark above-stretched-link p-1 mt-1"
+               href="https://owl.grand-challenge.org/evaluation/sanity-check/leaderboard/"
+               title="20 results, latest 1 day, 19 hours ago">
+                <i class="fas fa-trophy fa-fw"></i>
+                20
+            </a>
+        
+    
+
+    
+
+    
+
+    
+        <span class="badge badge-dark above-stretched-link p-1 mt-1"
+              title="Held in 2026">
+                                                <i class="fas fa-calendar-day fa-fw"></i>
+                                                2026
+                                            </span>
+    
+
+</div>
+
+                    
+                </div>
+            </div>
+        </div>
+    
+        
+        <div class="col-12 col-sm-6 col-md-3 mb-3 px-2">
+            <div class="card gc-card">
+                <a class="stretched-link" href="https://lightmycells2.grand-challenge.org/"
+                   title="View Challenge"></a>
+                <div class="embed-responsive embed-responsive-1by1">
+                    
+                        <picture>
+  <source type="image/avif"
+          srcset="https://public.grand-challenge-user-content.org/logos/challenge/858/Logo_Challenge_LMC_2_Version_finale_vertical/1/800w.avif 800w, https://public.grand-challenge-user-content.org/logos/challenge/858/Logo_Challenge_LMC_2_Version_finale_vertical/1/1600w.avif 1600w, https://public.grand-challenge-user-content.org/logos/challenge/858/Logo_Challenge_LMC_2_Version_finale_vertical/1/2400w.avif 2400w, https://public.grand-challenge-user-content.org/logos/challenge/858/Logo_Challenge_LMC_2_Version_finale_vertical/1/100w.avif 100w, https://public.grand-challenge-user-content.org/logos/challenge/858/Logo_Challenge_LMC_2_Version_finale_vertical/1/1400w.avif 1400w, https://public.grand-challenge-user-content.org/logos/challenge/858/Logo_Challenge_LMC_2_Version_finale_vertical/1/900w.avif 900w, https://public.grand-challenge-user-content.org/logos/challenge/858/Logo_Challenge_LMC_2_Version_finale_vertical/1/200w.avif 200w, https://public.grand-challenge-user-content.org/logos/challenge/858/Logo_Challenge_LMC_2_Version_finale_vertical/1/1000w.avif 1000w, https://public.grand-challenge-user-content.org/logos/challenge/858/Logo_Challenge_LMC_2_Version_finale_vertical/1/1800w.avif 1800w, https://public.grand-challenge-user-content.org/logos/challenge/858/Logo_Challenge_LMC_2_Version_finale_vertical/1/300w.avif 300w, https://public.grand-challenge-user-content.org/logos/challenge/858/Logo_Challenge_LMC_2_Version_finale_vertical/1/1100w.avif 1100w, https://public.grand-challenge-user-content.org/logos/challenge/858/Logo_Challenge_LMC_2_Version_finale_vertical/1/400w.avif 400w, https://public.grand-challenge-user-content.org/logos/challenge/858/Logo_Challenge_LMC_2_Version_finale_vertical/1/1200w.avif 1200w, https://public.grand-challenge-user-content.org/logos/challenge/858/Logo_Challenge_LMC_2_Version_finale_vertical/1/2000w.avif 2000w, https://public.grand-challenge-user-content.org/logos/challenge/858/Logo_Challenge_LMC_2_Version_finale_vertical/1/500w.avif 500w, https://public.grand-challenge-user-content.org/logos/challenge/858/Logo_Challenge_LMC_2_Version_finale_vertical/1/600w.avif 600w, https://public.grand-challenge-user-content.org/logos/challenge/858/Logo_Challenge_LMC_2_Version_finale_vertical/1/700w.avif 700w, https://public.grand-challenge-user-content.org/logos/challenge/858/Logo_Challenge_LMC_2_Version_finale_vertical/1/2200w.avif 2200w"
+          sizes="(min-width: 0px) and (max-width: 767px) 100vw, (min-width: 768px) and (max-width: 991px) 50vw, (min-width: 992px) and (max-width: 1199px) 25vw, 300px">
+  <img src="https://public.grand-challenge-user-content.org/logos/challenge/858/Logo_Challenge_LMC_2_Version_finale_vertical.png" alt="Item Logo" width="5334" height="5334" class="card-img-top embed-responsive-item" loading="lazy">
+</picture>
+
+                    
+                </div>
+                <div class="card-body d-flex flex-column">
+                    <h5 class="card-title text-truncate mb-0">
+                        
+                            Light My Cells 2 : Transmitted Light to Fluorescence Challenge
+                        
+                        
+                    </h5>
+                    
+                        
+
+
+
+<div>
+    
+        <div class="badge-info badge above-stretched-link text-wrap mt-1 p-2 text-white w-100"
+             title="Algorithm submission challenge (Type 2)">
+            <i class="fa fa-sm fa-code mr-1"></i> Algorithm submission challenge
+        </div>
+    
+
+    <span class="badge  badge-success  mt-1 above-stretched-link text-wrap w-100 p-2">
+    <i class="far fa-clock fa-fw"></i> Accepting submissions
+</span><br>
+
+
+    
+
+    
+        <span class="badge badge-dark above-stretched-link p-1 mt-1"
+              title="220 participants">
+                                            <i class="fas fa-user fa-fw"></i>
+                                            220
+                                        </span>
+    
+
+    
+        
+            <a class="badge badge-dark above-stretched-link p-1 mt-1"
+               href="https://lightmycells2.grand-challenge.org/evaluation/mock-phase/leaderboard/"
+               title="56 results, latest 15 hours ago">
+                <i class="fas fa-trophy fa-fw"></i>
+                56
+            </a>
+        
+    
+
+    
+
+    
+
+    
+        <span class="badge badge-dark above-stretched-link p-1 mt-1"
+              title="Held in 2026">
+                                                <i class="fas fa-calendar-day fa-fw"></i>
+                                                2026
+                                            </span>
+    
+
+</div>
+
+                    
+                </div>
+            </div>
+        </div>
+    
+        
+        <div class="col-12 col-sm-6 col-md-3 mb-3 px-2">
+            <div class="card gc-card">
+                <a class="stretched-link" href="https://cobra2026.grand-challenge.org/"
+                   title="View Challenge"></a>
+                <div class="embed-responsive embed-responsive-1by1">
+                    
+                        <picture>
+  <source type="image/avif"
+          srcset="https://public.grand-challenge-user-content.org/logos/challenge/851/logo/1/800w.avif 800w, https://public.grand-challenge-user-content.org/logos/challenge/851/logo/1/100w.avif 100w, https://public.grand-challenge-user-content.org/logos/challenge/851/logo/1/900w.avif 900w, https://public.grand-challenge-user-content.org/logos/challenge/851/logo/1/200w.avif 200w, https://public.grand-challenge-user-content.org/logos/challenge/851/logo/1/1000w.avif 1000w, https://public.grand-challenge-user-content.org/logos/challenge/851/logo/1/300w.avif 300w, https://public.grand-challenge-user-content.org/logos/challenge/851/logo/1/1100w.avif 1100w, https://public.grand-challenge-user-content.org/logos/challenge/851/logo/1/400w.avif 400w, https://public.grand-challenge-user-content.org/logos/challenge/851/logo/1/500w.avif 500w, https://public.grand-challenge-user-content.org/logos/challenge/851/logo/1/600w.avif 600w, https://public.grand-challenge-user-content.org/logos/challenge/851/logo/1/700w.avif 700w"
+          sizes="(min-width: 0px) and (max-width: 767px) 100vw, (min-width: 768px) and (max-width: 991px) 50vw, (min-width: 992px) and (max-width: 1199px) 25vw, 300px">
+  <img src="https://public.grand-challenge-user-content.org/logos/challenge/851/logo.png" alt="Item Logo" width="1402" height="1122" class="card-img-top embed-responsive-item" loading="lazy">
+</picture>
+
+                    
+                </div>
+                <div class="card-body d-flex flex-column">
+                    <h5 class="card-title text-truncate mb-0">
+                        
+                            Cone-beam CT reconstruction for radiation therapy challenge
+                        
+                        
+                    </h5>
+                    
+                        
+
+
+
+<div>
+    
+        <div class="badge-info badge above-stretched-link text-wrap mt-1 p-2 text-white w-100"
+             title="Algorithm submission challenge (Type 2)">
+            <i class="fa fa-sm fa-code mr-1"></i> Algorithm submission challenge
+        </div>
+    
+
+    <span class="badge  badge-warning  mt-1 above-stretched-link text-wrap w-100 p-2">
+    <i class="far fa-clock fa-fw"></i> Opening submissions for Test phase on Jan 15 2027 at 23:01
+</span><br>
+
+
+    
+
+    
+        <span class="badge badge-dark above-stretched-link p-1 mt-1"
+              title="282 participants">
+                                            <i class="fas fa-user fa-fw"></i>
+                                            282
+                                        </span>
+    
+
+    
+        
+            <a class="badge badge-dark above-stretched-link p-1 mt-1"
+               href="https://cobra2026.grand-challenge.org/evaluation/validation-phase/leaderboard/"
+               title="2 results, latest 1 month ago">
+                <i class="fas fa-trophy fa-fw"></i>
+                2
+            </a>
+        
+    
+
+    
+
+    
+        <a class="badge badge-dark above-stretched-link p-1 mt-1"
+           href="https://arxiv.org/abs/2607.20037"
+           title="COBRA2026: a large-scale multicenter pelvic cone-beam computed tomography projection dataset">
+            <i class="fas fa-file fa-fw"></i>&nbsp;Article
+        </a>
+    
+
+    
+        <span class="badge badge-dark above-stretched-link p-1 mt-1"
+              title="Held in 2026">
+                                                <i class="fas fa-calendar-day fa-fw"></i>
+                                                2026
+                                            </span>
+    
+
+</div>
+
+                    
+                </div>
+            </div>
+        </div>
+    
+        
+        <div class="col-12 col-sm-6 col-md-3 mb-3 px-2">
+            <div class="card gc-card">
+                <a class="stretched-link" href="https://topbrain2026.grand-challenge.org/"
+                   title="View Challenge"></a>
+                <div class="embed-responsive embed-responsive-1by1">
+                    
+                        <picture>
+  <source type="image/avif"
+          srcset="https://public.grand-challenge-user-content.org/logos/challenge/847/TopBrainAtlasforLogo/1/800w.avif 800w, https://public.grand-challenge-user-content.org/logos/challenge/847/TopBrainAtlasforLogo/1/1600w.avif 1600w, https://public.grand-challenge-user-content.org/logos/challenge/847/TopBrainAtlasforLogo/1/2400w.avif 2400w, https://public.grand-challenge-user-content.org/logos/challenge/847/TopBrainAtlasforLogo/1/100w.avif 100w, https://public.grand-challenge-user-content.org/logos/challenge/847/TopBrainAtlasforLogo/1/1400w.avif 1400w, https://public.grand-challenge-user-content.org/logos/challenge/847/TopBrainAtlasforLogo/1/900w.avif 900w, https://public.grand-challenge-user-content.org/logos/challenge/847/TopBrainAtlasforLogo/1/200w.avif 200w, https://public.grand-challenge-user-content.org/logos/challenge/847/TopBrainAtlasforLogo/1/1000w.avif 1000w, https://public.grand-challenge-user-content.org/logos/challenge/847/TopBrainAtlasforLogo/1/1800w.avif 1800w, https://public.grand-challenge-user-content.org/logos/challenge/847/TopBrainAtlasforLogo/1/300w.avif 300w, https://public.grand-challenge-user-content.org/logos/challenge/847/TopBrainAtlasforLogo/1/1100w.avif 1100w, https://public.grand-challenge-user-content.org/logos/challenge/847/TopBrainAtlasforLogo/1/400w.avif 400w, https://public.grand-challenge-user-content.org/logos/challenge/847/TopBrainAtlasforLogo/1/1200w.avif 1200w, https://public.grand-challenge-user-content.org/logos/challenge/847/TopBrainAtlasforLogo/1/2000w.avif 2000w, https://public.grand-challenge-user-content.org/logos/challenge/847/TopBrainAtlasforLogo/1/500w.avif 500w, https://public.grand-challenge-user-content.org/logos/challenge/847/TopBrainAtlasforLogo/1/600w.avif 600w, https://public.grand-challenge-user-content.org/logos/challenge/847/TopBrainAtlasforLogo/1/700w.avif 700w, https://public.grand-challenge-user-content.org/logos/challenge/847/TopBrainAtlasforLogo/1/2200w.avif 2200w"
+          sizes="(min-width: 0px) and (max-width: 767px) 100vw, (min-width: 768px) and (max-width: 991px) 50vw, (min-width: 992px) and (max-width: 1199px) 25vw, 300px">
+  <img src="https://public.grand-challenge-user-content.org/logos/challenge/847/TopBrainAtlasforLogo.jpg" alt="Item Logo" width="2425" height="2425" class="card-img-top embed-responsive-item" loading="lazy">
+</picture>
+
+                    
+                </div>
+                <div class="card-body d-flex flex-column">
+                    <h5 class="card-title text-truncate mb-0">
+                        
+                            TopBrain Segmentation Challenge Version 2
+                        
+                        
+                    </h5>
+                    
+                        
+
+
+
+<div>
+    
+        <div class="badge-info badge above-stretched-link text-wrap mt-1 p-2 text-white w-100"
+             title="Algorithm submission challenge (Type 2)">
+            <i class="fa fa-sm fa-code mr-1"></i> Algorithm submission challenge
+        </div>
+    
+
+    <span class="badge  badge-warning  mt-1 above-stretched-link text-wrap w-100 p-2">
+    <i class="far fa-clock fa-fw"></i> Opening submissions for FinalTest-TopBrainV2-Seg on Dec 11 2026 at 23:00
+</span><br>
+
+
+    
+        <a href="#InfoModal"
+           class="badge badge-dark above-stretched-link p-1 mt-1"
+           data-toggle="modal"
+           data-target="#InfoModal"
+           data-title="TopBrain Segmentation Challenge Version 2"
+           data-description="Segment over 50 landmark brain vessel anatomies for both CTA and MRA in TopBrain version 2"
+           data-absolute-url="https://topbrain2026.grand-challenge.org/"
+           title="Challenge Info">
+            <i class="fas fa-info-circle fa-fw"></i>
+        </a>
+    
+
+    
+        <span class="badge badge-dark above-stretched-link p-1 mt-1"
+              title="227 participants">
+                                            <i class="fas fa-user fa-fw"></i>
+                                            227
+                                        </span>
+    
+
+    
+        
+            <a class="badge badge-dark above-stretched-link p-1 mt-1"
+               href="https://topbrain2026.grand-challenge.org/evaluation/validation-ta36-seg/leaderboard/"
+               title="49 results, latest 1 month, 3 weeks ago">
+                <i class="fas fa-trophy fa-fw"></i>
+                49
+            </a>
+        
+    
+
+    
+
+    
+        <a class="badge badge-dark above-stretched-link p-1 mt-1"
+           href="https://doi.org/10.64898/2026.05.28.26354312"
+           title="TopBrain Segmentation Challenge for Whole Brain Vessel Anatomy">
+            <i class="fas fa-file fa-fw"></i>&nbsp;Article
+        </a>
+    
+
+    
+        <span class="badge badge-dark above-stretched-link p-1 mt-1"
+              title="Held in 2026">
+                                                <i class="fas fa-calendar-day fa-fw"></i>
+                                                2026
+                                            </span>
+    
+
+</div>
+
+                    
+                </div>
+            </div>
+        </div>
+    
+        
+        <div class="col-12 col-sm-6 col-md-3 mb-3 px-2">
+            <div class="card gc-card">
+                <a class="stretched-link" href="https://atm26.grand-challenge.org/"
+                   title="View Challenge"></a>
+                <div class="embed-responsive embed-responsive-1by1">
+                    
+                        <picture>
+  <source type="image/avif"
+          srcset="https://public.grand-challenge-user-content.org/logos/challenge/857/atm-logo2_HmAO3g5/1/800w.avif 800w, https://public.grand-challenge-user-content.org/logos/challenge/857/atm-logo2_HmAO3g5/1/100w.avif 100w, https://public.grand-challenge-user-content.org/logos/challenge/857/atm-logo2_HmAO3g5/1/200w.avif 200w, https://public.grand-challenge-user-content.org/logos/challenge/857/atm-logo2_HmAO3g5/1/300w.avif 300w, https://public.grand-challenge-user-content.org/logos/challenge/857/atm-logo2_HmAO3g5/1/400w.avif 400w, https://public.grand-challenge-user-content.org/logos/challenge/857/atm-logo2_HmAO3g5/1/500w.avif 500w, https://public.grand-challenge-user-content.org/logos/challenge/857/atm-logo2_HmAO3g5/1/600w.avif 600w, https://public.grand-challenge-user-content.org/logos/challenge/857/atm-logo2_HmAO3g5/1/700w.avif 700w"
+          sizes="(min-width: 0px) and (max-width: 767px) 100vw, (min-width: 768px) and (max-width: 991px) 50vw, (min-width: 992px) and (max-width: 1199px) 25vw, 300px">
+  <img src="https://public.grand-challenge-user-content.org/logos/challenge/857/atm-logo2_HmAO3g5.png" alt="Item Logo" width="800" height="800" class="card-img-top embed-responsive-item" loading="lazy">
+</picture>
+
+                    
+                </div>
+                <div class="card-body d-flex flex-column">
+                    <h5 class="card-title text-truncate mb-0">
+                        
+                            Airway Tree Modeling 26
+                        
+                        
+                    </h5>
+                    
+                        
+
+
+
+<div>
+    
+        <div class="badge-info badge above-stretched-link text-wrap mt-1 p-2 text-white w-100"
+             title="Algorithm submission challenge (Type 2)">
+            <i class="fa fa-sm fa-code mr-1"></i> Algorithm submission challenge
+        </div>
+    
+
+    <span class="badge  badge-light  mt-1 above-stretched-link text-wrap w-100 p-2">
+    <i class="far fa-clock fa-fw"></i> Challenge completed
+</span><br>
+
+
+    
+        <a href="#InfoModal"
+           class="badge badge-dark above-stretched-link p-1 mt-1"
+           data-toggle="modal"
+           data-target="#InfoModal"
+           data-title="Airway Tree Modeling 26"
+           data-description="ATM26 is part of the Sino-European SENSAR Network series. Accurate airway tree modeling supports respiratory assessment and interventions like biopsy navigation. Building on ATM22 (binary segmentation), ATM26 advances to structured airway understanding, including two tracks: binary segmentation and anatomical labeling. The challenge encourages robust, topology-aware methods under diverse CT conditions."
+           data-absolute-url="https://atm26.grand-challenge.org/"
+           title="Challenge Info">
+            <i class="fas fa-info-circle fa-fw"></i>
+        </a>
+    
+
+    
+        <span class="badge badge-dark above-stretched-link p-1 mt-1"
+              title="146 participants">
+                                            <i class="fas fa-user fa-fw"></i>
+                                            146
+                                        </span>
+    
+
+    
+        
+            <a class="badge badge-dark above-stretched-link p-1 mt-1"
+               href="https://atm26.grand-challenge.org/evaluation/challenge-only-track-1-sanity-check-submission-phase/leaderboard/"
+               title="72 results, latest 2 months, 1 week ago">
+                <i class="fas fa-trophy fa-fw"></i>
+                72
+            </a>
+        
+    
+
+    
+
+    
+        <a class="badge badge-dark above-stretched-link p-1 mt-1"
+           href="https://doi.org/10.1007/s11548-025-03368-3"
+           title="Reflecting topology consistency and abnormality via learnable attentions for airway labeling">
+            <i class="fas fa-file fa-fw"></i>&nbsp;Article
+        </a>
+    
+        <a class="badge badge-dark above-stretched-link p-1 mt-1"
+           href="https://arxiv.org/abs/2412.11039"
+           title="AirMorph: Topology-Preserving Deep Learning for Pulmonary Airway Analysis">
+            <i class="fas fa-file fa-fw"></i>&nbsp;Article
+        </a>
+    
+        <a class="badge badge-dark above-stretched-link p-1 mt-1"
+           href="https://doi.org/10.1016/j.media.2023.102957"
+           title="Multi-site, Multi-domain Airway Tree Modeling">
+            <i class="fas fa-file fa-fw"></i>&nbsp;Article
+        </a>
+    
+
+    
+        <span class="badge badge-dark above-stretched-link p-1 mt-1"
+              title="Held in 2026">
+                                                <i class="fas fa-calendar-day fa-fw"></i>
+                                                2026
+                                            </span>
+    
+
+</div>
+
+                    
+                </div>
+            </div>
+        </div>
+    
+        
+        <div class="col-12 col-sm-6 col-md-3 mb-3 px-2">
+            <div class="card gc-card">
+                <a class="stretched-link" href="https://odin2026.grand-challenge.org/"
+                   title="View Challenge"></a>
+                <div class="embed-responsive embed-responsive-1by1">
+                    
+                        <picture>
+  <source type="image/avif"
+          srcset="https://public.grand-challenge-user-content.org/logos/challenge/855/MICCA-ODIN_logo_E6eNMes/1/800w.avif 800w, https://public.grand-challenge-user-content.org/logos/challenge/855/MICCA-ODIN_logo_E6eNMes/1/100w.avif 100w, https://public.grand-challenge-user-content.org/logos/challenge/855/MICCA-ODIN_logo_E6eNMes/1/900w.avif 900w, https://public.grand-challenge-user-content.org/logos/challenge/855/MICCA-ODIN_logo_E6eNMes/1/200w.avif 200w, https://public.grand-challenge-user-content.org/logos/challenge/855/MICCA-ODIN_logo_E6eNMes/1/300w.avif 300w, https://public.grand-challenge-user-content.org/logos/challenge/855/MICCA-ODIN_logo_E6eNMes/1/400w.avif 400w, https://public.grand-challenge-user-content.org/logos/challenge/855/MICCA-ODIN_logo_E6eNMes/1/500w.avif 500w, https://public.grand-challenge-user-content.org/logos/challenge/855/MICCA-ODIN_logo_E6eNMes/1/600w.avif 600w, https://public.grand-challenge-user-content.org/logos/challenge/855/MICCA-ODIN_logo_E6eNMes/1/700w.avif 700w"
+          sizes="(min-width: 0px) and (max-width: 767px) 100vw, (min-width: 768px) and (max-width: 991px) 50vw, (min-width: 992px) and (max-width: 1199px) 25vw, 300px">
+  <img src="https://public.grand-challenge-user-content.org/logos/challenge/855/MICCA-ODIN_logo_E6eNMes.png" alt="Item Logo" width="982" height="974" class="card-img-top embed-responsive-item" loading="lazy">
+</picture>
+
+                    
+                </div>
+                <div class="card-body d-flex flex-column">
+                    <h5 class="card-title text-truncate mb-0">
+                        
+                            ODIN 2026 Challenges
+                        
+                        
+                    </h5>
+                    
+                        
+
+
+
+<div>
+    
+        <div class="badge-info badge above-stretched-link text-wrap mt-1 p-2 text-white w-100"
+             title="Algorithm submission challenge (Type 2)">
+            <i class="fa fa-sm fa-code mr-1"></i> Algorithm submission challenge
+        </div>
+    
+
+    <span class="badge  badge-light  mt-1 above-stretched-link text-wrap w-100 p-2">
+    <i class="far fa-clock fa-fw"></i> Challenge completed
+</span><br>
+
+
+    
+        <a href="#InfoModal"
+           class="badge badge-dark above-stretched-link p-1 mt-1"
+           data-toggle="modal"
+           data-target="#InfoModal"
+           data-title="ODIN 2026 Challenges"
+           data-description="ODIN 2026 is a cluster of challenges on multimodal report generation for oral and dental image analysis. It includes ToothFairy4, focused on maxillofacial and surgical report generation from CBCT volumes, and Bite2Text, focused on orthodontic report generation from intraoral 3D scans and photographs. The challenge benchmarks fully automatic systems that transform routine dental imaging into clinically meaningful textual reports, emphasizing clinical correctness, completeness, robustness across centers, and generalization to hidden test data."
+           data-absolute-url="https://odin2026.grand-challenge.org/"
+           title="Challenge Info">
+            <i class="fas fa-info-circle fa-fw"></i>
+        </a>
+    
+
+    
+        <span class="badge badge-dark above-stretched-link p-1 mt-1"
+              title="125 participants">
+                                            <i class="fas fa-user fa-fw"></i>
+                                            125
+                                        </span>
+    
+
+    
+        
+            <a class="badge badge-dark above-stretched-link p-1 mt-1"
+               href="https://odin2026.grand-challenge.org/evaluation/task-1-toothfairy4-debugging-phase/leaderboard/"
+               title="228 results, latest 2 months, 4 weeks ago">
+                <i class="fas fa-trophy fa-fw"></i>
+                228
+            </a>
+        
+    
+
+    
+
+    
+
+    
+        <span class="badge badge-dark above-stretched-link p-1 mt-1"
+              title="Held in 2026">
+                                                <i class="fas fa-calendar-day fa-fw"></i>
+                                                2026
+                                            </span>
+    
+
+</div>
+
+                    
+                </div>
+            </div>
+        </div>
+    
+        
+        <div class="col-12 col-sm-6 col-md-3 mb-3 px-2">
+            <div class="card gc-card">
+                <a class="stretched-link" href="https://headline26.grand-challenge.org/"
+                   title="View Challenge"></a>
+                <div class="embed-responsive embed-responsive-1by1">
+                    
+                        <picture>
+  <source type="image/avif"
+          srcset="https://public.grand-challenge-user-content.org/logos/challenge/853/logo-square/1/800w.avif 800w, https://public.grand-challenge-user-content.org/logos/challenge/853/logo-square/1/1600w.avif 1600w, https://public.grand-challenge-user-content.org/logos/challenge/853/logo-square/1/2400w.avif 2400w, https://public.grand-challenge-user-content.org/logos/challenge/853/logo-square/1/100w.avif 100w, https://public.grand-challenge-user-content.org/logos/challenge/853/logo-square/1/1400w.avif 1400w, https://public.grand-challenge-user-content.org/logos/challenge/853/logo-square/1/900w.avif 900w, https://public.grand-challenge-user-content.org/logos/challenge/853/logo-square/1/200w.avif 200w, https://public.grand-challenge-user-content.org/logos/challenge/853/logo-square/1/1000w.avif 1000w, https://public.grand-challenge-user-content.org/logos/challenge/853/logo-square/1/1800w.avif 1800w, https://public.grand-challenge-user-content.org/logos/challenge/853/logo-square/1/300w.avif 300w, https://public.grand-challenge-user-content.org/logos/challenge/853/logo-square/1/1100w.avif 1100w, https://public.grand-challenge-user-content.org/logos/challenge/853/logo-square/1/400w.avif 400w, https://public.grand-challenge-user-content.org/logos/challenge/853/logo-square/1/1200w.avif 1200w, https://public.grand-challenge-user-content.org/logos/challenge/853/logo-square/1/2000w.avif 2000w, https://public.grand-challenge-user-content.org/logos/challenge/853/logo-square/1/500w.avif 500w, https://public.grand-challenge-user-content.org/logos/challenge/853/logo-square/1/600w.avif 600w, https://public.grand-challenge-user-content.org/logos/challenge/853/logo-square/1/700w.avif 700w, https://public.grand-challenge-user-content.org/logos/challenge/853/logo-square/1/2200w.avif 2200w"
+          sizes="(min-width: 0px) and (max-width: 767px) 100vw, (min-width: 768px) and (max-width: 991px) 50vw, (min-width: 992px) and (max-width: 1199px) 25vw, 300px">
+  <img src="https://public.grand-challenge-user-content.org/logos/challenge/853/logo-square.jpeg" alt="Item Logo" width="4096" height="4096" class="card-img-top embed-responsive-item" loading="lazy">
+</picture>
+
+                    
+                </div>
+                <div class="card-body d-flex flex-column">
+                    <h5 class="card-title text-truncate mb-0">
+                        
+                            HEADLINE: Benchmarking VLMs in Head CT Reporting
+                        
+                        
+                    </h5>
+                    
+                        
+
+
+
+<div>
+    
+        <div class="badge-info badge above-stretched-link text-wrap mt-1 p-2 text-white w-100"
+             title="Algorithm submission challenge (Type 2)">
+            <i class="fa fa-sm fa-code mr-1"></i> Algorithm submission challenge
+        </div>
+    
+
+    <span class="badge  badge-light  mt-1 above-stretched-link text-wrap w-100 p-2">
+    <i class="far fa-clock fa-fw"></i> Challenge completed
+</span><br>
+
+
+    
+
+    
+        <span class="badge badge-dark above-stretched-link p-1 mt-1"
+              title="54 participants">
+                                            <i class="fas fa-user fa-fw"></i>
+                                            54
+                                        </span>
+    
+
+    
+        
+            <a class="badge badge-dark above-stretched-link p-1 mt-1"
+               href="https://headline26.grand-challenge.org/evaluation/validation-phase/leaderboard/"
+               title="40 results, latest 3 months, 3 weeks ago">
+                <i class="fas fa-trophy fa-fw"></i>
+                40
+            </a>
+        
+    
+
+    
+
+    
+
+    
+        <span class="badge badge-dark above-stretched-link p-1 mt-1"
+              title="Held in 2026">
+                                                <i class="fas fa-calendar-day fa-fw"></i>
+                                                2026
+                                            </span>
+    
+
+</div>
+
+                    
+                </div>
+            </div>
+        </div>
+    
+        
+        <div class="col-12 col-sm-6 col-md-3 mb-3 px-2">
+            <div class="card gc-card">
+                <a class="stretched-link" href="https://selma3d2026.grand-challenge.org/"
+                   title="View Challenge"></a>
+                <div class="embed-responsive embed-responsive-1by1">
+                    
+                        <picture>
+  <source type="image/avif"
+          srcset="https://public.grand-challenge-user-content.org/logos/challenge/852/2026_logo/1/200w.avif 200w, https://public.grand-challenge-user-content.org/logos/challenge/852/2026_logo/1/100w.avif 100w, https://public.grand-challenge-user-content.org/logos/challenge/852/2026_logo/1/400w.avif 400w, https://public.grand-challenge-user-content.org/logos/challenge/852/2026_logo/1/300w.avif 300w"
+          sizes="(min-width: 0px) and (max-width: 767px) 100vw, (min-width: 768px) and (max-width: 991px) 50vw, (min-width: 992px) and (max-width: 1199px) 25vw, 300px">
+  <img src="https://public.grand-challenge-user-content.org/logos/challenge/852/2026_logo.png" alt="Item Logo" width="465" height="542" class="card-img-top embed-responsive-item" loading="lazy">
+</picture>
+
+                    
+                </div>
+                <div class="card-body d-flex flex-column">
+                    <h5 class="card-title text-truncate mb-0">
+                        
+                            SSL for 3D light-sheet microscopy image segmentation
+                        
+                        
+                    </h5>
+                    
+                        
+
+
+
+<div>
+    
+        <div class="badge-info badge above-stretched-link text-wrap mt-1 p-2 text-white w-100"
+             title="Algorithm submission challenge (Type 2)">
+            <i class="fa fa-sm fa-code mr-1"></i> Algorithm submission challenge
+        </div>
+    
+
+    <span class="badge  badge-success  mt-1 above-stretched-link text-wrap w-100 p-2">
+    <i class="far fa-clock fa-fw"></i> Accepting submissions
+</span><br>
+
+
+    
+
+    
+        <span class="badge badge-dark above-stretched-link p-1 mt-1"
+              title="184 participants">
+                                            <i class="fas fa-user fa-fw"></i>
+                                            184
+                                        </span>
+    
+
+    
+        
+            <a class="badge badge-dark above-stretched-link p-1 mt-1"
+               href="https://selma3d2026.grand-challenge.org/evaluation/preliminary-development-phase-task-1-wo-ssl/leaderboard/"
+               title="93 results, latest 1 month, 2 weeks ago">
+                <i class="fas fa-trophy fa-fw"></i>
+                93
+            </a>
+        
+    
+
+    
+
+    
+
+    
+        <span class="badge badge-dark above-stretched-link p-1 mt-1"
+              title="Held in 2026">
+                                                <i class="fas fa-calendar-day fa-fw"></i>
+                                                2026
+                                            </span>
+    
+
+</div>
+
+                    
+                </div>
+            </div>
+        </div>
+    
+        
+        <div class="col-12 col-sm-6 col-md-3 mb-3 px-2">
+            <div class="card gc-card">
+                <a class="stretched-link" href="https://topaneu-26.grand-challenge.org/"
+                   title="View Challenge"></a>
+                <div class="embed-responsive embed-responsive-1by1">
+                    
+                        <picture>
+  <source type="image/avif"
+          srcset="https://public.grand-challenge-user-content.org/logos/challenge/850/TopAneu_logo_medium/1/800w.avif 800w, https://public.grand-challenge-user-content.org/logos/challenge/850/TopAneu_logo_medium/1/100w.avif 100w, https://public.grand-challenge-user-content.org/logos/challenge/850/TopAneu_logo_medium/1/900w.avif 900w, https://public.grand-challenge-user-content.org/logos/challenge/850/TopAneu_logo_medium/1/200w.avif 200w, https://public.grand-challenge-user-content.org/logos/challenge/850/TopAneu_logo_medium/1/1000w.avif 1000w, https://public.grand-challenge-user-content.org/logos/challenge/850/TopAneu_logo_medium/1/300w.avif 300w, https://public.grand-challenge-user-content.org/logos/challenge/850/TopAneu_logo_medium/1/1100w.avif 1100w, https://public.grand-challenge-user-content.org/logos/challenge/850/TopAneu_logo_medium/1/400w.avif 400w, https://public.grand-challenge-user-content.org/logos/challenge/850/TopAneu_logo_medium/1/1200w.avif 1200w, https://public.grand-challenge-user-content.org/logos/challenge/850/TopAneu_logo_medium/1/500w.avif 500w, https://public.grand-challenge-user-content.org/logos/challenge/850/TopAneu_logo_medium/1/600w.avif 600w, https://public.grand-challenge-user-content.org/logos/challenge/850/TopAneu_logo_medium/1/700w.avif 700w"
+          sizes="(min-width: 0px) and (max-width: 767px) 100vw, (min-width: 768px) and (max-width: 991px) 50vw, (min-width: 992px) and (max-width: 1199px) 25vw, 300px">
+  <img src="https://public.grand-challenge-user-content.org/logos/challenge/850/TopAneu_logo_medium.png" alt="Item Logo" width="1254" height="1254" class="card-img-top embed-responsive-item" loading="lazy">
+</picture>
+
+                    
+                </div>
+                <div class="card-body d-flex flex-column">
+                    <h5 class="card-title text-truncate mb-0">
+                        
+                            TopAneu 2026
+                        
+                        
+                    </h5>
+                    
+                        
+
+
+
+<div>
+    
+        <div class="badge-info badge above-stretched-link text-wrap mt-1 p-2 text-white w-100"
+             title="Algorithm submission challenge (Type 2)">
+            <i class="fa fa-sm fa-code mr-1"></i> Algorithm submission challenge
+        </div>
+    
+
+    <span class="badge  badge-light  mt-1 above-stretched-link text-wrap w-100 p-2">
+    <i class="far fa-clock fa-fw"></i> Challenge completed
+</span><br>
+
+
+    
+        <a href="#InfoModal"
+           class="badge badge-dark above-stretched-link p-1 mt-1"
+           data-toggle="modal"
+           data-target="#InfoModal"
+           data-title="TopAneu 2026"
+           data-description="Multimodal Vessel-Specific Intracranial Aneurysm Classification and Segmentation Challenge"
+           data-absolute-url="https://topaneu-26.grand-challenge.org/"
+           title="Challenge Info">
+            <i class="fas fa-info-circle fa-fw"></i>
+        </a>
+    
+
+    
+        <span class="badge badge-dark above-stretched-link p-1 mt-1"
+              title="455 participants">
+                                            <i class="fas fa-user fa-fw"></i>
+                                            455
+                                        </span>
+    
+
+    
+        
+            <a class="badge badge-dark above-stretched-link p-1 mt-1"
+               href="https://topaneu-26.grand-challenge.org/evaluation/preliminary-docker-evaluation-sanity-check/leaderboard/"
+               title="183 results, latest 1 month, 4 weeks ago">
+                <i class="fas fa-trophy fa-fw"></i>
+                183
+            </a>
+        
+    
+
+    
+
+    
+
+    
+        <span class="badge badge-dark above-stretched-link p-1 mt-1"
+              title="Held in 2026">
+                                                <i class="fas fa-calendar-day fa-fw"></i>
+                                                2026
+                                            </span>
+    
+
+</div>
+
+                    
+                </div>
+            </div>
+        </div>
+    
+        
+        <div class="col-12 col-sm-6 col-md-3 mb-3 px-2">
+            <div class="card gc-card">
+                <a class="stretched-link" href="https://reg2026.grand-challenge.org/"
+                   title="View Challenge"></a>
+                <div class="embed-responsive embed-responsive-1by1">
+                    
+                        <picture>
+  <source type="image/avif"
+          srcset="https://public.grand-challenge-user-content.org/logos/challenge/849/Logo_UqgjNCP/1/800w.avif 800w, https://public.grand-challenge-user-content.org/logos/challenge/849/Logo_UqgjNCP/1/100w.avif 100w, https://public.grand-challenge-user-content.org/logos/challenge/849/Logo_UqgjNCP/1/900w.avif 900w, https://public.grand-challenge-user-content.org/logos/challenge/849/Logo_UqgjNCP/1/200w.avif 200w, https://public.grand-challenge-user-content.org/logos/challenge/849/Logo_UqgjNCP/1/1000w.avif 1000w, https://public.grand-challenge-user-content.org/logos/challenge/849/Logo_UqgjNCP/1/300w.avif 300w, https://public.grand-challenge-user-content.org/logos/challenge/849/Logo_UqgjNCP/1/1100w.avif 1100w, https://public.grand-challenge-user-content.org/logos/challenge/849/Logo_UqgjNCP/1/400w.avif 400w, https://public.grand-challenge-user-content.org/logos/challenge/849/Logo_UqgjNCP/1/1200w.avif 1200w, https://public.grand-challenge-user-content.org/logos/challenge/849/Logo_UqgjNCP/1/500w.avif 500w, https://public.grand-challenge-user-content.org/logos/challenge/849/Logo_UqgjNCP/1/600w.avif 600w, https://public.grand-challenge-user-content.org/logos/challenge/849/Logo_UqgjNCP/1/700w.avif 700w"
+          sizes="(min-width: 0px) and (max-width: 767px) 100vw, (min-width: 768px) and (max-width: 991px) 50vw, (min-width: 992px) and (max-width: 1199px) 25vw, 300px">
+  <img src="https://public.grand-challenge-user-content.org/logos/challenge/849/Logo_UqgjNCP.jpeg" alt="Item Logo" width="1280" height="1280" class="card-img-top embed-responsive-item" loading="lazy">
+</picture>
+
+                    
+                </div>
+                <div class="card-body d-flex flex-column">
+                    <h5 class="card-title text-truncate mb-0">
+                        
+                            Pathologist REasoning-Guided REport Generation Challenge
+                        
+                        
+                    </h5>
+                    
+                        
+
+
+
+<div>
+    
+        <div class="badge-info badge above-stretched-link text-wrap mt-1 p-2 text-white w-100"
+             title="Algorithm submission challenge (Type 2)">
+            <i class="fa fa-sm fa-code mr-1"></i> Algorithm submission challenge
+        </div>
+    
+
+    <span class="badge  badge-light  mt-1 above-stretched-link text-wrap w-100 p-2">
+    <i class="far fa-clock fa-fw"></i> Challenge completed
+</span><br>
+
+
+    
+        <a href="#InfoModal"
+           class="badge badge-dark above-stretched-link p-1 mt-1"
+           data-toggle="modal"
+           data-target="#InfoModal"
+           data-title="Pathologist REasoning-Guided REport Generation Challenge"
+           data-description="Pathologist REasoning-Guided REport Generation Challenge is a medical AI competition where teams build models that generate pathology reports from whole slide images and explain their reasoning while doing it. It builds on last year&#x27;s REG2025, which focused only on matching reference reports. This time, the bar is higher: models need to show structured diagnostic thinking, the way a pathologist would walk a colleague through their findings. Evaluation now goes beyond surface-level text metrics to assess clinical correctness and reasoning quality. The challenge runs from May through July 2026, with top teams announced at MICCAI 2026 in October."
+           data-absolute-url="https://reg2026.grand-challenge.org/"
+           title="Challenge Info">
+            <i class="fas fa-info-circle fa-fw"></i>
+        </a>
+    
+
+    
+        <span class="badge badge-dark above-stretched-link p-1 mt-1"
+              title="361 participants">
+                                            <i class="fas fa-user fa-fw"></i>
+                                            361
+                                        </span>
+    
+
+    
+        
+            <a class="badge badge-dark above-stretched-link p-1 mt-1"
+               href="https://reg2026.grand-challenge.org/evaluation/debug-phase/leaderboard/"
+               title="71 results, latest 3 months, 4 weeks ago">
+                <i class="fas fa-trophy fa-fw"></i>
+                71
+            </a>
+        
+    
+
+    
+
+    
+
+    
+        <span class="badge badge-dark above-stretched-link p-1 mt-1"
+              title="Held in 2026">
+                                                <i class="fas fa-calendar-day fa-fw"></i>
+                                                2026
+                                            </span>
+    
+
+</div>
+
+                    
+                </div>
+            </div>
+        </div>
+    
+        
+        <div class="col-12 col-sm-6 col-md-3 mb-3 px-2">
+            <div class="card gc-card">
+                <a class="stretched-link" href="https://isles-26.grand-challenge.org/"
+                   title="View Challenge"></a>
+                <div class="embed-responsive embed-responsive-1by1">
+                    
+                        <picture>
+  <source type="image/avif"
+          srcset="https://public.grand-challenge-user-content.org/logos/challenge/848/ISLES_LOGO26/1/100w.avif 100w, https://public.grand-challenge-user-content.org/logos/challenge/848/ISLES_LOGO26/1/200w.avif 200w, https://public.grand-challenge-user-content.org/logos/challenge/848/ISLES_LOGO26/1/300w.avif 300w, https://public.grand-challenge-user-content.org/logos/challenge/848/ISLES_LOGO26/1/400w.avif 400w, https://public.grand-challenge-user-content.org/logos/challenge/848/ISLES_LOGO26/1/500w.avif 500w, https://public.grand-challenge-user-content.org/logos/challenge/848/ISLES_LOGO26/1/600w.avif 600w"
+          sizes="(min-width: 0px) and (max-width: 767px) 100vw, (min-width: 768px) and (max-width: 991px) 50vw, (min-width: 992px) and (max-width: 1199px) 25vw, 300px">
+  <img src="https://public.grand-challenge-user-content.org/logos/challenge/848/ISLES_LOGO26.png" alt="Item Logo" width="643" height="653" class="card-img-top embed-responsive-item" loading="lazy">
+</picture>
+
+                    
+                </div>
+                <div class="card-body d-flex flex-column">
+                    <h5 class="card-title text-truncate mb-0">
+                        
+                            Ischemic Stroke Lesion Segmentation Challenge  2026
+                        
+                        
+                    </h5>
+                    
+                        
+
+
+
+<div>
+    
+        <div class="badge-info badge above-stretched-link text-wrap mt-1 p-2 text-white w-100"
+             title="Algorithm submission challenge (Type 2)">
+            <i class="fa fa-sm fa-code mr-1"></i> Algorithm submission challenge
+        </div>
+    
+
+    <span class="badge  badge-light  mt-1 above-stretched-link text-wrap w-100 p-2">
+    <i class="far fa-clock fa-fw"></i> Challenge completed
+</span><br>
+
+
+    
+
+    
+        <span class="badge badge-dark above-stretched-link p-1 mt-1"
+              title="420 participants">
+                                            <i class="fas fa-user fa-fw"></i>
+                                            420
+                                        </span>
+    
+
+    
+        
+            <a class="badge badge-dark above-stretched-link p-1 mt-1"
+               href="https://isles-26.grand-challenge.org/evaluation/preliminary-docker-evaluation-sanity-check/leaderboard/"
+               title="174 results, latest 2 months, 2 weeks ago">
+                <i class="fas fa-trophy fa-fw"></i>
+                174
+            </a>
+        
+    
+
+    
+
+    
+
+    
+        <span class="badge badge-dark above-stretched-link p-1 mt-1"
+              title="Held in 2026">
+                                                <i class="fas fa-calendar-day fa-fw"></i>
+                                                2026
+                                            </span>
+    
+
+</div>
+
+                    
+                </div>
+            </div>
+        </div>
+    
+        
+        <div class="col-12 col-sm-6 col-md-3 mb-3 px-2">
+            <div class="card gc-card">
+                <a class="stretched-link" href="https://chimera-agent.grand-challenge.org/"
+                   title="View Challenge"></a>
+                <div class="embed-responsive embed-responsive-1by1">
+                    
+                        <picture>
+  <source type="image/avif"
+          srcset="https://public.grand-challenge-user-content.org/logos/challenge/846/CHIMERA_AGENT/1/800w.avif 800w, https://public.grand-challenge-user-content.org/logos/challenge/846/CHIMERA_AGENT/1/1600w.avif 1600w, https://public.grand-challenge-user-content.org/logos/challenge/846/CHIMERA_AGENT/1/100w.avif 100w, https://public.grand-challenge-user-content.org/logos/challenge/846/CHIMERA_AGENT/1/1400w.avif 1400w, https://public.grand-challenge-user-content.org/logos/challenge/846/CHIMERA_AGENT/1/900w.avif 900w, https://public.grand-challenge-user-content.org/logos/challenge/846/CHIMERA_AGENT/1/200w.avif 200w, https://public.grand-challenge-user-content.org/logos/challenge/846/CHIMERA_AGENT/1/1000w.avif 1000w, https://public.grand-challenge-user-content.org/logos/challenge/846/CHIMERA_AGENT/1/1800w.avif 1800w, https://public.grand-challenge-user-content.org/logos/challenge/846/CHIMERA_AGENT/1/300w.avif 300w, https://public.grand-challenge-user-content.org/logos/challenge/846/CHIMERA_AGENT/1/1100w.avif 1100w, https://public.grand-challenge-user-content.org/logos/challenge/846/CHIMERA_AGENT/1/400w.avif 400w, https://public.grand-challenge-user-content.org/logos/challenge/846/CHIMERA_AGENT/1/1200w.avif 1200w, https://public.grand-challenge-user-content.org/logos/challenge/846/CHIMERA_AGENT/1/2000w.avif 2000w, https://public.grand-challenge-user-content.org/logos/challenge/846/CHIMERA_AGENT/1/500w.avif 500w, https://public.grand-challenge-user-content.org/logos/challenge/846/CHIMERA_AGENT/1/600w.avif 600w, https://public.grand-challenge-user-content.org/logos/challenge/846/CHIMERA_AGENT/1/700w.avif 700w"
+          sizes="(min-width: 0px) and (max-width: 767px) 100vw, (min-width: 768px) and (max-width: 991px) 50vw, (min-width: 992px) and (max-width: 1199px) 25vw, 300px">
+  <img src="https://public.grand-challenge-user-content.org/logos/challenge/846/CHIMERA_AGENT.png" alt="Item Logo" width="2000" height="2000" class="card-img-top embed-responsive-item" loading="lazy">
+</picture>
+
+                    
+                </div>
+                <div class="card-body d-flex flex-column">
+                    <h5 class="card-title text-truncate mb-0">
+                        
+                            CHIMERA-agent
+                        
+                        
+                    </h5>
+                    
+                        
+
+
+
+<div>
+    
+        <div class="badge-info badge above-stretched-link text-wrap mt-1 p-2 text-white w-100"
+             title="Algorithm submission challenge (Type 2)">
+            <i class="fa fa-sm fa-code mr-1"></i> Algorithm submission challenge
+        </div>
+    
+
+    <span class="badge  badge-light  mt-1 above-stretched-link text-wrap w-100 p-2">
+    <i class="far fa-clock fa-fw"></i> Challenge completed
+</span><br>
+
+
+    
+        <a href="#InfoModal"
+           class="badge badge-dark above-stretched-link p-1 mt-1"
+           data-toggle="modal"
+           data-target="#InfoModal"
+           data-title="CHIMERA-agent"
+           data-description="An agentic multimodal AI benchmark covering the full prostate cancer patient journey, from MRI-based diagnosis to long-term biochemical recurrence prediction, under realistic clinical conditions of missingness, fragmentation, and cross-modality conflict."
+           data-absolute-url="https://chimera-agent.grand-challenge.org/"
+           title="Challenge Info">
+            <i class="fas fa-info-circle fa-fw"></i>
+        </a>
+    
+
+    
+        <span class="badge badge-dark above-stretched-link p-1 mt-1"
+              title="349 participants">
+                                            <i class="fas fa-user fa-fw"></i>
+                                            349
+                                        </span>
+    
+
+    
+        
+            <a class="badge badge-dark above-stretched-link p-1 mt-1"
+               href="https://chimera-agent.grand-challenge.org/evaluation/debug/leaderboard/"
+               title="334 results, latest 2 months ago">
+                <i class="fas fa-trophy fa-fw"></i>
+                334
+            </a>
+        
+    
+
+    
+
+    
+
+    
+        <span class="badge badge-dark above-stretched-link p-1 mt-1"
+              title="Held in 2026">
+                                                <i class="fas fa-calendar-day fa-fw"></i>
+                                                2026
+                                            </span>
+    
+
+</div>
+
+                    
+                </div>
+            </div>
+        </div>
+    
+        
+        <div class="col-12 col-sm-6 col-md-3 mb-3 px-2">
+            <div class="card gc-card">
+                <a class="stretched-link" href="https://surgvu26.grand-challenge.org/"
+                   title="View Challenge"></a>
+                <div class="embed-responsive embed-responsive-1by1">
+                    
+                        <picture>
+  <source type="image/avif"
+          srcset="https://public.grand-challenge-user-content.org/logos/challenge/845/miccai_logo/1/800w.avif 800w, https://public.grand-challenge-user-content.org/logos/challenge/845/miccai_logo/1/100w.avif 100w, https://public.grand-challenge-user-content.org/logos/challenge/845/miccai_logo/1/900w.avif 900w, https://public.grand-challenge-user-content.org/logos/challenge/845/miccai_logo/1/200w.avif 200w, https://public.grand-challenge-user-content.org/logos/challenge/845/miccai_logo/1/1000w.avif 1000w, https://public.grand-challenge-user-content.org/logos/challenge/845/miccai_logo/1/300w.avif 300w, https://public.grand-challenge-user-content.org/logos/challenge/845/miccai_logo/1/1100w.avif 1100w, https://public.grand-challenge-user-content.org/logos/challenge/845/miccai_logo/1/400w.avif 400w, https://public.grand-challenge-user-content.org/logos/challenge/845/miccai_logo/1/1200w.avif 1200w, https://public.grand-challenge-user-content.org/logos/challenge/845/miccai_logo/1/500w.avif 500w, https://public.grand-challenge-user-content.org/logos/challenge/845/miccai_logo/1/600w.avif 600w, https://public.grand-challenge-user-content.org/logos/challenge/845/miccai_logo/1/700w.avif 700w"
+          sizes="(min-width: 0px) and (max-width: 767px) 100vw, (min-width: 768px) and (max-width: 991px) 50vw, (min-width: 992px) and (max-width: 1199px) 25vw, 300px">
+  <img src="https://public.grand-challenge-user-content.org/logos/challenge/845/miccai_logo.png" alt="Item Logo" width="1254" height="1254" class="card-img-top embed-responsive-item" loading="lazy">
+</picture>
+
+                    
+                </div>
+                <div class="card-body d-flex flex-column">
+                    <h5 class="card-title text-truncate mb-0">
+                        
+                            Surgical Visual Understanding 2026
+                        
+                        
+                    </h5>
+                    
+                        
+
+
+
+<div>
+    
+        <div class="badge-info badge above-stretched-link text-wrap mt-1 p-2 text-white w-100"
+             title="Algorithm submission challenge (Type 2)">
+            <i class="fa fa-sm fa-code mr-1"></i> Algorithm submission challenge
+        </div>
+    
+
+    <span class="badge  badge-light  mt-1 above-stretched-link text-wrap w-100 p-2">
+    <i class="far fa-clock fa-fw"></i> Challenge completed
+</span><br>
+
+
+    
+
+    
+        <span class="badge badge-dark above-stretched-link p-1 mt-1"
+              title="79 participants">
+                                            <i class="fas fa-user fa-fw"></i>
+                                            79
+                                        </span>
+    
+
+    
+        
+            <a class="badge badge-dark above-stretched-link p-1 mt-1"
+               href="https://surgvu26.grand-challenge.org/evaluation/category-1-prelim-phase/leaderboard/"
+               title="191 results, latest 2 months, 1 week ago">
+                <i class="fas fa-trophy fa-fw"></i>
+                191
+            </a>
+        
+    
+
+    
+
+    
+
+    
+        <span class="badge badge-dark above-stretched-link p-1 mt-1"
+              title="Held in 2026">
+                                                <i class="fas fa-calendar-day fa-fw"></i>
+                                                2026
+                                            </span>
+    
+
+</div>
+
+                    
+                </div>
+            </div>
+        </div>
+    
+        
+        <div class="col-12 col-sm-6 col-md-3 mb-3 px-2">
+            <div class="card gc-card">
+                <a class="stretched-link" href="https://pengwin2026.grand-challenge.org/"
+                   title="View Challenge"></a>
+                <div class="embed-responsive embed-responsive-1by1">
+                    
+                        <picture>
+  <source type="image/avif"
+          srcset="https://public.grand-challenge-user-content.org/logos/challenge/844/Logo_r256idb/1/100w.avif 100w, https://public.grand-challenge-user-content.org/logos/challenge/844/Logo_r256idb/1/200w.avif 200w, https://public.grand-challenge-user-content.org/logos/challenge/844/Logo_r256idb/1/300w.avif 300w, https://public.grand-challenge-user-content.org/logos/challenge/844/Logo_r256idb/1/400w.avif 400w, https://public.grand-challenge-user-content.org/logos/challenge/844/Logo_r256idb/1/500w.avif 500w, https://public.grand-challenge-user-content.org/logos/challenge/844/Logo_r256idb/1/600w.avif 600w, https://public.grand-challenge-user-content.org/logos/challenge/844/Logo_r256idb/1/700w.avif 700w"
+          sizes="(min-width: 0px) and (max-width: 767px) 100vw, (min-width: 768px) and (max-width: 991px) 50vw, (min-width: 992px) and (max-width: 1199px) 25vw, 300px">
+  <img src="https://public.grand-challenge-user-content.org/logos/challenge/844/Logo_r256idb.png" alt="Item Logo" width="705" height="705" class="card-img-top embed-responsive-item" loading="lazy">
+</picture>
+
+                    
+                </div>
+                <div class="card-body d-flex flex-column">
+                    <h5 class="card-title text-truncate mb-0">
+                        
+                            Peripelvic Fracture Segmentation and Reduction Planning
+                        
+                        
+                    </h5>
+                    
+                        
+
+
+
+<div>
+    
+        <div class="badge-info badge above-stretched-link text-wrap mt-1 p-2 text-white w-100"
+             title="Algorithm submission challenge (Type 2)">
+            <i class="fa fa-sm fa-code mr-1"></i> Algorithm submission challenge
+        </div>
+    
+
+    <span class="badge  badge-light  mt-1 above-stretched-link text-wrap w-100 p-2">
+    <i class="far fa-clock fa-fw"></i> Challenge completed
+</span><br>
+
+
+    
+        <a href="#InfoModal"
+           class="badge badge-dark above-stretched-link p-1 mt-1"
+           data-toggle="modal"
+           data-target="#InfoModal"
+           data-title="Peripelvic Fracture Segmentation and Reduction Planning"
+           data-description="Peripelvic fractures are severe injuries with high disability and mortality rates. The PENGWIN 2026 Challenge aims to advance state-of-the-art techniques for intelligent surgical planning in 3D CT scans. It consists of three tasks: fully automated peripelvic fracture segmentation (Task 1), interactive segmentation (Task 2), and fracture reduction planning (Task 3). The dataset features 500 clinical cases with expert annotations and 16,000 simulated fracture cases to support the training of data-driven reduction models."
+           data-absolute-url="https://pengwin2026.grand-challenge.org/"
+           title="Challenge Info">
+            <i class="fas fa-info-circle fa-fw"></i>
+        </a>
+    
+
+    
+        <span class="badge badge-dark above-stretched-link p-1 mt-1"
+              title="400 participants">
+                                            <i class="fas fa-user fa-fw"></i>
+                                            400
+                                        </span>
+    
+
+    
+        
+            <a class="badge badge-dark above-stretched-link p-1 mt-1"
+               href="https://pengwin2026.grand-challenge.org/evaluation/task-2-pengwin-intact-preliminary/leaderboard/"
+               title="338 results, latest 2 months, 4 weeks ago">
+                <i class="fas fa-trophy fa-fw"></i>
+                338
+            </a>
+        
+    
+
+    
+
+    
+
+    
+        <span class="badge badge-dark above-stretched-link p-1 mt-1"
+              title="Held in 2026">
+                                                <i class="fas fa-calendar-day fa-fw"></i>
+                                                2026
+                                            </span>
+    
+
+</div>
+
+                    
+                </div>
+            </div>
+        </div>
+    
+        
+        <div class="col-12 col-sm-6 col-md-3 mb-3 px-2">
+            <div class="card gc-card">
+                <a class="stretched-link" href="https://hecktor26.grand-challenge.org/"
+                   title="View Challenge"></a>
+                <div class="embed-responsive embed-responsive-1by1">
+                    
+                        <picture>
+  <source type="image/avif"
+          srcset="https://public.grand-challenge-user-content.org/logos/challenge/843/hecktor_logo/1/800w.avif 800w, https://public.grand-challenge-user-content.org/logos/challenge/843/hecktor_logo/1/1600w.avif 1600w, https://public.grand-challenge-user-content.org/logos/challenge/843/hecktor_logo/1/2400w.avif 2400w, https://public.grand-challenge-user-content.org/logos/challenge/843/hecktor_logo/1/100w.avif 100w, https://public.grand-challenge-user-content.org/logos/challenge/843/hecktor_logo/1/1400w.avif 1400w, https://public.grand-challenge-user-content.org/logos/challenge/843/hecktor_logo/1/900w.avif 900w, https://public.grand-challenge-user-content.org/logos/challenge/843/hecktor_logo/1/200w.avif 200w, https://public.grand-challenge-user-content.org/logos/challenge/843/hecktor_logo/1/1000w.avif 1000w, https://public.grand-challenge-user-content.org/logos/challenge/843/hecktor_logo/1/1800w.avif 1800w, https://public.grand-challenge-user-content.org/logos/challenge/843/hecktor_logo/1/300w.avif 300w, https://public.grand-challenge-user-content.org/logos/challenge/843/hecktor_logo/1/1100w.avif 1100w, https://public.grand-challenge-user-content.org/logos/challenge/843/hecktor_logo/1/400w.avif 400w, https://public.grand-challenge-user-content.org/logos/challenge/843/hecktor_logo/1/1200w.avif 1200w, https://public.grand-challenge-user-content.org/logos/challenge/843/hecktor_logo/1/2000w.avif 2000w, https://public.grand-challenge-user-content.org/logos/challenge/843/hecktor_logo/1/500w.avif 500w, https://public.grand-challenge-user-content.org/logos/challenge/843/hecktor_logo/1/600w.avif 600w, https://public.grand-challenge-user-content.org/logos/challenge/843/hecktor_logo/1/700w.avif 700w, https://public.grand-challenge-user-content.org/logos/challenge/843/hecktor_logo/1/2200w.avif 2200w"
+          sizes="(min-width: 0px) and (max-width: 767px) 100vw, (min-width: 768px) and (max-width: 991px) 50vw, (min-width: 992px) and (max-width: 1199px) 25vw, 300px">
+  <img src="https://public.grand-challenge-user-content.org/logos/challenge/843/hecktor_logo.png" alt="Item Logo" width="3950" height="4000" class="card-img-top embed-responsive-item" loading="lazy">
+</picture>
+
+                    
+                </div>
+                <div class="card-body d-flex flex-column">
+                    <h5 class="card-title text-truncate mb-0">
+                        
+                            HEad and neCK TumOR Lesion Segmentation, Staging and Prognosis
+                        
+                        
+                    </h5>
+                    
+                        
+
+
+
+<div>
+    
+        <div class="badge-info badge above-stretched-link text-wrap mt-1 p-2 text-white w-100"
+             title="Algorithm submission challenge (Type 2)">
+            <i class="fa fa-sm fa-code mr-1"></i> Algorithm submission challenge
+        </div>
+    
+
+    <span class="badge  badge-light  mt-1 above-stretched-link text-wrap w-100 p-2">
+    <i class="far fa-clock fa-fw"></i> Challenge completed
+</span><br>
+
+
+    
+
+    
+        <span class="badge badge-dark above-stretched-link p-1 mt-1"
+              title="483 participants">
+                                            <i class="fas fa-user fa-fw"></i>
+                                            483
+                                        </span>
+    
+
+    
+        
+            <a class="badge badge-dark above-stretched-link p-1 mt-1"
+               href="https://hecktor26.grand-challenge.org/evaluation/sanity-check/leaderboard/"
+               title="310 results, latest 3 months, 1 week ago">
+                <i class="fas fa-trophy fa-fw"></i>
+                310
+            </a>
+        
+    
+
+    
+
+    
+
+    
+        <span class="badge badge-dark above-stretched-link p-1 mt-1"
+              title="Held in 2026">
+                                                <i class="fas fa-calendar-day fa-fw"></i>
+                                                2026
+                                            </span>
+    
+
+</div>
+
+                    
+                </div>
+            </div>
+        </div>
+    
+        
+        <div class="col-12 col-sm-6 col-md-3 mb-3 px-2">
+            <div class="card gc-card">
+                <a class="stretched-link" href="https://autopet-v.grand-challenge.org/"
+                   title="View Challenge"></a>
+                <div class="embed-responsive embed-responsive-1by1">
+                    
+                        <picture>
+  <source type="image/avif"
+          srcset="https://public.grand-challenge-user-content.org/logos/challenge/842/autopet-5/1/100w.avif 100w, https://public.grand-challenge-user-content.org/logos/challenge/842/autopet-5/1/200w.avif 200w, https://public.grand-challenge-user-content.org/logos/challenge/842/autopet-5/1/300w.avif 300w, https://public.grand-challenge-user-content.org/logos/challenge/842/autopet-5/1/400w.avif 400w, https://public.grand-challenge-user-content.org/logos/challenge/842/autopet-5/1/500w.avif 500w, https://public.grand-challenge-user-content.org/logos/challenge/842/autopet-5/1/600w.avif 600w"
+          sizes="(min-width: 0px) and (max-width: 767px) 100vw, (min-width: 768px) and (max-width: 991px) 50vw, (min-width: 992px) and (max-width: 1199px) 25vw, 300px">
+  <img src="https://public.grand-challenge-user-content.org/logos/challenge/842/autopet-5.png" alt="Item Logo" width="640" height="640" class="card-img-top embed-responsive-item" loading="lazy">
+</picture>
+
+                    
+                </div>
+                <div class="card-body d-flex flex-column">
+                    <h5 class="card-title text-truncate mb-0">
+                        
+                            autoPET V - Automated Lesion Segmentation in Whole-Body PET/CT
+                        
+                        
+                    </h5>
+                    
+                        
+
+
+
+<div>
+    
+        <div class="badge-info badge above-stretched-link text-wrap mt-1 p-2 text-white w-100"
+             title="Algorithm submission challenge (Type 2)">
+            <i class="fa fa-sm fa-code mr-1"></i> Algorithm submission challenge
+        </div>
+    
+
+    <span class="badge  badge-light  mt-1 above-stretched-link text-wrap w-100 p-2">
+    <i class="far fa-clock fa-fw"></i> Challenge completed
+</span><br>
+
+
+    
+        <a href="#InfoModal"
+           class="badge badge-dark above-stretched-link p-1 mt-1"
+           data-toggle="modal"
+           data-target="#InfoModal"
+           data-title="autoPET V - Automated Lesion Segmentation in Whole-Body PET/CT"
+           data-description="Automated Lesion Segmentation in Whole-Body PET/CT"
+           data-absolute-url="https://autopet-v.grand-challenge.org/"
+           title="Challenge Info">
+            <i class="fas fa-info-circle fa-fw"></i>
+        </a>
+    
+
+    
+        <span class="badge badge-dark above-stretched-link p-1 mt-1"
+              title="275 participants">
+                                            <i class="fas fa-user fa-fw"></i>
+                                            275
+                                        </span>
+    
+
+    
+        
+            <a class="badge badge-dark above-stretched-link p-1 mt-1"
+               href="https://autopet-v.grand-challenge.org/evaluation/preliminary-test-set/leaderboard/"
+               title="181 results, latest 2 months, 2 weeks ago">
+                <i class="fas fa-trophy fa-fw"></i>
+                181
+            </a>
+        
+    
+
+    
+
+    
+
+    
+        <span class="badge badge-dark above-stretched-link p-1 mt-1"
+              title="Held in 2026">
+                                                <i class="fas fa-calendar-day fa-fw"></i>
+                                                2026
+                                            </span>
+    
+
+</div>
+
+                    
+                </div>
+            </div>
+        </div>
+    
+        
+        <div class="col-12 col-sm-6 col-md-3 mb-3 px-2">
+            <div class="card gc-card">
+                <a class="stretched-link" href="https://rare26.grand-challenge.org/"
+                   title="View Challenge"></a>
+                <div class="embed-responsive embed-responsive-1by1">
+                    
+                        <picture>
+  <source type="image/avif"
+          srcset="https://public.grand-challenge-user-content.org/logos/challenge/841/logo/1/800w.avif 800w, https://public.grand-challenge-user-content.org/logos/challenge/841/logo/1/100w.avif 100w, https://public.grand-challenge-user-content.org/logos/challenge/841/logo/1/900w.avif 900w, https://public.grand-challenge-user-content.org/logos/challenge/841/logo/1/200w.avif 200w, https://public.grand-challenge-user-content.org/logos/challenge/841/logo/1/1000w.avif 1000w, https://public.grand-challenge-user-content.org/logos/challenge/841/logo/1/300w.avif 300w, https://public.grand-challenge-user-content.org/logos/challenge/841/logo/1/1100w.avif 1100w, https://public.grand-challenge-user-content.org/logos/challenge/841/logo/1/400w.avif 400w, https://public.grand-challenge-user-content.org/logos/challenge/841/logo/1/1200w.avif 1200w, https://public.grand-challenge-user-content.org/logos/challenge/841/logo/1/500w.avif 500w, https://public.grand-challenge-user-content.org/logos/challenge/841/logo/1/600w.avif 600w, https://public.grand-challenge-user-content.org/logos/challenge/841/logo/1/700w.avif 700w"
+          sizes="(min-width: 0px) and (max-width: 767px) 100vw, (min-width: 768px) and (max-width: 991px) 50vw, (min-width: 992px) and (max-width: 1199px) 25vw, 300px">
+  <img src="https://public.grand-challenge-user-content.org/logos/challenge/841/logo.png" alt="Item Logo" width="1317" height="1220" class="card-img-top embed-responsive-item" loading="lazy">
+</picture>
+
+                    
+                </div>
+                <div class="card-body d-flex flex-column">
+                    <h5 class="card-title text-truncate mb-0">
+                        
+                            RARE26
+                        
+                        
+                    </h5>
+                    
+                        
+
+
+
+<div>
+    
+        <div class="badge-info badge above-stretched-link text-wrap mt-1 p-2 text-white w-100"
+             title="Algorithm submission challenge (Type 2)">
+            <i class="fa fa-sm fa-code mr-1"></i> Algorithm submission challenge
+        </div>
+    
+
+    <span class="badge  badge-light  mt-1 above-stretched-link text-wrap w-100 p-2">
+    <i class="far fa-clock fa-fw"></i> Challenge completed
+</span><br>
+
+
+    
+        <a href="#InfoModal"
+           class="badge badge-dark above-stretched-link p-1 mt-1"
+           data-toggle="modal"
+           data-target="#InfoModal"
+           data-title="RARE26"
+           data-description="Recognition of Anomalies in low-pREvalence cancer"
+           data-absolute-url="https://rare26.grand-challenge.org/"
+           title="Challenge Info">
+            <i class="fas fa-info-circle fa-fw"></i>
+        </a>
+    
+
+    
+        <span class="badge badge-dark above-stretched-link p-1 mt-1"
+              title="381 participants">
+                                            <i class="fas fa-user fa-fw"></i>
+                                            381
+                                        </span>
+    
+
+    
+        
+            <a class="badge badge-dark above-stretched-link p-1 mt-1"
+               href="https://rare26.grand-challenge.org/evaluation/sanity-check/leaderboard/"
+               title="541 results, latest 2 months, 1 week ago">
+                <i class="fas fa-trophy fa-fw"></i>
+                541
+            </a>
+        
+    
+
+    
+
+    
+
+    
+        <span class="badge badge-dark above-stretched-link p-1 mt-1"
+              title="Held in 2026">
+                                                <i class="fas fa-calendar-day fa-fw"></i>
+                                                2026
+                                            </span>
+    
+
+</div>
+
+                    
+                </div>
+            </div>
+        </div>
+    
+        
+        <div class="col-12 col-sm-6 col-md-3 mb-3 px-2">
+            <div class="card gc-card">
+                <a class="stretched-link" href="https://clear-ec.grand-challenge.org/"
+                   title="View Challenge"></a>
+                <div class="embed-responsive embed-responsive-1by1">
+                    
+                        <picture>
+  <source type="image/avif"
+          srcset="https://public.grand-challenge-user-content.org/logos/challenge/840/Screenshot_2026-06-30_at_12.14.08AM/1/100w.avif 100w, https://public.grand-challenge-user-content.org/logos/challenge/840/Screenshot_2026-06-30_at_12.14.08AM/1/200w.avif 200w, https://public.grand-challenge-user-content.org/logos/challenge/840/Screenshot_2026-06-30_at_12.14.08AM/1/300w.avif 300w, https://public.grand-challenge-user-content.org/logos/challenge/840/Screenshot_2026-06-30_at_12.14.08AM/1/400w.avif 400w, https://public.grand-challenge-user-content.org/logos/challenge/840/Screenshot_2026-06-30_at_12.14.08AM/1/500w.avif 500w, https://public.grand-challenge-user-content.org/logos/challenge/840/Screenshot_2026-06-30_at_12.14.08AM/1/600w.avif 600w, https://public.grand-challenge-user-content.org/logos/challenge/840/Screenshot_2026-06-30_at_12.14.08AM/1/700w.avif 700w"
+          sizes="(min-width: 0px) and (max-width: 767px) 100vw, (min-width: 768px) and (max-width: 991px) 50vw, (min-width: 992px) and (max-width: 1199px) 25vw, 300px">
+  <img src="https://public.grand-challenge-user-content.org/logos/challenge/840/Screenshot_2026-06-30_at_12.14.08AM.png" alt="Item Logo" width="824" height="762" class="card-img-top embed-responsive-item" loading="lazy">
+</picture>
+
+                    
+                </div>
+                <div class="card-body d-flex flex-column">
+                    <h5 class="card-title text-truncate mb-0">
+                        
+                            CLEAR-EC
+                        
+                        
+                    </h5>
+                    
+                        
+
+
+
+<div>
+    
+        <div class="badge-info badge above-stretched-link text-wrap mt-1 p-2 text-white w-100"
+             title="Algorithm submission challenge (Type 2)">
+            <i class="fa fa-sm fa-code mr-1"></i> Algorithm submission challenge
+        </div>
+    
+
+    <span class="badge  badge-light  mt-1 above-stretched-link text-wrap w-100 p-2">
+    <i class="far fa-clock fa-fw"></i> Challenge completed
+</span><br>
+
+
+    
+
+    
+        <span class="badge badge-dark above-stretched-link p-1 mt-1"
+              title="127 participants">
+                                            <i class="fas fa-user fa-fw"></i>
+                                            127
+                                        </span>
+    
+
+    
+        
+            <a class="badge badge-dark above-stretched-link p-1 mt-1"
+               href="https://clear-ec.grand-challenge.org/evaluation/debug-phase-debug-with-sample-images/leaderboard/"
+               title="136 results, latest 4 days, 9 hours ago">
+                <i class="fas fa-trophy fa-fw"></i>
+                136
+            </a>
+        
+    
+
+    
+
+    
+
+    
+        <span class="badge badge-dark above-stretched-link p-1 mt-1"
+              title="Held in 2026">
+                                                <i class="fas fa-calendar-day fa-fw"></i>
+                                                2026
+                                            </span>
+    
+
+</div>
+
+                    
+                </div>
+            </div>
+        </div>
+    
+        
+        <div class="col-12 col-sm-6 col-md-3 mb-3 px-2">
+            <div class="card gc-card">
+                <a class="stretched-link" href="https://mamasynth.grand-challenge.org/"
+                   title="View Challenge"></a>
+                <div class="embed-responsive embed-responsive-1by1">
+                    
+                        <picture>
+  <source type="image/avif"
+          srcset="https://public.grand-challenge-user-content.org/logos/challenge/839/mama-synth-banner/1/100w.avif 100w, https://public.grand-challenge-user-content.org/logos/challenge/839/mama-synth-banner/1/200w.avif 200w, https://public.grand-challenge-user-content.org/logos/challenge/839/mama-synth-banner/1/300w.avif 300w, https://public.grand-challenge-user-content.org/logos/challenge/839/mama-synth-banner/1/400w.avif 400w, https://public.grand-challenge-user-content.org/logos/challenge/839/mama-synth-banner/1/500w.avif 500w, https://public.grand-challenge-user-content.org/logos/challenge/839/mama-synth-banner/1/600w.avif 600w"
+          sizes="(min-width: 0px) and (max-width: 767px) 100vw, (min-width: 768px) and (max-width: 991px) 50vw, (min-width: 992px) and (max-width: 1199px) 25vw, 300px">
+  <img src="https://public.grand-challenge-user-content.org/logos/challenge/839/mama-synth-banner.png" alt="Item Logo" width="600" height="600" class="card-img-top embed-responsive-item" loading="lazy">
+</picture>
+
+                    
+                </div>
+                <div class="card-body d-flex flex-column">
+                    <h5 class="card-title text-truncate mb-0">
+                        
+                            The MAMA-SYNTH Challenge
+                        
+                        
+                    </h5>
+                    
+                        
+
+
+
+<div>
+    
+        <div class="badge-info badge above-stretched-link text-wrap mt-1 p-2 text-white w-100"
+             title="Algorithm submission challenge (Type 2)">
+            <i class="fa fa-sm fa-code mr-1"></i> Algorithm submission challenge
+        </div>
+    
+
+    <span class="badge  badge-light  mt-1 above-stretched-link text-wrap w-100 p-2">
+    <i class="far fa-clock fa-fw"></i> Challenge completed
+</span><br>
+
+
+    
+        <a href="#InfoModal"
+           class="badge badge-dark above-stretched-link p-1 mt-1"
+           data-toggle="modal"
+           data-target="#InfoModal"
+           data-title="The MAMA-SYNTH Challenge"
+           data-description="DCE-MRI Pre-Contrast to Peak Contrast Enhancement Image Synthesis with Multi-Dimensional Evaluation"
+           data-absolute-url="https://mamasynth.grand-challenge.org/"
+           title="Challenge Info">
+            <i class="fas fa-info-circle fa-fw"></i>
+        </a>
+    
+
+    
+        <span class="badge badge-dark above-stretched-link p-1 mt-1"
+              title="211 participants">
+                                            <i class="fas fa-user fa-fw"></i>
+                                            211
+                                        </span>
+    
+
+    
+        
+            <a class="badge badge-dark above-stretched-link p-1 mt-1"
+               href="https://mamasynth.grand-challenge.org/evaluation/validation-phase/leaderboard/"
+               title="194 results, latest 4 months, 1 week ago">
+                <i class="fas fa-trophy fa-fw"></i>
+                194
+            </a>
+        
+    
+
+    
+
+    
+
+    
+        <span class="badge badge-dark above-stretched-link p-1 mt-1"
+              title="Held in 2026">
+                                                <i class="fas fa-calendar-day fa-fw"></i>
+                                                2026
+                                            </span>
+    
+
+</div>
+
+                    
+                </div>
+            </div>
+        </div>
+    
+        
+        <div class="col-12 col-sm-6 col-md-3 mb-3 px-2">
+            <div class="card gc-card">
+                <a class="stretched-link" href="https://doserad2026.grand-challenge.org/"
+                   title="View Challenge"></a>
+                <div class="embed-responsive embed-responsive-1by1">
+                    
+                        <picture>
+  <source type="image/avif"
+          srcset="https://public.grand-challenge-user-content.org/logos/challenge/838/Logo_square/1/100w.avif 100w, https://public.grand-challenge-user-content.org/logos/challenge/838/Logo_square/1/200w.avif 200w, https://public.grand-challenge-user-content.org/logos/challenge/838/Logo_square/1/300w.avif 300w, https://public.grand-challenge-user-content.org/logos/challenge/838/Logo_square/1/400w.avif 400w, https://public.grand-challenge-user-content.org/logos/challenge/838/Logo_square/1/500w.avif 500w"
+          sizes="(min-width: 0px) and (max-width: 767px) 100vw, (min-width: 768px) and (max-width: 991px) 50vw, (min-width: 992px) and (max-width: 1199px) 25vw, 300px">
+  <img src="https://public.grand-challenge-user-content.org/logos/challenge/838/Logo_square.png" alt="Item Logo" width="501" height="501" class="card-img-top embed-responsive-item" loading="lazy">
+</picture>
+
+                    
+                </div>
+                <div class="card-body d-flex flex-column">
+                    <h5 class="card-title text-truncate mb-0">
+                        
+                            Real-time dose calculation in radiotherapy
+                        
+                        
+                    </h5>
+                    
+                        
+
+
+
+<div>
+    
+        <div class="badge-info badge above-stretched-link text-wrap mt-1 p-2 text-white w-100"
+             title="Algorithm submission challenge (Type 2)">
+            <i class="fa fa-sm fa-code mr-1"></i> Algorithm submission challenge
+        </div>
+    
+
+    <span class="badge  badge-light  mt-1 above-stretched-link text-wrap w-100 p-2">
+    <i class="far fa-clock fa-fw"></i> Challenge completed
+</span><br>
+
+
+    
+
+    
+        <span class="badge badge-dark above-stretched-link p-1 mt-1"
+              title="285 participants">
+                                            <i class="fas fa-user fa-fw"></i>
+                                            285
+                                        </span>
+    
+
+    
+        
+            <a class="badge badge-dark above-stretched-link p-1 mt-1"
+               href="https://doserad2026.grand-challenge.org/evaluation/photon-dose-preliminary-testing/leaderboard/"
+               title="370 results, latest 2 months, 2 weeks ago">
+                <i class="fas fa-trophy fa-fw"></i>
+                370
+            </a>
+        
+    
+
+    
+
+    
+
+    
+        <span class="badge badge-dark above-stretched-link p-1 mt-1"
+              title="Held in 2026">
+                                                <i class="fas fa-calendar-day fa-fw"></i>
+                                                2026
+                                            </span>
+    
+
+</div>
+
+                    
+                </div>
+            </div>
+        </div>
+    
+        
+        <div class="col-12 col-sm-6 col-md-3 mb-3 px-2">
+            <div class="card gc-card">
+                <a class="stretched-link" href="https://lunovo26.grand-challenge.org/"
+                   title="View Challenge"></a>
+                <div class="embed-responsive embed-responsive-1by1">
+                    
+                        <picture>
+  <source type="image/avif"
+          srcset="https://public.grand-challenge-user-content.org/logos/challenge/837/LUNOVO-logo2/1/100w.avif 100w, https://public.grand-challenge-user-content.org/logos/challenge/837/LUNOVO-logo2/1/200w.avif 200w, https://public.grand-challenge-user-content.org/logos/challenge/837/LUNOVO-logo2/1/300w.avif 300w, https://public.grand-challenge-user-content.org/logos/challenge/837/LUNOVO-logo2/1/400w.avif 400w, https://public.grand-challenge-user-content.org/logos/challenge/837/LUNOVO-logo2/1/500w.avif 500w"
+          sizes="(min-width: 0px) and (max-width: 767px) 100vw, (min-width: 768px) and (max-width: 991px) 50vw, (min-width: 992px) and (max-width: 1199px) 25vw, 300px">
+  <img src="https://public.grand-challenge-user-content.org/logos/challenge/837/LUNOVO-logo2.png" alt="Item Logo" width="574" height="580" class="card-img-top embed-responsive-item" loading="lazy">
+</picture>
+
+                    
+                </div>
+                <div class="card-body d-flex flex-column">
+                    <h5 class="card-title text-truncate mb-0">
+                        
+                            Lung Nodule Volumetry 2026 Challenge
+                        
+                        
+                    </h5>
+                    
+                        
+
+
+
+<div>
+    
+        <div class="badge-info badge above-stretched-link text-wrap mt-1 p-2 text-white w-100"
+             title="Algorithm submission challenge (Type 2)">
+            <i class="fa fa-sm fa-code mr-1"></i> Algorithm submission challenge
+        </div>
+    
+
+    <span class="badge  badge-success  mt-1 above-stretched-link text-wrap w-100 p-2">
+    <i class="far fa-clock fa-fw"></i> Accepting submissions
+</span><br>
+
+
+    
+
+    
+        <span class="badge badge-dark above-stretched-link p-1 mt-1"
+              title="6 participants">
+                                            <i class="fas fa-user fa-fw"></i>
+                                            6
+                                        </span>
+    
+
+    
+        
+            <a class="badge badge-dark above-stretched-link p-1 mt-1"
+               href="https://lunovo26.grand-challenge.org/evaluation/debug-phase/leaderboard/"
+               title="8 results, latest 3 weeks, 3 days ago">
+                <i class="fas fa-trophy fa-fw"></i>
+                8
+            </a>
+        
+    
+
+    
+
+    
+
+    
+        <span class="badge badge-dark above-stretched-link p-1 mt-1"
+              title="Held in 2026">
+                                                <i class="fas fa-calendar-day fa-fw"></i>
+                                                2026
+                                            </span>
+    
+
+</div>
+
+                    
+                </div>
+            </div>
+        </div>
+    
+        
+        <div class="col-12 col-sm-6 col-md-3 mb-3 px-2">
+            <div class="card gc-card">
+                <a class="stretched-link" href="https://dalphin.grand-challenge.org/"
+                   title="View Challenge"></a>
+                <div class="embed-responsive embed-responsive-1by1">
+                    
+                        <picture>
+  <source type="image/avif"
+          srcset="https://public.grand-challenge-user-content.org/logos/challenge/836/dalphin_logo/1/800w.avif 800w, https://public.grand-challenge-user-content.org/logos/challenge/836/dalphin_logo/1/1600w.avif 1600w, https://public.grand-challenge-user-content.org/logos/challenge/836/dalphin_logo/1/100w.avif 100w, https://public.grand-challenge-user-content.org/logos/challenge/836/dalphin_logo/1/1400w.avif 1400w, https://public.grand-challenge-user-content.org/logos/challenge/836/dalphin_logo/1/900w.avif 900w, https://public.grand-challenge-user-content.org/logos/challenge/836/dalphin_logo/1/200w.avif 200w, https://public.grand-challenge-user-content.org/logos/challenge/836/dalphin_logo/1/1000w.avif 1000w, https://public.grand-challenge-user-content.org/logos/challenge/836/dalphin_logo/1/1800w.avif 1800w, https://public.grand-challenge-user-content.org/logos/challenge/836/dalphin_logo/1/300w.avif 300w, https://public.grand-challenge-user-content.org/logos/challenge/836/dalphin_logo/1/1100w.avif 1100w, https://public.grand-challenge-user-content.org/logos/challenge/836/dalphin_logo/1/400w.avif 400w, https://public.grand-challenge-user-content.org/logos/challenge/836/dalphin_logo/1/1200w.avif 1200w, https://public.grand-challenge-user-content.org/logos/challenge/836/dalphin_logo/1/2000w.avif 2000w, https://public.grand-challenge-user-content.org/logos/challenge/836/dalphin_logo/1/500w.avif 500w, https://public.grand-challenge-user-content.org/logos/challenge/836/dalphin_logo/1/600w.avif 600w, https://public.grand-challenge-user-content.org/logos/challenge/836/dalphin_logo/1/700w.avif 700w, https://public.grand-challenge-user-content.org/logos/challenge/836/dalphin_logo/1/2200w.avif 2200w"
+          sizes="(min-width: 0px) and (max-width: 767px) 100vw, (min-width: 768px) and (max-width: 991px) 50vw, (min-width: 992px) and (max-width: 1199px) 25vw, 300px">
+  <img src="https://public.grand-challenge-user-content.org/logos/challenge/836/dalphin_logo.png" alt="Item Logo" width="2250" height="2250" class="card-img-top embed-responsive-item" loading="lazy">
+</picture>
+
+                    
+                </div>
+                <div class="card-body d-flex flex-column">
+                    <h5 class="card-title text-truncate mb-0">
+                        
+                            DALPHIN
+                        
+                        
+                    </h5>
+                    
+                        
+
+
+
+<div>
+    
+
+    <span class="badge  badge-success  mt-1 above-stretched-link text-wrap w-100 p-2">
+    <i class="far fa-clock fa-fw"></i> Accepting submissions
+</span><br>
+
+
+    
+        <a href="#InfoModal"
+           class="badge badge-dark above-stretched-link p-1 mt-1"
+           data-toggle="modal"
+           data-target="#InfoModal"
+           data-title="DALPHIN"
+           data-description="DALPHIN is a multicentric, open visual question answering (VQA) benchmark for pathology AI copilots. It focuses on assessing multimodal large language models across a range of diagnostic reasoning tasks using histopathology images (thumbnails and regions of interest) derived from whole-slide images. The benchmark comprises 300 cases collected from six healthcare institutions in six countries, covering 130 diagnoses across 14 pathology subspecialties, including non-neoplastic entities and rare cancers. DALPHIN provides a standardized, long-term framework for reproducible, automated evaluation and enables direct comparison of pathology AI assistants both among themselves and against pathologists with different levels of expertise."
+           data-absolute-url="https://dalphin.grand-challenge.org/"
+           title="Challenge Info">
+            <i class="fas fa-info-circle fa-fw"></i>
+        </a>
+    
+
+    
+        <span class="badge badge-dark above-stretched-link p-1 mt-1"
+              title="56 participants">
+                                            <i class="fas fa-user fa-fw"></i>
+                                            56
+                                        </span>
+    
+
+    
+        
+            <a class="badge badge-dark above-stretched-link p-1 mt-1"
+               href="https://dalphin.grand-challenge.org/evaluation/dalphin/leaderboard/"
+               title="168 results, latest 2 weeks, 4 days ago">
+                <i class="fas fa-trophy fa-fw"></i>
+                168
+            </a>
+        
+    
+
+    
+
+    
+        <a class="badge badge-dark above-stretched-link p-1 mt-1"
+           href="https://arxiv.org/abs/2605.03544"
+           title="DALPHIN: Benchmarking Digital Pathology AI Copilots Against Pathologists on an Open Multicentric Dataset">
+            <i class="fas fa-file fa-fw"></i>&nbsp;Article
+        </a>
+    
+
+    
+        <span class="badge badge-dark above-stretched-link p-1 mt-1"
+              title="Held in 2025">
+                                                <i class="fas fa-calendar-day fa-fw"></i>
+                                                2025
+                                            </span>
+    
+
+</div>
+
+                    
+                </div>
+            </div>
+        </div>
+    
+        
+        <div class="col-12 col-sm-6 col-md-3 mb-3 px-2">
+            <div class="card gc-card">
+                <a class="stretched-link" href="https://beetle.grand-challenge.org/"
+                   title="View Challenge"></a>
+                <div class="embed-responsive embed-responsive-1by1">
+                    
+                        <picture>
+  <source type="image/avif"
+          srcset="https://public.grand-challenge-user-content.org/logos/challenge/834/logo/1/800w.avif 800w, https://public.grand-challenge-user-content.org/logos/challenge/834/logo/1/1600w.avif 1600w, https://public.grand-challenge-user-content.org/logos/challenge/834/logo/1/100w.avif 100w, https://public.grand-challenge-user-content.org/logos/challenge/834/logo/1/1400w.avif 1400w, https://public.grand-challenge-user-content.org/logos/challenge/834/logo/1/900w.avif 900w, https://public.grand-challenge-user-content.org/logos/challenge/834/logo/1/200w.avif 200w, https://public.grand-challenge-user-content.org/logos/challenge/834/logo/1/1000w.avif 1000w, https://public.grand-challenge-user-content.org/logos/challenge/834/logo/1/1800w.avif 1800w, https://public.grand-challenge-user-content.org/logos/challenge/834/logo/1/300w.avif 300w, https://public.grand-challenge-user-content.org/logos/challenge/834/logo/1/1100w.avif 1100w, https://public.grand-challenge-user-content.org/logos/challenge/834/logo/1/400w.avif 400w, https://public.grand-challenge-user-content.org/logos/challenge/834/logo/1/1200w.avif 1200w, https://public.grand-challenge-user-content.org/logos/challenge/834/logo/1/2000w.avif 2000w, https://public.grand-challenge-user-content.org/logos/challenge/834/logo/1/500w.avif 500w, https://public.grand-challenge-user-content.org/logos/challenge/834/logo/1/600w.avif 600w, https://public.grand-challenge-user-content.org/logos/challenge/834/logo/1/700w.avif 700w, https://public.grand-challenge-user-content.org/logos/challenge/834/logo/1/2200w.avif 2200w"
+          sizes="(min-width: 0px) and (max-width: 767px) 100vw, (min-width: 768px) and (max-width: 991px) 50vw, (min-width: 992px) and (max-width: 1199px) 25vw, 300px">
+  <img src="https://public.grand-challenge-user-content.org/logos/challenge/834/logo.png" alt="Item Logo" width="2250" height="2250" class="card-img-top embed-responsive-item" loading="lazy">
+</picture>
+
+                    
+                </div>
+                <div class="card-body d-flex flex-column">
+                    <h5 class="card-title text-truncate mb-0">
+                        
+                            BEETLE
+                        
+                        
+                    </h5>
+                    
+                        
+
+
+
+<div>
+    
+
+    <span class="badge  badge-success  mt-1 above-stretched-link text-wrap w-100 p-2">
+    <i class="far fa-clock fa-fw"></i> Accepting submissions for BEETLE
+</span><br>
+
+
+    
+        <a href="#InfoModal"
+           class="badge badge-dark above-stretched-link p-1 mt-1"
+           data-toggle="modal"
+           data-target="#InfoModal"
+           data-title="BEETLE"
+           data-description="BEETLE is a multicenter, multiscanner benchmark for breast cancer histopathology segmentation. It focuses on multiclass semantic segmentation of hematoxylin and eosin (H&amp;E)-stained whole-slide images (WSIs) into four tissue categories: invasive epithelium, non-invasive epithelium, necrosis, and other. The evaluation set comprises 170 densely annotated regions from 54 WSIs, covering all molecular subtypes and histological grades, thereby capturing much of the morphological heterogeneity seen in clinical practice. BEETLE provides a standardized resource for benchmarking breast cancer segmentation models, supporting the development of robust, generalizable algorithms for large-scale biomarker quantification across heterogeneous patient cohorts."
+           data-absolute-url="https://beetle.grand-challenge.org/"
+           title="Challenge Info">
+            <i class="fas fa-info-circle fa-fw"></i>
+        </a>
+    
+
+    
+        <span class="badge badge-dark above-stretched-link p-1 mt-1"
+              title="227 participants">
+                                            <i class="fas fa-user fa-fw"></i>
+                                            227
+                                        </span>
+    
+
+    
+        
+            <a class="badge badge-dark above-stretched-link p-1 mt-1"
+               href="https://beetle.grand-challenge.org/evaluation/beetle/leaderboard/"
+               title="233 results, latest 21 hours ago">
+                <i class="fas fa-trophy fa-fw"></i>
+                233
+            </a>
+        
+    
+
+    
+
+    
+        <a class="badge badge-dark above-stretched-link p-1 mt-1"
+           href="https://arxiv.org/abs/2510.02037"
+           title="A Multicentric Dataset for Training and Benchmarking Breast Cancer Segmentation in H&amp;E Slides">
+            <i class="fas fa-file fa-fw"></i>&nbsp;Article
+        </a>
+    
+
+    
+        <span class="badge badge-dark above-stretched-link p-1 mt-1"
+              title="Held in 2025">
+                                                <i class="fas fa-calendar-day fa-fw"></i>
+                                                2025
+                                            </span>
+    
+
+</div>
+
+                    
+                </div>
+            </div>
+        </div>
+    
+        
+        <div class="col-12 col-sm-6 col-md-3 mb-3 px-2">
+            <div class="card gc-card">
+                <a class="stretched-link" href="https://ai4life-cidc25.grand-challenge.org/"
+                   title="View Challenge"></a>
+                <div class="embed-responsive embed-responsive-1by1">
+                    
+                        <picture>
+  <source type="image/avif"
+          srcset="https://public.grand-challenge-user-content.org/logos/challenge/833/card_extended/1/800w.avif 800w, https://public.grand-challenge-user-content.org/logos/challenge/833/card_extended/1/100w.avif 100w, https://public.grand-challenge-user-content.org/logos/challenge/833/card_extended/1/900w.avif 900w, https://public.grand-challenge-user-content.org/logos/challenge/833/card_extended/1/200w.avif 200w, https://public.grand-challenge-user-content.org/logos/challenge/833/card_extended/1/300w.avif 300w, https://public.grand-challenge-user-content.org/logos/challenge/833/card_extended/1/400w.avif 400w, https://public.grand-challenge-user-content.org/logos/challenge/833/card_extended/1/500w.avif 500w, https://public.grand-challenge-user-content.org/logos/challenge/833/card_extended/1/600w.avif 600w, https://public.grand-challenge-user-content.org/logos/challenge/833/card_extended/1/700w.avif 700w"
+          sizes="(min-width: 0px) and (max-width: 767px) 100vw, (min-width: 768px) and (max-width: 991px) 50vw, (min-width: 992px) and (max-width: 1199px) 25vw, 300px">
+  <img src="https://public.grand-challenge-user-content.org/logos/challenge/833/card_extended.png" alt="Item Logo" width="1600" height="900" class="card-img-top embed-responsive-item" loading="lazy">
+</picture>
+
+                    
+                </div>
+                <div class="card-body d-flex flex-column">
+                    <h5 class="card-title text-truncate mb-0">
+                        
+                            AI4Life Calcium Imaging Denoising Challenge 2025
+                        
+                        
+                    </h5>
+                    
+                        
+
+
+
+<div>
+    
+        <div class="badge-info badge above-stretched-link text-wrap mt-1 p-2 text-white w-100"
+             title="Algorithm submission challenge (Type 2)">
+            <i class="fa fa-sm fa-code mr-1"></i> Algorithm submission challenge
+        </div>
+    
+
+    <span class="badge  badge-light  mt-1 above-stretched-link text-wrap w-100 p-2">
+    <i class="far fa-clock fa-fw"></i> Challenge completed
+</span><br>
+
+
+    
+        <a href="#InfoModal"
+           class="badge badge-dark above-stretched-link p-1 mt-1"
+           data-toggle="modal"
+           data-target="#InfoModal"
+           data-title="AI4Life Calcium Imaging Denoising Challenge 2025"
+           data-description="Welcome to AI4Life-CIDC25! In this challenge, we want to focus on unsupervised denoising of  calcium imaging microscopy. By participating, researchers can contribute to a critical area of scientific research, aiding in interpreting microscopy images and potentially unlocking discoveries in biology and medicine."
+           data-absolute-url="https://ai4life-cidc25.grand-challenge.org/"
+           title="Challenge Info">
+            <i class="fas fa-info-circle fa-fw"></i>
+        </a>
+    
+
+    
+        <span class="badge badge-dark above-stretched-link p-1 mt-1"
+              title="72 participants">
+                                            <i class="fas fa-user fa-fw"></i>
+                                            72
+                                        </span>
+    
+
+    
+        
+            <a class="badge badge-dark above-stretched-link p-1 mt-1"
+               href="https://ai4life-cidc25.grand-challenge.org/evaluation/preliminary-phase/leaderboard/"
+               title="18 results, latest 5 months, 3 weeks ago">
+                <i class="fas fa-trophy fa-fw"></i>
+                18
+            </a>
+        
+    
+
+    
+
+    
+
+    
+        <span class="badge badge-dark above-stretched-link p-1 mt-1"
+              title="Held in 2025">
+                                                <i class="fas fa-calendar-day fa-fw"></i>
+                                                2025
+                                            </span>
+    
+
+</div>
+
+                    
+                </div>
+            </div>
+        </div>
+    
+        
+        <div class="col-12 col-sm-6 col-md-3 mb-3 px-2">
+            <div class="card gc-card">
+                <a class="stretched-link" href="https://midog2025.grand-challenge.org/"
+                   title="View Challenge"></a>
+                <div class="embed-responsive embed-responsive-1by1">
+                    
+                        <picture>
+  <source type="image/avif"
+          srcset="https://public.grand-challenge-user-content.org/logos/challenge/832/MIDOG-logo-squared_Zeichenfl%C3%A4che_1_Kopie_16/1/800w.avif 800w, https://public.grand-challenge-user-content.org/logos/challenge/832/MIDOG-logo-squared_Zeichenfl%C3%A4che_1_Kopie_16/1/100w.avif 100w, https://public.grand-challenge-user-content.org/logos/challenge/832/MIDOG-logo-squared_Zeichenfl%C3%A4che_1_Kopie_16/1/900w.avif 900w, https://public.grand-challenge-user-content.org/logos/challenge/832/MIDOG-logo-squared_Zeichenfl%C3%A4che_1_Kopie_16/1/200w.avif 200w, https://public.grand-challenge-user-content.org/logos/challenge/832/MIDOG-logo-squared_Zeichenfl%C3%A4che_1_Kopie_16/1/1000w.avif 1000w, https://public.grand-challenge-user-content.org/logos/challenge/832/MIDOG-logo-squared_Zeichenfl%C3%A4che_1_Kopie_16/1/300w.avif 300w, https://public.grand-challenge-user-content.org/logos/challenge/832/MIDOG-logo-squared_Zeichenfl%C3%A4che_1_Kopie_16/1/1100w.avif 1100w, https://public.grand-challenge-user-content.org/logos/challenge/832/MIDOG-logo-squared_Zeichenfl%C3%A4che_1_Kopie_16/1/400w.avif 400w, https://public.grand-challenge-user-content.org/logos/challenge/832/MIDOG-logo-squared_Zeichenfl%C3%A4che_1_Kopie_16/1/1200w.avif 1200w, https://public.grand-challenge-user-content.org/logos/challenge/832/MIDOG-logo-squared_Zeichenfl%C3%A4che_1_Kopie_16/1/500w.avif 500w, https://public.grand-challenge-user-content.org/logos/challenge/832/MIDOG-logo-squared_Zeichenfl%C3%A4che_1_Kopie_16/1/600w.avif 600w, https://public.grand-challenge-user-content.org/logos/challenge/832/MIDOG-logo-squared_Zeichenfl%C3%A4che_1_Kopie_16/1/700w.avif 700w"
+          sizes="(min-width: 0px) and (max-width: 767px) 100vw, (min-width: 768px) and (max-width: 991px) 50vw, (min-width: 992px) and (max-width: 1199px) 25vw, 300px">
+  <img src="https://public.grand-challenge-user-content.org/logos/challenge/832/MIDOG-logo-squared_Zeichenfl%C3%A4che_1_Kopie_16.jpg" alt="Item Logo" width="1256" height="1243" class="card-img-top embed-responsive-item" loading="lazy">
+</picture>
+
+                    
+                </div>
+                <div class="card-body d-flex flex-column">
+                    <h5 class="card-title text-truncate mb-0">
+                        
+                            Mitosis Domain Generalization Challenge 2025
+                        
+                        
+                    </h5>
+                    
+                        
+
+
+
+<div>
+    
+        <div class="badge-info badge above-stretched-link text-wrap mt-1 p-2 text-white w-100"
+             title="Algorithm submission challenge (Type 2)">
+            <i class="fa fa-sm fa-code mr-1"></i> Algorithm submission challenge
+        </div>
+    
+
+    <span class="badge  badge-light  mt-1 above-stretched-link text-wrap w-100 p-2">
+    <i class="far fa-clock fa-fw"></i> Challenge completed
+</span><br>
+
+
+    
+
+    
+        <span class="badge badge-dark above-stretched-link p-1 mt-1"
+              title="177 participants">
+                                            <i class="fas fa-user fa-fw"></i>
+                                            177
+                                        </span>
+    
+
+    
+        
+            <a class="badge badge-dark above-stretched-link p-1 mt-1"
+               href="https://midog2025.grand-challenge.org/evaluation/track-1-object-detection-preliminary-evaluation-phase/leaderboard/"
+               title="103 results, latest 1 year, 2 months ago">
+                <i class="fas fa-trophy fa-fw"></i>
+                103
+            </a>
+        
+    
+
+    
+
+    
+        <a class="badge badge-dark above-stretched-link p-1 mt-1"
+           href="https://doi.org/10.5281/zenodo.15077360"
+           title="Mitosis Domain Generalization Challenge 2025">
+            <i class="fas fa-file fa-fw"></i>&nbsp;Article
+        </a>
+    
+
+    
+        <span class="badge badge-dark above-stretched-link p-1 mt-1"
+              title="Held in 2025">
+                                                <i class="fas fa-calendar-day fa-fw"></i>
+                                                2025
+                                            </span>
+    
+
+</div>
+
+                    
+                </div>
+            </div>
+        </div>
+    
+        
+        <div class="col-12 col-sm-6 col-md-3 mb-3 px-2">
+            <div class="card gc-card">
+                <a class="stretched-link" href="https://hancothon25.grand-challenge.org/"
+                   title="View Challenge"></a>
+                <div class="embed-responsive embed-responsive-1by1">
+                    
+                        <picture>
+  <source type="image/avif"
+          srcset="https://public.grand-challenge-user-content.org/logos/challenge/831/Icon_blue/1/800w.avif 800w, https://public.grand-challenge-user-content.org/logos/challenge/831/Icon_blue/1/1600w.avif 1600w, https://public.grand-challenge-user-content.org/logos/challenge/831/Icon_blue/1/100w.avif 100w, https://public.grand-challenge-user-content.org/logos/challenge/831/Icon_blue/1/1400w.avif 1400w, https://public.grand-challenge-user-content.org/logos/challenge/831/Icon_blue/1/900w.avif 900w, https://public.grand-challenge-user-content.org/logos/challenge/831/Icon_blue/1/200w.avif 200w, https://public.grand-challenge-user-content.org/logos/challenge/831/Icon_blue/1/1000w.avif 1000w, https://public.grand-challenge-user-content.org/logos/challenge/831/Icon_blue/1/1800w.avif 1800w, https://public.grand-challenge-user-content.org/logos/challenge/831/Icon_blue/1/300w.avif 300w, https://public.grand-challenge-user-content.org/logos/challenge/831/Icon_blue/1/1100w.avif 1100w, https://public.grand-challenge-user-content.org/logos/challenge/831/Icon_blue/1/400w.avif 400w, https://public.grand-challenge-user-content.org/logos/challenge/831/Icon_blue/1/1200w.avif 1200w, https://public.grand-challenge-user-content.org/logos/challenge/831/Icon_blue/1/2000w.avif 2000w, https://public.grand-challenge-user-content.org/logos/challenge/831/Icon_blue/1/500w.avif 500w, https://public.grand-challenge-user-content.org/logos/challenge/831/Icon_blue/1/600w.avif 600w, https://public.grand-challenge-user-content.org/logos/challenge/831/Icon_blue/1/700w.avif 700w"
+          sizes="(min-width: 0px) and (max-width: 767px) 100vw, (min-width: 768px) and (max-width: 991px) 50vw, (min-width: 992px) and (max-width: 1199px) 25vw, 300px">
+  <img src="https://public.grand-challenge-user-content.org/logos/challenge/831/Icon_blue.png" alt="Item Logo" width="2126" height="2126" class="card-img-top embed-responsive-item" loading="lazy">
+</picture>
+
+                    
+                </div>
+                <div class="card-body d-flex flex-column">
+                    <h5 class="card-title text-truncate mb-0">
+                        
+                            HANCOTHON
+                        
+                        
+                    </h5>
+                    
+                        
+
+
+
+<div>
+    
+        <div class="badge-info badge above-stretched-link text-wrap mt-1 p-2 text-white w-100"
+             title="Algorithm submission challenge (Type 2)">
+            <i class="fa fa-sm fa-code mr-1"></i> Algorithm submission challenge
+        </div>
+    
+
+    <span class="badge  badge-light  mt-1 above-stretched-link text-wrap w-100 p-2">
+    <i class="far fa-clock fa-fw"></i> Challenge completed
+</span><br>
+
+
+    
+        <a href="#InfoModal"
+           class="badge badge-dark above-stretched-link p-1 mt-1"
+           data-toggle="modal"
+           data-target="#InfoModal"
+           data-title="HANCOTHON"
+           data-description="The HANCOCK dataset challenge at MICCAI 2025 focuses on predicting 5-year survival and 2-year recurrence in head and neck cancer patients using a multimodal dataset from 763 patients. It includes clinical data, pathology reports, histopathology images, tissue microarrays, blood data, and surgery reports. Participants are tasked with fusing these diverse data streams to perform two binary classification tasks: (i) predicting 5-year survival to guide therapy decisions and (ii) estimating 2-year recurrence risk for timely follow-up. This challenge aims to advance precision oncology by leveraging comprehensive patient-specific insights."
+           data-absolute-url="https://hancothon25.grand-challenge.org/"
+           title="Challenge Info">
+            <i class="fas fa-info-circle fa-fw"></i>
+        </a>
+    
+
+    
+        <span class="badge badge-dark above-stretched-link p-1 mt-1"
+              title="89 participants">
+                                            <i class="fas fa-user fa-fw"></i>
+                                            89
+                                        </span>
+    
+
+    
+        
+            <a class="badge badge-dark above-stretched-link p-1 mt-1"
+               href="https://hancothon25.grand-challenge.org/evaluation/open-development-phase/leaderboard/"
+               title="21 results, latest 1 year, 2 months ago">
+                <i class="fas fa-trophy fa-fw"></i>
+                21
+            </a>
+        
+    
+
+    
+
+    
+        <a class="badge badge-dark above-stretched-link p-1 mt-1"
+           href="https://doi.org/10.1101/2024.05.29.24308141"
+           title="A multimodal dataset for precision oncology in head and neck cancer">
+            <i class="fas fa-file fa-fw"></i>&nbsp;Article
+        </a>
+    
+
+    
+        <span class="badge badge-dark above-stretched-link p-1 mt-1"
+              title="Held in 2025">
+                                                <i class="fas fa-calendar-day fa-fw"></i>
+                                                2025
+                                            </span>
+    
+
+</div>
+
+                    
+                </div>
+            </div>
+        </div>
+    
+        
+        <div class="col-12 col-sm-6 col-md-3 mb-3 px-2">
+            <div class="card gc-card">
+                <a class="stretched-link" href="https://selma3d2025.grand-challenge.org/"
+                   title="View Challenge"></a>
+                <div class="embed-responsive embed-responsive-1by1">
+                    
+                        <picture>
+  <source type="image/avif"
+          srcset="https://public.grand-challenge-user-content.org/logos/challenge/830/logo_2025_dtt48I5/1/100w.avif 100w, https://public.grand-challenge-user-content.org/logos/challenge/830/logo_2025_dtt48I5/1/200w.avif 200w, https://public.grand-challenge-user-content.org/logos/challenge/830/logo_2025_dtt48I5/1/300w.avif 300w, https://public.grand-challenge-user-content.org/logos/challenge/830/logo_2025_dtt48I5/1/400w.avif 400w, https://public.grand-challenge-user-content.org/logos/challenge/830/logo_2025_dtt48I5/1/500w.avif 500w"
+          sizes="(min-width: 0px) and (max-width: 767px) 100vw, (min-width: 768px) and (max-width: 991px) 50vw, (min-width: 992px) and (max-width: 1199px) 25vw, 300px">
+  <img src="https://public.grand-challenge-user-content.org/logos/challenge/830/logo_2025_dtt48I5.png" alt="Item Logo" width="506" height="567" class="card-img-top embed-responsive-item" loading="lazy">
+</picture>
+
+                    
+                </div>
+                <div class="card-body d-flex flex-column">
+                    <h5 class="card-title text-truncate mb-0">
+                        
+                            SSL for 3D light-sheet microscopy image segmentation
+                        
+                        
+                    </h5>
+                    
+                        
+
+
+
+<div>
+    
+        <div class="badge-info badge above-stretched-link text-wrap mt-1 p-2 text-white w-100"
+             title="Algorithm submission challenge (Type 2)">
+            <i class="fa fa-sm fa-code mr-1"></i> Algorithm submission challenge
+        </div>
+    
+
+    <span class="badge  badge-light  mt-1 above-stretched-link text-wrap w-100 p-2">
+    <i class="far fa-clock fa-fw"></i> Challenge completed
+</span><br>
+
+
+    
+
+    
+        <span class="badge badge-dark above-stretched-link p-1 mt-1"
+              title="59 participants">
+                                            <i class="fas fa-user fa-fw"></i>
+                                            59
+                                        </span>
+    
+
+    
+        
+            <a class="badge badge-dark above-stretched-link p-1 mt-1"
+               href="https://selma3d2025.grand-challenge.org/evaluation/preliminary-development-phase-task-1/leaderboard/"
+               title="41 results, latest 1 year, 2 months ago">
+                <i class="fas fa-trophy fa-fw"></i>
+                41
+            </a>
+        
+    
+
+    
+
+    
+
+    
+        <span class="badge badge-dark above-stretched-link p-1 mt-1"
+              title="Held in 2025">
+                                                <i class="fas fa-calendar-day fa-fw"></i>
+                                                2025
+                                            </span>
+    
+
+</div>
+
+                    
+                </div>
+            </div>
+        </div>
+    
+        
+        <div class="col-12 col-sm-6 col-md-3 mb-3 px-2">
+            <div class="card gc-card">
+                <a class="stretched-link" href="https://rare25.grand-challenge.org/"
+                   title="View Challenge"></a>
+                <div class="embed-responsive embed-responsive-1by1">
+                    
+                        <picture>
+  <source type="image/avif"
+          srcset="https://public.grand-challenge-user-content.org/logos/challenge/829/logo_white_raven_0A0SQgP/1/800w.avif 800w, https://public.grand-challenge-user-content.org/logos/challenge/829/logo_white_raven_0A0SQgP/1/100w.avif 100w, https://public.grand-challenge-user-content.org/logos/challenge/829/logo_white_raven_0A0SQgP/1/900w.avif 900w, https://public.grand-challenge-user-content.org/logos/challenge/829/logo_white_raven_0A0SQgP/1/200w.avif 200w, https://public.grand-challenge-user-content.org/logos/challenge/829/logo_white_raven_0A0SQgP/1/1000w.avif 1000w, https://public.grand-challenge-user-content.org/logos/challenge/829/logo_white_raven_0A0SQgP/1/300w.avif 300w, https://public.grand-challenge-user-content.org/logos/challenge/829/logo_white_raven_0A0SQgP/1/1100w.avif 1100w, https://public.grand-challenge-user-content.org/logos/challenge/829/logo_white_raven_0A0SQgP/1/400w.avif 400w, https://public.grand-challenge-user-content.org/logos/challenge/829/logo_white_raven_0A0SQgP/1/1200w.avif 1200w, https://public.grand-challenge-user-content.org/logos/challenge/829/logo_white_raven_0A0SQgP/1/500w.avif 500w, https://public.grand-challenge-user-content.org/logos/challenge/829/logo_white_raven_0A0SQgP/1/600w.avif 600w, https://public.grand-challenge-user-content.org/logos/challenge/829/logo_white_raven_0A0SQgP/1/700w.avif 700w"
+          sizes="(min-width: 0px) and (max-width: 767px) 100vw, (min-width: 768px) and (max-width: 991px) 50vw, (min-width: 992px) and (max-width: 1199px) 25vw, 300px">
+  <img src="https://public.grand-challenge-user-content.org/logos/challenge/829/logo_white_raven_0A0SQgP.png" alt="Item Logo" width="1225" height="1207" class="card-img-top embed-responsive-item" loading="lazy">
+</picture>
+
+                    
+                </div>
+                <div class="card-body d-flex flex-column">
+                    <h5 class="card-title text-truncate mb-0">
+                        
+                            RARE25
+                        
+                        
+                    </h5>
+                    
+                        
+
+
+
+<div>
+    
+        <div class="badge-info badge above-stretched-link text-wrap mt-1 p-2 text-white w-100"
+             title="Algorithm submission challenge (Type 2)">
+            <i class="fa fa-sm fa-code mr-1"></i> Algorithm submission challenge
+        </div>
+    
+
+    <span class="badge  badge-light  mt-1 above-stretched-link text-wrap w-100 p-2">
+    <i class="far fa-clock fa-fw"></i> Challenge completed
+</span><br>
+
+
+    
+        <a href="#InfoModal"
+           class="badge badge-dark above-stretched-link p-1 mt-1"
+           data-toggle="modal"
+           data-target="#InfoModal"
+           data-title="RARE25"
+           data-description="Recognition of Anomalies in low-pREvalance cancer"
+           data-absolute-url="https://rare25.grand-challenge.org/"
+           title="Challenge Info">
+            <i class="fas fa-info-circle fa-fw"></i>
+        </a>
+    
+
+    
+        <span class="badge badge-dark above-stretched-link p-1 mt-1"
+              title="242 participants">
+                                            <i class="fas fa-user fa-fw"></i>
+                                            242
+                                        </span>
+    
+
+    
+        
+            <a class="badge badge-dark above-stretched-link p-1 mt-1"
+               href="https://rare25.grand-challenge.org/evaluation/test-submission-debug/leaderboard/"
+               title="323 results, latest 10 months, 2 weeks ago">
+                <i class="fas fa-trophy fa-fw"></i>
+                323
+            </a>
+        
+    
+
+    
+
+    
+
+    
+        <span class="badge badge-dark above-stretched-link p-1 mt-1"
+              title="Held in 2025">
+                                                <i class="fas fa-calendar-day fa-fw"></i>
+                                                2025
+                                            </span>
+    
+
+</div>
+
+                    
+                </div>
+            </div>
+        </div>
+    
+        
+        <div class="col-12 col-sm-6 col-md-3 mb-3 px-2">
+            <div class="card gc-card">
+                <a class="stretched-link" href="https://toothfairy3.grand-challenge.org/"
+                   title="View Challenge"></a>
+                <div class="embed-responsive embed-responsive-1by1">
+                    
+                        <picture>
+  <source type="image/avif"
+          srcset="https://public.grand-challenge-user-content.org/logos/challenge/828/gc-thumbnail_2/1/800w.avif 800w, https://public.grand-challenge-user-content.org/logos/challenge/828/gc-thumbnail_2/1/1600w.avif 1600w, https://public.grand-challenge-user-content.org/logos/challenge/828/gc-thumbnail_2/1/2400w.avif 2400w, https://public.grand-challenge-user-content.org/logos/challenge/828/gc-thumbnail_2/1/100w.avif 100w, https://public.grand-challenge-user-content.org/logos/challenge/828/gc-thumbnail_2/1/1400w.avif 1400w, https://public.grand-challenge-user-content.org/logos/challenge/828/gc-thumbnail_2/1/900w.avif 900w, https://public.grand-challenge-user-content.org/logos/challenge/828/gc-thumbnail_2/1/200w.avif 200w, https://public.grand-challenge-user-content.org/logos/challenge/828/gc-thumbnail_2/1/1000w.avif 1000w, https://public.grand-challenge-user-content.org/logos/challenge/828/gc-thumbnail_2/1/1800w.avif 1800w, https://public.grand-challenge-user-content.org/logos/challenge/828/gc-thumbnail_2/1/300w.avif 300w, https://public.grand-challenge-user-content.org/logos/challenge/828/gc-thumbnail_2/1/1100w.avif 1100w, https://public.grand-challenge-user-content.org/logos/challenge/828/gc-thumbnail_2/1/400w.avif 400w, https://public.grand-challenge-user-content.org/logos/challenge/828/gc-thumbnail_2/1/1200w.avif 1200w, https://public.grand-challenge-user-content.org/logos/challenge/828/gc-thumbnail_2/1/2000w.avif 2000w, https://public.grand-challenge-user-content.org/logos/challenge/828/gc-thumbnail_2/1/500w.avif 500w, https://public.grand-challenge-user-content.org/logos/challenge/828/gc-thumbnail_2/1/600w.avif 600w, https://public.grand-challenge-user-content.org/logos/challenge/828/gc-thumbnail_2/1/700w.avif 700w, https://public.grand-challenge-user-content.org/logos/challenge/828/gc-thumbnail_2/1/2200w.avif 2200w"
+          sizes="(min-width: 0px) and (max-width: 767px) 100vw, (min-width: 768px) and (max-width: 991px) 50vw, (min-width: 992px) and (max-width: 1199px) 25vw, 300px">
+  <img src="https://public.grand-challenge-user-content.org/logos/challenge/828/gc-thumbnail_2.png" alt="Item Logo" width="7404" height="7420" class="card-img-top embed-responsive-item" loading="lazy">
+</picture>
+
+                    
+                </div>
+                <div class="card-body d-flex flex-column">
+                    <h5 class="card-title text-truncate mb-0">
+                        
+                            ToothFairy3: Multi-Class Segmentation in CBCT Volumes
+                        
+                        
+                    </h5>
+                    
+                        
+
+
+
+<div>
+    
+        <div class="badge-info badge above-stretched-link text-wrap mt-1 p-2 text-white w-100"
+             title="Algorithm submission challenge (Type 2)">
+            <i class="fa fa-sm fa-code mr-1"></i> Algorithm submission challenge
+        </div>
+    
+
+    <span class="badge  badge-success  mt-1 above-stretched-link text-wrap w-100 p-2">
+    <i class="far fa-clock fa-fw"></i> Accepting submissions
+</span><br>
+
+
+    
+        <a href="#InfoModal"
+           class="badge badge-dark above-stretched-link p-1 mt-1"
+           data-toggle="modal"
+           data-target="#InfoModal"
+           data-title="ToothFairy3: Multi-Class Segmentation in CBCT Volumes"
+           data-description="ToothFairy3, part of the ODIN2025 challenge cluster at MICCAI2025, advances CBCT segmentation with an expanded 77-class dataset and a new emphasis on computational efficiency. It introduces two tasks: a runtime-aware multi-structure segmentation and a novel interactive track for Inferior Alveolar Canal (IAC) segmentation using minimal user input. The challenge supports the development of both automated and prompt-based interactive AI tools to enhance clinical workflows in dentistry and maxillofacial surgery."
+           data-absolute-url="https://toothfairy3.grand-challenge.org/"
+           title="Challenge Info">
+            <i class="fas fa-info-circle fa-fw"></i>
+        </a>
+    
+
+    
+        <span class="badge badge-dark above-stretched-link p-1 mt-1"
+              title="258 participants">
+                                            <i class="fas fa-user fa-fw"></i>
+                                            258
+                                        </span>
+    
+
+    
+        
+            <a class="badge badge-dark above-stretched-link p-1 mt-1"
+               href="https://toothfairy3.grand-challenge.org/evaluation/debugging-phase/leaderboard/"
+               title="97 results, latest 11 months, 3 weeks ago">
+                <i class="fas fa-trophy fa-fw"></i>
+                97
+            </a>
+        
+    
+
+    
+
+    
+
+    
+        <span class="badge badge-dark above-stretched-link p-1 mt-1"
+              title="Held in 2025">
+                                                <i class="fas fa-calendar-day fa-fw"></i>
+                                                2025
+                                            </span>
+    
+
+</div>
+
+                    
+                </div>
+            </div>
+        </div>
+    
+        
+        <div class="col-12 col-sm-6 col-md-3 mb-3 px-2">
+            <div class="card gc-card">
+                <a class="stretched-link" href="https://surgvu25.grand-challenge.org/"
+                   title="View Challenge"></a>
+                <div class="embed-responsive embed-responsive-1by1">
+                    
+                        <picture>
+  <source type="image/avif"
+          srcset="https://public.grand-challenge-user-content.org/logos/challenge/827/miccai_2025_logo_V9HCXdi/1/800w.avif 800w, https://public.grand-challenge-user-content.org/logos/challenge/827/miccai_2025_logo_V9HCXdi/1/100w.avif 100w, https://public.grand-challenge-user-content.org/logos/challenge/827/miccai_2025_logo_V9HCXdi/1/900w.avif 900w, https://public.grand-challenge-user-content.org/logos/challenge/827/miccai_2025_logo_V9HCXdi/1/200w.avif 200w, https://public.grand-challenge-user-content.org/logos/challenge/827/miccai_2025_logo_V9HCXdi/1/300w.avif 300w, https://public.grand-challenge-user-content.org/logos/challenge/827/miccai_2025_logo_V9HCXdi/1/400w.avif 400w, https://public.grand-challenge-user-content.org/logos/challenge/827/miccai_2025_logo_V9HCXdi/1/500w.avif 500w, https://public.grand-challenge-user-content.org/logos/challenge/827/miccai_2025_logo_V9HCXdi/1/600w.avif 600w, https://public.grand-challenge-user-content.org/logos/challenge/827/miccai_2025_logo_V9HCXdi/1/700w.avif 700w"
+          sizes="(min-width: 0px) and (max-width: 767px) 100vw, (min-width: 768px) and (max-width: 991px) 50vw, (min-width: 992px) and (max-width: 1199px) 25vw, 300px">
+  <img src="https://public.grand-challenge-user-content.org/logos/challenge/827/miccai_2025_logo_V9HCXdi.jpg" alt="Item Logo" width="1298" height="988" class="card-img-top embed-responsive-item" loading="lazy">
+</picture>
+
+                    
+                </div>
+                <div class="card-body d-flex flex-column">
+                    <h5 class="card-title text-truncate mb-0">
+                        
+                            Surgical Visual Understanding
+                        
+                        
+                    </h5>
+                    
+                        
+
+
+
+<div>
+    
+        <div class="badge-info badge above-stretched-link text-wrap mt-1 p-2 text-white w-100"
+             title="Algorithm submission challenge (Type 2)">
+            <i class="fa fa-sm fa-code mr-1"></i> Algorithm submission challenge
+        </div>
+    
+
+    <span class="badge  badge-light  mt-1 above-stretched-link text-wrap w-100 p-2">
+    <i class="far fa-clock fa-fw"></i> Challenge completed
+</span><br>
+
+
+    
+
+    
+        <span class="badge badge-dark above-stretched-link p-1 mt-1"
+              title="87 participants">
+                                            <i class="fas fa-user fa-fw"></i>
+                                            87
+                                        </span>
+    
+
+    
+        
+            <a class="badge badge-dark above-stretched-link p-1 mt-1"
+               href="https://surgvu25.grand-challenge.org/evaluation/category-1-prelim-phase/leaderboard/"
+               title="186 results, latest 1 year, 2 months ago">
+                <i class="fas fa-trophy fa-fw"></i>
+                186
+            </a>
+        
+    
+
+    
+
+    
+
+    
+        <span class="badge badge-dark above-stretched-link p-1 mt-1"
+              title="Held in 2025">
+                                                <i class="fas fa-calendar-day fa-fw"></i>
+                                                2025
+                                            </span>
+    
+
+</div>
+
+                    
+                </div>
+            </div>
+        </div>
+    
+        
+        <div class="col-12 col-sm-6 col-md-3 mb-3 px-2">
+            <div class="card gc-card">
+                <a class="stretched-link" href="https://topbrain2025.grand-challenge.org/"
+                   title="View Challenge"></a>
+                <div class="embed-responsive embed-responsive-1by1">
+                    
+                        <picture>
+  <source type="image/avif"
+          srcset="https://public.grand-challenge-user-content.org/logos/challenge/826/TopBrain_Logo_Social_Jul292025/1/100w.avif 100w, https://public.grand-challenge-user-content.org/logos/challenge/826/TopBrain_Logo_Social_Jul292025/1/200w.avif 200w, https://public.grand-challenge-user-content.org/logos/challenge/826/TopBrain_Logo_Social_Jul292025/1/300w.avif 300w, https://public.grand-challenge-user-content.org/logos/challenge/826/TopBrain_Logo_Social_Jul292025/1/400w.avif 400w, https://public.grand-challenge-user-content.org/logos/challenge/826/TopBrain_Logo_Social_Jul292025/1/500w.avif 500w, https://public.grand-challenge-user-content.org/logos/challenge/826/TopBrain_Logo_Social_Jul292025/1/600w.avif 600w"
+          sizes="(min-width: 0px) and (max-width: 767px) 100vw, (min-width: 768px) and (max-width: 991px) 50vw, (min-width: 992px) and (max-width: 1199px) 25vw, 300px">
+  <img src="https://public.grand-challenge-user-content.org/logos/challenge/826/TopBrain_Logo_Social_Jul292025.jpg" alt="Item Logo" width="640" height="640" class="card-img-top embed-responsive-item" loading="lazy">
+</picture>
+
+                    
+                </div>
+                <div class="card-body d-flex flex-column">
+                    <h5 class="card-title text-truncate mb-0">
+                        
+                            TopBrain Segmentation Challenge for Whole Brain Vessel Anatomy
+                        
+                        
+                    </h5>
+                    
+                        
+
+
+
+<div>
+    
+        <div class="badge-info badge above-stretched-link text-wrap mt-1 p-2 text-white w-100"
+             title="Algorithm submission challenge (Type 2)">
+            <i class="fa fa-sm fa-code mr-1"></i> Algorithm submission challenge
+        </div>
+    
+
+    <span class="badge  badge-light  mt-1 above-stretched-link text-wrap w-100 p-2">
+    <i class="far fa-clock fa-fw"></i> Challenge completed
+</span><br>
+
+
+    
+        <a href="#InfoModal"
+           class="badge badge-dark above-stretched-link p-1 mt-1"
+           data-toggle="modal"
+           data-target="#InfoModal"
+           data-title="TopBrain Segmentation Challenge for Whole Brain Vessel Anatomy"
+           data-description="Segment over 40 landmark brain vessel anatomies for both CTA and MRA"
+           data-absolute-url="https://topbrain2025.grand-challenge.org/"
+           title="Challenge Info">
+            <i class="fas fa-info-circle fa-fw"></i>
+        </a>
+    
+
+    
+        <span class="badge badge-dark above-stretched-link p-1 mt-1"
+              title="284 participants">
+                                            <i class="fas fa-user fa-fw"></i>
+                                            284
+                                        </span>
+    
+
+    
+        
+            <a class="badge badge-dark above-stretched-link p-1 mt-1"
+               href="https://topbrain2025.grand-challenge.org/evaluation/validation-cta-seg/leaderboard/"
+               title="75 results, latest 1 year, 1 month ago">
+                <i class="fas fa-trophy fa-fw"></i>
+                75
+            </a>
+        
+    
+
+    
+
+    
+        <a class="badge badge-dark above-stretched-link p-1 mt-1"
+           href="https://doi.org/10.64898/2026.05.28.26354312"
+           title="TopBrain Segmentation Challenge for Whole Brain Vessel Anatomy">
+            <i class="fas fa-file fa-fw"></i>&nbsp;Article
+        </a>
+    
+
+    
+        <span class="badge badge-dark above-stretched-link p-1 mt-1"
+              title="Held in 2025">
+                                                <i class="fas fa-calendar-day fa-fw"></i>
+                                                2025
+                                            </span>
+    
+
+</div>
+
+                    
+                </div>
+            </div>
+        </div>
+    
+        
+        <div class="col-12 col-sm-6 col-md-3 mb-3 px-2">
+            <div class="card gc-card">
+                <a class="stretched-link" href="https://t3challenge25.grand-challenge.org/"
+                   title="View Challenge"></a>
+                <div class="embed-responsive embed-responsive-1by1">
+                    
+                        <picture>
+  <source type="image/avif"
+          srcset="https://public.grand-challenge-user-content.org/logos/challenge/825/logo/1/100w.avif 100w, https://public.grand-challenge-user-content.org/logos/challenge/825/logo/1/200w.avif 200w, https://public.grand-challenge-user-content.org/logos/challenge/825/logo/1/300w.avif 300w, https://public.grand-challenge-user-content.org/logos/challenge/825/logo/1/400w.avif 400w, https://public.grand-challenge-user-content.org/logos/challenge/825/logo/1/500w.avif 500w, https://public.grand-challenge-user-content.org/logos/challenge/825/logo/1/600w.avif 600w"
+          sizes="(min-width: 0px) and (max-width: 767px) 100vw, (min-width: 768px) and (max-width: 991px) 50vw, (min-width: 992px) and (max-width: 1199px) 25vw, 300px">
+  <img src="https://public.grand-challenge-user-content.org/logos/challenge/825/logo.jpg" alt="Item Logo" width="640" height="640" class="card-img-top embed-responsive-item" loading="lazy">
+</picture>
+
+                    
+                </div>
+                <div class="card-body d-flex flex-column">
+                    <h5 class="card-title text-truncate mb-0">
+                        
+                            The Trauma THOMPSON Challenge 2025
+                        
+                        
+                    </h5>
+                    
+                        
+
+
+
+<div>
+    
+        <div class="badge-info badge above-stretched-link text-wrap mt-1 p-2 text-white w-100"
+             title="Algorithm submission challenge (Type 2)">
+            <i class="fa fa-sm fa-code mr-1"></i> Algorithm submission challenge
+        </div>
+    
+
+    <span class="badge  badge-light  mt-1 above-stretched-link text-wrap w-100 p-2">
+    <i class="far fa-clock fa-fw"></i> Challenge completed
+</span><br>
+
+
+    
+
+    
+        <span class="badge badge-dark above-stretched-link p-1 mt-1"
+              title="80 participants">
+                                            <i class="fas fa-user fa-fw"></i>
+                                            80
+                                        </span>
+    
+
+    
+        
+            <a class="badge badge-dark above-stretched-link p-1 mt-1"
+               href="https://t3challenge25.grand-challenge.org/evaluation/open-development-phase-task-1/leaderboard/"
+               title="54 results, latest 1 year, 2 months ago">
+                <i class="fas fa-trophy fa-fw"></i>
+                54
+            </a>
+        
+    
+
+    
+
+    
+
+    
+        <span class="badge badge-dark above-stretched-link p-1 mt-1"
+              title="Held in 2025">
+                                                <i class="fas fa-calendar-day fa-fw"></i>
+                                                2025
+                                            </span>
+    
+
+</div>
+
+                    
+                </div>
+            </div>
+        </div>
+    
+        
+        <div class="col-12 col-sm-6 col-md-3 mb-3 px-2">
+            <div class="card gc-card">
+                <a class="stretched-link" href="https://dehazingecho2025.grand-challenge.org/"
+                   title="View Challenge"></a>
+                <div class="embed-responsive embed-responsive-1by1">
+                    
+                        <picture>
+  <source type="image/avif"
+          srcset="https://public.grand-challenge-user-content.org/logos/challenge/823/logo_MAnBCrj/1/100w.avif 100w, https://public.grand-challenge-user-content.org/logos/challenge/823/logo_MAnBCrj/1/200w.avif 200w, https://public.grand-challenge-user-content.org/logos/challenge/823/logo_MAnBCrj/1/300w.avif 300w, https://public.grand-challenge-user-content.org/logos/challenge/823/logo_MAnBCrj/1/400w.avif 400w, https://public.grand-challenge-user-content.org/logos/challenge/823/logo_MAnBCrj/1/500w.avif 500w, https://public.grand-challenge-user-content.org/logos/challenge/823/logo_MAnBCrj/1/600w.avif 600w"
+          sizes="(min-width: 0px) and (max-width: 767px) 100vw, (min-width: 768px) and (max-width: 991px) 50vw, (min-width: 992px) and (max-width: 1199px) 25vw, 300px">
+  <img src="https://public.grand-challenge-user-content.org/logos/challenge/823/logo_MAnBCrj.png" alt="Item Logo" width="640" height="640" class="card-img-top embed-responsive-item" loading="lazy">
+</picture>
+
+                    
+                </div>
+                <div class="card-body d-flex flex-column">
+                    <h5 class="card-title text-truncate mb-0">
+                        
+                            Dehazing Echocardiography Challenge 2025
+                        
+                        
+                    </h5>
+                    
+                        
+
+
+
+<div>
+    
+        <div class="badge-info badge above-stretched-link text-wrap mt-1 p-2 text-white w-100"
+             title="Algorithm submission challenge (Type 2)">
+            <i class="fa fa-sm fa-code mr-1"></i> Algorithm submission challenge
+        </div>
+    
+
+    <span class="badge  badge-light  mt-1 above-stretched-link text-wrap w-100 p-2">
+    <i class="far fa-clock fa-fw"></i> Challenge completed
+</span><br>
+
+
+    
+
+    
+        <span class="badge badge-dark above-stretched-link p-1 mt-1"
+              title="192 participants">
+                                            <i class="fas fa-user fa-fw"></i>
+                                            192
+                                        </span>
+    
+
+    
+        
+            <a class="badge badge-dark above-stretched-link p-1 mt-1"
+               href="https://dehazingecho2025.grand-challenge.org/evaluation/timeline/leaderboard/"
+               title="133 results, latest 1 year, 3 months ago">
+                <i class="fas fa-trophy fa-fw"></i>
+                133
+            </a>
+        
+    
+
+    
+
+    
+
+    
+        <span class="badge badge-dark above-stretched-link p-1 mt-1"
+              title="Held in 2025">
+                                                <i class="fas fa-calendar-day fa-fw"></i>
+                                                2025
+                                            </span>
+    
+
+</div>
+
+                    
+                </div>
+            </div>
+        </div>
+    
+        
+        <div class="col-12 col-sm-6 col-md-3 mb-3 px-2">
+            <div class="card gc-card">
+                <a class="stretched-link" href="https://curvas-pdacvi.grand-challenge.org/"
+                   title="View Challenge"></a>
+                <div class="embed-responsive embed-responsive-1by1">
+                    
+                        <picture>
+  <source type="image/avif"
+          srcset="https://public.grand-challenge-user-content.org/logos/challenge/821/logo_A76y4X4/1/100w.avif 100w, https://public.grand-challenge-user-content.org/logos/challenge/821/logo_A76y4X4/1/200w.avif 200w, https://public.grand-challenge-user-content.org/logos/challenge/821/logo_A76y4X4/1/300w.avif 300w, https://public.grand-challenge-user-content.org/logos/challenge/821/logo_A76y4X4/1/400w.avif 400w, https://public.grand-challenge-user-content.org/logos/challenge/821/logo_A76y4X4/1/500w.avif 500w"
+          sizes="(min-width: 0px) and (max-width: 767px) 100vw, (min-width: 768px) and (max-width: 991px) 50vw, (min-width: 992px) and (max-width: 1199px) 25vw, 300px">
+  <img src="https://public.grand-challenge-user-content.org/logos/challenge/821/logo_A76y4X4.png" alt="Item Logo" width="655" height="595" class="card-img-top embed-responsive-item" loading="lazy">
+</picture>
+
+                    
+                </div>
+                <div class="card-body d-flex flex-column">
+                    <h5 class="card-title text-truncate mb-0">
+                        
+                            CURVAS-Pancreatic Adenocarcinoma Vascular Invasion
+                        
+                        
+                    </h5>
+                    
+                        
+
+
+
+<div>
+    
+        <div class="badge-info badge above-stretched-link text-wrap mt-1 p-2 text-white w-100"
+             title="Algorithm submission challenge (Type 2)">
+            <i class="fa fa-sm fa-code mr-1"></i> Algorithm submission challenge
+        </div>
+    
+
+    <span class="badge  badge-light  mt-1 above-stretched-link text-wrap w-100 p-2">
+    <i class="far fa-clock fa-fw"></i> Challenge completed
+</span><br>
+
+
+    
+
+    
+        <span class="badge badge-dark above-stretched-link p-1 mt-1"
+              title="62 participants">
+                                            <i class="fas fa-user fa-fw"></i>
+                                            62
+                                        </span>
+    
+
+    
+        
+            <a class="badge badge-dark above-stretched-link p-1 mt-1"
+               href="https://curvas-pdacvi.grand-challenge.org/evaluation/sanity-check-phase/leaderboard/"
+               title="97 results, latest 8 months, 1 week ago">
+                <i class="fas fa-trophy fa-fw"></i>
+                97
+            </a>
+        
+    
+
+    
+
+    
+
+    
+        <span class="badge badge-dark above-stretched-link p-1 mt-1"
+              title="Held in 2025">
+                                                <i class="fas fa-calendar-day fa-fw"></i>
+                                                2025
+                                            </span>
+    
+
+</div>
+
+                    
+                </div>
+            </div>
+        </div>
+    
+        
+        <div class="col-12 col-sm-6 col-md-3 mb-3 px-2">
+            <div class="card gc-card">
+                <a class="stretched-link" href="https://reg2025.grand-challenge.org/"
+                   title="View Challenge"></a>
+                <div class="embed-responsive embed-responsive-1by1">
+                    
+                        <picture>
+  <source type="image/avif"
+          srcset="https://public.grand-challenge-user-content.org/logos/challenge/820/logo2_z1MUHQs/1/800w.avif 800w, https://public.grand-challenge-user-content.org/logos/challenge/820/logo2_z1MUHQs/1/100w.avif 100w, https://public.grand-challenge-user-content.org/logos/challenge/820/logo2_z1MUHQs/1/900w.avif 900w, https://public.grand-challenge-user-content.org/logos/challenge/820/logo2_z1MUHQs/1/200w.avif 200w, https://public.grand-challenge-user-content.org/logos/challenge/820/logo2_z1MUHQs/1/1000w.avif 1000w, https://public.grand-challenge-user-content.org/logos/challenge/820/logo2_z1MUHQs/1/300w.avif 300w, https://public.grand-challenge-user-content.org/logos/challenge/820/logo2_z1MUHQs/1/1100w.avif 1100w, https://public.grand-challenge-user-content.org/logos/challenge/820/logo2_z1MUHQs/1/400w.avif 400w, https://public.grand-challenge-user-content.org/logos/challenge/820/logo2_z1MUHQs/1/500w.avif 500w, https://public.grand-challenge-user-content.org/logos/challenge/820/logo2_z1MUHQs/1/600w.avif 600w, https://public.grand-challenge-user-content.org/logos/challenge/820/logo2_z1MUHQs/1/700w.avif 700w"
+          sizes="(min-width: 0px) and (max-width: 767px) 100vw, (min-width: 768px) and (max-width: 991px) 50vw, (min-width: 992px) and (max-width: 1199px) 25vw, 300px">
+  <img src="https://public.grand-challenge-user-content.org/logos/challenge/820/logo2_z1MUHQs.png" alt="Item Logo" width="1177" height="1176" class="card-img-top embed-responsive-item" loading="lazy">
+</picture>
+
+                    
+                </div>
+                <div class="card-body d-flex flex-column">
+                    <h5 class="card-title text-truncate mb-0">
+                        
+                            REport Generation in pathology using Pan-Asia Giga-pixel WSIs
+                        
+                        
+                    </h5>
+                    
+                        
+
+
+
+<div>
+    
+
+    <span class="badge  badge-light  mt-1 above-stretched-link text-wrap w-100 p-2">
+    <i class="far fa-clock fa-fw"></i> Challenge completed
+</span><br>
+
+
+    
+        <a href="#InfoModal"
+           class="badge badge-dark above-stretched-link p-1 mt-1"
+           data-toggle="modal"
+           data-target="#InfoModal"
+           data-title="REport Generation in pathology using Pan-Asia Giga-pixel WSIs"
+           data-description="This project focuses on advancing automated pathology report generation using vision-language foundation models. It addresses the limitations of traditional NLP metrics (e.g., BLEU, METEOR, ROUGE) by emphasizing clinically relevant evaluation. The initiative includes standardized datasets, expert comparisons, and medical-domain-specific metrics to assess model performance. It also explores the integration of generated reports into diagnostic workflows with clinical feedback. To support fairness and generalizability, the challenge dataset comprises ~20,500 cases from six medical centers in Korea, Japan, India, Turkey, and Germany, promoting multicultural and multiethnic medical AI development."
+           data-absolute-url="https://reg2025.grand-challenge.org/"
+           title="Challenge Info">
+            <i class="fas fa-info-circle fa-fw"></i>
+        </a>
+    
+
+    
+        <span class="badge badge-dark above-stretched-link p-1 mt-1"
+              title="546 participants">
+                                            <i class="fas fa-user fa-fw"></i>
+                                            546
+                                        </span>
+    
+
+    
+
+    
+
+    
+
+    
+        <span class="badge badge-dark above-stretched-link p-1 mt-1"
+              title="Held in 2025">
+                                                <i class="fas fa-calendar-day fa-fw"></i>
+                                                2025
+                                            </span>
+    
+
+</div>
+
+                    
+                </div>
+            </div>
+        </div>
+    
+        
+        <div class="col-12 col-sm-6 col-md-3 mb-3 px-2">
+            <div class="card gc-card">
+                <a class="stretched-link" href="https://migratu2025.grand-challenge.org/"
+                   title="View Challenge"></a>
+                <div class="embed-responsive embed-responsive-1by1">
+                    
+                        <picture>
+  <source type="image/avif"
+          srcset="https://public.grand-challenge-user-content.org/logos/challenge/819/1/1/800w.avif 800w, https://public.grand-challenge-user-content.org/logos/challenge/819/1/1/1600w.avif 1600w, https://public.grand-challenge-user-content.org/logos/challenge/819/1/1/100w.avif 100w, https://public.grand-challenge-user-content.org/logos/challenge/819/1/1/1400w.avif 1400w, https://public.grand-challenge-user-content.org/logos/challenge/819/1/1/900w.avif 900w, https://public.grand-challenge-user-content.org/logos/challenge/819/1/1/200w.avif 200w, https://public.grand-challenge-user-content.org/logos/challenge/819/1/1/1000w.avif 1000w, https://public.grand-challenge-user-content.org/logos/challenge/819/1/1/1800w.avif 1800w, https://public.grand-challenge-user-content.org/logos/challenge/819/1/1/300w.avif 300w, https://public.grand-challenge-user-content.org/logos/challenge/819/1/1/1100w.avif 1100w, https://public.grand-challenge-user-content.org/logos/challenge/819/1/1/400w.avif 400w, https://public.grand-challenge-user-content.org/logos/challenge/819/1/1/1200w.avif 1200w, https://public.grand-challenge-user-content.org/logos/challenge/819/1/1/2000w.avif 2000w, https://public.grand-challenge-user-content.org/logos/challenge/819/1/1/500w.avif 500w, https://public.grand-challenge-user-content.org/logos/challenge/819/1/1/600w.avif 600w, https://public.grand-challenge-user-content.org/logos/challenge/819/1/1/700w.avif 700w"
+          sizes="(min-width: 0px) and (max-width: 767px) 100vw, (min-width: 768px) and (max-width: 991px) 50vw, (min-width: 992px) and (max-width: 1199px) 25vw, 300px">
+  <img src="https://public.grand-challenge-user-content.org/logos/challenge/819/1.png" alt="Item Logo" width="2048" height="2048" class="card-img-top embed-responsive-item" loading="lazy">
+</picture>
+
+                    
+                </div>
+                <div class="card-body d-flex flex-column">
+                    <h5 class="card-title text-truncate mb-0">
+                        
+                            MICCAI Grand Challenge Tutorial 2025
+                        
+                        
+                    </h5>
+                    
+                        
+
+
+
+<div>
+    
+
+    <span class="badge  badge-danger  mt-1 above-stretched-link text-wrap w-100 p-2">
+    <i class="far fa-clock fa-fw"></i> Not accepting submissions
+</span><br>
+
+
+    
+
+    
+        <span class="badge badge-dark above-stretched-link p-1 mt-1"
+              title="4 participants">
+                                            <i class="fas fa-user fa-fw"></i>
+                                            4
+                                        </span>
+    
+
+    
+
+    
+
+    
+
+    
+        <span class="badge badge-dark above-stretched-link p-1 mt-1"
+              title="Held in 2025">
+                                                <i class="fas fa-calendar-day fa-fw"></i>
+                                                2025
+                                            </span>
+    
+
+</div>
+
+                    
+                </div>
+            </div>
+        </div>
+    
+        
+        <div class="col-12 col-sm-6 col-md-3 mb-3 px-2">
+            <div class="card gc-card">
+                <a class="stretched-link" href="https://odelia2025.grand-challenge.org/"
+                   title="View Challenge"></a>
+                <div class="embed-responsive embed-responsive-1by1">
+                    
+                        <picture>
+  <source type="image/avif"
+          srcset="https://public.grand-challenge-user-content.org/logos/challenge/818/ODELIA_logo2/1/100w.avif 100w, https://public.grand-challenge-user-content.org/logos/challenge/818/ODELIA_logo2/1/200w.avif 200w, https://public.grand-challenge-user-content.org/logos/challenge/818/ODELIA_logo2/1/300w.avif 300w, https://public.grand-challenge-user-content.org/logos/challenge/818/ODELIA_logo2/1/400w.avif 400w, https://public.grand-challenge-user-content.org/logos/challenge/818/ODELIA_logo2/1/500w.avif 500w"
+          sizes="(min-width: 0px) and (max-width: 767px) 100vw, (min-width: 768px) and (max-width: 991px) 50vw, (min-width: 992px) and (max-width: 1199px) 25vw, 300px">
+  <img src="https://public.grand-challenge-user-content.org/logos/challenge/818/ODELIA_logo2.png" alt="Item Logo" width="532" height="516" class="card-img-top embed-responsive-item" loading="lazy">
+</picture>
+
+                    
+                </div>
+                <div class="card-body d-flex flex-column">
+                    <h5 class="card-title text-truncate mb-0">
+                        
+                            ODELIA BREAST MRI Challenge 2025
+                        
+                        
+                    </h5>
+                    
+                        
+
+
+
+<div>
+    
+        <div class="badge-info badge above-stretched-link text-wrap mt-1 p-2 text-white w-100"
+             title="Algorithm submission challenge (Type 2)">
+            <i class="fa fa-sm fa-code mr-1"></i> Algorithm submission challenge
+        </div>
+    
+
+    <span class="badge  badge-danger  mt-1 above-stretched-link text-wrap w-100 p-2">
+    <i class="far fa-clock fa-fw"></i> Not accepting submissions
+</span><br>
+
+
+    
+        <a href="#InfoModal"
+           class="badge badge-dark above-stretched-link p-1 mt-1"
+           data-toggle="modal"
+           data-target="#InfoModal"
+           data-title="ODELIA BREAST MRI Challenge 2025"
+           data-description="Classification of breast MRI studies on a heterogeneous dataset"
+           data-absolute-url="https://odelia2025.grand-challenge.org/"
+           title="Challenge Info">
+            <i class="fas fa-info-circle fa-fw"></i>
+        </a>
+    
+
+    
+        <span class="badge badge-dark above-stretched-link p-1 mt-1"
+              title="151 participants">
+                                            <i class="fas fa-user fa-fw"></i>
+                                            151
+                                        </span>
+    
+
+    
+        
+            <a class="badge badge-dark above-stretched-link p-1 mt-1"
+               href="https://odelia2025.grand-challenge.org/evaluation/pre-evaluation-test-run-required-for-full-submission/leaderboard/"
+               title="49 results, latest 7 months, 2 weeks ago">
+                <i class="fas fa-trophy fa-fw"></i>
+                49
+            </a>
+        
+    
+
+    
+
+    
+        <a class="badge badge-dark above-stretched-link p-1 mt-1"
+           href="https://arxiv.org/abs/2506.00474"
+           title="A European Multi-Center Breast Cancer MRI Dataset">
+            <i class="fas fa-file fa-fw"></i>&nbsp;Article
+        </a>
+    
+
+    
+        <span class="badge badge-dark above-stretched-link p-1 mt-1"
+              title="Held in 2025">
+                                                <i class="fas fa-calendar-day fa-fw"></i>
+                                                2025
+                                            </span>
+    
+
+</div>
+
+                    
+                </div>
+            </div>
+        </div>
+    
+        
+        <div class="col-12 col-sm-6 col-md-3 mb-3 px-2">
+            <div class="card gc-card">
+                <a class="stretched-link" href="https://autopet-iv.grand-challenge.org/"
+                   title="View Challenge"></a>
+                <div class="embed-responsive embed-responsive-1by1">
+                    
+                        <picture>
+  <source type="image/avif"
+          srcset="https://public.grand-challenge-user-content.org/logos/challenge/807/autopet-2025/1/100w.avif 100w, https://public.grand-challenge-user-content.org/logos/challenge/807/autopet-2025/1/200w.avif 200w, https://public.grand-challenge-user-content.org/logos/challenge/807/autopet-2025/1/300w.avif 300w, https://public.grand-challenge-user-content.org/logos/challenge/807/autopet-2025/1/400w.avif 400w, https://public.grand-challenge-user-content.org/logos/challenge/807/autopet-2025/1/500w.avif 500w, https://public.grand-challenge-user-content.org/logos/challenge/807/autopet-2025/1/600w.avif 600w"
+          sizes="(min-width: 0px) and (max-width: 767px) 100vw, (min-width: 768px) and (max-width: 991px) 50vw, (min-width: 992px) and (max-width: 1199px) 25vw, 300px">
+  <img src="https://public.grand-challenge-user-content.org/logos/challenge/807/autopet-2025.png" alt="Item Logo" width="640" height="640" class="card-img-top embed-responsive-item" loading="lazy">
+</picture>
+
+                    
+                </div>
+                <div class="card-body d-flex flex-column">
+                    <h5 class="card-title text-truncate mb-0">
+                        
+                            autoPET/CT IV
+                        
+                        
+                    </h5>
+                    
+                        
+
+
+
+<div>
+    
+        <div class="badge-info badge above-stretched-link text-wrap mt-1 p-2 text-white w-100"
+             title="Algorithm submission challenge (Type 2)">
+            <i class="fa fa-sm fa-code mr-1"></i> Algorithm submission challenge
+        </div>
+    
+
+    <span class="badge  badge-light  mt-1 above-stretched-link text-wrap w-100 p-2">
+    <i class="far fa-clock fa-fw"></i> Challenge completed
+</span><br>
+
+
+    
+        <a href="#InfoModal"
+           class="badge badge-dark above-stretched-link p-1 mt-1"
+           data-toggle="modal"
+           data-target="#InfoModal"
+           data-title="autoPET/CT IV"
+           data-description="Automated Lesion Segmentation in PET/CT - The human frontier"
+           data-absolute-url="https://autopet-iv.grand-challenge.org/"
+           title="Challenge Info">
+            <i class="fas fa-info-circle fa-fw"></i>
+        </a>
+    
+
+    
+        <span class="badge badge-dark above-stretched-link p-1 mt-1"
+              title="232 participants">
+                                            <i class="fas fa-user fa-fw"></i>
+                                            232
+                                        </span>
+    
+
+    
+        
+            <a class="badge badge-dark above-stretched-link p-1 mt-1"
+               href="https://autopet-iv.grand-challenge.org/evaluation/task-1-preliminary-test-set/leaderboard/"
+               title="42 results, latest 1 year, 2 months ago">
+                <i class="fas fa-trophy fa-fw"></i>
+                42
+            </a>
+        
+    
+
+    
+
+    
+
+    
+        <span class="badge badge-dark above-stretched-link p-1 mt-1"
+              title="Held in 2025">
+                                                <i class="fas fa-calendar-day fa-fw"></i>
+                                                2025
+                                            </span>
+    
+
+</div>
+
+                    
+                </div>
+            </div>
+        </div>
+    
+        
+        <div class="col-12 col-sm-6 col-md-3 mb-3 px-2">
+            <div class="card gc-card">
+                <a class="stretched-link" href="https://panther.grand-challenge.org/"
+                   title="View Challenge"></a>
+                <div class="embed-responsive embed-responsive-1by1">
+                    
+                        <picture>
+  <source type="image/avif"
+          srcset="https://public.grand-challenge-user-content.org/logos/challenge/805/PUMA_challenge_1/1/100w.avif 100w, https://public.grand-challenge-user-content.org/logos/challenge/805/PUMA_challenge_1/1/200w.avif 200w, https://public.grand-challenge-user-content.org/logos/challenge/805/PUMA_challenge_1/1/300w.avif 300w, https://public.grand-challenge-user-content.org/logos/challenge/805/PUMA_challenge_1/1/400w.avif 400w, https://public.grand-challenge-user-content.org/logos/challenge/805/PUMA_challenge_1/1/500w.avif 500w"
+          sizes="(min-width: 0px) and (max-width: 767px) 100vw, (min-width: 768px) and (max-width: 991px) 50vw, (min-width: 992px) and (max-width: 1199px) 25vw, 300px">
+  <img src="https://public.grand-challenge-user-content.org/logos/challenge/805/PUMA_challenge_1.png" alt="Item Logo" width="500" height="500" class="card-img-top embed-responsive-item" loading="lazy">
+</picture>
+
+                    
+                </div>
+                <div class="card-body d-flex flex-column">
+                    <h5 class="card-title text-truncate mb-0">
+                        
+                            PANTHER Challenge
+                        
+                        
+                    </h5>
+                    
+                        
+
+
+
+<div>
+    
+        <div class="badge-info badge above-stretched-link text-wrap mt-1 p-2 text-white w-100"
+             title="Algorithm submission challenge (Type 2)">
+            <i class="fa fa-sm fa-code mr-1"></i> Algorithm submission challenge
+        </div>
+    
+
+    <span class="badge  badge-success  mt-1 above-stretched-link text-wrap w-100 p-2">
+    <i class="far fa-clock fa-fw"></i> Accepting submissions
+</span><br>
+
+
+    
+        <a href="#InfoModal"
+           class="badge badge-dark above-stretched-link p-1 mt-1"
+           data-toggle="modal"
+           data-target="#InfoModal"
+           data-title="PANTHER Challenge"
+           data-description="📜 If you are using any of the resources (e.g., dataset, source code repositories, AI models, benchmarks, outcomes) associated with the PANORAMA challenge, please cite the following article as reference"
+           data-absolute-url="https://panther.grand-challenge.org/"
+           title="Challenge Info">
+            <i class="fas fa-info-circle fa-fw"></i>
+        </a>
+    
+
+    
+        <span class="badge badge-dark above-stretched-link p-1 mt-1"
+              title="334 participants">
+                                            <i class="fas fa-user fa-fw"></i>
+                                            334
+                                        </span>
+    
+
+    
+        
+            <a class="badge badge-dark above-stretched-link p-1 mt-1"
+               href="https://panther.grand-challenge.org/evaluation/open-development-phase/leaderboard/"
+               title="234 results, latest 5 months, 1 week ago">
+                <i class="fas fa-trophy fa-fw"></i>
+                234
+            </a>
+        
+    
+
+    
+
+    
+        <a class="badge badge-dark above-stretched-link p-1 mt-1"
+           href="https://doi.org/10.1016/j.media.2026.104186"
+           title="PANTHER Challenge Report: Cross-Domain Pancreatic Tumor Segmentation in Magnetic Resonance Imaging">
+            <i class="fas fa-file fa-fw"></i>&nbsp;Article
+        </a>
+    
+
+    
+        <span class="badge badge-dark above-stretched-link p-1 mt-1"
+              title="Held in 2025">
+                                                <i class="fas fa-calendar-day fa-fw"></i>
+                                                2025
+                                            </span>
+    
+
+</div>
+
+                    
+                </div>
+            </div>
+        </div>
+    
+        
+        <div class="col-12 col-sm-6 col-md-3 mb-3 px-2">
+            <div class="card gc-card">
+                <a class="stretched-link" href="https://ai4life-mdc25.grand-challenge.org/"
+                   title="View Challenge"></a>
+                <div class="embed-responsive embed-responsive-1by1">
+                    
+                        <picture>
+  <source type="image/avif"
+          srcset="https://public.grand-challenge-user-content.org/logos/challenge/804/card/1/200w.avif 200w, https://public.grand-challenge-user-content.org/logos/challenge/804/card/1/100w.avif 100w, https://public.grand-challenge-user-content.org/logos/challenge/804/card/1/400w.avif 400w, https://public.grand-challenge-user-content.org/logos/challenge/804/card/1/300w.avif 300w"
+          sizes="(min-width: 0px) and (max-width: 767px) 100vw, (min-width: 768px) and (max-width: 991px) 50vw, (min-width: 992px) and (max-width: 1199px) 25vw, 300px">
+  <img src="https://public.grand-challenge-user-content.org/logos/challenge/804/card.png" alt="Item Logo" width="800" height="450" class="card-img-top embed-responsive-item" loading="lazy">
+</picture>
+
+                    
+                </div>
+                <div class="card-body d-flex flex-column">
+                    <h5 class="card-title text-truncate mb-0">
+                        
+                            AI4Life Microscopy Supervised Denoising Challenge 2025
+                        
+                        
+                    </h5>
+                    
+                        
+
+
+
+<div>
+    
+        <div class="badge-info badge above-stretched-link text-wrap mt-1 p-2 text-white w-100"
+             title="Algorithm submission challenge (Type 2)">
+            <i class="fa fa-sm fa-code mr-1"></i> Algorithm submission challenge
+        </div>
+    
+
+    <span class="badge  badge-light  mt-1 above-stretched-link text-wrap w-100 p-2">
+    <i class="far fa-clock fa-fw"></i> Challenge completed
+</span><br>
+
+
+    
+        <a href="#InfoModal"
+           class="badge badge-dark above-stretched-link p-1 mt-1"
+           data-toggle="modal"
+           data-target="#InfoModal"
+           data-title="AI4Life Microscopy Supervised Denoising Challenge 2025"
+           data-description="Wellcome to AI4Life-MDC25! In this challenge, we want to focus on an supervised denoising of microscopy images. By participating, researchers can contribute to a critical area of scientific research, aiding in interpreting microscopy images and potentially unlocking discoveries in biology and medicine."
+           data-absolute-url="https://ai4life-mdc25.grand-challenge.org/"
+           title="Challenge Info">
+            <i class="fas fa-info-circle fa-fw"></i>
+        </a>
+    
+
+    
+        <span class="badge badge-dark above-stretched-link p-1 mt-1"
+              title="21 participants">
+                                            <i class="fas fa-user fa-fw"></i>
+                                            21
+                                        </span>
+    
+
+    
+        
+            <a class="badge badge-dark above-stretched-link p-1 mt-1"
+               href="https://ai4life-mdc25.grand-challenge.org/evaluation/leaderboard-1-3d-data/leaderboard/"
+               title="17 results, latest 1 year, 2 months ago">
+                <i class="fas fa-trophy fa-fw"></i>
+                17
+            </a>
+        
+    
+
+    
+
+    
+
+    
+        <span class="badge badge-dark above-stretched-link p-1 mt-1"
+              title="Held in 2025">
+                                                <i class="fas fa-calendar-day fa-fw"></i>
+                                                2025
+                                            </span>
+    
+
+</div>
+
+                    
+                </div>
+            </div>
+        </div>
+    
+</div>
+
+
+    
+
+<div class="d-flex justify-content-end">
+    <ul class="pagination mb-0">
+        
+            <li class="page-item disabled"><span class="page-link">Previous</span></li>
+        
+
+        <li class="page-item disabled"><span
+                class="page-link">Page 1 of 7</span>
+        </li>
+
+        
+            <li class="page-item">
+                <a class="page-link" href="?page=2">Next</a>
+            </li>
+        
+    </ul>
+</div>
+
+
+    <div class="modal fade" id="InfoModal" tabindex="-1" role="dialog"
+     aria-labelledby="InfoModalTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title"></h5>
+                <button type="button" class="close" data-dismiss="modal"
+                        aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <p class="modal-description"></p>
+                <p class="text-right"><a href="" class="modal-url"></a>
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+                    </div>
+                </div>
+            
+        </div>
+
+        
+        
+    </main>
+
+
+
+    
+
+
+
+    
+
+
+
+
+
+    
+    <footer class="footer">
+        <div class="container">
+            <div class="row small border-top">
+                <div class="col-sm-6 col-md-3 pt-3">
+                    <h6 class="text-uppercase text-primary mb-2">Grand Challenge</h6>
+                    <ul class="list-unstyled ml-1 mb-0">
+                        
+                            <li>
+                                
+                                <a class="text-secondary"
+                                        
+                                   href="https://grand-challenge.org/about-us/">
+                                        
+                                    About Us
+                                </a>
+                            </li>
+                        
+                            <li>
+                                
+                                <a class="text-secondary"
+                                        
+                                   href="https://grand-challenge.org/challenge-pricing-and-hosting-requirements/">
+                                        
+                                    Challenge Pricing &amp; Hosting Requirements
+                                </a>
+                            </li>
+                        
+                            <li>
+                                
+                                <a class="text-secondary"
+                                        
+                                   href="https://grand-challenge.org/support/">
+                                        
+                                    Support &amp; Documentation
+                                </a>
+                            </li>
+                        
+                            <li>
+                                
+                                <a class="text-secondary"
+                                        
+                                   href="https://grand-challenge.org/vulnerability-disclosure/">
+                                        
+                                    Vulnerability Disclosure
+                                </a>
+                            </li>
+                        
+                        <li>
+                            <a class="text-secondary"
+                               href="https://grand-challenge.org/stats/">
+                                Statistics
+                            </a>
+                        </li>
+                        <li>
+                            <a class="text-secondary"
+                               href="https://diagnijmegen.github.io/rse-grand-challenge-status/"
+                               target="_blank">
+                                Status
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-sm-6 col-md-3 pt-3">
+                    <h6 class="text-uppercase text-primary mb-2">Policies</h6>
+                    <ul class="list-unstyled ml-1 mb-0">
+                        
+                            <li>
+                                <a class="text-secondary"
+                                    href="https://grand-challenge.org/policies/terms-of-service/">
+                                        Terms of Service
+                                </a>
+                            </li>
+                        
+                            <li>
+                                <a class="text-secondary"
+                                    href="https://grand-challenge.org/policies/privacy/">
+                                        Privacy Policy
+                                </a>
+                            </li>
+                        
+                    </ul>
+                </div>
+                <div class="col-sm-6 col-md-3 pt-3">
+                    <h6 class="text-uppercase text-primary mb-1">Follow Us</h6>
+                    <ul class="d-flex list-unstyled ml-1 mb-2">
+                        <li class="mt-2">
+                            <a class="h4 text-secondary"
+                                href="https://www.linkedin.com/company/grand-challenge/"
+                                title="Follow us on LinkedIn">
+                                <i class="fab fa-linkedin fa-lg"></i>
+                            </a>
+                        </li>
+                        <li class="mt-2">
+                            <a class="h4 mx-2 text-secondary"
+                                href="https://github.com/DIAGNijmegen/rse-grand-challenge/"
+                                title="Join us on GitHub">
+                                <i class="fab fa-github fa-lg"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-sm-6 col-md-3 pt-3">
+                    <h6 class="text-uppercase text-primary mb-1">Sponsors</h6>
+                    <ul class="d-flex list-unstyled ml-2 mb-0">
+                        <li class="text-center">
+                           <a href="https://aws.amazon.com/">
+                                 <img class="w-25 mx-2"
+                                     loading="lazy"
+                                     src="https://static.grand-challenge.org/9d6895e/images/Powered-By_logo-stack_RGB.png"
+                                     alt="Logo of Amazon Web Services"
+                                     title="Grand Challenge is sponsored by Amazon Web Services"
+                                >
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="row justify-content-center">
+                <div class="col text-center pt-2">
+                    <p class="text-muted small">&copy; 2012&ndash;2026 Radboud university medical center</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+
+    
+    
+
+
+
+<script src="https://static.grand-challenge.org/9d6895e/vendored/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+
+<script src="https://static.grand-challenge.org/9d6895e/vendored/floating-scroll/dist/jquery.floatingscroll.min.js" defer></script>
+
+
+
+<script src="https://static.grand-challenge.org/9d6895e/CACHE/js/output.5fc6011173e7.js"></script>
+
+
+<script type="module" src="https://static.grand-challenge.org/9d6895e/js/datatables.defaults.mjs"></script>
+
+
+<script id="htmx-script" src="https://static.grand-challenge.org/9d6895e/vendored/htmx/htmx.min.js" defer></script>
+
+
+<script type="module" src="https://static.grand-challenge.org/9d6895e/js/copy_to_clipboard.mjs"></script>
+
+
+<script type="module" src="https://static.grand-challenge.org/9d6895e/js/disable_after_submit.mjs"></script>
+
+    
+
+
+
+
+
+<script id="setTimezoneUrl" type="application/json">"https://grand-challenge.org/api/v1/timezone/"</script>
+
+<script id="currentTimezone" type="application/json">"UTC"</script>
+<input type="hidden" name="csrfmiddlewaretoken" value="8YsveUZXPcdivyfvbxNtijwmVpp2LMMKg2F4DaIJyMevXfslbU1R9zeTUiL4X8JP">
+<script src="https://static.grand-challenge.org/9d6895e/timezones/js/detect-timezone.mjs" type="module"></script>
+
+
+    <script src="https://static.grand-challenge.org/9d6895e/js/cards_info_modal.js"></script>
+
+</body>
+</html>

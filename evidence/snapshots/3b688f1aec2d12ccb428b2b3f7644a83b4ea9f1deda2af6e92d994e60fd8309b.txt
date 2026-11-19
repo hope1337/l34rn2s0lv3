@@ -1,0 +1,1271 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>
+      Competition: Hateful Memes: Phase 2
+    </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="DrivenData" />
+    
+    <link rel="icon" href="https://drivendata-prod-public.s3.amazonaws.com/favicon.d9d9c8790050.ico">
+    
+    <meta property="og:site_name" content="DrivenData Competitions" />
+    
+  <meta name="description"
+        content="Data science competition for social good: Hateful Memes: Phase 2. Join now and compete!">
+  <meta property="og:title" content="Hateful Memes: Phase 2" />
+  <meta property="og:description"
+        content="Detecting hateful content presents a unique challenge in memes, where multiple data modalities need to be analyzed together. Facebook is calling on researchers around the world to help identify which memes contain hate speech.
+" />
+  <meta property="og:image" content="https://drivendata-prod-public.s3.amazonaws.com/comp_images/sample_meme_skunk.png" />
+
+    
+  
+      
+      <link href="https://drivendata-prod-public.s3.amazonaws.com/dist/assets/app-CId6t1mQ.9e34094dbb76.css" rel="stylesheet">
+      
+      <link href="https://drivendata-prod-public.s3.amazonaws.com/vendor/fontawesome/css/fontawesome.min.63ea6c496f8c.css"
+            rel="stylesheet">
+      <link href="https://drivendata-prod-public.s3.amazonaws.com/vendor/fontawesome/css/solid.min.a1961264a2c1.css"
+            rel="stylesheet">
+      <link href="https://drivendata-prod-public.s3.amazonaws.com/vendor/fontawesome/css/regular.min.c0ac0aef9cad.css"
+            rel="stylesheet">
+      <link href="https://drivendata-prod-public.s3.amazonaws.com/vendor/fontawesome/css/brands.min.d4c355f1930b.css"
+            rel="stylesheet">
+      
+      <link href="https://drivendata-prod-public.s3.amazonaws.com/css/global.300167c006cf.css?v=3" rel="stylesheet">
+      <link href="https://drivendata-prod-public.s3.amazonaws.com/css/global_base.fab7c41c201f.css?v=2" rel="stylesheet">
+      <link href="https://drivendata-prod-public.s3.amazonaws.com/css/global_utils.6b7b89c57d9c.css?v=1" rel="stylesheet">
+      <link href="https://drivendata-prod-public.s3.amazonaws.com/css/global_components.ba7b851408ed.css?v=2" rel="stylesheet">
+      
+      <link href="https://drivendata-prod-public.s3.amazonaws.com/css/project.b23e047f83aa.css?v=1" rel="stylesheet">
+      <link href="https://drivendata-prod-public.s3.amazonaws.com/css/accessible-colors.d41d8cd98f00.css?v=1" rel="stylesheet">
+      <link href="https://drivendata-prod-public.s3.amazonaws.com/css/homepage.f01af6bef058.css?v=1" rel="stylesheet">
+      <link href="https://drivendata-prod-public.s3.amazonaws.com/css/components.3b5994b7e938.css?v=1" rel="stylesheet">
+      <link href="https://drivendata-prod-public.s3.amazonaws.com/css/animations.20c827374947.css?v=1" rel="stylesheet">
+    
+  
+
+    
+<meta name="htmx-config" content='{"historyCacheSize": 0, "refreshOnHistoryMiss": true}'>
+
+    
+<script id="app-config" type="application/json">{"sentryDsn": "https://b6cf330367d97d356b38446834aa0b95@o15121.ingest.us.sentry.io/4511632688414720", "environment": "production", "release": "525859fac8f8f2ff3d058cb11fcd355b2bfe1c44", "gaKey": "G-Z4K0VQDRX2", "posthogToken": "", "posthogHost": "https://us.i.posthog.com", "user": null}</script>
+<script>window.__APP__ = JSON.parse(document.getElementById("app-config").textContent);</script>
+
+    
+    <script type="module" src="https://drivendata-prod-public.s3.amazonaws.com/dist/assets/sentry-cUn97kn2.a91543ccfcc1.js"></script>
+    
+      
+
+<script>
+  (function () {
+    var cfg = window.__APP__ || {};
+    if (!cfg.gaKey) return;
+    var tag = document.createElement("script");
+    tag.async = true;
+    tag.src = "https://www.googletagmanager.com/gtag/js?id=" + encodeURIComponent(cfg.gaKey);
+    document.head.appendChild(tag);
+
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    window.gtag = gtag;
+    gtag("js", new Date());
+    gtag("config", cfg.gaKey, cfg.user && cfg.user.id ? { user_id: cfg.user.id } : {});
+  })();
+</script>
+
+
+
+
+    
+    
+    <script defer src="https://drivendata-prod-public.s3.amazonaws.com/js/alpine.3.15.12.min.422c7d8cfa8b.js"></script>
+    
+    <script defer src="https://drivendata-prod-public.s3.amazonaws.com/js/_hyperscript.0.9.91.min.61f8f97e7bb0.js"></script>
+  </head>
+  <body class="">
+    
+      
+
+
+<nav class="navbar navbar-expand-lg navbar-light navbar-default py-0 border-bottom bg-white"
+     aria-label="Primary"
+     _="on keydown[key=='Escape'] from window call bootstrap.Collapse.getOrCreateInstance(#navbarSupportedContent, {toggle: false}).hide()">
+  <div class="container-fluid">
+    <a class="skip-to-main-content-link"
+       href="#main-container">Skip to main content</a>
+    <a class="navbar-brand"
+       href="/"
+       aria-label="Go to DrivenData homepage"
+       aria-current="">
+      <img src="https://drivendata-prod-public.s3.amazonaws.com/images/drivendata-logo.58f94dd407ef.svg" height="24px" alt="" />
+    </a>
+    <div class="me-3"></div>
+    <button class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mb-3 mb-lg-0 d-flex gap-2 gap-lg-4 align-items-lg-center w-100">
+        <li aria-current="page">
+          <a href="/competitions/">Competitions</a>
+        </li>
+        <li >
+          <a href="/partners/">Partner with us</a>
+        </li>
+        <li 
+            class="flex-grow-1">
+          <a href="/competitors/">How it works</a>
+        </li>
+        
+        <li>
+          <a href="https://drivendata.co/" target="_blank" rel="noopener">DrivenData<sup>LABS</sup></a>
+        </li>
+        <li>
+          <a href="https://drivendata.co/blog.html" target="_blank" rel="noopener">Blog</a>
+        </li>
+        
+          <li>
+            <a href="/accounts/login/?next=/competitions/70/hateful-memes-phase-2/rules/">Log in</a>
+          </li>
+          <li class="highlight sign-up">
+            <a href="/accounts/signup/?next=/competitions/70/hateful-memes-phase-2/rules/">Sign up</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+
+    
+    
+  <header>
+    
+      
+
+
+<div class="competition-header">
+  <hr class="my-0"
+      style="border-color: var(--color-accent);
+             border-width: 5px">
+  <div class="container-fluid">
+    <div class="d-flex align-items-stretch" style="width:100%; height:100%;">
+      <div class="w-100">
+        <div class="py-4 d-flex align-items-center h-100 gap-4">
+          <div class="w-100">
+            <div class="d-flex flex-column"  style="max-width: 100ch;">
+              <div class="pt-3"></div>
+              <div class="d-flex gap-3 align-items-center w-100">
+                <div class="d-flex gap-1 text-uppercase align-items-center">
+                  <a class="text-category text-sm font-body" href="/competitions/search/?category=society">society</a>
+
+                </div>
+              </div>
+              <h1 class="text-3xl">Hateful Memes: Phase 2</h1>
+              <div class="pt-1"></div>
+              <div>
+                <p class="text-muted m-0 text-sm">
+                  
+                  
+                  Detecting hateful content presents a unique challenge in memes, where multiple data modalities need to be analyzed together. Facebook is calling on researchers around the world to help identify which memes contain hate speech.
+
+                  <span class="pe-1"></span>
+                  
+  <span class="d-none">
+    
+      <a href="/competitions/search/?type=society"
+         class="rounded text-lowercase fw-bold text-body">#society</a>
+    
+  </span>
+
+
+                </p>
+                <div class="pt-2"></div>
+              </div>
+              <div class="pt-3"></div>
+              <div class="d-flex flex-column-reverse flex-wrap-reverse flex-md-row gap-4">
+                
+                
+                <div class="d-flex gap-3 gap-lg-4 text-sm flex-column flex-md-row align-items-md-center">
+                  
+<div class="d-flex align-items-center gap-2">
+  
+    <div class="svg-icon-circle text-4xl text-primary">
+      <i class="fa-solid fa-fw fa-trophy"></i>
+    </div>
+  
+  <div>
+    
+      <span class="prize">
+        <strong>$100,000</strong>
+      </span>
+      <span>
+        
+          in prizes
+        
+      </span>
+    
+  </div>
+</div>
+
+                  
+<div class="d-flex align-items-center gap-2">
+  
+    <div class="svg-icon-circle text-4xl text-primary">
+      <i class="fa-solid fa-fw fa-calendar"></i>
+    </div>
+  
+  <div>
+    
+      <strong>Completed</strong>
+      <span class="end-date text-capitalize">oct 2020</span>
+    
+  </div>
+</div>
+
+                  
+<div class="d-flex align-items-center gap-2">
+  <div class="svg-icon-circle text-4xl text-primary">
+    <i class="fa-solid fa-fw fa-users"></i>
+  </div>
+  <div>
+    <span class="participants"
+          title="2,706 solo participants and 213 teams">
+      <strong>3,166</strong> joined
+    </span>
+  </div>
+</div>
+
+                </div>
+              </div>
+              <div class="pt-3"></div>
+            </div>
+          </div>
+          <div class="flex-shrink-0 d-none d-lg-block border"
+               style="width: 400px;
+                      aspect-ratio: 3/2;
+                      border-radius: 3px;
+                      background-size: cover;
+                      background-color: #ddd;
+                      position: relative;
+                      background-image: url(https://drivendata-prod-public.s3.amazonaws.com/comp_images/sample_meme_skunk.png )">
+            <div class="position-absolute" style="right: 8px; bottom: 8px">
+              
+  <div class="panel-logo p-2 bg-white rounded border">
+    <img src="https://drivendata-prod-public.s3.amazonaws.com/hosts/meta-ai-logo-crop.png"
+         height="26px"
+         alt="Hosted by Facebook" />
+  </div>
+
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <hr class="my-0">
+</div>
+
+    
+  </header>
+
+    <main class="main">
+      <div id="wrapper">
+        <div id="main-container">
+          
+          
+          <div class="container-fluid">
+            
+
+            
+  <div class="pt-5"></div>
+  <div class="d-flex justify-content-between gap-3 gap-lg-5 flex-wrap flex-lg-nowrap">
+    
+      <div class="sidebar sticky-lg-top align-self-start" style="top: 1rem;">
+        
+
+<div class="nav-subpages">
+  <h2 class="text-base">Navigation</h2>
+  <ul class="list-unstyled m-0" id="competition-sidebar-nav">
+  
+    <li>
+      <a href="/competitions/70/hateful-memes-phase-2/page/293/"
+         >Results</a>
+    </li>
+  
+    <li>
+      <a href="/competitions/70/hateful-memes-phase-2/page/266/"
+         >Home</a>
+    </li>
+  
+    <li>
+      <a href="/competitions/70/hateful-memes-phase-2/page/267/"
+         >Problem description</a>
+    </li>
+  
+    <li>
+      <a href="/competitions/70/hateful-memes-phase-2/page/268/"
+         >About</a>
+    </li>
+  
+    <li>
+      <a href="/competitions/70/hateful-memes-phase-2/page/269/"
+         >Data access agreement</a>
+    </li>
+  
+  
+    
+    <li>
+      <a href="/competitions/70/hateful-memes-phase-2/rules/"
+         
+         aria-current="page">
+        Official rules
+        
+      </a>
+    </li>
+  
+    
+    <li>
+      <a href="/competitions/70/hateful-memes-phase-2/leaderboard/"
+         
+         >
+        Leaderboard results
+        
+      </a>
+    </li>
+  
+</ul>
+
+</div>
+
+  <div class="mt-4"></div>
+  <div class="nav-subpages">
+    <h2 class="text-base">Quick access</h2>
+    <ul class="list-unstyled m-0">
+      
+        <li>
+          <a href="/competitions/group/hateful-memes/"
+             class="">Hateful Memes</a>
+        </li>
+      
+        <li>
+          <a href="/competitions/64/hateful-memes/"
+             class="subgroup">Phase 1</a>
+        </li>
+      
+    </ul>
+  </div>
+
+<div class="pt-5"></div>
+
+      </div>
+    
+    
+    <div class="d-flex flex-column flex-grow-1"
+         id="content-page"
+         style="min-width: 0">
+      <div class="js-messages">
+  
+  <div id="inline-messages"
+       class="d-flex flex-column messages-container gap-2">
+    
+  </div>
+  
+  <div id="toast-container"
+       class="toast-container position-fixed start-0 bottom-0 m-3">
+    
+  </div>
+  
+  <template id="toast-template">
+    
+<div class="toast animate-slide-in-left"
+     role="alert"
+     aria-live="assertive"
+     aria-atomic="true"
+     data-bs-delay="6000"
+     style="max-width: fit-content;
+            --bs-toast-max-width: 80ch;
+            --bs-toast-font-size: 1rem;
+            --bs-toast-border-width: 0">
+  <div data-toast-variant
+       class=" m-0 d-flex align-items-center gap-3 justify-content-between">
+    <div class="toast-message"></div>
+    <div>
+      <button type="button"
+              class="bg-transparent border-0 text-xl float-end text-current-color"
+              data-bs-dismiss="toast"
+              aria-label="Dismiss">×</button>
+    </div>
+  </div>
+</div>
+
+  </template>
+</div>
+
+      
+        <div class="prose">
+          <h1 id="drivendata-competition-rules">DrivenData Competition Rules</h1>
+<hr />
+<h1 id="guidelines">GUIDELINES</h1>
+<h2 id="competition-period">Competition period</h2>
+<p>The Competition consists of a phase I (“Phase I”) and a phase II (“Phase II”) (where distinction is not necessary, each may be referred to as a “Phase” or together as “Phases”). The start and end dates and times for each Phase are set forth on the Competition Website (collectively, the “Competition Period”).</p>
+<h2 id="external-data">External data</h2>
+<p><strong>External Data (defined in the Competition Rules) is permitted in this Competition provided Participants have all rights, licenses and permissions to use the External Data as contemplated in the Competition Rules. Top performing Participants will be required to certify in writing that they have permission to use all External Data used to develop potentially winning Submissions, and may be required to provide documentation demonstrating such permission to Competition Sponsor’s satisfaction. Failure to satisfy these requirements or Sponsor’s belief that the Participant does not have all necessary consents and licenses (notwithstanding any certification by Participant) will result in disqualification from the Competition and forfeiture of any prize claim.</strong></p>
+<h2 id="winning-license-type-open-licensing-of-winners">Winning License Type: Open licensing of winners</h2>
+<p>Winning Submissions and all source code used to generate the Submissions need to be made available under an Approved OSS License in order to be eligible for recognition and prize money.</p>
+<h2 id="documentation-for-winning-submissions">Documentation for winning submissions</h2>
+<p>Winning Submissions and all source code used to generate the Submissions must be documented using the provided Winning Model Documentation Template which will require, without limitation, an academic explanation of the Submission and source code. Winners must complete the required winner documentation in accordance with the Winning Model Documentation Template and publish their academic explanation of the Submission under a permissive license in order to be eligible for recognition and prize money.</p>
+<h2 id="submission-limits">Submission limits</h2>
+<p>The submission limits for each Phase are set forth on the Competition Website. Any attempt to circumvent stated limits will result in disqualification. For the purposes of this Competition, a day begins at 12:00:00 am UTC and ends at 11:59:59 pm UTC that same calendar day.</p>
+<h2 id="one-account-per-participant">One account per participant</h2>
+<p>You cannot sign up to DrivenData from multiple accounts and therefore you cannot submit from multiple accounts.</p>
+<h2 id="private-sharing-of-code">Private sharing of code</h2>
+<p>Privately sharing code or data outside of teams is not permitted. </p>
+<hr />
+<h1 id="full-rules">FULL RULES</h1>
+<p>NO PURCHASE NECESSARY TO ENTER OR WIN THIS COMPETITION. A PURCHASE OR PAYMENT WILL NOT INCREASE YOUR CHANCES OF WINNING.</p>
+<p>BY ENTERING THIS COMPETITION, PARTICIPANT AGREES TO THESE COMPETITION RULES, WHICH ARE A CONTRACT, SO READ THEM CAREFULLY BEFORE ENTERING. WITHOUT LIMITATION, THIS CONTRACT INCLUDES INDEMNITIES TO THE COMPETITION ENTITIES FROM THE PARTICIPANT (i.e., A REQUIREMENT THAT THE PARTICIPANT DEFEND COMPETITION ENTITIES FROM/FOR CERTAIN LOSSES) AND A LIMITATION OF PARTICIPANT’S RIGHTS AND REMEDIES.</p>
+<p>These are the complete, official rules (the <strong>"Competition Rules"</strong>) for the competition (the <strong>"Competition"</strong>) described on the website listed above (<a href="https://www.drivendata.org/competitions/64/hateful-memes/">https://www.drivendata.org/competitions/64/hateful-memes/</a>) or linking to these Competition Rules (the <strong>"Competition Website"</strong>). These Competition Rules incorporate by reference the contents of the Competition Website listed above.</p>
+<p>The Competition is hosted by DrivenData, Inc (<strong>“DrivenData"</strong>) and sponsored by Facebook, Inc. (the <strong>“Competition Sponsor”</strong>). DrivenData and Competition Sponsor are referred to jointly at the <strong>“Competition Entities”</strong>. The Competition will run according to the dates listed on the Competition Website (the <strong>“Competition Period”</strong>).  By downloading a dataset linked from the Competition Website, submitting an entry to this Competition (a <strong>“Submission”</strong>), or joining a Team in this Competition, you are agreeing to be bound by these Competition Rules which constitute a binding agreement between you and the Competition Entities.</p>
+<p>Each registered individual or Team is referred to as a Participant. You may only compete using a single, unique DrivenData account registered at http://www.drivendata.org. Competing using more than one DrivenData account per individual is a breach of these Competition Rules and DrivenData reserves the right to disqualify any individual (or Team including an individual) who is found to breach these Competition Rules.</p>
+<h2 id="eligibility">Eligibility</h2>
+<p>The Competition is open to all natural persons who, at the date of entry, are a legal resident of a country, state, province or territory within the Territory and at least eighteen years of age and the age of majority in their jurisdiction of residence. Legal entities and organizations are not eligible for entry. There is no purchase or donation necessary to enter the Competition. All potential winners must successfully pass a sanctions screening by Competition Entities to be eligible to receive any prize in this Competition. </p>
+<p>Officers, directors, employees and advisory board members (and their immediate families and members of the same household) of the Competition Sponsor, DrivenData and their respective affiliates, subsidiaries, contractors, agents, judges and advertising and promotion agencies and any family member or member of the same household (whether or not related) of any such persons are not eligible to win a prize in this Challenge. For purposes of this Challenge, the term “family member” is defined as any spouse, partner, parent, legal guardian, child, sibling, grandparent, grandchild, or in-law. In addition, government officials or political figures (all as determined by Competition Sponsor in its sole discretion) are not eligible to participate in the Competition. </p>
+<p>For the purposes of this Competition, the <strong>“Territory”</strong> means any country, state, province, territory, region, or jurisdiction where the laws of the United States or local law do not prohibit participating or receiving a prize in the Challenge and excludes any area or country designated by the United States Treasury's Office of Foreign Assets Control (e.g. Cuba, Sudan, Crimea, Iran, North Korea, Syria, Venezuela).</p>
+<h2 id="registration">Registration</h2>
+<p>If you meet the eligibility requirements and would like to participate, then you must first complete the Competition registration process through the Competition Website within the Competition Period. After you complete the registration process and agree to the Dataset License Agreement located at <a href="https://www.drivendata.org/competitions/64/hateful-memes/page/214/">this link</a>, you will receive access to the Competition Dataset(s) available during the current Phase (each a “Dataset”) (described on the Competition Website) that will enable you to develop and submit one or more Submissions. Use of the Datasets is subject to the Dataset License Agreement. All Submissions must be received during the Competition Period and only Submissions submitted and received during Phase II of the Competition will be eligible to win Prizes in this Competition. To register, visit the Competition Website and follow the onscreen instructions to complete and submit your registration. All of the registration information that you provide is collectively referred to as your "Account". (If you have already created an Account at www.drivendata.org, enter your user name and password and follow the on-screen instructions).</p>
+<p>After you register individually, you may join a group of individuals with which to collaborate (each group, a <strong>"Team"</strong>), but you may register only once for the Competition either as an Individual or as part of a Team. If you register for the Competition more than once, you will be, and the remainder of your Team may be, disqualified in Competition Entities’ sole discretion. Any natural person completing any portion of the participation process described in these Competition Rules on behalf of a Team must be authorized to act on behalf of that Team. An individual Participant cannot join more than one (1) Team and a Participant who is part of a Team cannot also enter the Competition on an individual basis.</p>
+<p>You acknowledge and agree that you are solely responsible for abiding by your employer's policies regarding participation in the Competition. Competition Sponsor disclaims any and all liability or responsibility for disputes arising between an employee and employer related to this Competition and failure to resolve any such dispute to Competition Entities’ satisfaction may result in disqualification from the Competition. Participants (including each member of a Team) must not be under any legal or contractual obligation that would prohibit their participation in this Competition as described in these Competition Rules. If participating in this Competition would result in a violation by Participant of any law applicable to them or any agreement to which they are a party or employer or company policies and procedures, such Participant is ineligible. Participants and Teams (including each member of a Team) represent and warrant that their participation in this Competition does not violate their employer’s or company’s policies and procedures; and if participating in this Competition would result in a violation by Participant of employer or company policies and procedures, such Participant is ineligible. If you are participating within the scope of your employment, as an employee, contractor, or agent of a legal entity, you warrant that such party has full knowledge of your actions and has consented thereto, including your potential receipt of a prize.  </p>
+<p>Once you have completed the registration process, you or your Team will be provided with access to the Dataset(s) that you use to develop your Submissions.</p>
+<p>BY ENTERING THE COMPETITION YOU ACCEPT THE CONDITIONS STATED IN THESE COMPETITION RULES INCLUDING THE RULES ON THE COMPETITION WEBSITE, AGREE TO BE BOUND BY THE DECISIONS OF THE COMPETITION SPONSOR AND DRIVENDATA AND WARRANT THAT YOU ARE ELIGIBLE TO PARTICIPATE IN THE COMPETITION. IF YOU DO NOT ACCEPT ALL OF THESE COMPETITION RULES, THEN PLEASE DO NOT REGISTER FOR THE COMPETITION. WE RECOMMEND THAT YOU PRINT OUT A COPY OF THESE COMPETITION RULES FOR YOUR FUTURE REFERENCE.</p>
+<h2 id="teams">Teams</h2>
+<p><strong>FORMING A TEAM</strong>. 
+Multiple individuals may collaborate as a Team. You may not participate on more than one Team. Each Team member must be a single individual operating a separate DrivenData account. You must register individually for the Competition before joining a Team. You must confirm your Team membership to make it official by responding to the Team notification message which will be sent to your Account.</p>
+<p><strong>TEAM PRIZES</strong>. 
+If a Team wins a monetary Prize, DrivenData will allocate the Prize money in even shares between the Team members unless the Team unanimously contacts DrivenData before the Prize is awarded to request an alternative prize distribution.</p>
+<h2 id="entry-submissions">Entry submissions</h2>
+<p>Each Submission must be uploaded to the Competition Website in the manner and format specified on the Competition Website. <strong>All Submissions must be received during the Competition Period and only those Submissions submitted and received during Phase II of the Competition Period using the Phase II Dataset will be eligible to win Prizes.</strong> The Submission includes all data, content, copy and/or all other materials submitted in the manner and format specified on the Competition Website via the entry form, as well as all documentation provided by entrants for winning Submissions. The number of Submissions a Participant may submit during each Phase of the Competition Period will be displayed on the Competition Website. </p>
+<p>USER SUBMISSIONS MUST IN THEIR ENTIRETY COMPLY WITH ALL APPLICABLE FEDERAL, STATE, LOCAL, AND INTERNATIONAL LAWS AND REGULATIONS.  WITHOUT LIMITING THE FOREGOING, IN ORDER TO BE ELIGIBLE, YOU WARRANT THAT YOUR SUBMISSION FOR THIS COMPETITION MEETS THE FOLLOWING SUBMISSION CRITERIA, ALL AS DETERMINED IN THE SOLE DISCRETION OF COMPETITION SPONSOR AND/OR DRIVENDATA:</p>
+<ul>
+<li>Does not include or anticipate the inclusion of any content that is in violation of or infringes third party intellectual property rights including, but not limited to copyrights, including music copyrights, patents, trade secrets, trademarks, and rights of publicity or privacy.</li>
+<li>Is free and clear of all liens, claims, encumbrances or demands of any third parties. </li>
+<li>Does not include or anticipate the inclusion of any unsuitable or offensive content, including nudity, sexually explicit, disparaging, libelous or other inappropriate content.</li>
+<li>Has not been entered in previous challenges, competitions or contests, or won previous awards.</li>
+<li>Has not been published or distributed previously in any media.</li>
+<li>Is suitable for a general audience and for presentation in a public forum.</li>
+<li>Does not contain any claims that are not and cannot be substantiated or that would be false and/or misleading to a reasonable consumer.</li>
+<li>Must be entirely in English.</li>
+</ul>
+<h2 id="selection-of-winners">Selection of winners</h2>
+<p>This Competition is a challenge of skill and the final results are determined by evaluating a combination of quantitative and qualitative factors, as more fully described on the Competition Website. The Competition results will be determined solely by leaderboard ranking, subject to verification by the Competition Entities, on the Phase II leaderboard based on an objective statistical evaluation metric published on the Competition Website prior to commencement of the Competition (subject to compliance with these Competition Rules). Phase I leaderboard standings do not impact Competition outcome or the award of any Prizes. Participants' scores and ranks on the Competition Website at any given stage of the Competition will be based on the objective statistical evaluation metric described on the Competition Website, as determined by applying the predictions in the Submission to the ground truth of a validation dataset whose instances were a fixed set sampled from the Data.  As more fully described on the Competition Website, the Competition will have a quantitative winner. Phase II leaderboard rankings posted on the Competition Website are not dispositive and all scores and winner determinations are subject to verification by Competition Entities.</p>
+<p>The evaluation metric used for scoring and ranking Submissions will be displayed on the Competition Website.</p>
+<p>Any prize awards are subject to verification of eligibility and compliance with these Competition Rules. All decisions of DrivenData, the Competition Sponsor and/or judges will be final and binding on all matters relating to this Competition. Competition Entities reserve the right to examine the Submission and any associated code, documentation or External Data for compliance with these Competition Rules. In the event that the Submission, any associated code, documentation or External Data demonstrates a breach of these Competition Rules, Competition Sponsor or DrivenData may at its discretion take either of the following actions:</p>
+<ul>
+<li>disqualify your Submission(s); or </li>
+<li>require that you remediate within one week any issues identified in your Submission(s) (including, without limitation, the resolution of license conflicts and confirmation of the fulfillment of all obligations required by software licenses). Competition Sponsor and DrivenData are under no obligation to alert you of any issues with your Submission or permit you to remediate any identified issues.</li>
+</ul>
+<p>A tie between two or more valid and identically ranked submissions submitted during Phase II will be resolved in favor of the tied submission that was submitted first.</p>
+<p>A Participant may decline to be nominated as a Winner by notifying DrivenData directly within one week following the Competition deadline, in which case the declining Participant forgoes any prize or other features associated with winning the Competition. Competition Entities reserve the right to disqualify a Participant who so declines at Competition Entities’ sole discretion if Competition Entities deems disqualification appropriate.</p>
+<h2 id="prizes-and-conditions">Prizes and conditions</h2>
+<p>The prizes for this Competition are set forth on the Competition Website. The Prize Winner(s) will be notified and announced within 30 days of the end of the Competition on the Competition Website. The Prize Winner(s) will receive their prizes awarded as a check or electronic transfer from DrivenData. </p>
+<p>If a Team wins a prize, all Team members must submit a single written statement describing how the prize is to be allocated among the Team members. If the Team fails to submit such statement within 30 days after DrivenData requests it, then DrivenData will distribute the prize among Team members in equal shares and will have no further obligation to winning Team members. </p>
+<p>As a condition of receipt of a prize, winner must deliver the algorithm’s code and documentation to the Competition Entities. The source code must contain a description of resources required to build and run the algorithm. The accompanying documentation should be consistent with DrivenData’s Winning Model Documentation Template (“Template”), must comply with all guidelines set forth in the Template and must include an academic explanation of the winning Submission. The Template will be provided to winners within 30 days of the end of the Competition Period. The academic explanation must be published to arxiv.org or a similar platform under a permissive Creative Commons license without commercial restriction. Winner documentation will be used by the Competition Entities for the administration and promotion of the Competition, winners and winning Submissions, and may be posted publicly. Winners must complete all requirements set forth in these Competition Rules to be eligible to receive a prize in this Competition. </p>
+<p>Each potential individual winner, and all natural people who are members of a winning Team (as determined and requested in Competition Sponsor’s sole discretion), may be required to complete, execute, have notarized (if applicable), and return an Affidavit/Declaration of Eligibility and Liability/Publicity Release (unless prohibited by law), tax documents, and related prize-acceptance documents in the form provided by DrivenData, without revision, or prize may be forfeited. If any individual Participant on a Team fails to comply with the foregoing requirements and other requirements of Sponsor, the Team may be disqualified at any time in Competition Entities’ sole discretion with no liability or responsibility to the respective Participant or any or any other member of the Team, even if other Team members have complied with the requirements.  The prize may be awarded to an alternate winner if required documentation is not returned within thirty (30) days after mailing to winner, if prize notification letter/email or prize is returned as undeliverable, if winner does not respond to an email or other communication from DrivenData within ten (10) days of the date sent, or if the winner, in DrivenData’s judgment, does not respond to reasonable requests for information related to prize delivery or otherwise unable or unwilling to coordinate prize delivery within thirty (30) days after prize notification. Allow thirty (30) days for prize delivery following winner verification. In addition to the license set forth in the PERMISSIONS section of these Competition Rules, by accepting any prize/award, Winner agrees to allow DrivenData and/or the Competition Sponsor to disclose Winner’s first name, first initial of last name, and city of residence, as well as prize information to the extent required by law, and if so required by law, Winner agrees to the disclosure of additional personal information, all without additional compensation. </p>
+<p>DrivenData is responsible only for prize delivery and is not responsible for prize utility or otherwise. No substitution or transfer of prizes is permitted. All taxes, fees and expenses associated with participation in the Competition or receipt and use of a prize are the sole responsibility of the Prize Winner(s). </p>
+<p><strong>PARTICIPANT INTELLECTUAL PROPERTY LICENSING.</strong></p>
+<p>All Participants grant the Competition Entities a limited, worldwide license to use each Participant’s Submission for the administration of the Competition. </p>
+<p>As a further condition of receipt of a Prize, each winning Participant: </p>
+<ul>
+<li>agrees to publish their winning Submission and the source code used to generate the Submission to a public GitHub repository under a permissive open source license approved by the Open Source Initiative <strong>“Approved OSS License”</strong>; and</li>
+<li>represents that he/she/it has the unrestricted right to grant that license.</li>
+</ul>
+<p><strong>CHEATING.</strong> </p>
+<p>Participating using more than one DrivenData account is deemed cheating and, if discovered, will result in disqualification from the Competition and any other affected Competitions and may result in banning or deactivation of affected DrivenData accounts.</p>
+<p>Competition Entities reserve the right to request information associated with our investigation of suspected cheating. Failure to respond to these requests (including failure to furnish the requested information) within ten (10) days is grounds for disqualification.</p>
+<p><strong>RECEIVING PRIZES.</strong></p>
+<p>After verification of eligibility, each Prize winner will receive the prize in the form of a check or electronic transfer from DrivenData made out to the Prize winner (if an individual, or to the individual Team members if a Team). Allow 30 days from final verification and confirmation for Prize delivery. Winners may receive an IRS 1099 form or W-8BEN, as applicable, from DrivenData in the amount of their prize at the appropriate time. Prize winners are responsible for any taxes, fees or other liability resulting from their receipt of a Prize. Prizes may not be transferred (a) to any individual, entity, or country prohibited by any applicable  U.S. or non-U.S. export controls and trade sanctions; (b) to anyone on U.S. or non-U.S. government restricted parties lists; or (c) for any purpose prohibited by applicable export controls and trade sanctions, including nuclear, chemical or biological weapons, or missile technology applications without the required government authorizations. You acknowledge that Competition Sponsor is subject to U.S. economic restrictions and trade sanctions. As such, Sponsor reserves the right to deny distribution of any prize when required by applicable law.</p>
+<h2 id="permissions">Permissions</h2>
+<p>Except where prohibited by law, entry constitutes permission by the Competition Entities to use winners’ names, hometowns, images, statements and likenesses for online posting, and/or any advertising and publicity without additional compensation. Winners may also be required to sign and return a release of liability, declaration of eligibility and, where lawful, a publicity consent agreement, as conditions of receiving a prize. Failure to comply with the aforementioned conditions shall be grounds for forfeiture of a prize.</p>
+<h2 id="data-use-and-code-sharing">Data use and code sharing</h2>
+<p><strong>DATA.</strong></p>
+<p>“Data” means the data or datasets linked from the Competition Website for the purpose of use by Participants in the Competition. For the avoidance of doubt, Data is deemed for the purpose of these Competition Rules to include any prototype or executable code provided to Participants by DrivenData via the Competition Website, including, without limitation, all files contained in the zip file provided to Participants. Participants must use the Data only as permitted by these Competition Rules and any associated data use rules specified on the Competition Website, including the Dataset License Agreement at <a href="https://www.drivendata.org/competitions/64/hateful-memes/page/214/">this link</a>.</p>
+<p>Participants agree to use suitable measures to prevent persons who have not formally agreed to these Competition Rules from gaining access to the Data and agree not to transmit, duplicate, publish, redistribute or otherwise provide or make available the Data to any party not participating in the Competition. Participants agree to notify DrivenData immediately upon learning of any possible unauthorized transmission or unauthorized access of the Data and agree to work with DrivenData to rectify any unauthorized transmission. Participants agree that participation in the Competition shall not be construed as having or being granted a license (expressly, by implication, estoppel, or otherwise) under, or any right of ownership in, any of the Data. Competition Sponsor reserves the right in its sole discretion to disqualify any Participant who uses the Data other than as permitted according to the Competition Website and in these Competition Rules, in the course of the Competition.</p>
+<p><strong>EXTERNAL DATA.</strong></p>
+<p><strong>For this Competition, Participants may use pre-trained models and other external data (collectively, “External Data”), provided such Participant has all rights, licenses and permissions to use the External Data as contemplated in these Competition Rules. Participant represents and warrants that any use of any External Data in connection with participation in this Competition is pursuant to and in accordance with a valid license that permits unrestricted commercial use of the External Data without the need for additional approvals from any third party, and agrees to provide Sponsor with proof (to Competition Entities’ satisfaction) of such license upon request at any time during the Competition Period or the Competition evaluation process. Top performing Participants will also be required to certify in writing that they have permission to use all External Data used to develop potentially winning Submissions. Failure to satisfy any of these requirements in accordance with Competition Entities’ instructions and timing, or Sponsor’s belief that a Participant does not have all necessary consents and licenses (notwithstanding any certification by Participant) will result in disqualification from the Competition and forfeiture of any prize claim.</strong> </p>
+<p><strong>CODE SHARING.</strong></p>
+<p>Participants are prohibited from privately sharing source or executable code developed in connection with or based upon the Data, and any such sharing is a breach of these Competition Rules and may result in disqualification.</p>
+<p>Participants are permitted to publicly share source or executable code developed in connection with or based upon the Data, or otherwise relevant to the Competition, provided that such sharing does not violate the intellectual property rights of any third party and Participant releases such source or executable code under an Approved OSS License.</p>
+<p><strong>OPEN-SOURCE CODE.</strong></p>
+<p>If a Submission was developed using code containing or depending on software licensed under an open source license, that license must be an Approved OSS license that permits commercial use. </p>
+<h2 id="participant-warranties-and-obligations">Participant warranties and obligations</h2>
+<p>By registering, you agree that (a) your Account is complete, correct and accurate and (b) your registration may be rejected or terminated and all Submissions submitted by you and/or your Team may be disqualified if any of the information in your Account is (or Competition Sponsor or DrivenData has reasonable grounds to believe it is) incomplete, incorrect or inaccurate. You are solely responsible for your Account. All registration information is deemed collected in the United States.</p>
+<p>Participation is subject to all applicable federal, state, provincial, territorial and local laws, rules and regulations. You agree to comply with all applicable laws and regulations at all times during your participation in the Competition. Void where prohibited or restricted by law. You are responsible for checking applicable laws and regulations in your jurisdiction before participating in the Competition to make sure that your participation is legal. You are responsible for all taxes and reporting related to any award that you may receive as part of the Competition.  Each Participant must comply with all applicable explicit or implicit terms and conditions or policies applicable for platforms, applications, or software used in connection with or on which their Submission and the Submission's source code operate.  As such, each Participant must follow the spirit of such terms and conditions and policies; and any attempt to subvert or to use a work-around of such terms and conditions or policies may, in Competition Entities’ sole discretion, lead to such Participant’s disqualification.</p>
+<p>Each Participant is solely responsible for all equipment, including but not necessarily limited to a computer and internet connection necessary to access the Competition Website and to develop and upload any Submission, and any telephone, data, hosting or other service fees associated with such access, as well as all costs incurred by or behalf of the Entrant in participating in the Competition.</p>
+<p>By entering a Submission, you represent and warrant that all information you enter on the Competition Website is true and complete to the best of your knowledge, that you have the right and authority to make the Submission (including any underlying code and model) on your own behalf or on behalf of the persons and entities that you specify within the Submission, and that your Submission:</p>
+<ul>
+<li>complies with all applicable federal, state, provincial, territorial, local and international laws, statutes, ordinances, rules and regulations;</li>
+<li>is your own original work, or is used by permission, in which case full and proper credit and identity is given and the third party contributions are clearly identified within your Submission. Competition Entities reserve the right to request proof of permission from you which must be provided in a form approved by Competition Entities or your Submission may be disqualified;</li>
+<li>does not contain confidential information or trade secrets and is not the subject of a registered patent or pending patent application;</li>
+<li>does not violate or infringe upon the patent rights, industrial design rights, copyrights, trademarks, rights of privacy, publicity or other intellectual property or other rights of any person or entity;</li>
+<li>does not contain malicious code, such as viruses, timebombs, cancelbots, worms, Trojan horses or other potentially harmful programs or other material or information; </li>
+<li>does not and will not violate any applicable law, statute, ordinance, rule or regulation;</li>
+<li>does not trigger any reporting or royalty obligation to any third party; and</li>
+<li>was not previously published and has not won any other prize/award. </li>
+</ul>
+<p>A breach of any of these warranties will result in the corresponding Submission being invalid.</p>
+<h2 id="confidentiality">Confidentiality</h2>
+<p><strong>Confidential Information Defined.</strong>
+Confidential Information Defined. As used in this Section, “Confidential Information” means Competition Sponsor materials, and any information provided by Competition Entities hereunder, whether of a technical, business, or other nature (including, without limitation, information relating to a party’s technology, software, products, services, designs, methodologies, business plans, finances, marketing plans, prospects, or other affairs), that is received by Participant. </p>
+<p><strong>Exclusions.</strong>
+Participant's obligations under this Section as to the disclosing party's Confidential Information does not include any information that Participant can document: (a) was known to Participant prior to receiving the same from the disclosing party in connection with this Agreement; (b) is independently developed by Participant without use of or reference to the Confidential Information of the disclosing party; (c) is acquired by Participant from another source without restriction as to use or disclosure; or (d) is or becomes part of the public domain through no fault or action of Participant.</p>
+<p><strong>Nondisclosure.</strong>
+In consideration of the terms and conditions of this Agreement, and for other good and valuable consideration, the receipt and sufficiency of which is acknowledged, during and after the term of this Agreement Participant will: (a) use the disclosing party's Confidential Information solely for the purpose for which it is provided; (b) not disclose the disclosing party's Confidential Information to a third party unless the third party must access the Confidential Information to perform in accordance with this Agreement and the third party has executed a written agreement that contains terms that are substantially similar to the terms contained in this Section; and (c) maintain the secrecy of, and protect from unauthorized use and disclosure, the disclosing party's Confidential Information to the same extent (but using no less than a reasonable degree of care) that Participant protects its own Confidential Information of a similar nature. If Participant is required by law or by any governmental or semi-governmental agency or court to disclose the disclosing party's Confidential Information or the terms of this Agreement Participant must give prompt written notice of such requirement to the disclosing party before such disclosure and assist the disclosing party in attempting to obtain an order protecting the Confidential Information from public disclosure. </p>
+<p><strong>Return of Information.</strong>
+Upon request, Participant will destroy or deliver to the disclosing party all Confidential Information Participant may have in its possession or control. </p>
+<p><strong>Injunctive Relief.</strong>
+Participant acknowledges that any violation or threatened violation of this Section may cause irreparable injury to the other party, entitling the disclosing party to obtain injunctive relief in addition to all legal remedies.</p>
+<h2 id="delivery-and-receipt-of-submissions">Delivery and receipt of submissions</h2>
+<p>Competition Entities are not responsible for (a) late, lost, stolen, damaged, garbled, incomplete, incorrect or misdirected Submissions, Competition registration, or other communications, (b) errors, omissions, interruptions, deletions, defects, or delays in operations or transmission of information, in each case whether arising by way of technical or other failures or malfunctions of computer hardware, software, communications devices, or transmission lines, or (c) data corruption, theft, destruction, unauthorized access to or alteration of Submission materials, loss or otherwise. Competition Entities are not responsible for electronic communications or emails which are undeliverable as a result of any form of active or passive filtering of any kind, or insufficient space in any email account to receive email messages. Competition Entities disclaim any liability for damage to any computer system resulting from participation in, or accessing or downloading information in connection with, the Competition.</p>
+<h2 id="reservation-of-rights">Reservation of rights</h2>
+<p>Competition Entities, in their sole discretion, reserves the right to disqualify any person tampering with the entry process, the operation of the Web site, the competition process, or is otherwise in violation of the Competition Rules. Competition Entities reserve the right at any time to disqualify a Submission from a Competition where, acting in good faith, it believes there are reasonable grounds to warrant disqualification. For example, Competition Entities’ determination that the Submission does not provide the functionality described or required, or the Submission appears to be purposely designed to circumvent these Competition Rules or the spirit of the Competition would be grounds for disqualification. Competition Entities reserve the right to cancel, terminate or modify the Competition if it is not capable of completion as planned for any reason, including infection by computer virus, bugs, tampering, unauthorized intervention or technical failures of any sort. If Competition Entities determine (at any time and in their sole discretion) that any Participant is engaging in behavior that Competition Entities deem obnoxious, inappropriate, threatening, illegal or that is intended to annoy, abuse, or harass any other person or entity, Competition Entities reserve the right to disqualify such Participant (and Participant’s Team, if applicable).</p>
+<h2 id="general-release">General release</h2>
+<p>By entering the Competition, you release and discharge the Competition Sponsor and DrivenData from any liability whatsoever in connection with the Competition or with the acceptance, possession, use or misuse of any prize including, without limitation, legal claims, costs, injuries, losses or damages, demands or actions of any kind (including, without limitation: personal injuries; death; damage to, loss or destruction of property; rights of publicity or privacy; and defamation or portrayal in a false light). The Competition Sponsor and DrivenData will not be responsible for typographical, printing or other inadvertent errors in these Competition Rules or in other materials relating to the Competition. Additionally, you hereby agree to indemnify the Competition Sponsor and DrivenData from any and all losses, damages, costs, expenses, rights, claims, demands and actions (including attorney's fees and expenses for litigation and settlement), which may be brought against any one or more of them by anyone claiming to have suffered loss or damage as a result of your participation in the Competition or for any breach of any representation or warranty herein.</p>
+<h2 id="limitations-of-liability">Limitations of liability</h2>
+<p>By participating in the Competition, each Participant agrees that: (1) any and all disputes, claims, and causes of action arising out of or in connection with the Competition, or any prize awarded, shall be resolved individually without resort to any form of class action; (2) any claims, judgments and awards shall be limited to actual out-of-pocket costs incurred, including costs associated with entering the Competition, but in no event attorney's fees; and (3) under no circumstances will a Participant be permitted to obtain any award for, and each Participant hereby waives all rights to claim, punitive, incidental or consequential damages and any and all rights to have damages multiplied or otherwise increased and any other damages, other than damages for actual out-of-pocket expenses.</p>
+<p>DrivenData, Inc., Competition Sponsor, and the employees, officers, directors, shareholders, agents, representatives, affiliates, subsidiaries, and advertising, promotional and legal advisors thereof (collectively, the “Released Parties”) are not responsible and shall not be liable for: (i) late, lost, delayed, damaged, misdirected, incomplete, illegible, or unintelligible entries; (ii) telephone, electronic, hardware, or software program, network, Internet, or computer malfunctions, failures, or difficulties; (iii) errors in transmission; (iv) any condition caused by events beyond the control of the Released Parties that may cause the Competition to be disrupted or corrupted; (v) any injuries, losses, or damages of any kind caused by a prize or resulting from acceptance, possession, or use of a prize, or from participation in the Competition (however (but only if required by law in your jurisdiction), this release and hold harmless commitment does not apply to cases of bodily injury or loss of life to the extent that any death or personal injury is caused by the negligence of Competition Entities or other third parties, where liability to the injured party cannot be excluded by law); or (vi) any printing or typographical errors in any materials associated with the Competition.</p>
+<h2 id="disclaimer-of-warranties">Disclaimer of Warranties</h2>
+<p>You understand that we cannot and do not guarantee or warrant that the Data or other files available for downloading from the internet or the Competition Website will be free of viruses or other destructive code. You are responsible for implementing sufficient procedures and checkpoints to satisfy your particular requirements for anti-virus protection and accuracy of data input and output, and for maintaining a means external to our site for any reconstruction of any lost data. RELEASED PARTIES  WILL NOT BE LIABLE FOR ANY LOSS OR DAMAGE CAUSED BY A DISTRIBUTED DENIAL-OF-SERVICE ATTACK, VIRUSES OR OTHER TECHNOLOGICALLY HARMFUL MATERIAL THAT MAY INFECT YOUR COMPUTER EQUIPMENT, COMPUTER PROGRAMS, DATA OR OTHER PROPRIETARY MATERIAL DUE TO YOUR USE OF THE WEBSITE OR ANY SERVICES OR ITEMS OBTAINED THROUGH THE WEBSITE OR TO YOUR DOWNLOADING OF ANY MATERIAL POSTED ON IT, OR ON ANY WEBSITE LINKED TO IT.</p>
+<p>YOUR USE OF THE COMPETITION WEBSITE, ITS CONTENT AND ANY SERVICES OR ITEMS OBTAINED THROUGH THE WEBSITE AND RECEIPT OF ANY PRIZES IS AT YOUR OWN RISK. THE WEBSITE, ITS CONTENT AND ANY SERVICES OR ITEMS OBTAINED THROUGH THE WEBSITE ARE PROVIDED ON AN “AS IS” AND “AS AVAILABLE” BASIS, WITHOUT ANY WARRANTIES OF ANY KIND, EITHER EXPRESS OR IMPLIED, BEYOND ANY NON-EXCLUDABLE GUARANTEES (DEFINED BELOW). NEITHER THE RELEASED PARTIES NOR ANY PERSON ASSOCIATED WITH RELEASED PARTIES MAKES ANY WARRANTY OR REPRESENTATION WITH RESPECT TO THE COMPLETENESS, SECURITY, RELIABILITY, QUALITY, ACCURACY OR AVAILABILITY OF THE COMPETITION WEBSITE. WITHOUT LIMITING THE FOREGOING, NEITHER RELEASED PARTIES NOR ANYONE ASSOCIATED WITH THE RELEASED PARTIES REPRESENTS OR WARRANTS THAT THE COMPETITION WEBSITE, ITS CONTENT OR ANY SERVICES OR ITEMS OBTAINED THROUGH THE WEBSITE WILL BE ACCURATE, RELIABLE, ERROR-FREE OR UNINTERRUPTED, THAT DEFECTS WILL BE CORRECTED, THAT OUR SITE OR THE SERVER THAT MAKES IT AVAILABLE ARE FREE OF VIRUSES OR OTHER HARMFUL COMPONENTS OR THAT THE COMPETITION WEBSITE OR ANY SERVICES OR ITEMS OBTAINED THROUGH THE WEBSITE WILL OTHERWISE MEET YOUR NEEDS OR EXPECTATIONS.</p>
+<p>NOTHING IN THESE COMPETITION RULES LIMITS, EXCLUDES, OR MODIFIES OR PURPORTS TO LIMIT, EXCLUDE, OR MODIFY ANY STATUTORY CONSUMER GUARANTEE OR ANY IMPLIED CONDITION OR WARRANTY, THE EXCLUSION OF WHICH FROM THESE COMPETITION RULES WOULD CONTRAVENE ANY STATUTE OR CAUSE ANY PART OF THESE TERMS TO BE VOID (<strong>“NON-EXCLUDABLE GUARANTEES”</strong>). SUBJECT TO THE LIMITATIONS IN THE PRECEDING SENTENCE AND TO THE MAXIMUM EXTENT PERMITTED BY ANY MANDATORY PROVISIONS OF APPLICABLE LAW, THE RELEASED PARTIES HEREBY DISCLAIM ALL WARRANTIES OF ANY KIND, WHETHER EXPRESS OR IMPLIED, STATUTORY OR OTHERWISE, INCLUDING BUT NOT LIMITED TO ANY WARRANTIES OF MERCHANTABILITY, NON-INFRINGEMENT AND FITNESS FOR PARTICULAR PURPOSE.</p>
+<p>THE FOREGOING DOES NOT AFFECT ANY WARRANTIES WHICH CANNOT BE EXCLUDED OR LIMITED UNDER APPLICABLE LAW.</p>
+<h2 id="governing-law-and-jurisdiction">Governing Law and Jurisdiction</h2>
+<p>Competition Entities shall be the sole interpreters of these Competition Rules. </p>
+<p>All matters relating to the Competition Rules or the Competition and any dispute or claim arising therefrom or related thereto (in each case, including non-contractual disputes or claims), shall be governed by and construed in accordance with the internal laws of the State of California without giving effect to any choice or conflict of law provision or rule (whether of the Commonwealth of Massachusetts or any other jurisdiction).</p>
+<p>Any legal suit, action or proceeding arising out of, or related to, the Competition or the Competition Website shall be instituted exclusively in the federal courts of the United States or the courts of the State of California although we retain the right to bring any suit, action or proceeding against you for breach of these Competition Rules in your country of residence or any other relevant country. You waive any and all objections to the exercise of jurisdiction over you by such courts and to venue in such courts.</p>
+<p>The invalidity or unenforceability of any provision of these Competition Rules shall not affect the validity or enforceability of any other provision. In the event that any provision is determined to be invalid or otherwise unenforceable or illegal, these Competition Rules shall otherwise remain in effect and be construed in accordance with their terms as if the invalid or illegal provision was not contained herein.</p>
+<p><strong>TERMS/WHO WON?:</strong> To obtain a copy of these Competition Rules during the Competition Period, visit <a href="https://www.drivendata.org/competitions/64/hateful-memes/rules/">https://www.drivendata.org/competitions/64/hateful-memes/rules/</a>. To see who won after the Competition Period, visit the Competition Website or send an email with the subject line “Hateful Memes Challenge – Who Won?” to dkiela@fb.com. Requests for winner information must be received no later than three (3) months after the end of the Competition Period.</p>
+        </div>
+      
+    </div>
+    
+      <div class="d-none d-xl-block"
+           style="position: sticky;
+                  top: 1rem;
+                  align-self: flex-start">
+        <div class="sidebar sidebar-toc">
+          <h2 class="text-base">On this page</h2>
+          <div class="toc">
+<ul>
+<li><a href="#competition-period">Competition period</a></li>
+<li><a href="#external-data">External data</a></li>
+<li><a href="#winning-license-type-open-licensing-of-winners">Winning License Type: Open licensing of winners</a></li>
+<li><a href="#documentation-for-winning-submissions">Documentation for winning submissions</a></li>
+<li><a href="#submission-limits">Submission limits</a></li>
+<li><a href="#one-account-per-participant">One account per participant</a></li>
+<li><a href="#private-sharing-of-code">Private sharing of code</a></li>
+<li><a href="#eligibility">Eligibility</a></li>
+<li><a href="#registration">Registration</a></li>
+<li><a href="#teams">Teams</a></li>
+<li><a href="#entry-submissions">Entry submissions</a></li>
+<li><a href="#selection-of-winners">Selection of winners</a></li>
+<li><a href="#prizes-and-conditions">Prizes and conditions</a></li>
+<li><a href="#permissions">Permissions</a></li>
+<li><a href="#data-use-and-code-sharing">Data use and code sharing</a></li>
+<li><a href="#participant-warranties-and-obligations">Participant warranties and obligations</a></li>
+<li><a href="#confidentiality">Confidentiality</a></li>
+<li><a href="#delivery-and-receipt-of-submissions">Delivery and receipt of submissions</a></li>
+<li><a href="#reservation-of-rights">Reservation of rights</a></li>
+<li><a href="#general-release">General release</a></li>
+<li><a href="#limitations-of-liability">Limitations of liability</a></li>
+<li><a href="#disclaimer-of-warranties">Disclaimer of Warranties</a></li>
+<li><a href="#governing-law-and-jurisdiction">Governing Law and Jurisdiction</a></li>
+</ul>
+</div>
+
+        </div>
+      </div>
+    
+  </div>
+  
+  
+    <div class="modal fade"
+         id="signupModal"
+         tabindex="-1"
+         role="dialog"
+         aria-labelledby="signupModalLabel"
+         aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title text-base" id="signupModalLabel">Hateful Memes: Phase 2: Rules and Terms of Data Use</h4>
+          </div>
+          <div class="modal-body prose"><h1>DrivenData Competition Rules</h1>
+
+<hr />
+
+<h1>GUIDELINES</h1>
+
+<h2>Competition period</h2>
+
+<p>The Competition consists of a phase I (“Phase I”) and a phase II (“Phase II”) (where distinction is not necessary, each may be referred to as a “Phase” or together as “Phases”). The start and end dates and times for each Phase are set forth on the Competition Website (collectively, the “Competition Period”).</p>
+
+<h2>External data</h2>
+
+<p><strong>External Data (defined in the Competition Rules) is permitted in this Competition provided Participants have all rights, licenses and permissions to use the External Data as contemplated in the Competition Rules. Top performing Participants will be required to certify in writing that they have permission to use all External Data used to develop potentially winning Submissions, and may be required to provide documentation demonstrating such permission to Competition Sponsor’s satisfaction. Failure to satisfy these requirements or Sponsor’s belief that the Participant does not have all necessary consents and licenses (notwithstanding any certification by Participant) will result in disqualification from the Competition and forfeiture of any prize claim.</strong></p>
+
+<h2>Winning License Type: Open licensing of winners</h2>
+
+<p>Winning Submissions and all source code used to generate the Submissions need to be made available under an Approved OSS License in order to be eligible for recognition and prize money.</p>
+
+<h2>Documentation for winning submissions</h2>
+
+<p>Winning Submissions and all source code used to generate the Submissions must be documented using the provided Winning Model Documentation Template which will require, without limitation, an academic explanation of the Submission and source code. Winners must complete the required winner documentation in accordance with the Winning Model Documentation Template and publish their academic explanation of the Submission under a permissive license in order to be eligible for recognition and prize money.</p>
+
+<h2>Submission limits</h2>
+
+<p>The submission limits for each Phase are set forth on the Competition Website. Any attempt to circumvent stated limits will result in disqualification. For the purposes of this Competition, a day begins at 12:00:00 am UTC and ends at 11:59:59 pm UTC that same calendar day.</p>
+
+<h2>One account per participant</h2>
+
+<p>You cannot sign up to DrivenData from multiple accounts and therefore you cannot submit from multiple accounts.</p>
+
+<h2>Private sharing of code</h2>
+
+<p>Privately sharing code or data outside of teams is not permitted. </p>
+
+<hr />
+
+<h1>FULL RULES</h1>
+
+<p>NO PURCHASE NECESSARY TO ENTER OR WIN THIS COMPETITION. A PURCHASE OR PAYMENT WILL NOT INCREASE YOUR CHANCES OF WINNING.</p>
+
+<p>BY ENTERING THIS COMPETITION, PARTICIPANT AGREES TO THESE COMPETITION RULES, WHICH ARE A CONTRACT, SO READ THEM CAREFULLY BEFORE ENTERING. WITHOUT LIMITATION, THIS CONTRACT INCLUDES INDEMNITIES TO THE COMPETITION ENTITIES FROM THE PARTICIPANT (i.e., A REQUIREMENT THAT THE PARTICIPANT DEFEND COMPETITION ENTITIES FROM/FOR CERTAIN LOSSES) AND A LIMITATION OF PARTICIPANT’S RIGHTS AND REMEDIES.</p>
+
+<p>These are the complete, official rules (the <strong>"Competition Rules"</strong>) for the competition (the <strong>"Competition"</strong>) described on the website listed above (<a href="https://www.drivendata.org/competitions/64/hateful-memes/">https://www.drivendata.org/competitions/64/hateful-memes/</a>) or linking to these Competition Rules (the <strong>"Competition Website"</strong>). These Competition Rules incorporate by reference the contents of the Competition Website listed above.</p>
+
+<p>The Competition is hosted by DrivenData, Inc (<strong>“DrivenData"</strong>) and sponsored by Facebook, Inc. (the <strong>“Competition Sponsor”</strong>). DrivenData and Competition Sponsor are referred to jointly at the <strong>“Competition Entities”</strong>. The Competition will run according to the dates listed on the Competition Website (the <strong>“Competition Period”</strong>).  By downloading a dataset linked from the Competition Website, submitting an entry to this Competition (a <strong>“Submission”</strong>), or joining a Team in this Competition, you are agreeing to be bound by these Competition Rules which constitute a binding agreement between you and the Competition Entities.</p>
+
+<p>Each registered individual or Team is referred to as a Participant. You may only compete using a single, unique DrivenData account registered at http://www.drivendata.org. Competing using more than one DrivenData account per individual is a breach of these Competition Rules and DrivenData reserves the right to disqualify any individual (or Team including an individual) who is found to breach these Competition Rules.</p>
+
+<h2>Eligibility</h2>
+
+<p>The Competition is open to all natural persons who, at the date of entry, are a legal resident of a country, state, province or territory within the Territory and at least eighteen years of age and the age of majority in their jurisdiction of residence. Legal entities and organizations are not eligible for entry. There is no purchase or donation necessary to enter the Competition. All potential winners must successfully pass a sanctions screening by Competition Entities to be eligible to receive any prize in this Competition. </p>
+
+<p>Officers, directors, employees and advisory board members (and their immediate families and members of the same household) of the Competition Sponsor, DrivenData and their respective affiliates, subsidiaries, contractors, agents, judges and advertising and promotion agencies and any family member or member of the same household (whether or not related) of any such persons are not eligible to win a prize in this Challenge. For purposes of this Challenge, the term “family member” is defined as any spouse, partner, parent, legal guardian, child, sibling, grandparent, grandchild, or in-law. In addition, government officials or political figures (all as determined by Competition Sponsor in its sole discretion) are not eligible to participate in the Competition. </p>
+
+<p>For the purposes of this Competition, the <strong>“Territory”</strong> means any country, state, province, territory, region, or jurisdiction where the laws of the United States or local law do not prohibit participating or receiving a prize in the Challenge and excludes any area or country designated by the United States Treasury's Office of Foreign Assets Control (e.g. Cuba, Sudan, Crimea, Iran, North Korea, Syria, Venezuela).</p>
+
+<h2>Registration</h2>
+
+<p>If you meet the eligibility requirements and would like to participate, then you must first complete the Competition registration process through the Competition Website within the Competition Period. After you complete the registration process and agree to the Dataset License Agreement located at <a href="https://www.drivendata.org/competitions/64/hateful-memes/page/214/">this link</a>, you will receive access to the Competition Dataset(s) available during the current Phase (each a “Dataset”) (described on the Competition Website) that will enable you to develop and submit one or more Submissions. Use of the Datasets is subject to the Dataset License Agreement. All Submissions must be received during the Competition Period and only Submissions submitted and received during Phase II of the Competition will be eligible to win Prizes in this Competition. To register, visit the Competition Website and follow the onscreen instructions to complete and submit your registration. All of the registration information that you provide is collectively referred to as your "Account". (If you have already created an Account at www.drivendata.org, enter your user name and password and follow the on-screen instructions).</p>
+
+<p>After you register individually, you may join a group of individuals with which to collaborate (each group, a <strong>"Team"</strong>), but you may register only once for the Competition either as an Individual or as part of a Team. If you register for the Competition more than once, you will be, and the remainder of your Team may be, disqualified in Competition Entities’ sole discretion. Any natural person completing any portion of the participation process described in these Competition Rules on behalf of a Team must be authorized to act on behalf of that Team. An individual Participant cannot join more than one (1) Team and a Participant who is part of a Team cannot also enter the Competition on an individual basis.</p>
+
+<p>You acknowledge and agree that you are solely responsible for abiding by your employer's policies regarding participation in the Competition. Competition Sponsor disclaims any and all liability or responsibility for disputes arising between an employee and employer related to this Competition and failure to resolve any such dispute to Competition Entities’ satisfaction may result in disqualification from the Competition. Participants (including each member of a Team) must not be under any legal or contractual obligation that would prohibit their participation in this Competition as described in these Competition Rules. If participating in this Competition would result in a violation by Participant of any law applicable to them or any agreement to which they are a party or employer or company policies and procedures, such Participant is ineligible. Participants and Teams (including each member of a Team) represent and warrant that their participation in this Competition does not violate their employer’s or company’s policies and procedures; and if participating in this Competition would result in a violation by Participant of employer or company policies and procedures, such Participant is ineligible. If you are participating within the scope of your employment, as an employee, contractor, or agent of a legal entity, you warrant that such party has full knowledge of your actions and has consented thereto, including your potential receipt of a prize.  </p>
+
+<p>Once you have completed the registration process, you or your Team will be provided with access to the Dataset(s) that you use to develop your Submissions.</p>
+
+<p>BY ENTERING THE COMPETITION YOU ACCEPT THE CONDITIONS STATED IN THESE COMPETITION RULES INCLUDING THE RULES ON THE COMPETITION WEBSITE, AGREE TO BE BOUND BY THE DECISIONS OF THE COMPETITION SPONSOR AND DRIVENDATA AND WARRANT THAT YOU ARE ELIGIBLE TO PARTICIPATE IN THE COMPETITION. IF YOU DO NOT ACCEPT ALL OF THESE COMPETITION RULES, THEN PLEASE DO NOT REGISTER FOR THE COMPETITION. WE RECOMMEND THAT YOU PRINT OUT A COPY OF THESE COMPETITION RULES FOR YOUR FUTURE REFERENCE.</p>
+
+<h2>Teams</h2>
+
+<p><strong>FORMING A TEAM</strong>. 
+Multiple individuals may collaborate as a Team. You may not participate on more than one Team. Each Team member must be a single individual operating a separate DrivenData account. You must register individually for the Competition before joining a Team. You must confirm your Team membership to make it official by responding to the Team notification message which will be sent to your Account.</p>
+
+<p><strong>TEAM PRIZES</strong>. 
+If a Team wins a monetary Prize, DrivenData will allocate the Prize money in even shares between the Team members unless the Team unanimously contacts DrivenData before the Prize is awarded to request an alternative prize distribution.</p>
+
+<h2>Entry submissions</h2>
+
+<p>Each Submission must be uploaded to the Competition Website in the manner and format specified on the Competition Website. <strong>All Submissions must be received during the Competition Period and only those Submissions submitted and received during Phase II of the Competition Period using the Phase II Dataset will be eligible to win Prizes.</strong> The Submission includes all data, content, copy and/or all other materials submitted in the manner and format specified on the Competition Website via the entry form, as well as all documentation provided by entrants for winning Submissions. The number of Submissions a Participant may submit during each Phase of the Competition Period will be displayed on the Competition Website. </p>
+
+<p>USER SUBMISSIONS MUST IN THEIR ENTIRETY COMPLY WITH ALL APPLICABLE FEDERAL, STATE, LOCAL, AND INTERNATIONAL LAWS AND REGULATIONS.  WITHOUT LIMITING THE FOREGOING, IN ORDER TO BE ELIGIBLE, YOU WARRANT THAT YOUR SUBMISSION FOR THIS COMPETITION MEETS THE FOLLOWING SUBMISSION CRITERIA, ALL AS DETERMINED IN THE SOLE DISCRETION OF COMPETITION SPONSOR AND/OR DRIVENDATA:</p>
+
+<ul>
+<li>Does not include or anticipate the inclusion of any content that is in violation of or infringes third party intellectual property rights including, but not limited to copyrights, including music copyrights, patents, trade secrets, trademarks, and rights of publicity or privacy.</li>
+<li>Is free and clear of all liens, claims, encumbrances or demands of any third parties. </li>
+<li>Does not include or anticipate the inclusion of any unsuitable or offensive content, including nudity, sexually explicit, disparaging, libelous or other inappropriate content.</li>
+<li>Has not been entered in previous challenges, competitions or contests, or won previous awards.</li>
+<li>Has not been published or distributed previously in any media.</li>
+<li>Is suitable for a general audience and for presentation in a public forum.</li>
+<li>Does not contain any claims that are not and cannot be substantiated or that would be false and/or misleading to a reasonable consumer.</li>
+<li>Must be entirely in English.</li>
+</ul>
+
+<h2>Selection of winners</h2>
+
+<p>This Competition is a challenge of skill and the final results are determined by evaluating a combination of quantitative and qualitative factors, as more fully described on the Competition Website. The Competition results will be determined solely by leaderboard ranking, subject to verification by the Competition Entities, on the Phase II leaderboard based on an objective statistical evaluation metric published on the Competition Website prior to commencement of the Competition (subject to compliance with these Competition Rules). Phase I leaderboard standings do not impact Competition outcome or the award of any Prizes. Participants' scores and ranks on the Competition Website at any given stage of the Competition will be based on the objective statistical evaluation metric described on the Competition Website, as determined by applying the predictions in the Submission to the ground truth of a validation dataset whose instances were a fixed set sampled from the Data.  As more fully described on the Competition Website, the Competition will have a quantitative winner. Phase II leaderboard rankings posted on the Competition Website are not dispositive and all scores and winner determinations are subject to verification by Competition Entities.</p>
+
+<p>The evaluation metric used for scoring and ranking Submissions will be displayed on the Competition Website.</p>
+
+<p>Any prize awards are subject to verification of eligibility and compliance with these Competition Rules. All decisions of DrivenData, the Competition Sponsor and/or judges will be final and binding on all matters relating to this Competition. Competition Entities reserve the right to examine the Submission and any associated code, documentation or External Data for compliance with these Competition Rules. In the event that the Submission, any associated code, documentation or External Data demonstrates a breach of these Competition Rules, Competition Sponsor or DrivenData may at its discretion take either of the following actions:</p>
+
+<ul>
+<li>disqualify your Submission(s); or </li>
+<li>require that you remediate within one week any issues identified in your Submission(s) (including, without limitation, the resolution of license conflicts and confirmation of the fulfillment of all obligations required by software licenses). Competition Sponsor and DrivenData are under no obligation to alert you of any issues with your Submission or permit you to remediate any identified issues.</li>
+</ul>
+
+<p>A tie between two or more valid and identically ranked submissions submitted during Phase II will be resolved in favor of the tied submission that was submitted first.</p>
+
+<p>A Participant may decline to be nominated as a Winner by notifying DrivenData directly within one week following the Competition deadline, in which case the declining Participant forgoes any prize or other features associated with winning the Competition. Competition Entities reserve the right to disqualify a Participant who so declines at Competition Entities’ sole discretion if Competition Entities deems disqualification appropriate.</p>
+
+<h2>Prizes and conditions</h2>
+
+<p>The prizes for this Competition are set forth on the Competition Website. The Prize Winner(s) will be notified and announced within 30 days of the end of the Competition on the Competition Website. The Prize Winner(s) will receive their prizes awarded as a check or electronic transfer from DrivenData. </p>
+
+<p>If a Team wins a prize, all Team members must submit a single written statement describing how the prize is to be allocated among the Team members. If the Team fails to submit such statement within 30 days after DrivenData requests it, then DrivenData will distribute the prize among Team members in equal shares and will have no further obligation to winning Team members. </p>
+
+<p>As a condition of receipt of a prize, winner must deliver the algorithm’s code and documentation to the Competition Entities. The source code must contain a description of resources required to build and run the algorithm. The accompanying documentation should be consistent with DrivenData’s Winning Model Documentation Template (“Template”), must comply with all guidelines set forth in the Template and must include an academic explanation of the winning Submission. The Template will be provided to winners within 30 days of the end of the Competition Period. The academic explanation must be published to arxiv.org or a similar platform under a permissive Creative Commons license without commercial restriction. Winner documentation will be used by the Competition Entities for the administration and promotion of the Competition, winners and winning Submissions, and may be posted publicly. Winners must complete all requirements set forth in these Competition Rules to be eligible to receive a prize in this Competition. </p>
+
+<p>Each potential individual winner, and all natural people who are members of a winning Team (as determined and requested in Competition Sponsor’s sole discretion), may be required to complete, execute, have notarized (if applicable), and return an Affidavit/Declaration of Eligibility and Liability/Publicity Release (unless prohibited by law), tax documents, and related prize-acceptance documents in the form provided by DrivenData, without revision, or prize may be forfeited. If any individual Participant on a Team fails to comply with the foregoing requirements and other requirements of Sponsor, the Team may be disqualified at any time in Competition Entities’ sole discretion with no liability or responsibility to the respective Participant or any or any other member of the Team, even if other Team members have complied with the requirements.  The prize may be awarded to an alternate winner if required documentation is not returned within thirty (30) days after mailing to winner, if prize notification letter/email or prize is returned as undeliverable, if winner does not respond to an email or other communication from DrivenData within ten (10) days of the date sent, or if the winner, in DrivenData’s judgment, does not respond to reasonable requests for information related to prize delivery or otherwise unable or unwilling to coordinate prize delivery within thirty (30) days after prize notification. Allow thirty (30) days for prize delivery following winner verification. In addition to the license set forth in the PERMISSIONS section of these Competition Rules, by accepting any prize/award, Winner agrees to allow DrivenData and/or the Competition Sponsor to disclose Winner’s first name, first initial of last name, and city of residence, as well as prize information to the extent required by law, and if so required by law, Winner agrees to the disclosure of additional personal information, all without additional compensation. </p>
+
+<p>DrivenData is responsible only for prize delivery and is not responsible for prize utility or otherwise. No substitution or transfer of prizes is permitted. All taxes, fees and expenses associated with participation in the Competition or receipt and use of a prize are the sole responsibility of the Prize Winner(s). </p>
+
+<p><strong>PARTICIPANT INTELLECTUAL PROPERTY LICENSING.</strong></p>
+
+<p>All Participants grant the Competition Entities a limited, worldwide license to use each Participant’s Submission for the administration of the Competition. </p>
+
+<p>As a further condition of receipt of a Prize, each winning Participant: </p>
+
+<ul>
+<li>agrees to publish their winning Submission and the source code used to generate the Submission to a public GitHub repository under a permissive open source license approved by the Open Source Initiative <strong>“Approved OSS License”</strong>; and</li>
+<li>represents that he/she/it has the unrestricted right to grant that license.</li>
+</ul>
+
+<p><strong>CHEATING.</strong> </p>
+
+<p>Participating using more than one DrivenData account is deemed cheating and, if discovered, will result in disqualification from the Competition and any other affected Competitions and may result in banning or deactivation of affected DrivenData accounts.</p>
+
+<p>Competition Entities reserve the right to request information associated with our investigation of suspected cheating. Failure to respond to these requests (including failure to furnish the requested information) within ten (10) days is grounds for disqualification.</p>
+
+<p><strong>RECEIVING PRIZES.</strong></p>
+
+<p>After verification of eligibility, each Prize winner will receive the prize in the form of a check or electronic transfer from DrivenData made out to the Prize winner (if an individual, or to the individual Team members if a Team). Allow 30 days from final verification and confirmation for Prize delivery. Winners may receive an IRS 1099 form or W-8BEN, as applicable, from DrivenData in the amount of their prize at the appropriate time. Prize winners are responsible for any taxes, fees or other liability resulting from their receipt of a Prize. Prizes may not be transferred (a) to any individual, entity, or country prohibited by any applicable  U.S. or non-U.S. export controls and trade sanctions; (b) to anyone on U.S. or non-U.S. government restricted parties lists; or (c) for any purpose prohibited by applicable export controls and trade sanctions, including nuclear, chemical or biological weapons, or missile technology applications without the required government authorizations. You acknowledge that Competition Sponsor is subject to U.S. economic restrictions and trade sanctions. As such, Sponsor reserves the right to deny distribution of any prize when required by applicable law.</p>
+
+<h2>Permissions</h2>
+
+<p>Except where prohibited by law, entry constitutes permission by the Competition Entities to use winners’ names, hometowns, images, statements and likenesses for online posting, and/or any advertising and publicity without additional compensation. Winners may also be required to sign and return a release of liability, declaration of eligibility and, where lawful, a publicity consent agreement, as conditions of receiving a prize. Failure to comply with the aforementioned conditions shall be grounds for forfeiture of a prize.</p>
+
+<h2>Data use and code sharing</h2>
+
+<p><strong>DATA.</strong></p>
+
+<p>“Data” means the data or datasets linked from the Competition Website for the purpose of use by Participants in the Competition. For the avoidance of doubt, Data is deemed for the purpose of these Competition Rules to include any prototype or executable code provided to Participants by DrivenData via the Competition Website, including, without limitation, all files contained in the zip file provided to Participants. Participants must use the Data only as permitted by these Competition Rules and any associated data use rules specified on the Competition Website, including the Dataset License Agreement at <a href="https://www.drivendata.org/competitions/64/hateful-memes/page/214/">this link</a>.</p>
+
+<p>Participants agree to use suitable measures to prevent persons who have not formally agreed to these Competition Rules from gaining access to the Data and agree not to transmit, duplicate, publish, redistribute or otherwise provide or make available the Data to any party not participating in the Competition. Participants agree to notify DrivenData immediately upon learning of any possible unauthorized transmission or unauthorized access of the Data and agree to work with DrivenData to rectify any unauthorized transmission. Participants agree that participation in the Competition shall not be construed as having or being granted a license (expressly, by implication, estoppel, or otherwise) under, or any right of ownership in, any of the Data. Competition Sponsor reserves the right in its sole discretion to disqualify any Participant who uses the Data other than as permitted according to the Competition Website and in these Competition Rules, in the course of the Competition.</p>
+
+<p><strong>EXTERNAL DATA.</strong></p>
+
+<p><strong>For this Competition, Participants may use pre-trained models and other external data (collectively, “External Data”), provided such Participant has all rights, licenses and permissions to use the External Data as contemplated in these Competition Rules. Participant represents and warrants that any use of any External Data in connection with participation in this Competition is pursuant to and in accordance with a valid license that permits unrestricted commercial use of the External Data without the need for additional approvals from any third party, and agrees to provide Sponsor with proof (to Competition Entities’ satisfaction) of such license upon request at any time during the Competition Period or the Competition evaluation process. Top performing Participants will also be required to certify in writing that they have permission to use all External Data used to develop potentially winning Submissions. Failure to satisfy any of these requirements in accordance with Competition Entities’ instructions and timing, or Sponsor’s belief that a Participant does not have all necessary consents and licenses (notwithstanding any certification by Participant) will result in disqualification from the Competition and forfeiture of any prize claim.</strong> </p>
+
+<p><strong>CODE SHARING.</strong></p>
+
+<p>Participants are prohibited from privately sharing source or executable code developed in connection with or based upon the Data, and any such sharing is a breach of these Competition Rules and may result in disqualification.</p>
+
+<p>Participants are permitted to publicly share source or executable code developed in connection with or based upon the Data, or otherwise relevant to the Competition, provided that such sharing does not violate the intellectual property rights of any third party and Participant releases such source or executable code under an Approved OSS License.</p>
+
+<p><strong>OPEN-SOURCE CODE.</strong></p>
+
+<p>If a Submission was developed using code containing or depending on software licensed under an open source license, that license must be an Approved OSS license that permits commercial use. </p>
+
+<h2>Participant warranties and obligations</h2>
+
+<p>By registering, you agree that (a) your Account is complete, correct and accurate and (b) your registration may be rejected or terminated and all Submissions submitted by you and/or your Team may be disqualified if any of the information in your Account is (or Competition Sponsor or DrivenData has reasonable grounds to believe it is) incomplete, incorrect or inaccurate. You are solely responsible for your Account. All registration information is deemed collected in the United States.</p>
+
+<p>Participation is subject to all applicable federal, state, provincial, territorial and local laws, rules and regulations. You agree to comply with all applicable laws and regulations at all times during your participation in the Competition. Void where prohibited or restricted by law. You are responsible for checking applicable laws and regulations in your jurisdiction before participating in the Competition to make sure that your participation is legal. You are responsible for all taxes and reporting related to any award that you may receive as part of the Competition.  Each Participant must comply with all applicable explicit or implicit terms and conditions or policies applicable for platforms, applications, or software used in connection with or on which their Submission and the Submission's source code operate.  As such, each Participant must follow the spirit of such terms and conditions and policies; and any attempt to subvert or to use a work-around of such terms and conditions or policies may, in Competition Entities’ sole discretion, lead to such Participant’s disqualification.</p>
+
+<p>Each Participant is solely responsible for all equipment, including but not necessarily limited to a computer and internet connection necessary to access the Competition Website and to develop and upload any Submission, and any telephone, data, hosting or other service fees associated with such access, as well as all costs incurred by or behalf of the Entrant in participating in the Competition.</p>
+
+<p>By entering a Submission, you represent and warrant that all information you enter on the Competition Website is true and complete to the best of your knowledge, that you have the right and authority to make the Submission (including any underlying code and model) on your own behalf or on behalf of the persons and entities that you specify within the Submission, and that your Submission:</p>
+
+<ul>
+<li>complies with all applicable federal, state, provincial, territorial, local and international laws, statutes, ordinances, rules and regulations;</li>
+<li>is your own original work, or is used by permission, in which case full and proper credit and identity is given and the third party contributions are clearly identified within your Submission. Competition Entities reserve the right to request proof of permission from you which must be provided in a form approved by Competition Entities or your Submission may be disqualified;</li>
+<li>does not contain confidential information or trade secrets and is not the subject of a registered patent or pending patent application;</li>
+<li>does not violate or infringe upon the patent rights, industrial design rights, copyrights, trademarks, rights of privacy, publicity or other intellectual property or other rights of any person or entity;</li>
+<li>does not contain malicious code, such as viruses, timebombs, cancelbots, worms, Trojan horses or other potentially harmful programs or other material or information; </li>
+<li>does not and will not violate any applicable law, statute, ordinance, rule or regulation;</li>
+<li>does not trigger any reporting or royalty obligation to any third party; and</li>
+<li>was not previously published and has not won any other prize/award. </li>
+</ul>
+
+<p>A breach of any of these warranties will result in the corresponding Submission being invalid.</p>
+
+<h2>Confidentiality</h2>
+
+<p><strong>Confidential Information Defined.</strong>
+Confidential Information Defined. As used in this Section, “Confidential Information” means Competition Sponsor materials, and any information provided by Competition Entities hereunder, whether of a technical, business, or other nature (including, without limitation, information relating to a party’s technology, software, products, services, designs, methodologies, business plans, finances, marketing plans, prospects, or other affairs), that is received by Participant. </p>
+
+<p><strong>Exclusions.</strong>
+Participant's obligations under this Section as to the disclosing party's Confidential Information does not include any information that Participant can document: (a) was known to Participant prior to receiving the same from the disclosing party in connection with this Agreement; (b) is independently developed by Participant without use of or reference to the Confidential Information of the disclosing party; (c) is acquired by Participant from another source without restriction as to use or disclosure; or (d) is or becomes part of the public domain through no fault or action of Participant.</p>
+
+<p><strong>Nondisclosure.</strong>
+In consideration of the terms and conditions of this Agreement, and for other good and valuable consideration, the receipt and sufficiency of which is acknowledged, during and after the term of this Agreement Participant will: (a) use the disclosing party's Confidential Information solely for the purpose for which it is provided; (b) not disclose the disclosing party's Confidential Information to a third party unless the third party must access the Confidential Information to perform in accordance with this Agreement and the third party has executed a written agreement that contains terms that are substantially similar to the terms contained in this Section; and (c) maintain the secrecy of, and protect from unauthorized use and disclosure, the disclosing party's Confidential Information to the same extent (but using no less than a reasonable degree of care) that Participant protects its own Confidential Information of a similar nature. If Participant is required by law or by any governmental or semi-governmental agency or court to disclose the disclosing party's Confidential Information or the terms of this Agreement Participant must give prompt written notice of such requirement to the disclosing party before such disclosure and assist the disclosing party in attempting to obtain an order protecting the Confidential Information from public disclosure. </p>
+
+<p><strong>Return of Information.</strong>
+Upon request, Participant will destroy or deliver to the disclosing party all Confidential Information Participant may have in its possession or control. </p>
+
+<p><strong>Injunctive Relief.</strong>
+Participant acknowledges that any violation or threatened violation of this Section may cause irreparable injury to the other party, entitling the disclosing party to obtain injunctive relief in addition to all legal remedies.</p>
+
+<h2>Delivery and receipt of submissions</h2>
+
+<p>Competition Entities are not responsible for (a) late, lost, stolen, damaged, garbled, incomplete, incorrect or misdirected Submissions, Competition registration, or other communications, (b) errors, omissions, interruptions, deletions, defects, or delays in operations or transmission of information, in each case whether arising by way of technical or other failures or malfunctions of computer hardware, software, communications devices, or transmission lines, or (c) data corruption, theft, destruction, unauthorized access to or alteration of Submission materials, loss or otherwise. Competition Entities are not responsible for electronic communications or emails which are undeliverable as a result of any form of active or passive filtering of any kind, or insufficient space in any email account to receive email messages. Competition Entities disclaim any liability for damage to any computer system resulting from participation in, or accessing or downloading information in connection with, the Competition.</p>
+
+<h2>Reservation of rights</h2>
+
+<p>Competition Entities, in their sole discretion, reserves the right to disqualify any person tampering with the entry process, the operation of the Web site, the competition process, or is otherwise in violation of the Competition Rules. Competition Entities reserve the right at any time to disqualify a Submission from a Competition where, acting in good faith, it believes there are reasonable grounds to warrant disqualification. For example, Competition Entities’ determination that the Submission does not provide the functionality described or required, or the Submission appears to be purposely designed to circumvent these Competition Rules or the spirit of the Competition would be grounds for disqualification. Competition Entities reserve the right to cancel, terminate or modify the Competition if it is not capable of completion as planned for any reason, including infection by computer virus, bugs, tampering, unauthorized intervention or technical failures of any sort. If Competition Entities determine (at any time and in their sole discretion) that any Participant is engaging in behavior that Competition Entities deem obnoxious, inappropriate, threatening, illegal or that is intended to annoy, abuse, or harass any other person or entity, Competition Entities reserve the right to disqualify such Participant (and Participant’s Team, if applicable).</p>
+
+<h2>General release</h2>
+
+<p>By entering the Competition, you release and discharge the Competition Sponsor and DrivenData from any liability whatsoever in connection with the Competition or with the acceptance, possession, use or misuse of any prize including, without limitation, legal claims, costs, injuries, losses or damages, demands or actions of any kind (including, without limitation: personal injuries; death; damage to, loss or destruction of property; rights of publicity or privacy; and defamation or portrayal in a false light). The Competition Sponsor and DrivenData will not be responsible for typographical, printing or other inadvertent errors in these Competition Rules or in other materials relating to the Competition. Additionally, you hereby agree to indemnify the Competition Sponsor and DrivenData from any and all losses, damages, costs, expenses, rights, claims, demands and actions (including attorney's fees and expenses for litigation and settlement), which may be brought against any one or more of them by anyone claiming to have suffered loss or damage as a result of your participation in the Competition or for any breach of any representation or warranty herein.</p>
+
+<h2>Limitations of liability</h2>
+
+<p>By participating in the Competition, each Participant agrees that: (1) any and all disputes, claims, and causes of action arising out of or in connection with the Competition, or any prize awarded, shall be resolved individually without resort to any form of class action; (2) any claims, judgments and awards shall be limited to actual out-of-pocket costs incurred, including costs associated with entering the Competition, but in no event attorney's fees; and (3) under no circumstances will a Participant be permitted to obtain any award for, and each Participant hereby waives all rights to claim, punitive, incidental or consequential damages and any and all rights to have damages multiplied or otherwise increased and any other damages, other than damages for actual out-of-pocket expenses.</p>
+
+<p>DrivenData, Inc., Competition Sponsor, and the employees, officers, directors, shareholders, agents, representatives, affiliates, subsidiaries, and advertising, promotional and legal advisors thereof (collectively, the “Released Parties”) are not responsible and shall not be liable for: (i) late, lost, delayed, damaged, misdirected, incomplete, illegible, or unintelligible entries; (ii) telephone, electronic, hardware, or software program, network, Internet, or computer malfunctions, failures, or difficulties; (iii) errors in transmission; (iv) any condition caused by events beyond the control of the Released Parties that may cause the Competition to be disrupted or corrupted; (v) any injuries, losses, or damages of any kind caused by a prize or resulting from acceptance, possession, or use of a prize, or from participation in the Competition (however (but only if required by law in your jurisdiction), this release and hold harmless commitment does not apply to cases of bodily injury or loss of life to the extent that any death or personal injury is caused by the negligence of Competition Entities or other third parties, where liability to the injured party cannot be excluded by law); or (vi) any printing or typographical errors in any materials associated with the Competition.</p>
+
+<h2>Disclaimer of Warranties</h2>
+
+<p>You understand that we cannot and do not guarantee or warrant that the Data or other files available for downloading from the internet or the Competition Website will be free of viruses or other destructive code. You are responsible for implementing sufficient procedures and checkpoints to satisfy your particular requirements for anti-virus protection and accuracy of data input and output, and for maintaining a means external to our site for any reconstruction of any lost data. RELEASED PARTIES  WILL NOT BE LIABLE FOR ANY LOSS OR DAMAGE CAUSED BY A DISTRIBUTED DENIAL-OF-SERVICE ATTACK, VIRUSES OR OTHER TECHNOLOGICALLY HARMFUL MATERIAL THAT MAY INFECT YOUR COMPUTER EQUIPMENT, COMPUTER PROGRAMS, DATA OR OTHER PROPRIETARY MATERIAL DUE TO YOUR USE OF THE WEBSITE OR ANY SERVICES OR ITEMS OBTAINED THROUGH THE WEBSITE OR TO YOUR DOWNLOADING OF ANY MATERIAL POSTED ON IT, OR ON ANY WEBSITE LINKED TO IT.</p>
+
+<p>YOUR USE OF THE COMPETITION WEBSITE, ITS CONTENT AND ANY SERVICES OR ITEMS OBTAINED THROUGH THE WEBSITE AND RECEIPT OF ANY PRIZES IS AT YOUR OWN RISK. THE WEBSITE, ITS CONTENT AND ANY SERVICES OR ITEMS OBTAINED THROUGH THE WEBSITE ARE PROVIDED ON AN “AS IS” AND “AS AVAILABLE” BASIS, WITHOUT ANY WARRANTIES OF ANY KIND, EITHER EXPRESS OR IMPLIED, BEYOND ANY NON-EXCLUDABLE GUARANTEES (DEFINED BELOW). NEITHER THE RELEASED PARTIES NOR ANY PERSON ASSOCIATED WITH RELEASED PARTIES MAKES ANY WARRANTY OR REPRESENTATION WITH RESPECT TO THE COMPLETENESS, SECURITY, RELIABILITY, QUALITY, ACCURACY OR AVAILABILITY OF THE COMPETITION WEBSITE. WITHOUT LIMITING THE FOREGOING, NEITHER RELEASED PARTIES NOR ANYONE ASSOCIATED WITH THE RELEASED PARTIES REPRESENTS OR WARRANTS THAT THE COMPETITION WEBSITE, ITS CONTENT OR ANY SERVICES OR ITEMS OBTAINED THROUGH THE WEBSITE WILL BE ACCURATE, RELIABLE, ERROR-FREE OR UNINTERRUPTED, THAT DEFECTS WILL BE CORRECTED, THAT OUR SITE OR THE SERVER THAT MAKES IT AVAILABLE ARE FREE OF VIRUSES OR OTHER HARMFUL COMPONENTS OR THAT THE COMPETITION WEBSITE OR ANY SERVICES OR ITEMS OBTAINED THROUGH THE WEBSITE WILL OTHERWISE MEET YOUR NEEDS OR EXPECTATIONS.</p>
+
+<p>NOTHING IN THESE COMPETITION RULES LIMITS, EXCLUDES, OR MODIFIES OR PURPORTS TO LIMIT, EXCLUDE, OR MODIFY ANY STATUTORY CONSUMER GUARANTEE OR ANY IMPLIED CONDITION OR WARRANTY, THE EXCLUSION OF WHICH FROM THESE COMPETITION RULES WOULD CONTRAVENE ANY STATUTE OR CAUSE ANY PART OF THESE TERMS TO BE VOID (<strong>“NON-EXCLUDABLE GUARANTEES”</strong>). SUBJECT TO THE LIMITATIONS IN THE PRECEDING SENTENCE AND TO THE MAXIMUM EXTENT PERMITTED BY ANY MANDATORY PROVISIONS OF APPLICABLE LAW, THE RELEASED PARTIES HEREBY DISCLAIM ALL WARRANTIES OF ANY KIND, WHETHER EXPRESS OR IMPLIED, STATUTORY OR OTHERWISE, INCLUDING BUT NOT LIMITED TO ANY WARRANTIES OF MERCHANTABILITY, NON-INFRINGEMENT AND FITNESS FOR PARTICULAR PURPOSE.</p>
+
+<p>THE FOREGOING DOES NOT AFFECT ANY WARRANTIES WHICH CANNOT BE EXCLUDED OR LIMITED UNDER APPLICABLE LAW.</p>
+
+<h2>Governing Law and Jurisdiction</h2>
+
+<p>Competition Entities shall be the sole interpreters of these Competition Rules. </p>
+
+<p>All matters relating to the Competition Rules or the Competition and any dispute or claim arising therefrom or related thereto (in each case, including non-contractual disputes or claims), shall be governed by and construed in accordance with the internal laws of the State of California without giving effect to any choice or conflict of law provision or rule (whether of the Commonwealth of Massachusetts or any other jurisdiction).</p>
+
+<p>Any legal suit, action or proceeding arising out of, or related to, the Competition or the Competition Website shall be instituted exclusively in the federal courts of the United States or the courts of the State of California although we retain the right to bring any suit, action or proceeding against you for breach of these Competition Rules in your country of residence or any other relevant country. You waive any and all objections to the exercise of jurisdiction over you by such courts and to venue in such courts.</p>
+
+<p>The invalidity or unenforceability of any provision of these Competition Rules shall not affect the validity or enforceability of any other provision. In the event that any provision is determined to be invalid or otherwise unenforceable or illegal, these Competition Rules shall otherwise remain in effect and be construed in accordance with their terms as if the invalid or illegal provision was not contained herein.</p>
+
+<p><strong>TERMS/WHO WON?:</strong> To obtain a copy of these Competition Rules during the Competition Period, visit <a href="https://www.drivendata.org/competitions/64/hateful-memes/rules/">https://www.drivendata.org/competitions/64/hateful-memes/rules/</a>. To see who won after the Competition Period, visit the Competition Website or send an email with the subject line “Hateful Memes Challenge – Who Won?” to dkiela@fb.com. Requests for winner information must be received no later than three (3) months after the end of the Competition Period.</p>
+</div>
+          <div class="modal-footer">
+            
+              <button type="button"
+                      class="btn btn-primary"
+                      data-bs-dismiss="modal"
+                      data-bs-toggle="modal"
+                      data-bs-target="#vettingModal">I agree</button>
+              <button type="button" class="btn btn-default" data-bs-dismiss="modal">Cancel</button>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+    
+      
+
+
+  <div class="modal fade"
+       id="vettingModal"
+       tabindex="-1"
+       role="dialog"
+       aria-labelledby="vettingModalLabel"
+       aria-hidden="true">
+    <div class="modal-dialog">
+      <form method="post"
+            id="vetting-form"
+            novalidate
+            enctype="multipart/form-data"
+            hx-post="/competitions/70/submissions/vetting-form/"
+            hx-ext="response-targets"
+            hx-target="#vetting-form-fields-container"
+            hx-target-error="#vetting-form-fields-container"
+            hx-swap="innerHTML"
+            hx-disabled-elt="find button[type=submit]">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title text-base" id="vettingModalLabel">Hateful Memes: Phase 2: Pre-registration Form</h4>
+          </div>
+          <div class="modal-body prose">
+            <h2>Hateful Memes Dataset License Agreement</h2>
+
+<p>In order to access the Hateful Memes Dataset (as defined below), you (as defined below) must first agree to this Hateful Memes Dataset (“HM Dataset”) License Agreement (“Agreement”). You may not use the HM Dataset if you do not accept this Agreement. By clicking to accept, accessing the HM Dataset, or both, you hereby agree to the terms of the Agreement. If you are agreeing to be bound by the Agreement on behalf of your employer or other entity, you represent and warrant to Facebook that you have full legal authority to bind your employer or such entity to this Agreement. If you do not have the requisite authority, you may not accept the Agreement or access the HM Dataset on behalf of your employer or other entity.</p>
+
+<p>This Agreement is effective upon the earlier of the date that you first access the HM Dataset or accept this Agreement (“Effective Date”), and is entered into by and between Facebook, Inc. (“Facebook”), and you, or your employer or other entity (if you are entering into this agreement on behalf of your employer or other entity) (“Participant” or “you”).</p>
+
+<p>(1) Subject to Participant’s compliance with the terms and conditions of this Agreement, Facebook hereby grants to Participant, a limited, non-exclusive, non-transferable, non-sublicensable license to: (a) use the HM Dataset to research, develop and improve software, algorithms, machine learning models, techniques and technologies designed to detect manipulated media, images, audio and videos (the “Purpose”) and (b) distribute and reproduce up to a total of one hundred (100) images from the HM Dataset per Participant for research or academic publications related to the Purpose.  If you include images from the HM Dataset in a research or academic publications, then you shall include attribution to Getty Images in one of the following formats:</p>
+
+<blockquote>
+  <p><em>“Image above is a compilation of assets, including ©Getty Images/[photographer name]”. If no photographer name is listed, attribution shall be as follows:</em>  </p>
+</blockquote>
+
+<blockquote>
+  <p><em>“Image above is a compilation of assets, including ©Getty Images/[collection name]”. If no collection name is listed, attribution shall be as follows:</em>  </p>
+</blockquote>
+
+<blockquote>
+  <p><em>“©Getty Images”.</em>  </p>
+</blockquote>
+
+<p>(2) Subject to Participant’s compliance with the terms and conditions of this Agreement, Participant retains its intellectual property rights in and to all algorithms, software, machine learning models, techniques and technologies developed or otherwise derived by Participant from the use of the HM Dataset. Such algorithms, software, machine learning models, techniques and technologies may be used for academic and commercial purposes.</p>
+
+<p>(3) As between Facebook and Participant, Facebook retains all intellectual property rights in and to the HM Dataset. All rights not expressly granted under this Agreement by Facebook are reserved.</p>
+
+<p>(4) At any time, Facebook may require Participant to delete all copies of the HM Dataset (in whole or in part) in Participant’s possession and control. Participant will promptly comply with any and all such requests. Upon Facebook’s request, Participant shall provide Facebook with written confirmation of Participant’s compliance with such requirement.</p>
+
+<p>(5) If Facebook reasonably believes (as determined at Facebook’s sole discretion) that you are or are likely to be in violation of the terms of this Agreement, then Facebook or Facebook’s designee (at Facebook’s sole expense) may audit your use, storage and distribution of the HM Dataset, including, without limitation, any and all records, files associated with the HM Dataset, and this Agreement.  You hereby agree to cooperate with such audit.</p>
+
+<p>(6) Participant will not:</p>
+
+<ul>
+<li>modify, translate, or create any derivative works based upon the HM Dataset;</li>
+<li>distribute, copy, disclose, assign, sublicense, embed, host or otherwise transfer the HM Dataset to any third party, except as described in Section 1(b) above;</li>
+<li>remove or alter any copyright, trademark or other proprietary notices appearing on or in copies of the HM Dataset;</li>
+<li>use the HM Dataset in a pornographic, defamatory or other unlawful manner, or in violation of any applicable regulations or laws;</li>
+<li>incorporate the HM Dataset into any other program, dataset, or product;</li>
+<li>use the HM Dataset to distribute manipulated images or videos (except as described in Section 1(b) above); or</li>
+<li>use the HM Dataset for any purpose other than the Purpose specified in this Agreement.</li>
+</ul>
+
+<p>(7) If you use the HM Dataset (or any portion thereof) in a manner that features models or property in connection with a subject that would be unflattering or unduly controversial to a reasonable person, you must indicate: (1) that the content is being used for illustrative purposes only, and (2) any person depicted in the content is a model. For example, you could say: “Stock photo. Posed by model.”</p>
+
+<p>(8) Facebook always appreciates your feedback and other suggestions about the HM Dataset. However, you should know and you hereby agree that we may use your feedback and suggestions without any restriction or obligation, including, without limitation, to compensate you or to keep them confidential.</p>
+
+<p>(9) Upon the termination of this Agreement, Participant will immediately stop using the HM Dataset and destroy all copies of the HM Dataset and related materials in Participant’s possession and control. Additionally, Facebook may, at any time, for any reason or for no reason, terminate this Agreement, effective immediately upon notice to the Participant. Upon termination, the license granted to Participant hereunder will immediately terminate and Participant will immediately stop using the HM Dataset and destroy all copies of the HM Dataset and related materials in Participant’s possession or control. Except for the licenses granted to Participant, the other provisions of this Agreement will survive any termination.</p>
+
+<p>(10) THE HM DATASET IS PROVIDED “AS IS” WITHOUT ANY EXPRESS OR IMPLIED WARRANTY OF ANY KIND, INCLUDING WARRANTIES OF MERCHANTABILITY, TITLE, NON-INFRINGEMENT, OR FITNESS FOR ANY PARTICULAR PURPOSE.</p>
+
+<p>(11) IN NO EVENT WILL FACEBOOK,  ITS CONTRACTORS AND ITS LICENSORS BE LIABLE FOR ANY CONSEQUENTIAL, INCIDENTAL, EXEMPLARY, PUNITIVE, SPECIAL, OR INDIRECT DAMAGES (INCLUDING DAMAGES FOR LOSS OF PROFITS, BUSINESS INTERRUPTION, OR LOSS OF INFORMATION) ARISING OUT OF OR RELATING TO THIS AGREEMENT OR ITS SUBJECT MATTER, EVEN IF FACEBOOK HAS BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGES.</p>
+
+<p>(12) FACEBOOK, ITS LICENSORS AND ITS CONTRACTOR’S TOTAL LIABILITY ARISING FROM OR RELATING TO THIS AGREEMENT AND ITS SUBJECT MATTER WILL NOT EXCEED ONE HUNDRED DOLLARS ($100).</p>
+
+<p>(13) Either party may terminate this Agreement if the other is in material breach of this Agreement and such breach remains uncured for thirty (30) days following receipt of written notice of the breach.</p>
+
+<p>(14) From time to time, Facebook may provide your name and the fact that you are a licensee of the HM Dataset to our licensors.</p>
+
+<p>(15) Participant will comply with all applicable export controls, import controls and trade sanctions applicable to the HM Dataset. You shall obtain, at your sole cost and expense, any export and import (temporary and permanent) license and other official authorization applicable to the HM Dataset. This Agreement, and your relationship with Facebook under this Agreement, shall be governed by the laws of the State of California without regard to its conflict of laws provisions. You and Facebook agree to submit to the exclusive jurisdiction of the courts located within the county of Santa Clara, California to resolve any legal matter arising from the Agreement. Notwithstanding this, you agree that Facebook shall still be allowed to apply for injunctive remedies (or an equivalent type of urgent legal relief) in any jurisdiction. Facebook may make changes to this Agreement at any time with notice to Participant and the opportunity to decline further use of the HM Dataset. You should look at the Agreement and check for notice of any changes regularly. Changes will not be retroactive. They will become effective, and will be deemed accepted by Participant, (a) immediately for those who become Participants after the notification is posted; or (b) for pre-existing Participants, on the date specified in the notice, which will be no sooner than 30 days after the changes are posted (except changes required by law which will be effective immediately).  If You do not agree with the modifications to the Agreement, You may terminate Your use of HM Dataset, which will be Your sole and exclusive remedy. You agree that Your continued use of HM Dataset constitutes Your agreement to the modified terms of this Agreement. No failure to exercise and no delay in exercising any right, remedy or power hereunder will operate as a waiver thereof, nor will any single or partial exercise of any right, remedy or power hereunder preclude any other or further exercise thereof or the exercise of any other right, remedy or power provided herein or by law or in equity. Participant may not assign its rights and obligations hereunder without prior written consent of Facebook. Facebook may assign its rights and obligations hereunder at any time to any party without Participant’s consent. If any provision of this Agreement is found by a court of competent jurisdiction to be void, invalid or unenforceable, the same will be reformed to comply with applicable law or stricken if not so conformable, so as not to affect the validity or enforceability of the remainder of this Agreement. This Agreement constitutes the entire agreement between the parties concerning the subject matter hereof and supersedes all prior or contemporaneous representations, discussions, negotiations, conditions, and agreements between the parties relating to the subject matter hereof.</p>
+
+<hr />
+
+<p>By providing the following information and clicking “Submit and Join”, you are indicating your agreement to these terms. Please note that these responses may also be shared with Facebook and Getty Images to routinely audit for potential misuse of the data set.</p>
+
+            <div id="vetting-form-fields-container"
+                 hx-get="/competitions/70/submissions/vetting-form/"
+                 hx-trigger="show.bs.modal from:#vettingModal"
+                 hx-swap="innerHTML">Loading form...</div>
+          </div>
+          <div class="modal-footer">
+            <button class="btn btn-primary" type="submit">Submit and join</button>
+            <button type="button" class="btn btn-default" data-bs-dismiss="modal">Cancel</button>
+          </div>
+        </div>
+      </form>
+      
+      <button type="button"
+              id="vetting-join-trigger"
+              class="d-none"
+              hx-post="/competitions/70/hateful-memes-phase-2/join/"
+              hx-trigger="vettingApproved from:body"></button>
+    </div>
+  </div>
+
+
+    
+  
+  <div class="pt-5"></div>
+  <div class="pt-5"></div>
+  <div class="pt-5"></div>
+
+            
+            
+          </div>
+        </div>
+      </div>
+    </main>
+    
+      
+<footer class="site-footer">
+  <div class="container-fluid">
+    <div class="row g-5">
+      <div class="col-xl-4">
+        <a href="/"
+           class="site-footer__brand d-inline-block"
+           aria-label="DrivenData">
+          <img src="https://drivendata-prod-public.s3.amazonaws.com/images/logo-white.46fdfa256aa3.svg"
+               class="img-fluid"
+               alt="DrivenData"
+               width="968"
+               height="156" />
+        </a>
+        <p class="site-footer__tagline mb-0">
+          We use data science &amp; AI to help mission-driven organizations offer more impactful services.
+        </p>
+      </div>
+      <div class="col-xl-8">
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-3 g-4">
+          
+          <div class="col">
+            <h3 class="site-footer__heading">
+              <a href="https://drivendata.co/team/" target="_blank" rel="noopener">About</a>
+            </h3>
+            <div class="site-footer__links">
+              <a href="https://drivendata.co/team/" target="_blank" rel="noopener">Meet the team</a>
+              <a href="/contact/">Contact us</a>
+              <a href="https://apply.workable.com/drivendata/"
+                 target="_blank"
+                 rel="noopener noreferrer">Careers</a>
+              <a href="https://drivendata.co/#faq" target="_blank" rel="noopener">FAQ</a>
+            </div>
+          </div>
+          <div class="col">
+            <h3 class="site-footer__heading">
+              <a href="https://drivendata.co/#services" target="_blank" rel="noopener">Services</a>
+            </h3>
+            <div class="site-footer__links">
+              <a href="https://drivendata.co/#data-science-and-ai"
+                 target="_blank"
+                 rel="noopener">Data science &amp; AI</a>
+              <a href="https://drivendata.co/#software-engineering"
+                 target="_blank"
+                 rel="noopener">Software engineering</a>
+              <a href="https://drivendata.co/#data-engineering"
+                 target="_blank"
+                 rel="noopener">Data engineering</a>
+              <a href="https://drivendata.co/#data-strategy"
+                 target="_blank"
+                 rel="noopener">Data strategy</a>
+            </div>
+          </div>
+          <div class="col">
+            <h3 class="site-footer__heading">
+              <a href="https://drivendata.co/open-source/"
+                 target="_blank"
+                 rel="noopener">Open source</a>
+            </h3>
+            <div class="site-footer__links">
+              <a href="https://cookiecutter-data-science.drivendata.org/"
+                 target="_blank"
+                 rel="noopener">Cookiecutter Data Science</a>
+              <a href="https://deon.drivendata.org/" target="_blank" rel="noopener">Deon: Ethics checklist</a>
+              <a href="https://zamba.drivendata.org/" target="_blank" rel="noopener">Zamba: Wildlife monitoring</a>
+              <a href="https://github.com/drivendataorg/competition-winners"
+                 target="_blank"
+                 rel="noopener noreferrer">Models from competitions</a>
+              <a href="https://drivendata.co/open-source/"
+                 target="_blank"
+                 rel="noopener">All open source projects</a>
+            </div>
+          </div>
+          <div class="col">
+            <h3 class="site-footer__heading">
+              <a href="https://drivendata.co/blog/" target="_blank" rel="noopener">Resources</a>
+            </h3>
+            <div class="site-footer__links">
+              <a href="https://drivendata.co/blog/" target="_blank" rel="noopener">Blog</a>
+              <a href="https://drivendata.co/projects/" target="_blank" rel="noopener">Projects</a>
+              <a href="https://drivendata.co/insights/" target="_blank" rel="noopener">Insights</a>
+              <a href="https://drivendata.co/case-studies/"
+                 target="_blank"
+                 rel="noopener">Case studies</a>
+            </div>
+          </div>
+          <div class="col">
+            <h3 class="site-footer__heading">
+              <a href="/competitions/">Competitions</a>
+            </h3>
+            <div class="site-footer__links">
+              <a href="/competitions/">Join a competition</a>
+              <a href="/partners/">Run a competition</a>
+              <a href="/competitors/">How competitions work</a>
+              <a href="/competitions/search/">Past competitions</a>
+            </div>
+          </div>
+          <div class="col">
+            <h3 class="site-footer__heading">
+              <a href="https://drivendata.co/government/"
+                 target="_blank"
+                 rel="noopener">Government</a>
+            </h3>
+            <div class="site-footer__links">
+              <a href="https://drivendata.co/government/"
+                 target="_blank"
+                 rel="noopener">Contract Vehicles</a>
+              <a href="https://drivendata.co/government/DrivenData,%20Inc%20-%20Capability%20Statement%20-%20Federal%20(2025).pdf"
+                 target="_blank"
+                 rel="noopener">Capability Statement</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row g-4 align-items-end site-footer__meta">
+      <div class="col-lg-6">
+        <ul class="site-footer__social list-unstyled mb-3">
+          <li>
+            <a aria-label="X (Twitter)"
+               target="_blank"
+               rel="noopener noreferrer"
+               href="https://x.com/drivendataorg"><i class="fa-brands fa-x-twitter site-footer__social-icon"
+   aria-hidden="true"></i></a>
+          </li>
+          <li>
+            <a aria-label="Bluesky"
+               target="_blank"
+               rel="noopener noreferrer"
+               href="https://bsky.app/profile/drivendata.org"><i class="fa-brands fa-bluesky site-footer__social-icon"
+   aria-hidden="true"></i></a>
+          </li>
+          <li>
+            <a aria-label="LinkedIn"
+               target="_blank"
+               rel="noopener noreferrer"
+               href="https://www.linkedin.com/company/9202422/"><i class="fa-brands fa-linkedin site-footer__social-icon"
+   aria-hidden="true"></i></a>
+          </li>
+          <li>
+            <a aria-label="GitHub"
+               target="_blank"
+               rel="noopener noreferrer"
+               href="https://github.com/drivendataorg"><i class="fa-brands fa-github site-footer__social-icon"
+   aria-hidden="true"></i></a>
+          </li>
+          <li>
+            <a aria-label="RSS" href="https://drivendata.co/feeds/all.atom.xml"><i class="fa-solid fa-rss site-footer__social-icon" aria-hidden="true"></i></a>
+          </li>
+        </ul>
+        <p class="site-footer__newsletter mb-0">
+          <a href="/#mailing-list"
+             class="text-decoration-underline">Subscribe to our newsletter</a>
+          <span>or follow us for updates</span>
+        </p>
+      </div>
+      <div class="col-lg-6">
+        <div class="site-footer__address small">
+          <div class="d-flex gap-2 gap-lg-3 flex-column flex-lg-row justify-content-lg-end mb-3 mb-lg-2 mt-3 mt-lg-0">
+            <a href="mailto:info@drivendata.org"
+               target="_blank"
+               rel="noopener noreferrer">info@drivendata.org</a>
+            <a href="/termsofuse/">Terms</a>
+            <a href="/privacypolicy/">Privacy</a>
+            <a href="/copyrightpolicy/">Copyright policy</a>
+          </div>
+          <div class="opacity-75">
+            © 2026 DrivenData LLC, <span class="text-nowrap">700 Colorado Blvd #611, Denver, CO 80206</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+    
+    
+    
+    
+  
+      
+      <script src="https://drivendata-prod-public.s3.amazonaws.com/js/jquery.min.5ca7582261c4.js"></script>
+      
+      <script src="https://drivendata-prod-public.s3.amazonaws.com/vendor/bootstrap/bootstrap.bundle.min.b7ef46c92e06.js"></script>
+      
+      <script src="https://drivendata-prod-public.s3.amazonaws.com/js/global.f763136173fc.js"></script>
+      
+      <script src="https://drivendata-prod-public.s3.amazonaws.com/js/project.d41d8cd98f00.js"></script>
+      
+      <script src="https://drivendata-prod-public.s3.amazonaws.com/js/htmx.2.0.10.min.6b99da76b7f7.js"></script>
+      <script src="https://drivendata-prod-public.s3.amazonaws.com/js/htmx-ext-response-targets.2.0.4.min.b6f8377a9941.js"></script>
+      
+      
+      
+      <script>
+        document.body.addEventListener('htmx:configRequest', (event) => {
+          event.detail.headers['X-CSRFToken'] = 'ieifTA7ZIDsqS2GAraWUv7CnxIhoPb5o2S1p9Dp6x2KvBD2t6VzB8LM7HjmZEVb7';
+        });
+      </script>
+    
+  <script>
+    // Open external content-page links in a new tab (skip internal, in-page, and drivendata links)
+    document.querySelectorAll('#content-page a').forEach(function (link) {
+      var href = link.getAttribute('href') || '';
+      if (href.includes('drivendata')) return;
+      if (href.startsWith('#')) return;
+      if (href.startsWith('/')) return;
+      if (link.getAttribute('target') === '_self') return;
+      link.setAttribute('target', '_blank');
+    });
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.3.1/anchor.min.js"
+          integrity="sha512-zPB79j2C+3sFS9zcA3vg/z6bVKzJVEyu9pY5w89akQRys76zpAT2t6S3wZKla3QQ14O5l/Yt0RUQ/DHXx82Y5g=="
+          crossorigin="anonymous"
+          referrerpolicy="no-referrer"></script>
+  <style>
+      a.anchorjs-link {
+          color: var(--color-muted);
+          text-decoration: none;
+          vertical-align: -0.075em;
+      }
+
+      a.anchorjs-link:hover {
+          text-decoration: none;
+      }
+  </style>
+  <script>
+      anchors.add('.anchored');
+      anchors.add('#content-page .prose :where(h2, h3, h4, h5, h6)').remove('.tooltiptext h4');
+
+      // Don't allow heading anchor links to take keyboard focus as it hinders keyboard navigation
+      document.querySelectorAll('a.anchorjs-link').forEach(anchorLink => {
+        anchorLink.tabIndex = -1;
+      });
+  </script>
+  
+    
+<script>
+  window.MathJax = {
+    options: {
+      enableMenu: false,
+      enableSpeech: false,
+      enableBraille: false,
+      enableExplorer: false,
+      menuOptions: {
+        settings: {
+          // v4 overwrites the enable* flags above from these; enrich: false is
+          // what stops the speech worker from ever starting.
+          enrich: false,
+          speech: false,
+          braille: false,
+          inTabOrder: false,
+        },
+      },
+    },
+    tex: {
+      inlineMath: [["|$", "$|"]],
+      displayMath: [["$$", "$$"]],
+      processEscapes: true,
+    },
+  };
+</script>
+<script defer
+        src="https://cdn.jsdelivr.net/npm/mathjax@4.0.0/tex-mml-chtml.js"
+        integrity="sha512-D0eU0TwZjXn2FsQXymdhToKse0yD7CFS6dQhhBQe5sUKYVp1hufw6lQtXxpvwBRj7dDjVJ858l2HEfktsOBv0A=="
+        crossorigin="anonymous"
+        referrerpolicy="no-referrer"></script>
+
+  
+  
+
+    
+    
+  </body>
+</html>

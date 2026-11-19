@@ -1,0 +1,84 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Evidence claims v1",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "properties": {
+      "id": {
+        "type": "string",
+        "pattern": "^[a-z0-9-]+$"
+      },
+      "claim": {
+        "type": "string",
+        "minLength": 1
+      },
+      "status": {
+        "enum": [
+          "VERIFIED",
+          "INFERRED",
+          "UNKNOWN"
+        ]
+      },
+      "scope": {
+        "enum": [
+          "published",
+          "code",
+          "measured",
+          "reasoning",
+          "unknown"
+        ]
+      },
+      "source_ids": {
+        "type": "array",
+        "items": {
+          "type": "string",
+          "minLength": 1
+        },
+        "uniqueItems": true
+      },
+      "locator": {
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "limitations": {
+        "type": "string",
+        "minLength": 1
+      },
+      "assumptions": {
+        "type": "array",
+        "items": {
+          "type": "string"
+        },
+        "uniqueItems": true
+      },
+      "test": {
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "artifact": {
+        "type": [
+          "string",
+          "null"
+        ]
+      }
+    },
+    "required": [
+      "id",
+      "claim",
+      "status",
+      "scope",
+      "source_ids",
+      "locator",
+      "limitations",
+      "assumptions",
+      "test",
+      "artifact"
+    ],
+    "additionalProperties": false
+  }
+}

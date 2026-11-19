@@ -1,0 +1,110 @@
+{
+  "schema_version": "1.0",
+  "competition_id": "dd-hateful-memes",
+  "updated_at": "2026-11-19",
+  "overall_status": "partial",
+  "stage": "source-and-pipeline-audit",
+  "review_type": "self_review",
+  "modules": {
+    "A": {
+      "status": "partial",
+      "artifact": "report.md",
+      "note": "Task/metric chính đã có nguồn; rules/evaluator edge cases chưa đủ để tuyên bố hoàn chỉnh."
+    },
+    "B": {
+      "status": "partial",
+      "artifact": "report.md",
+      "note": "Cần dữ liệu/run/dependency trace hoặc nguồn bổ sung; xem report và pipeline."
+    },
+    "C": {
+      "status": "partial",
+      "artifact": "report.md",
+      "note": "Task/metric chính đã có nguồn; rules/evaluator edge cases chưa đủ để tuyên bố hoàn chỉnh."
+    },
+    "D": {
+      "status": "blocked",
+      "artifact": "report.md",
+      "note": "Cần dữ liệu/run/dependency trace hoặc nguồn bổ sung; xem report và pipeline."
+    },
+    "E": {
+      "status": "partial",
+      "artifact": "report.md",
+      "note": "Cần dữ liệu/run/dependency trace hoặc nguồn bổ sung; xem report và pipeline."
+    },
+    "F": {
+      "status": "complete",
+      "artifact": "report.md",
+      "note": "Đã có nội dung/nguồn trong phạm vi audit; không đồng nghĩa đã reproduce."
+    },
+    "G": {
+      "status": "partial",
+      "artifact": "report.md",
+      "note": "Cần dữ liệu/run/dependency trace hoặc nguồn bổ sung; xem report và pipeline."
+    },
+    "H": {
+      "status": "partial",
+      "artifact": "report.md",
+      "note": "Cần dữ liệu/run/dependency trace hoặc nguồn bổ sung; xem report và pipeline."
+    },
+    "I": {
+      "status": "partial",
+      "artifact": "report.md",
+      "note": "Cần dữ liệu/run/dependency trace hoặc nguồn bổ sung; xem report và pipeline."
+    },
+    "J": {
+      "status": "partial",
+      "artifact": "report.md",
+      "note": "Cần dữ liệu/run/dependency trace hoặc nguồn bổ sung; xem report và pipeline."
+    },
+    "K": {
+      "status": "partial",
+      "artifact": "report.md",
+      "note": "Cần dữ liệu/run/dependency trace hoặc nguồn bổ sung; xem report và pipeline."
+    },
+    "L": {
+      "status": "partial",
+      "artifact": "report.md",
+      "note": "Cần dữ liệu/run/dependency trace hoặc nguồn bổ sung; xem report và pipeline."
+    },
+    "M": {
+      "status": "complete",
+      "artifact": "report.md",
+      "note": "Đã có nội dung/nguồn trong phạm vi audit; không đồng nghĩa đã reproduce."
+    },
+    "N": {
+      "status": "complete",
+      "artifact": "report.md",
+      "note": "Đã có nội dung/nguồn trong phạm vi audit; không đồng nghĩa đã reproduce."
+    },
+    "O": {
+      "status": "complete",
+      "artifact": "report.md",
+      "note": "Đã self-review; findings và blockers còn mở, chưa có independent signoff."
+    }
+  },
+  "artifacts": [
+    "report.md",
+    "pipeline.md",
+    "sources.md",
+    "evidence.json",
+    "evidence_matrix.md",
+    "experiment_plan.md",
+    "quality_review.md"
+  ],
+  "completed_checks": [
+    "Official task and final results read",
+    "Metric formula reconciled",
+    "Top-three approaches compared",
+    "Selected code paths pinned and traced",
+    "Claims separated from hypotheses"
+  ],
+  "unknowns": [
+    "Chưa xác minh full training graph/defaults, dataset/weights permission, exact winning component CSVs và reproduced score."
+  ],
+  "next_actions": [
+    "Resolve allowed dataset access and archive version.",
+    "Complete remaining team/dependency/feature code trace with source locators.",
+    "Measure modality-specific EDA after data is available.",
+    "Run budgeted reproduction only after prerequisites, record commands/logs."
+  ]
+}

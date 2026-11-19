@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="generator" content="Asciidoctor 2.0.16">
+<title>IMPORTANT DATES</title>
+<link rel="stylesheet" href="static/wmt.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body class="article toc2 toc-left">
+<div class="text-center" id="wmt-title">
+    EMNLP 2024
+    <h2>
+    NINTH CONFERENCE ON<br>
+    MACHINE TRANSLATION (WMT24)
+    </h2>
+    November 15-16, 2024<br>
+    Miami, Florida, USA
+    <br>&nbsp;<br>
+
+[<A HREF="/wmt24/index.html">HOME</A>]
+[<A HREF="/wmt24/program.html">PROGRAM</A>]
+[<A HREF="/wmt24/papers.html">PAPERS</A>]
+[<A HREF="/wmt24/authors.html">AUTHORS</A>]
+<br>
+TRANSLATION TASKS:
+[<A HREF="/wmt24/translation-task.html">GENERAL MT (NEWS)</A>]
+[<A HREF="/wmt24/romance-task.html">LOW-RESOURCE LANGUAGES OF SPAIN</A>]
+[<A HREF="/wmt24/indic-mt-task.html">INDIC MT</A>]
+[<A HREF="/wmt24/chat-task.html">CHAT TASK</A>]
+[<A HREF="/wmt24/biomedical-translation-task.html">BIOMEDICAL</A>]
+[<A HREF="/wmt24/multiindicmt-task.html">MULTIINDIC22MT TASK</A>]
+[<A HREF="/wmt24/multimodallowresmt-task.html">ENGLISH-TO-LOWRES MULTIMODAL MT TASK</A>]
+[<A HREF="/wmt24/non-repetitive-translation-task.html">NON-REPETITIVE</A>]
+[<A HREF="/wmt24/patent-task.html">PATENT</A>]
+[<A HREF="/wmt24/literary-translation-task.html">LITERARY</A>]
+
+<br>
+EVALUATION TASKS:
+[<A HREF="/wmt24/metrics-task.html">METRICS TASK</A>]
+[<A HREF="/wmt24/testsuite-subtask.html">MT TEST SUITES</A>]
+[<A HREF="/wmt24/qe-task.html">QUALITY ESTIMATION</A>]
+
+<br>
+OTHER TASKS:
+[<A HREF="/wmt24/open-data.html">OPEN LANGUAGE DATA INITIATIVE</A>]
+<br>
+
+
+
+<!-- [<A HREF="/wmt24/index.html">HOME</A>]  <br/>
+TRANSLATION TASKS:
+[<A HREF="/wmt24/translation-task.html">GENERAL MT (NEWS)</A>]
+[<A HREF="https://wmt-terminology-task.github.io/">TERMINOLOGY</A>]
+[<A HREF="/wmt24/indic-mt-task.html">INDIC MT</A>]
+[<A HREF="/wmt24/african-mt-task.html">AFRICAN MT</A>]
+[<A HREF="https://www.wmt-slt.com/">SIGN LANGUAGE</A>]
+[<A HREF="/wmt24/biomedical-translation-task.html">BIOMEDICAL</A>]
+[<A HREF="/wmt24/literary-translation-task.html">LITERARY</A>]
+<br>
+EVALUATION TASKS:
+[<A HREF="https://wmt-metrics-task.github.io/">METRICS</A>]
+[<A HREF="https://wmt-qe-task.github.io/">QUALITY ESTIMATION</A>]
+[<A HREF="/wmt24/testsuite-subtask.html">MT TEST SUITES</A>]
+<br>
+OTHER TASKS:
+[<A HREF="/wmt24/word-autocompletion.html">WORD-LEVEL AUTOCOMPLETION</A>]
+[<A HREF="/wmt24/ape-task.html">AUTOMATIC POST-EDITING</A>]
+[<A HREF="/wmt24/data-task.html">PARALLEL DATA CURATION</A>]
+<br> -->
+
+
+
+</div>
+<div id="header">
+<div id="toc" class="toc2">
+<div id="toctitle">WMT 2024</div>
+<ul class="sectlevel1">
+<li><a href="#_important_dates">IMPORTANT DATES</a></li>
+<li><a href="#_overview_and_shared_tasks">OVERVIEW AND SHARED TASKS</a></li>
+<li><a href="#_paper_submission_information">PAPER SUBMISSION INFORMATION</a>
+<ul class="sectlevel2">
+<li><a href="#_research_papers">Research Papers</a></li>
+<li><a href="#_system_papers">System Papers</a></li>
+<li><a href="#_presenting_and_poster_format">Presenting and poster format</a></li>
+</ul>
+</li>
+<li><a href="#ANNOUNCEMENTS">ANNOUNCEMENTS</a></li>
+<li><a href="#_registration_and_visa_information">REGISTRATION AND VISA INFORMATION</a></li>
+<li><a href="#_anti_harassment_policy">ANTI-HARASSMENT POLICY</a></li>
+<li><a href="#_past_conferences">PAST CONFERENCES</a></li>
+<li><a href="#_organizers">ORGANIZERS</a>
+<ul class="sectlevel2">
+<li><a href="#_invited_talk">Invited Talk</a></li>
+<li><a href="#_program_committee">Program Committee</a></li>
+<li><a href="#_contact">Contact</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<div id="content">
+<div class="sect1">
+<h2 id="_important_dates">IMPORTANT DATES</h2>
+<div class="sectionbody">
+<table class="tableblock frame-all grid-all fit-content">
+<colgroup>
+<col>
+<col>
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Evaluation periods for shared tasks</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">June/July, 2024</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Paper submission deadline</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">20th August</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Paper notification</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">20th September</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Camera-ready version due</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">3rd October</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Conference</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">15-16 November, 2024</p></td>
+</tr>
+</tbody>
+</table>
+<div class="paragraph">
+<p>All deadlines are in AoE (Anywhere on Earth). Dates are specified with
+respect to EMNLP 2024.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_overview_and_shared_tasks">OVERVIEW AND SHARED TASKS</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>This year&#8217;s conference will feature the following shared tasks:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>a <a href="translation-task.html">general translation task (former News task)</a>,</p>
+</li>
+<li>
+<p>a <a href="romance-task.html">translation into low-resource languages of Spain task</a>,</p>
+</li>
+<li>
+<p>a <a href="indic-mt-task.html">Low-Resource Indic Language Translation</a>,</p>
+</li>
+<li>
+<p>a <a href="metrics-task.html">Metrics Task</a>,</p>
+</li>
+<li>
+<p>a <a href="chat-task.html">Chat Translation Task</a></p>
+</li>
+<li>
+<p>a <a href="biomedical-translation-task.html">Biomedical Translation Task</a></p>
+</li>
+<li>
+<p>a <a href="testsuite-subtask.html">MT test suites sub-task</a></p>
+</li>
+<li>
+<p>an <a href="open-data.html">Open Language Data shared task</a></p>
+</li>
+<li>
+<p>a <a href="qe-task.html">Quality Estimation Task</a></p>
+</li>
+<li>
+<p>a <a href="multimodallowresmt-task.html">English-LowRes Multimodal Translation Task</a></p>
+</li>
+<li>
+<p>a <a href="non-repetitive-translation-task.html">Non-Repetitive Translation Task</a></p>
+</li>
+<li>
+<p>a <a href="patent-task.html">Patent Task</a></p>
+</li>
+<li>
+<p>a <a href="literary-translation-task.html">Literary Translation Task</a></p>
+</li>
+<li>
+<p>a <a href="patent-task.html">Patent Task</a></p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>In addition to the shared tasks, the conference will also feature
+scientific papers on topics related to MT. Topics of interest include,
+but are not limited to:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>MT models (neural, statistical etc. )</p>
+</li>
+<li>
+<p>analysis of neural models for MT</p>
+</li>
+<li>
+<p>using comparable corpora for MT</p>
+</li>
+<li>
+<p>selection and preparation of data for MT</p>
+</li>
+<li>
+<p>semi-supervised and unsupervised learning for MT, transfer learning</p>
+</li>
+<li>
+<p>multilingual MT</p>
+</li>
+<li>
+<p>incorporating linguistic information into MT</p>
+</li>
+<li>
+<p>MT inference</p>
+</li>
+<li>
+<p>manual and automatic methods for evaluating MT</p>
+</li>
+<li>
+<p>quality estimation for MT</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>We encourage authors to evaluate their approaches to the above topics
+using the common data sets created for the shared tasks.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_paper_submission_information">PAPER SUBMISSION INFORMATION</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>WMT accepts two types of submissions: <strong>research papers</strong> and <strong>system
+papers</strong>. Both types of papers are submitted
+<a href="https://www.softconf.com/emnlp2024/wmt/">electronically via SoftConf</a>, have the same deadlines, and should follow
+<a href="https://2024.emnlp.org/calls/style-and-formatting/">EMNLP2023 formatting guidelines</a>.
+You may include a limitations section and ethics statement but they are not required.
+WMT will participate in the
+<a href="https://aclrollingreview.org/">ACL Rolling Review</a>. Any ARR-reviewed
+paper that received all of its reviews and meta-reviews available by
+EMNLP ARR deadline can be committed to WMT and will be considered for publication
+at the conference.</p>
+</div>
+<div class="sect2">
+<h3 id="_research_papers">Research Papers</h3>
+<div class="paragraph">
+<p>Research papers should describe original research corresponding to the
+categories listed above. Research papers that have been or will be
+submitted to other meetings or publications must indicate this at
+submission time, and must be withdrawn from the other venues if accepted
+and published at WMT 2024. We will not accept for publication papers
+that overlap significantly in content or results with papers that have
+been or will be published elsewhere. It is acceptable to submit work
+that has been made available as a technical report (or similar, e.g. in
+arXiv) without citing it. For the research track, papers should be
+anonymised, be between 6 and 10 pages in length (excluding limitations,
+references, appendices).</p>
+</div>
+<div class="paragraph">
+<p>We encourage individuals who are submitting research papers to evaluate
+their approaches using the training resources provided by this
+conference and past workshops, so that their experiments can be repeated
+by others using these publicly available corpora.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_system_papers">System Papers</h3>
+<div class="paragraph">
+<p>System papers must describe one or more shared task submissions. System
+paper submissions that we cannot link to a shared task submission will
+be rejected without review. System papers can overlap with other
+published work, and do not have to follow the double submission policy.
+There is no maximum length for system papers, but normally a short paper
+(4-6 pages) is appropriate. System papers should not be anonymised.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_presenting_and_poster_format">Presenting and poster format</h3>
+<div class="paragraph">
+<p>System description papers will be presentated as posters. For the
+in-person poster session, the poster panels are 3.28’ (1m wide) x 8.20’
+(2.5m tall). We recommend to have posters that are portrait in
+orientation.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="ANNOUNCEMENTS">ANNOUNCEMENTS</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>If you are participating in any task, please subscribe to the Google
+groups <a href="http://groups.google.com/group/wmt-tasks">mailing list</a> for
+updates. You can also consult the list archives on this page. Note that
+there have been isues with subscribing to the mailing list in recent
+years. If you are unable to subscribe, or if your subscription is not
+approved, please contact Barry Haddow (address at the foot of the page).</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_registration_and_visa_information">REGISTRATION AND VISA INFORMATION</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>These will both be handled by EMNLP 2024.</p>
+</div>
+<div class="paragraph">
+<p>You can request a <a href="https://forms.office.com/r/rwq33DTqhL">invitation letter</a>
+from the EMNLP Conference if you need it for the visa application.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_anti_harassment_policy">ANTI-HARASSMENT POLICY</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>WMT follows the ACL&#8217;s
+<a href="https://www.aclweb.org/adminwiki/index.php?title=Anti-Harassment_Policy">anti-harassment policy</a></p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_past_conferences">PAST CONFERENCES</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>This conference builds on a series of annual workshops and
+conferences on statistical machine translation, going back to 2006:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>the <a href="http://www.statmt.org/wmt06/">NAACL-2006 Workshop on Statistical Machine Translation</a>,</p>
+</li>
+<li>
+<p>the <a href="http://www.statmt.org/wmt07/">ACL-2007 Workshop on Statistical Machine Translation</a>,</p>
+</li>
+<li>
+<p>the <a href="http://www.statmt.org/wmt08/">ACL-2008 Workshop on Statistical Machine Translation</a>,</p>
+</li>
+<li>
+<p>the <a href="http://www.statmt.org/wmt09/">EACL-2009 Workshop on Statistical Machine Translation</a>,</p>
+</li>
+<li>
+<p>the <a href="http://www.statmt.org/wmt10/">ACL-2010 Workshop on Statistical Machine Translation</a></p>
+</li>
+<li>
+<p>the <a href="http://www.statmt.org/wmt11/">EMNLP-2011 Workshop on Statistical Machine Translation</a>,</p>
+</li>
+<li>
+<p>the <a href="http://www.statmt.org/wmt12/">NAACL-2012 Workshop on Statistical Machine Translation</a>,</p>
+</li>
+<li>
+<p>the <a href="http://www.statmt.org/wmt13/">ACL-2013 Workshop on Statistical Machine Translation</a>,</p>
+</li>
+<li>
+<p>the <a href="http://www.statmt.org/wmt14/">ACL-2014 Workshop on Statistical Machine Translation</a>,</p>
+</li>
+<li>
+<p>the <a href="http://www.statmt.org/wmt15/">EMNLP-2015 Workshop on Statistical Machine Translation</a>,</p>
+</li>
+<li>
+<p>the <a href="http://www.statmt.org/wmt16/">First Conference on Machine Translation (at ACL-2016)</a>,</p>
+</li>
+<li>
+<p>the <a href="http://www.statmt.org/wmt17/">Second Conference on Machine Translation (at EMNLP-2017)</a>,</p>
+</li>
+<li>
+<p>the <a href="http://www.statmt.org/wmt18/">Third Conference on Machine Translation (at EMNLP-2018)</a>.</p>
+</li>
+<li>
+<p>the <a href="http://www.statmt.org/wmt19/">Fourth Conference on Machine Translation (at ACL-2019)</a>.</p>
+</li>
+<li>
+<p>the <a href="http://www.statmt.org/wmt20/">Fifth Conference on Machine Translation (at EMNLP-2020)</a>.</p>
+</li>
+<li>
+<p>the <a href="http://www.statmt.org/wmt21/">Sixth Conference on Machine Translation (at EMNLP-2021)</a>.</p>
+</li>
+<li>
+<p>the <a href="http://www.statmt.org/wmt22/">Seventh Conference on Machine Translation (at EMNLP-2022)</a>.</p>
+</li>
+<li>
+<p>the <a href="http://www2.statmt.org/wmt23/">Eight Conference on Machine Translation (at EMNLP-2023)</a>.</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_organizers">ORGANIZERS</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>Barry Haddow (University of Edinburgh)</p>
+</li>
+<li>
+<p>Tom Kocmi (Microsoft)</p>
+</li>
+<li>
+<p>Philipp Koehn (Johns Hopkins University)</p>
+</li>
+<li>
+<p>Christof Monz (University of Amsterdam)</p>
+</li>
+</ul>
+</div>
+<div class="sect2">
+<h3 id="_invited_talk">Invited Talk</h3>
+<div class="paragraph">
+<p>Ricardo Rei and Nuno M. Guerreiro (Unbabel)</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_program_committee">Program Committee</h3>
+<div class="paragraph">
+<p>TBA</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_contact">Contact</h3>
+<div class="paragraph">
+<p>For general questions, comments, etc. please send email to <a href="mailto:phi@jhu.edu">phi@jhu.edu</a>.<br>
+For task-specific questions, please contact the relevant organisers.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="footer">
+<div id="footer-text">
+Last updated 2024-12-06 11:30:19 UTC
+</div>
+</div>
+</body>
+</html>
